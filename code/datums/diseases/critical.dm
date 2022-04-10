@@ -20,11 +20,12 @@
 
 /datum/disease/critical/shock
 	name = "Шок"
-	form = "Требуется неотложная помощь"
+	form = "Тяжёлое состояние"
+	form_gender = FEMALE
 	spread_text = "Пациент в шоке"
 	max_stages = 3
 	spread_flags = SPECIAL
-	cure_text = "Saline-Glucose Solution"
+	cure_text = "Физраствор с глюкозой"
 	cures = list("salglu_solution")
 	cure_chance = 10
 	viable_mobtypes = list(/mob/living/carbon/human)
@@ -81,11 +82,12 @@
 
 /datum/disease/critical/heart_failure
 	name = "Сердечная недостаточность"
-	form = "Требуется неотложная помощь"
+	form = "Тяжёлое состояние"
 	spread_text = "У пациента сердечная недостаточность"
 	max_stages = 3
 	spread_flags = SPECIAL
-	cure_text = "Atropine, Epinephrine, или Heparin"
+	form_gender = FEMALE
+	cure_text = "Атропин, эпинефрин или гепарин"
 	cures = list("atropine", "epinephrine", "heparin")
 	cure_chance = 10
 	needs_all_cures = FALSE
@@ -116,7 +118,7 @@
 				if(prob(5))
 					to_chat(affected_mob, "<span class='danger'>Ваши руки болят!</span>")
 				else if(prob(5))
-					to_chat(affected_mob, "<span class='danger'>Ваша грудь болит!</span>")
+					to_chat(affected_mob, "<span class='danger'>Ваш торс болит!</span>")
 			if(2)
 				if(prob(1) && prob(10))
 					to_chat(affected_mob, "<span class='notice'>Вам становится лучше.</span>")
@@ -125,7 +127,7 @@
 				if(prob(8))
 					affected_mob.emote(pick("pale", "groan"))
 				if(prob(5))
-					to_chat(affected_mob, "<span class='danger'>Ваше сердце колотится в груди!</span>")
+					to_chat(affected_mob, "<span class='danger'>Сердце колотится в груди!</span>")
 					affected_mob.AdjustLoseBreath(1)
 				if(prob(3))
 					to_chat(affected_mob, "<span class='danger'>Ваше сердце остановилось!</span>")
@@ -142,9 +144,10 @@
 
 /datum/disease/critical/hypoglycemia
 	name = "Гипогликемия"
-	form = "Требуется неотложная помощь"
+	form = "Тяжёлое состояние"
 	max_stages = 3
 	spread_flags = SPECIAL
+	form_gender = NEUTER
 	spread_text = "У пациента низкий уровень сахара в крови."
 	cure_text = "Прием пищи, витаминов или питательных веществ"
 	viable_mobtypes = list(/mob/living/carbon/human)

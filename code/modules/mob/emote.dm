@@ -32,7 +32,7 @@
 /mob/proc/custom_emote(var/m_type=EMOTE_VISUAL,var/message = null)
 	if(stat || !use_me && usr == src)
 		if(usr)
-			to_chat(usr, "You are unable to emote.")
+			to_chat(usr, "Вы не можете проявлять эмоции.")
 		return
 	var/muzzled = is_muzzled()
 	if(muzzled)
@@ -44,7 +44,7 @@
 
 	var/input
 	if(!message)
-		input = sanitize(copytext_char(input(src,"Choose an emote to display.") as text|null,1,MAX_MESSAGE_LEN))
+		input = sanitize(copytext_char(input(src,"Выберите, какую эмоцию показать.") as text|null,1,MAX_MESSAGE_LEN))
 	else
 		input = message
 	if(input)
@@ -125,27 +125,27 @@
 
 /mob/proc/emote_dead(var/message)
 	if(client.prefs.muted & MUTE_DEADCHAT)
-		to_chat(src, "<span class='warning'>You cannot send deadchat emotes (muted).</span>")
+		to_chat(src, "<span class='warning'>Вы не можете отправлять эмоции в чат мёртвых (кляп).</span>")
 		return
 
 	if(!(client.prefs.toggles & PREFTOGGLE_CHAT_DEAD))
-		to_chat(src, "<span class='warning'>You have deadchat muted.</span>")
+		to_chat(src, "<span class='warning'>У вас кляп на чат мёртвых.</span>")
 		return
 
 	if(!src.client.holder)
 		if(!config.dsay_allowed)
-			to_chat(src, "<span class='warning'>Deadchat is globally muted</span>")
+			to_chat(src, "<span class='warning'>Чат мёртвых отключён у всех</span>")
 			return
 
 
 	var/input
 	if(!message)
-		input = sanitize(copytext_char(input(src, "Choose an emote to display.") as text|null, 1, MAX_MESSAGE_LEN))
+		input = sanitize(copytext_char(input(src, "Выберите, какую эмоцию показать.") as text|null, 1, MAX_MESSAGE_LEN))
 	else
 		input = message
 
 	if(input)
-		message = "<span class='game deadsay'><span class='prefix'>DEAD:</span> <b>[src]</b> [message]</span>"
+		message = "<span class='game deadsay'><span class='prefix'>МЁРТВ:</span> <b>[src]</b> [message]</span>"
 	else
 		return
 
@@ -211,7 +211,7 @@
 				if(!M.can_hear())
 					continue
 				if(M.stat == UNCONSCIOUS || (M.sleeping > 0 && M.stat != DEAD))
-					to_chat(M, "<I>... You can almost hear something ...</I>")
+					to_chat(M, "<I>… Вы почти смогли что-то расслышать …</I>")
 				else
 					to_chat(M, message)
 					if(M.client?.prefs.toggles2 & PREFTOGGLE_2_RUNECHAT)

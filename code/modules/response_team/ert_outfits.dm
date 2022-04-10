@@ -21,7 +21,7 @@
 		PDA.owner = H.real_name
 		PDA.ownjob = rt_assignment
 		PDA.ownrank = rt_assignment
-		PDA.name = "PDA-[H.real_name] ([PDA.ownjob])"
+		PDA.name = "КПК — [H.real_name] ([PDA.ownjob])"
 
 /datum/outfit/job/centcom/response_team/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()

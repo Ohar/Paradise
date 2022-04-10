@@ -7,8 +7,8 @@
 #define SLIMEPERSON_REGROWTHDELAY 450 // 45 seconds
 
 /datum/species/slime
-	name = "Slime People"
-	name_plural = "Slime People"
+	name = "Слаймомен"
+	name_plural = "Слаймомен"
 	language = "Bubblish"
 	icobase = 'icons/mob/human_races/r_slime.dmi'
 	deform = 'icons/mob/human_races/r_slime.dmi'

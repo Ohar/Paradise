@@ -39,9 +39,9 @@
 				displayed_species = C.species_disguise
 	if(skipjumpsuit && skipface || (NO_EXAMINE in dna.species.species_traits)) //either obscured or on the nospecies list
 		msg += "!\n"    //omit the species when examining
-	else if(displayed_species == "Slime People") //snowflakey because Slime People are defined as a plural
+	else if(displayed_species == "Слаймомен") //snowflakey because Slime People are defined as a plural
 		msg += ", a<b><font color='[examine_color]'> slime person</font></b>!\n"
-	else if(displayed_species == "Unathi") //DAMN YOU, VOWELS
+	else if(displayed_species == "Унати") //DAMN YOU, VOWELS
 		msg += ", a<b><font color='[examine_color]'> unathi</font></b>!\n"
 	else
 		msg += ", a<b><font color='[examine_color]'> [lowertext(displayed_species)]</font></b>!\n"

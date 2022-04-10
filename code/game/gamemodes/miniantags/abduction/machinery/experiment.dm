@@ -79,9 +79,9 @@
 		dat += "[occupant.name] => "
 		switch(occupant.stat)
 			if(0)
-				dat += "<span class='good'>Conscious</span>"
+				dat += "<span class='good'>В сознании</span>"
 			if(1)
-				dat += "<span class='average'>Unconscious</span>"
+				dat += "<span class='average'>Без сознания</span>"
 			else
 				dat += "<span class='bad'>Deceased</span>"
 	dat += "<br>"

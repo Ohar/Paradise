@@ -102,23 +102,23 @@
 	injectmasteralbum(P)
 
 /obj/item/camera/siliconcam/ai_camera/verb/take_image()
-	set category = "AI Commands"
-	set name = "Take Image"
+	set category = "Команды ИИ"
+	set name = "Сделать снимок"
 	set desc = "Takes an image"
 	set src in usr
 
 	toggle_camera_mode()
 
 /obj/item/camera/siliconcam/ai_camera/verb/view_images()
-	set category = "AI Commands"
-	set name = "View Images"
+	set category = "Команды ИИ"
+	set name = "Просмотреть снимки"
 	set desc = "View images"
 	set src in usr
 
 	viewpictures()
 
 /obj/item/camera/siliconcam/ai_camera/verb/delete_images()
-	set category = "AI Commands"
+	set category = "Команды ИИ"
 	set name = "Delete Image"
 	set desc = "Delete image"
 	set src in usr
@@ -126,23 +126,23 @@
 	deletepicture(src)
 
 /obj/item/camera/siliconcam/robot_camera/verb/take_image()
-	set category ="Robot Commands"
-	set name = "Take Image"
+	set category ="Робот: Команды"
+	set name = "Сделать снимок"
 	set desc = "Takes an image"
 	set src in usr
 
 	toggle_camera_mode()
 
 /obj/item/camera/siliconcam/robot_camera/verb/view_images()
-	set category ="Robot Commands"
-	set name = "View Images"
+	set category ="Робот: Команды"
+	set name = "Просмотреть снимки"
 	set desc = "View images"
 	set src in usr
 
 	viewpictures()
 
 /obj/item/camera/siliconcam/robot_camera/verb/delete_images()
-	set category = "Robot Commands"
+	set category = "Робот: Команды"
 	set name = "Delete Image"
 	set desc = "Delete a local image"
 	set src in usr

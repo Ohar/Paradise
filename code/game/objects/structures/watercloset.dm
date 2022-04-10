@@ -158,7 +158,7 @@
 				anchored = 1
 		if("Rotate")
 			var/list/dir_choices = list("North" = NORTH, "East" = EAST, "South" = SOUTH, "West" = WEST)
-			var/selected = input(user,"Select a direction for the connector.", "Connector Direction") in dir_choices
+			var/selected = input(user,"Выберите направление соединения.", "Направление соединения") in dir_choices
 			dir = dir_choices[selected]
 	update_icon()	//is this necessary? probably not
 
@@ -336,7 +336,7 @@
 		return
 	if(!I.tool_use_check(user, 0))
 		return
-	visible_message("<span class='notice'>[user] begins slicing [src] free...</span>", "<span class='notice'>You begin slicing [src] free...</span>", "<span class='warning'>You hear welding.</span>")
+	visible_message("<span class='notice'>[user] начина[pluralize_ru(user.gender,"ет","ют")] отваривать [src] от...</span>", "<span class='notice'>You begin slicing [src] free...</span>", "<span class='warning'>Вы слышите звуки сварки.</span>")
 	if(I.use_tool(src, user, 40, volume = I.tool_volume))
 		if(mymist)
 			qdel(mymist)
@@ -572,7 +572,7 @@
 				anchored = TRUE
 		if("Rotate")
 			var/list/dir_choices = list("North" = NORTH, "East" = EAST, "South" = SOUTH, "West" = WEST)
-			var/selected = input(user, "Select a direction for the connector.", "Connector Direction") in dir_choices
+			var/selected = input(user, "Выберите направление соединения.", "Направление соединения") in dir_choices
 			dir = dir_choices[selected]
 	update_icon()	//is this necessary? probably not
 

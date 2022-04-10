@@ -1,6 +1,6 @@
 /datum/species/tajaran
-	name = "Tajaran"
-	name_plural = "Tajaran"
+	name = "Таяран"
+	name_plural = "Таяран"
 	name_adjective_male = "таяранский"
 	name_adjective_female = "таяранская"
 	icobase = 'icons/mob/human_races/r_tajaran.dmi'

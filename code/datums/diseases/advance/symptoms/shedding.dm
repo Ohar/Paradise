@@ -34,17 +34,17 @@ BONUS
 			var/obj/item/organ/external/head/head_organ = H.get_organ("head")
 			switch(A.stage)
 				if(3, 4)
-					if(!(head_organ.h_style == "Bald") && !(head_organ.h_style == "Balding Hair"))
+					if(!(head_organ.h_style == "Лысина") && !(head_organ.h_style == "Залысина"))
 						to_chat(H, "<span class='warning'>Ваши волосы начинают выпадать клочьями…</span>")
 						spawn(50)
-							head_organ.h_style = "Balding Hair"
+							head_organ.h_style = "Залысина"
 							H.update_hair()
 				if(5)
-					if(!(head_organ.f_style == "Shaved") || !(head_organ.h_style == "Bald"))
+					if(!(head_organ.f_style == "Выбритость") || !(head_organ.h_style == "Лысина"))
 						to_chat(H, "<span class='warning'>Ваши волосы начинают выпадать клочьями…</span>")
 						spawn(50)
-							head_organ.f_style = "Shaved"
-							head_organ.h_style = "Bald"
+							head_organ.f_style = "Выбритость"
+							head_organ.h_style = "Лысина"
 							H.update_hair()
 							H.update_fhair()
 	return

@@ -40,7 +40,7 @@ export const RobotSelfDiagnosis = (props, context) => {
                     textAlign="center"
                     align="center"
                     color="#e8e8e8">
-                    {entry.installed === -1 ? "Destroyed" : "Missing"}
+                    {entry.installed === -1 ? "Сломано" : "Отсутствует"}
                   </Flex.Item>
                 </Flex>
               </NoticeBox>
@@ -49,12 +49,12 @@ export const RobotSelfDiagnosis = (props, context) => {
                 <Flex.Item width="72%">
                   <LabeledList>
                     <LabeledList.Item
-                      label="Brute Damage"
+                      label="Ушибы"
                       color={getDamageColor(entry.brute_damage, entry.max_damage)}>
                       {entry.brute_damage}
                     </LabeledList.Item>
                     <LabeledList.Item
-                      label="Burn Damage"
+                      label="Ожоги"
                       color={getDamageColor(entry.electronic_damage, entry.max_damage)}>
                       {entry.electronic_damage}
                     </LabeledList.Item>
@@ -63,14 +63,14 @@ export const RobotSelfDiagnosis = (props, context) => {
                 <Flex.Item width="50%">
                   <LabeledList>
                     <LabeledList.Item
-                      label="Powered"
+                      label="Питание"
                       color={entry.powered ? "good" : "bad"}>
-                      {entry.powered ? "Yes" : "No"}
+                      {entry.powered ? "Да" : "Нет"}
                     </LabeledList.Item>
                     <LabeledList.Item
-                      label="Enabled"
+                      label="Статус"
                       color={entry.status ? "good" : "bad"}>
-                      {entry.status ? "Yes" : "No" }
+                      {entry.status ? "Да" : "Нет" }
                     </LabeledList.Item>
                   </LabeledList>
                 </Flex.Item>

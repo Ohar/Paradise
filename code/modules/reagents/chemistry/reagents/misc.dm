@@ -33,7 +33,7 @@
 
 
 /datum/reagent/oxygen
-	name = "Oxygen"
+	name = "Кислород"
 	id = "oxygen"
 	description = "A colorless, odorless gas."
 	reagent_state = GAS
@@ -41,7 +41,7 @@
 	taste_mult = 0
 
 /datum/reagent/nitrogen
-	name = "Nitrogen"
+	name = "Азот"
 	id = "nitrogen"
 	description = "A colorless, odorless, tasteless gas."
 	reagent_state = GAS
@@ -67,7 +67,7 @@
 /datum/reagent/sulfur
 	name = "Sulfur"
 	id = "sulfur"
-	description = "A chemical element."
+	description = "Химический элемент."
 	reagent_state = SOLID
 	color = "#BF8C00" // rgb: 191, 140, 0
 	taste_description = "impulsive decisions"
@@ -75,7 +75,7 @@
 /datum/reagent/sodium
 	name = "Sodium"
 	id = "sodium"
-	description = "A chemical element."
+	description = "Химический элемент."
 	reagent_state = SOLID
 	color = "#808080" // rgb: 128, 128, 128
 	taste_description = "horrible misjudgement"
@@ -83,7 +83,7 @@
 /datum/reagent/phosphorus
 	name = "Phosphorus"
 	id = "phosphorus"
-	description = "A chemical element."
+	description = "Химический элемент."
 	reagent_state = SOLID
 	color = "#832828" // rgb: 131, 40, 40
 	taste_description = "misguided choices"
@@ -91,7 +91,7 @@
 /datum/reagent/carbon
 	name = "Carbon"
 	id = "carbon"
-	description = "A chemical element."
+	description = "Химический элемент."
 	reagent_state = SOLID
 	color = "#1C1300" // rgb: 30, 20, 0
 	taste_description = "like a pencil or something"
@@ -151,7 +151,7 @@
 	id = "chromium"
 	description = "A catalytic chemical element."
 	color = "#DCDCDC"
-	taste_description = "bitterness"
+	taste_description = "горечи"
 
 /datum/reagent/iron
 	name = "Iron"
@@ -372,15 +372,15 @@
 	if(ishuman(M))
 		var/mob/living/carbon/human/H = M
 		var/obj/item/organ/external/head/head_organ = H.get_organ("head")
-		var/datum/sprite_accessory/tmp_hair_style = GLOB.hair_styles_full_list["Very Long Hair"]
-		var/datum/sprite_accessory/tmp_facial_hair_style = GLOB.facial_hair_styles_list["Very Long Beard"]
+		var/datum/sprite_accessory/tmp_hair_style = GLOB.hair_styles_full_list["Очень длинные волосы"]
+		var/datum/sprite_accessory/tmp_facial_hair_style = GLOB.facial_hair_styles_list["Очень длинная борода"]
 
 		if(head_organ.dna.species.name in tmp_hair_style.species_allowed) //If 'Very Long Hair' is a style the person's species can have, give it to them.
-			head_organ.h_style = "Very Long Hair"
+			head_organ.h_style = "Очень длинные волосы"
 		else //Otherwise, give them a random hair style.
 			head_organ.h_style = random_hair_style(H.gender, head_organ.dna.species.name)
 		if(head_organ.dna.species.name in tmp_facial_hair_style.species_allowed) //If 'Very Long Beard' is a style the person's species can have, give it to them.
-			head_organ.f_style = "Very Long Beard"
+			head_organ.f_style = "Очень длинная борода"
 		else //Otherwise, give them a random facial hair style.
 			head_organ.f_style = random_facial_hair_style(H.gender, head_organ.dna.species.name)
 		H.update_hair()
@@ -505,7 +505,7 @@
 	id = "royal_bee_jelly"
 	description = "Royal Bee Jelly, if injected into a Queen Space Bee said bee will split into two bees."
 	color = "#00ff80"
-	taste_description = "sweetness"
+	taste_description = "сладости"
 
 /datum/reagent/royal_bee_jelly/on_mob_life(mob/living/M)
 	if(prob(2))
@@ -683,7 +683,7 @@
 	if(ishuman(M) && is_species(M, /datum/species/human))
 		var/mob/living/carbon/human/N = M
 		N.change_hair("Spiky")
-		N.change_facial_hair("Shaved")
+		N.change_facial_hair("Выбритость")
 		N.change_hair_color("#000000")
 		N.change_facial_hair_color("#000000")
 		set_skin_color(N)

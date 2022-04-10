@@ -30,7 +30,7 @@ const ShuttleControlSection = (props, context) => {
   return (
     <Section>
       <LabeledList>
-        <LabeledList.Item label="Status">
+        <LabeledList.Item label="Статус">
           {((!!id_inserted && (
             <ProgressBar
               value={id_points / id_goal}

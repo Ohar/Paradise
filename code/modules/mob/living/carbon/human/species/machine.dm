@@ -1,5 +1,5 @@
 /datum/species/machine
-	name = "Machine"
+	name = "КПБ"
 	name_plural = "Machines"
 
 	blurb = "Positronic intelligence really took off in the 26th century, and it is not uncommon to see independant, free-willed \
@@ -31,7 +31,7 @@
 	flesh_color = "#AAAAAA"
 
 	//Default styles for created mobs.
-	default_hair = "Blue IPC Screen"
+	default_hair = "Синий экран КПБ"
 	dies_at_threshold = TRUE
 	can_revive_by_healing = 1
 	has_gender = FALSE
@@ -105,8 +105,8 @@
 	var/obj/item/organ/external/head/head_organ = H.get_organ("head")
 	if(!head_organ)
 		return
-	head_organ.h_style = "Bald"
-	head_organ.f_style = "Shaved"
+	head_organ.h_style = "Лысина"
+	head_organ.f_style = "Выбритость"
 	spawn(100)
 		if(H && head_organ)
 			H.update_hair()

@@ -1,6 +1,6 @@
 /datum/species/drask
-	name = "Drask"
-	name_plural = "Drask"
+	name = "Драск"
+	name_plural = "Драск"
 	name_adjective_male = "драсковый"
 	name_adjective_female = "драсковая"
 	icobase = 'icons/mob/human_races/r_drask.dmi'

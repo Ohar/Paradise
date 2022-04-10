@@ -1,7 +1,7 @@
 //Helper object for picking dionaea (and other creatures) up.
 /obj/item/holder
-	name = "holder"
-	desc = "You shouldn't ever see this."
+	name = "держатель"
+	desc = "Вы никогда не должны видеть это."
 	icon = 'icons/obj/objects.dmi'
 	slot_flags = SLOT_HEAD
 
@@ -46,10 +46,10 @@
 
 	if(istype(M))
 		M.unEquip(src)
-		to_chat(M, "[src] wriggles out of your grip!")
-		to_chat(L, "You wriggle out of [M]'s grip!")
+		to_chat(M, "[src] вырывается из вашей хватки!")
+		to_chat(L, "Вы вырываетесь из хватки [M]!")
 	else if(istype(loc,/obj/item))
-		to_chat(L, "You struggle free of [loc].")
+		to_chat(L, "Вы пытаетесь высвободиться из [loc].")
 		forceMove(get_turf(src))
 
 	if(istype(M))
@@ -73,34 +73,34 @@
 	if(desc)	H.desc = desc
 	H.attack_hand(grabber)
 
-	to_chat(grabber, "<span class='notice'>You scoop up \the [src].")
-	to_chat(src, "<span class='notice'>\The [grabber] scoops you up.</span>")
+	to_chat(grabber, "<span class='notice'>Вы подхватываете \the [src].")
+	to_chat(src, "<span class='notice'>[grabber] подхватыва[pluralize_ru(grabber.gender,"ет","ют")] вас.</span>")
 	grabber.status_flags |= PASSEMOTES
 	return H
 
 //Mob specific holders.
 
 /obj/item/holder/diona
-	name = "diona nymph"
-	desc = "It's a tiny plant critter."
+	name = "нимфа дионы"
+	desc = "Это маленькое растительное существо."
 	icon_state = "nymph"
 
 /obj/item/holder/drone
-	name = "maintenance drone"
-	desc = "It's a small maintenance robot."
+	name = "дрон техобслуживания"
+	desc = "Это маленький робот техобслуживания."
 	icon_state = "drone"
 
 /obj/item/holder/drone/emagged
-	name = "maintenance drone"
+	name = "дрон техобслуживания"
 	icon_state = "drone-emagged"
 
 /obj/item/holder/pai
-	name = "pAI"
-	desc = "It's a little robot."
+	name = "ПИИ"
+	desc = "Это маленький робот."
 	icon_state = "pai"
 
 /obj/item/holder/mouse
-	name = "mouse"
-	desc = "It's a small, disease-ridden rodent."
+	name = "мышь"
+	desc = "Это маленький переносящий болезни грызун."
 	icon = 'icons/mob/animal.dmi'
 	icon_state = "mouse_gray"

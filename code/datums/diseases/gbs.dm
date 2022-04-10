@@ -43,7 +43,7 @@
 	stage_prob = 5
 	spread_text = "Незаразно"
 	spread_flags = SPECIAL
-	cure_text = "Cryoxadone"
+	cure_text = "Криоксадон"
 	cures = list("cryoxadone")
 	cure_chance = 10
 	agent = "гиббис"

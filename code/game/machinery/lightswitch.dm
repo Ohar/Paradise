@@ -159,7 +159,7 @@
 	. = TRUE
 	if(!I.tool_use_check(user, 0))
 		return
-	user.visible_message("<span class='notice'>[user] starts unwrenching [src] from the wall...</span>", "<span class='notice'>You are unwrenching [src] from the wall...</span>", "<span class='warning'>You hear ratcheting.</span>")
+	user.visible_message("<span class='notice'>[user] starts unwrenching [src] from the wall...</span>", "<span class='notice'>You are unwrenching [src] from the wall...</span>", "<span class='warning'>Вы слышите звук трещотки.</span>")
 	. = TRUE
 	if(!I.use_tool(src, user, 30, volume = I.tool_volume))
 		return
@@ -170,9 +170,9 @@
 /obj/machinery/light_switch/multitool_menu(var/mob/user, var/obj/item/multitool/P)
 	return {"
 	<ul>
-	<li><b>Light Circuit Connection:</b> <a href='?src=[UID()];toggle_light_connect=1'>[light_connect ? "On" : "Off"]</a></li>
-	<li><b>Logic Connection:</b> <a href='?src=[UID()];toggle_logic=1'>[logic_connect ? "On" : "Off"]</a></li>
-	<li><b>Logic ID Tag:</b> [format_tag("Logic ID Tag", "logic_id_tag")]</li>
+	<li><b>Light Circuit Connection:</b> <a href='?src=[UID()];toggle_light_connect=1'>[light_connect ? "Вкл" : "Выкл"]</a></li>
+	<li><b>Подключение логической схемы:</b> <a href='?src=[UID()];toggle_logic=1'>[logic_connect ? "Вкл" : "Выкл"]</a></li>
+	<li><b>Название логической схемы:</b> [format_tag("Название логической схемы", "logic_id_tag")]</li>
 	</ul>"}
 
 /obj/machinery/light_switch/multitool_topic(var/mob/user,var/list/href_list,var/obj/O)

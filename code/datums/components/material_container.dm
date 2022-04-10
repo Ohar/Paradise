@@ -364,7 +364,7 @@
 	ore_type = /obj/item/stack/ore/diamond
 
 /datum/material/uranium
-	name = "Uranium"
+	name = "Уран"
 	id = MAT_URANIUM
 	sheet_type = /obj/item/stack/sheet/mineral/uranium
 	coin_type = /obj/item/coin/uranium

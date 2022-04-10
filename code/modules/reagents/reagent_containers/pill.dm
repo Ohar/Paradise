@@ -76,19 +76,19 @@
 	list_reagents = list("adminordrazine" = 50)
 
 /obj/item/reagent_containers/food/pill/morphine
-	name = "Morphine pill"
-	desc = "Commonly used to treat insomnia."
+	name = "Таблетка морфина"
+	desc = "Обычно используется для лечения бессонницы."
 	icon_state = "pill8"
 	list_reagents = list("morphine" = 30)
 
 /obj/item/reagent_containers/food/pill/methamphetamine
-	name = "Methamphetamine pill"
-	desc = "Helps improve the ability to concentrate."
+	name = "Пилюля метамфетамина"
+	desc = "Улучшает концентрацию."
 	icon_state = "pill8"
 	list_reagents = list("methamphetamine" = 5)
 
 /obj/item/reagent_containers/food/pill/haloperidol
-	name = "Haloperidol pill"
+	name = "Таблетка галоперидола"
 	desc = "Haloperidol is an anti-psychotic use to treat psychiatric problems."
 	icon_state = "pill8"
 	list_reagents = list("haloperidol" = 15)
@@ -106,25 +106,25 @@
 	list_reagents = list("synaptizine" = 5, "methamphetamine" = 5)
 
 /obj/item/reagent_containers/food/pill/charcoal
-	name = "Charcoal pill"
-	desc = "Neutralizes many common toxins."
+	name = "Таблетка активированного угля"
+	desc = "Нейтрализует большинство распространённых токсинов."
 	icon_state = "pill17"
 	list_reagents = list("charcoal" = 50)
 
 /obj/item/reagent_containers/food/pill/epinephrine
-	name = "Epinephrine pill"
+	name = "Пилюля эпинефрина"
 	desc = "Used to provide shots of adrenaline."
 	icon_state = "pill6"
 	list_reagents = list("epinephrine" = 50)
 
 /obj/item/reagent_containers/food/pill/salicylic
-	name = "Salicylic Acid pill"
+	name = "Пилюля салициловой кислота"
 	desc = "Commonly used to treat moderate pain and fevers."
 	icon_state = "pill4"
 	list_reagents = list("sal_acid" = 20)
 
 /obj/item/reagent_containers/food/pill/salbutamol
-	name = "Salbutamol pill"
+	name = "Пилюли сальбутамола"
 	desc = "Used to treat respiratory distress."
 	icon_state = "pill8"
 	list_reagents = list("salbutamol" = 20)

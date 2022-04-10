@@ -188,7 +188,7 @@
 			P.info += "<b>Chemical name:</b> [R.name]<br>"
 			if(istype(R, /datum/reagent/blood))
 				var/datum/reagent/blood/B = R
-				P.info += "<b>Description:</b> N/A<br><b>Blood Type:</b> [B.data["blood_type"]]<br><b>DNA:</b> [B.data["blood_DNA"]]"
+				P.info += "<b>Description:</b> Нет<br><b>Blood Type:</b> [B.data["blood_type"]]<br><b>DNA:</b> [B.data["blood_DNA"]]"
 			else
 				P.info += "<b>Description:</b> [R.description]"
 			P.info += "<br><br><b>Notes:</b><br>"

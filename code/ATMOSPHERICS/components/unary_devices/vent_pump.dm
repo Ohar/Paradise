@@ -338,13 +338,13 @@
 				if(do_after(user, 20 * W.toolspeed, target = src))
 					playsound(loc, W.usesound, 100, 1)
 					open = 0
-					user.visible_message("[user] screwdrivers the vent shut.", "You screwdriver the vent shut.", "You hear a screwdriver.")
+					user.visible_message("[user] screwdrivers the vent shut.", "Вы закручиваете винты вентиляции", "Вы слышите звуки отвёртки.")
 			else
 				to_chat(user, "<span class='notice'>Now opening the vent.</span>")
 				if(do_after(user, 20 * W.toolspeed, target = src))
 					playsound(loc, W.usesound, 100, 1)
 					open = 1
-					user.visible_message("[user] screwdrivers the vent open.", "You screwdriver the vent open.", "You hear a screwdriver.")
+					user.visible_message("[user] screwdrivers the vent open.", "Вы откручиваете винты вентиляции", "Вы слышите звуки отвёртки.")
 		return
 	if(istype(W, /obj/item/paper))
 		if(!welded)
@@ -354,14 +354,14 @@
 			if(!open)
 				to_chat(user, "You can't shove that down there when it is closed")
 		else
-			to_chat(user, "The vent is welded.")
+			to_chat(user, "Вентиляция заварена")
 		return 1
 	if(istype(W, /obj/item/multitool))
 		update_multitool_menu(user)
 		return 1
 	if(istype(W, /obj/item/wrench))
 		if(!(stat & NOPOWER) && on)
-			to_chat(user, "<span class='danger'>You cannot unwrench this [src], turn it off first.</span>")
+			to_chat(user, "<span class='danger'>Чтобы открутить, [src] нужно сначала отключить.</span>")
 			return 1
 
 	return ..()
@@ -375,11 +375,11 @@
 		if(!welded)
 			welded = TRUE
 			user.visible_message("<span class='notice'>[user] welds [src] shut!</span>",\
-				"<span class='notice'>You weld [src] shut!</span>")
+				"<span class='notice'>Вы привариваете [src] shut!</span>")
 		else
 			welded = FALSE
 			user.visible_message("<span class='notice'>[user] unwelds [src]!</span>",\
-				"<span class='notice'>You unweld [src]!</span>")
+				"<span class='notice'>Вы развариваете [src]!</span>")
 		update_icon()
 
 
@@ -411,7 +411,7 @@
 	return {"
 	<ul>
 		<li><b>Frequency:</b> <a href="?src=[UID()];set_freq=-1">[format_frequency(frequency)] GHz</a> (<a href="?src=[UID()];set_freq=[ATMOS_VENTSCRUB]">Reset</a>)</li>
-		<li>[format_tag("ID Tag","id_tag","set_id")]</li>
+		<li>[format_tag("Название","id_tag","set_id")]</li>
 		</ul>
 	"}
 

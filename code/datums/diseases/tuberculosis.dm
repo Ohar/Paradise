@@ -1,6 +1,7 @@
 /datum/disease/tuberculosis
 	form = "Болезнь"
 	name = "Грибковый туберкулёз"
+	form_gender = FEMALE
 	max_stages = 5
 	spread_text = "Аэрогенный"
 	cure_text = "Spaceacillin & salbutamol"

@@ -94,7 +94,7 @@
 				R.code = clamp(text2num(params["code"]), 1, 100)
 
 /datum/data/pda/app/power
-	name = "Power Monitor"
+	name = "Монитор энергосистем"
 	icon = "bolt"
 	template = "pda_power"
 	category = "Engineering"

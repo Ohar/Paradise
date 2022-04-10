@@ -73,7 +73,7 @@ GLOBAL_LIST_EMPTY(alien_whitelist)
 		return TRUE
 	if(config.disable_karma)
 		return TRUE
-	if(species == "human" || species == "Human")
+	if(species == "human" || species == "Человек")
 		return TRUE
 	if(check_rights(R_ADMIN, 0))
 		return TRUE

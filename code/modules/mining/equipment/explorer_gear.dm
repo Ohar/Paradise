@@ -13,14 +13,14 @@
 	armor = list("melee" = 30, "bullet" = 20, "laser" = 20, "energy" = 20, "bomb" = 50, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 50)
 	allowed = list(/obj/item/flashlight, /obj/item/tank, /obj/item/resonator, /obj/item/mining_scanner, /obj/item/t_scanner/adv_mining_scanner, /obj/item/gun/energy/kinetic_accelerator, /obj/item/pickaxe)
 	resistance_flags = FIRE_PROOF
-	hide_tail_by_species = list("Vox" , "Vulpkanin" , "Unathi" , "Tajaran")
+	hide_tail_by_species = list("Вокс" , "Вульпканин" , "Унати" , "Таяран")
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/suit.dmi',
-		"Drask" = 'icons/mob/species/drask/suit.dmi',
-		"Tajaran" = 'icons/mob/species/tajaran/suit.dmi',
-		"Unathi" = 'icons/mob/species/unathi/suit.dmi',
-		"Vulpkanin" = 'icons/mob/species/vulpkanin/suit.dmi'
+		"Вокс" = 'icons/mob/species/vox/suit.dmi',
+		"Драск" = 'icons/mob/species/drask/suit.dmi',
+		"Таяран" = 'icons/mob/species/tajaran/suit.dmi',
+		"Унати" = 'icons/mob/species/unathi/suit.dmi',
+		"Вульпканин" = 'icons/mob/species/vulpkanin/suit.dmi'
 	)
 
 /obj/item/clothing/head/hooded/explorer
@@ -37,10 +37,10 @@
 	resistance_flags = FIRE_PROOF
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/head.dmi',
-		"Drask" = 'icons/mob/species/drask/head.dmi',
-		"Grey" = 'icons/mob/species/grey/head.dmi',
-		"Skrell" = 'icons/mob/species/skrell/head.dmi'
+		"Вокс" = 'icons/mob/species/vox/head.dmi',
+		"Драск" = 'icons/mob/species/drask/head.dmi',
+		"Серый" = 'icons/mob/species/grey/head.dmi',
+		"Скрелл" = 'icons/mob/species/skrell/head.dmi'
 	)
 
 /obj/item/clothing/suit/space/hostile_environment

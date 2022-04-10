@@ -67,9 +67,9 @@
 	slot_flags = SLOT_HEAD
 	dog_fashion = /datum/dog_fashion/head/fried_vox_empty
 	sprite_sheets = list(
-	"Skrell" = 'icons/mob/species/skrell/head.dmi',
-	"Drask" = 'icons/mob/species/drask/head.dmi',
-	"Kidan" = 'icons/mob/species/kidan/head.dmi'
+	"Скрелл" = 'icons/mob/species/skrell/head.dmi',
+	"Драск" = 'icons/mob/species/drask/head.dmi',
+	"Кидан" = 'icons/mob/species/kidan/head.dmi'
 	)
 
 /obj/item/trash/pistachios

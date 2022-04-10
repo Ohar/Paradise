@@ -23,7 +23,7 @@
 	sharp = TRUE
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
-	sprite_sheets_inhand = list("Skrell" = 'icons/mob/species/skrell/held.dmi') // To stop skrell stabbing themselves in the head
+	sprite_sheets_inhand = list("Скрелл" = 'icons/mob/species/skrell/held.dmi') // To stop skrell stabbing themselves in the head
 
 /obj/item/melee/cultblade/New()
 	if(SSticker.mode)
@@ -184,9 +184,9 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	armor = list("melee" = -50, "bullet" = -50, "laser" = -50,"energy" = -50, "bomb" = -50, "bio" = -50, "rad" = -50, "fire" = 0, "acid" = 0)
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/suit.dmi',
-		"Drask" = 'icons/mob/species/drask/suit.dmi',
-		"Grey" = 'icons/mob/species/grey/suit.dmi'
+		"Вокс" = 'icons/mob/species/vox/suit.dmi',
+		"Драск" = 'icons/mob/species/drask/suit.dmi',
+		"Серый" = 'icons/mob/species/grey/suit.dmi'
 		)
 	hoodtype = /obj/item/clothing/head/hooded/flagellant_hood
 
@@ -217,9 +217,9 @@
 	flags_cover = HEADCOVERSEYES
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/head.dmi',
-		"Drask" = 'icons/mob/species/drask/head.dmi',
-		"Grey" = 'icons/mob/species/grey/head.dmi'
+		"Вокс" = 'icons/mob/species/vox/head.dmi',
+		"Драск" = 'icons/mob/species/drask/head.dmi',
+		"Серый" = 'icons/mob/species/grey/head.dmi'
 		)
 
 /obj/item/whetstone/cult
@@ -241,8 +241,8 @@
 		qdel(src)
 
 /obj/item/reagent_containers/food/drinks/bottle/unholywater
-	name = "flask of unholy water"
-	desc = "Toxic to nonbelievers; this water renews and reinvigorates the faithful of a cult."
+	name = "фляга несвятой вода"
+	desc = "Токсична для неверующих. Эта вода обновляет и придаёт сил верующим культа."
 	icon_state = "holyflask"
 	color = "#333333"
 	list_reagents = list("unholywater" = 40)

@@ -50,7 +50,7 @@
 	name = "Улучшенный синдром Кингстона"
 	max_stages = 4
 	spread_text = "Аэрогенный"
-	cure_text = "Plasma"
+	cure_text = "Плазма"
 	cures = list("plasma")
 	cure_chance = 50
 	agent = "Бактерия AMB45DR"

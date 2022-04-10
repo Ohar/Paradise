@@ -89,7 +89,7 @@
 	locked = FALSE
 
 /obj/structure/closet/secure_closet/freezer/money
-	name = "freezer"
+	name = "холодильник"
 	icon_state = "fridge1"
 	icon_closed = "fridge"
 	icon_locked = "fridge1"

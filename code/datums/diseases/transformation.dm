@@ -180,7 +180,7 @@
 	cure_text = "frost oil"
 	cures = list("frostoil")
 	cure_chance = 80
-	agent = "Advanced Mutation Toxin"
+	agent = "Улучшенный мутационный токсин"
 	desc = "Этот высококонцентрированный экстракт превращает всё в него самого."
 	severity = BIOHAZARD
 	visibility_flags = 0

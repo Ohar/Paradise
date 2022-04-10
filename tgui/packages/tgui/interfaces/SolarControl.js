@@ -22,7 +22,7 @@ export const SolarControl = (props, context) => {
     <Window>
       <Window.Content>
         <Section
-          title="Status"
+          title="Статус"
           buttons={(
             <Button
               icon="sync"
@@ -35,7 +35,7 @@ export const SolarControl = (props, context) => {
                 <LabeledList.Item
                   label="Solar tracker"
                   color={connected_tracker ? 'good' : 'bad'}>
-                  {connected_tracker ? 'OK' : 'N/A'}
+                  {connected_tracker ? 'OK' : 'Нет'}
                 </LabeledList.Item>
                 <LabeledList.Item
                   label="Solar panels"
@@ -107,7 +107,7 @@ export const SolarControl = (props, context) => {
                 onClick={() => act('track', { track: TRACKER_TIMED })} />
               <Button
                 icon="sync"
-                content="Auto"
+                content="Авто"
                 selected={tracking_state === TRACKER_AUTO}
                 disabled={!connected_tracker}
                 onClick={() => act('track', { track: TRACKER_AUTO })} />

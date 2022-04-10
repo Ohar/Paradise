@@ -16,8 +16,8 @@ Thus, the two variables affect pump operation are set in New():
 	icon = 'icons/atmos/pump.dmi'
 	icon_state = "map_off"
 
-	name = "gas pump"
-	desc = "A pump"
+	name = "газовая помпа"
+	desc = "Помпа"
 
 	can_unwrench = 1
 
@@ -28,7 +28,7 @@ Thus, the two variables affect pump operation are set in New():
 
 /obj/machinery/atmospherics/binary/pump/CtrlClick(mob/living/user)
 	if(!istype(user) || user.incapacitated())
-		to_chat(user, "<span class='warning'>You can't do that right now!</span>")
+		to_chat(user, "<span class='warning'>Сейчас вы не можете этого сделать!</span>")
 		return
 	if(!in_range(src, user) && !issilicon(usr))
 		return
@@ -43,7 +43,7 @@ Thus, the two variables affect pump operation are set in New():
 
 /obj/machinery/atmospherics/binary/pump/AltClick(mob/living/user)
 	if(!istype(user) || user.incapacitated())
-		to_chat(user, "<span class='warning'>You can't do that right now!</span>")
+		to_chat(user, "<span class='warning'>Сейчас вы не можете этого сделать!</span>")
 		return
 	if(!in_range(src, user) && !issilicon(usr))
 		return
@@ -179,7 +179,7 @@ Thus, the two variables affect pump operation are set in New():
 		return
 
 	if(!allowed(user))
-		to_chat(user, "<span class='alert'>Access denied.</span>")
+		to_chat(user, "<span class='alert'>Доступ запрещён.</span>")
 		return
 
 	add_fingerprint(user)
@@ -199,7 +199,7 @@ Thus, the two variables affect pump operation are set in New():
 		"on" = on,
 		"rate" = round(target_pressure),
 		"max_rate" = MAX_OUTPUT_PRESSURE,
-		"gas_unit" = "kPa",
+		"gas_unit" = "кПа",
 		"step" = 10 // This is for the TGUI <NumberInput> step. It's here since multiple pumps share the same UI, but need different values.
 	)
 	return data
@@ -241,6 +241,6 @@ Thus, the two variables affect pump operation are set in New():
 	else if(!istype(W, /obj/item/wrench))
 		return ..()
 	if(!(stat & NOPOWER) && on)
-		to_chat(user, "<span class='alert'>You cannot unwrench this [src], turn it off first.</span>")
+		to_chat(user, "<span class='alert'>Чтобы открутить, [src] нужно сначала отключить.</span>")
 		return 1
 	return ..()

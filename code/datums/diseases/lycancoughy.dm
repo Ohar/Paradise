@@ -4,7 +4,8 @@
 	max_stages = 4
 	spread_text = "Контактный"
 	spread_flags = CONTACT_GENERAL
-	cure_text = "Ethanol"
+	cure_text = "Этанол"
+	form_gender = FEMALE
 	cures = list("ethanol")
 	agent = "Излишние обжимашки"
 	viable_mobtypes = list(/mob/living/carbon/human, /mob/living/carbon/human/monkey)

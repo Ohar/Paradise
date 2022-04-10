@@ -382,7 +382,7 @@ GLOBAL_LIST_EMPTY(turret_icons)
 			to_chat(user, "<span class='notice'>Controls are now [locked ? "locked" : "unlocked"].</span>")
 			updateUsrDialog()
 		else
-			to_chat(user, "<span class='notice'>Access denied.</span>")
+			to_chat(user, "<span class='notice'>Доступ запрещён.</span>")
 
 	else
 		//if the turret was attacked with the intention of harming it:
@@ -840,7 +840,7 @@ GLOBAL_LIST_EMPTY(turret_icons)
 					return
 				var/obj/item/gun/energy/E = I //typecasts the item to an energy gun
 				if(!user.unEquip(I))
-					to_chat(user, "<span class='notice'>\the [I] is stuck to your hand, you cannot put it in \the [src]</span>")
+					to_chat(user, "<span class='notice'>[I] is stuck to your hand, you cannot put it in \the [src]</span>")
 					return
 				installation = I.type //installation becomes I.type
 				gun_charge = E.cell.charge //the gun's charge is stored in gun_charge
@@ -934,7 +934,7 @@ GLOBAL_LIST_EMPTY(turret_icons)
 		if(build_step != 7)
 			return
 		build_step = 8
-		to_chat(user, "<span class='notice'>You weld the turret's armor down.</span>")
+		to_chat(user, "<span class='notice'>Вы привариваете the turret's armor down.</span>")
 
 		//The final step: create a full turret
 		var/obj/machinery/porta_turret/Turret = new target_type(loc)

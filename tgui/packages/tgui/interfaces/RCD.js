@@ -87,7 +87,7 @@ const AirlockSettings = (props, context) => {
       flexBasis="content"
       height={5.5}>
       <LabeledList>
-        <LabeledList.Item color="silver" label="Name">
+        <LabeledList.Item color="silver" label="Имя">
           {door_name}
           <Button
             ml={2.5}

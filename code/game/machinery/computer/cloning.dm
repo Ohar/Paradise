@@ -216,7 +216,7 @@
 					set_temp("Record deleted.", "success")
 					menu = MENU_RECORDS
 				else
-					set_temp("Access denied.", "danger")
+					set_temp("Доступ запрещён.", "danger")
 			return
 
 	switch(action)

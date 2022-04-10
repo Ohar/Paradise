@@ -921,7 +921,7 @@
 				else
 					P.close()
 					return 1
-		to_chat(usr, "<span class='warning'>Access denied.</span>")
+		to_chat(usr, "<span class='warning'>Доступ запрещён.</span>")
 		return
 
 	to_chat(usr, "<span class='warning'>You are not close to any pod doors.</span>")

@@ -187,7 +187,7 @@ GLOBAL_LIST_INIT(robot_verbs_default, list(
 /mob/living/silicon/robot/proc/init(alien, connect_to_AI = TRUE, mob/living/silicon/ai/ai_to_sync_to = null)
 	aiCamera = new/obj/item/camera/siliconcam/robot_camera(src)
 	make_laws()
-	additional_law_channels["Binary"] = ":b "
+	additional_law_channels["Бинарный"] = ":b "
 	if(!connect_to_AI)
 		return
 	var/found_ai = ai_to_sync_to
@@ -254,7 +254,9 @@ GLOBAL_LIST_INIT(robot_verbs_default, list(
 		return "[modtype] [braintype]-[num2text(ident)]"
 
 /mob/living/silicon/robot/verb/Namepick()
-	set category = "Robot Commands"
+	set name = "Смена имени"
+	set category = "Робот: Команды"
+
 	if(custom_name)
 		return 0
 	if(!allow_rename)
@@ -503,12 +505,12 @@ GLOBAL_LIST_INIT(robot_verbs_default, list(
 
 // this verb lets cyborgs see the stations manifest
 /mob/living/silicon/robot/verb/cmd_station_manifest()
-	set category = "Robot Commands"
+	set category = "Робот: Команды"
 	set name = "Show Station Manifest"
 	show_station_manifest()
 
 /mob/living/silicon/robot/verb/toggle_component()
-	set category = "Robot Commands"
+	set category = "Робот: Команды"
 	set name = "Toggle Component"
 	set desc = "Toggle a component, conserving power."
 
@@ -528,9 +530,9 @@ GLOBAL_LIST_INIT(robot_verbs_default, list(
 	to_chat(src, "<span class='warning'>You [C.toggled ? "enable" : "disable"] [C.name].</span>")
 
 /mob/living/silicon/robot/proc/sensor_mode()
-	set name = "Set Sensor Augmentation"
-	set desc = "Augment visual feed with internal sensor overlays."
-	set category = "Robot Commands"
+	set name = "Задать тип сенсоров"
+	set desc = "Обогатить поток визуальной информации дополнительными слоями данных."
+	set category = "Робот: Команды"
 	toggle_sensor_mode()
 
 /mob/living/silicon/robot/proc/add_robot_verbs()
@@ -542,8 +544,8 @@ GLOBAL_LIST_INIT(robot_verbs_default, list(
 	src.verbs -= silicon_subsystems
 
 /mob/living/silicon/robot/verb/cmd_robot_alerts()
-	set category = "Robot Commands"
-	set name = "Show Alerts"
+	set category = "Робот: Команды"
+	set name = "Показать тревоги"
 	if(usr.stat == DEAD)
 		to_chat(src, "<span class='userdanger'>Alert: You are dead.</span>")
 		return //won't work if dead
@@ -641,7 +643,7 @@ GLOBAL_LIST_INIT(robot_verbs_default, list(
 		return
 	if(stat == DEAD)
 		return
-	queueAlarm(text("--- [class] alarm detected in [A.name]!"), class)
+	queueAlarm(text("--- [class] тревога обнаружена в [A.name]!"), class)
 
 /mob/living/silicon/robot/alarm_cancelled(src, class, area/A, obj/origin, cleared)
 	if(cleared)
@@ -747,7 +749,7 @@ GLOBAL_LIST_INIT(robot_verbs_default, list(
 				to_chat(src, "<span class='notice'>[user] [ locked ? "locked" : "unlocked"] your interface.</span>")
 				update_icons()
 			else
-				to_chat(user, "<span class='warning'>Access denied.</span>")
+				to_chat(user, "<span class='warning'>Доступ запрещён.</span>")
 
 	else if(istype(W, /obj/item/borg/upgrade/))
 		var/obj/item/borg/upgrade/U = W
@@ -939,7 +941,7 @@ GLOBAL_LIST_INIT(robot_verbs_default, list(
 			to_chat(src, "<span class='warning'>> N</span>")
 			sleep(20)
 			to_chat(src, "<span class='warning'>ERRORERRORERROR</span>")
-			to_chat(src, "<b>Obey these laws:</b>")
+			to_chat(src, "<b>Подчиняйтесь этим законам:</b>")
 			laws.show_laws(src)
 			to_chat(src, "<span class='boldwarning'>ALERT: [M.real_name] is your new master. Obey your new laws and [M.p_their()] commands.</span>")
 			SetLockdown(0)
@@ -958,7 +960,7 @@ GLOBAL_LIST_INIT(robot_verbs_default, list(
 		return
 
 /mob/living/silicon/robot/verb/toggle_own_cover()
-	set category = "Robot Commands"
+	set category = "Робот: Команды"
 	set name = "Toggle Cover"
 	set desc = "Toggles the lock on your cover."
 
@@ -1266,7 +1268,7 @@ GLOBAL_LIST_INIT(robot_verbs_default, list(
 	// I could change the network to null but I don't know what would happen, and it seems too hacky for me.
 
 /mob/living/silicon/robot/proc/ResetSecurityCodes()
-	set category = "Robot Commands"
+	set category = "Робот: Команды"
 	set name = "Reset Identity Codes"
 	set desc = "Scrambles your security and identification codes and resets your current buffers.  Unlocks you and but permanently severs you from your AI and the robotics console and will deactivate your camera system."
 
@@ -1308,7 +1310,7 @@ GLOBAL_LIST_INIT(robot_verbs_default, list(
 
 	var/icontype
 	lockcharge = 1  //Locks borg until it select an icon to avoid secborgs running around with a standard sprite
-	icontype = input("Select an icon! [triesleft ? "You have [triesleft] more chances." : "This is your last try."]", "Robot", null, null) in module_sprites
+	icontype = input("Выберите значок! [triesleft ? "You have [triesleft] more chances." : "This is your last try."]", "Robot", null, null) in module_sprites
 
 	if(icontype)
 		if(icontype == "Custom")
@@ -1498,7 +1500,7 @@ GLOBAL_LIST_INIT(robot_verbs_default, list(
 
 /mob/living/silicon/robot/destroyer/init(alien = FALSE, connect_to_AI = TRUE, mob/living/silicon/ai/ai_to_sync_to = null)
 	aiCamera = new/obj/item/camera/siliconcam/robot_camera(src)
-	additional_law_channels["Binary"] = ":b "
+	additional_law_channels["Бинарный"] = ":b "
 	laws = new /datum/ai_laws/deathsquad
 	module = new /obj/item/robot_module/destroyer(src)
 	module.add_languages(src)

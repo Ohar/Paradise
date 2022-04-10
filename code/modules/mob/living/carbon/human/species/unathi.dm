@@ -1,6 +1,6 @@
 /datum/species/unathi
-	name = "Unathi"
-	name_plural = "Unathi"
+	name = "Унати"
+	name_plural = "Унати"
 	name_adjective_male = "унатский"
 	name_adjective_female = "унатская"
 	icobase = 'icons/mob/human_races/r_lizard.dmi'

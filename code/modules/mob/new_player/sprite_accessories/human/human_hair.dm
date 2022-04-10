@@ -3,41 +3,41 @@
 */
 
 /datum/sprite_accessory/hair/short
-	name = "Short Hair"	  // try to capatilize the names please~
+	name = "Короткие волосы"	  // try to capatilize the names please~
 	icon_state = "short" // you do not need to define _s or _l sub-states, game automatically does this for you a
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/cut
-	name = "Cut Hair"
+	name = "Короткая стрижка"
 	icon_state = "cut"
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/long
-	name = "Shoulder-length Hair"
+	name = "Волосы до плеч"
 	icon_state = "long"
 
 /datum/sprite_accessory/hair/longalt
-	name = "Shoulder-length Hair Alt"
+	name = "Волосы до плеч (альтернативные)"
 	icon_state = "longfringe"
 
 /datum/sprite_accessory/hair/longer
-	name = "Long Hair"
+	name = "Длинные волосы"
 	icon_state = "vlong"
 
 /datum/sprite_accessory/hair/longeralt
-	name = "Long Hair Alt"
+	name = "Длинные волосы (альтернативные)"
 	icon_state = "vlongfringe"
 
 /datum/sprite_accessory/hair/longest
-	name = "Very Long Hair"
+	name = "Очень длинные волосы"
 	icon_state = "longest"
 
 /datum/sprite_accessory/hair/longfringe
-	name = "Long Fringe"
+	name = "Длинная чёлка"
 	icon_state = "longfringe"
 
 /datum/sprite_accessory/hair/longestalt
-	name = "Longer Fringe"
+	name = "Очень длинная чёлка"
 	icon_state = "vlongfringe"
 
 /datum/sprite_accessory/hair/halfbang
@@ -49,29 +49,29 @@
 	icon_state = "halfbang_alt"
 
 /datum/sprite_accessory/hair/ponytail1
-	name = "Ponytail male"
+	name = "Хвост (мужской)"
 	icon_state = "ponytailm"
 	gender = MALE
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/ponytail2
-	name = "Ponytail female"
+	name = "Хвост (женский)"
 	icon_state = "ponytailf"
 	gender = FEMALE
 
 /datum/sprite_accessory/hair/ponytail3
-	name = "Ponytail alt"
+	name = "Хвост (альтернативный)"
 	icon_state = "ponytail3"
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/sideponytail
-	name = "Side Ponytail"
+	name = "Боковой хвост"
 	icon_state = "stail"
 	gender = FEMALE
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/highponytail
-	name = "High Ponytail"
+	name = "Высокий хвост"
 	icon_state = "highponytail"
 	gender = FEMALE
 	glasses_over = 1
@@ -86,10 +86,10 @@
 	icon_state = "parted"
 
 /datum/sprite_accessory/hair/pompadour
-	name = "Pompadour"
+	name = "Помпадур"
 	icon_state = "pompadour"
 	gender = MALE
-	species_allowed = list("Human", "Slime People", "Unathi")
+	species_allowed = list("Человек", "Слаймомен", "Унати")
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/quiff
@@ -111,22 +111,22 @@
 	icon_state = "bedhead3"
 
 /datum/sprite_accessory/hair/beehive
-	name = "Beehive"
+	name = "Пчелиный улей"
 	icon_state = "beehive"
 	gender = FEMALE
-	species_allowed = list("Human", "Slime People", "Unathi")
+	species_allowed = list("Человек", "Слаймомен", "Унати")
 
 /datum/sprite_accessory/hair/bobcurl
 	name = "Bobcurl"
 	icon_state = "bobcurl"
 	gender = FEMALE
-	species_allowed = list("Human", "Slime People", "Unathi")
+	species_allowed = list("Человек", "Слаймомен", "Унати")
 
 /datum/sprite_accessory/hair/bob
 	name = "Bob"
 	icon_state = "bobcut"
 	gender = FEMALE
-	species_allowed = list("Human", "Slime People", "Unathi")
+	species_allowed = list("Человек", "Слаймомен", "Унати")
 
 /datum/sprite_accessory/hair/bowl
 	name = "Bowl"
@@ -148,7 +148,7 @@
 	name = "Buzzcut"
 	icon_state = "buzzcut"
 	gender = MALE
-	species_allowed = list("Human", "Slime People", "Unathi")
+	species_allowed = list("Человек", "Слаймомен", "Унати")
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/crew
@@ -169,39 +169,39 @@
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/dreadlocks
-	name = "Dreadlocks"
+	name = "Дреды"
 	icon_state = "dreads"
 
 /datum/sprite_accessory/hair/curls
-	name = "Curls"
+	name = "Кудряшки"
 	icon_state = "curls"
 
 /datum/sprite_accessory/hair/afro
-	name = "Afro"
+	name = "Афро"
 	icon_state = "afro"
 
 /datum/sprite_accessory/hair/afro2
-	name = "Afro 2"
+	name = "Афро 2"
 	icon_state = "afro2"
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/afro_large
-	name = "Big Afro"
+	name = "Большое афро"
 	icon_state = "bigafro"
 	gender = MALE
 
 /datum/sprite_accessory/hair/sergeant
-	name = "Flat Top"
+	name = "Площадка"
 	icon_state = "sergeant"
 	gender = MALE
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/emo
-	name = "Emo"
+	name = "Эмо"
 	icon_state = "emo"
 
 /datum/sprite_accessory/hair/flow
-	name = "Flow Hair"
+	name = "Струящиеся волосы"
 	icon_state = "flow"
 
 /datum/sprite_accessory/hair/feather
@@ -215,19 +215,19 @@
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/mohawk
-	name = "Mohawk"
+	name = "Ирокез"
 	icon_state = "mohawk"
-	species_allowed = list("Human", "Slime People", "Unathi")
+	species_allowed = list("Человек", "Слаймомен", "Унати")
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/jensen
-	name = "Adam Jensen Hair"
+	name = "Стрижка Адама Дженсена"
 	icon_state = "jensen"
 	gender = MALE
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/cia
-	name = "CIA"
+	name = "ЦРУ"
 	icon_state = "cia"
 	gender = MALE
 	glasses_over = 1
@@ -252,7 +252,7 @@
 /datum/sprite_accessory/hair/spiky
 	name = "Spiky"
 	icon_state = "spikey"
-	species_allowed = list("Human", "Slime People", "Unathi")
+	species_allowed = list("Человек", "Слаймомен", "Унати")
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/kusanagi
@@ -260,7 +260,7 @@
 	icon_state = "kusanagi"
 
 /datum/sprite_accessory/hair/kagami
-	name = "Pigtails"
+	name = "Косички"
 	icon_state = "kagami"
 	gender = FEMALE
 	glasses_over = 1
@@ -276,34 +276,34 @@
 	gender = FEMALE
 
 /datum/sprite_accessory/hair/odango
-	name = "Odango"
+	name = "Оданго"
 	icon_state = "odango"
 	gender = FEMALE
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/ombre
-	name = "Ombre"
+	name = "Омбре"
 	icon_state = "ombre"
 	gender = FEMALE
 
 /datum/sprite_accessory/hair/updo
-	name = "Updo"
+	name = "Высокая прическа"
 	icon_state = "updo"
 	gender = FEMALE
 
 /datum/sprite_accessory/hair/skinhead
-	name = "Skinhead"
+	name = "Скинхэд"
 	icon_state = "skinhead"
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/balding
-	name = "Balding Hair"
+	name = "Залысина"
 	icon_state = "balding"
 	gender = MALE // turnoff!
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/longemo
-	name = "Long Emo"
+	name = "Длинная стрижка эмо"
 	icon_state = "emolong"
 	gender = FEMALE
 
@@ -311,36 +311,36 @@
 //////START VG HAIRSTYLES/////
 //////////////////////////////
 /datum/sprite_accessory/hair/birdnest
-	name = "Bird Nest"
+	name = "Гнездо"
 	icon_state = "birdnest"
 
 /datum/sprite_accessory/hair/unkept
-	name = "Unkempt"
+	name = "Неряха"
 	icon_state = "unkept"
 
 /datum/sprite_accessory/hair/duelist
-	name = "Duelist"
+	name = "Дуэлянт"
 	icon_state = "duelist"
 	gender = MALE
 
 /datum/sprite_accessory/hair/modern
-	name = "Modern"
+	name = "Модерн"
 	icon_state = "modern"
 	gender = FEMALE
 
 /datum/sprite_accessory/hair/unshavenmohawk
-	name = "Unshaven Mohawk"
+	name = "Невыбритый ирокез"
 	icon_state = "unshavenmohawk"
 	gender = MALE
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/drills
-	name = "Twincurls"
+	name = "Двойные кудри"
 	icon_state = "twincurl"
 	gender = FEMALE
 
 /datum/sprite_accessory/hair/minidrills
-	name = "Twincurls 2"
+	name = "Двойные кудри 2"
 	icon_state = "twincurl2"
 	gender = FEMALE
 //////////////////////////////
@@ -364,7 +364,7 @@
 	icon_state = "jade"
 
 /datum/sprite_accessory/hair/shy
-	name = "Shy"
+	name = "Стесняшка"
 	icon_state = "shy"
 
 /datum/sprite_accessory/hair/manbun
@@ -388,11 +388,11 @@
 	icon_state = "bowlcut2"
 
 /datum/sprite_accessory/hair/ronin
-	name = "Ronin"
+	name = "Ронин"
 	icon_state = "ronin"
 
 /datum/sprite_accessory/hair/topknot
-	name = "Topknot"
+	name = "Верхний узел"
 	icon_state = "topknot"
 
 /datum/sprite_accessory/hair/regulationmohawk
@@ -441,12 +441,12 @@
 	gender = MALE
 
 /datum/sprite_accessory/hair/tightbun
-	name = "Tight Bun"
+	name = "Тугой пучок"
 	icon_state = "tightbun"
 	gender = FEMALE
 
 /datum/sprite_accessory/hair/trimmed
-	name = "Trimmed"
+	name = "Под машинку"
 	icon_state = "trimmed"
 	gender = MALE
 
@@ -496,7 +496,7 @@
 	icon_state = "shortbangs"
 
 /datum/sprite_accessory/hair/longeralt2
-	name = "Long Hair Alt 2"
+	name = "Длинные волосы № 3"
 	icon_state = "longeralt2"
 
 /datum/sprite_accessory/hair/nia
@@ -504,7 +504,7 @@
 	icon_state = "nia"
 
 /datum/sprite_accessory/hair/eighties
-	name = "80's"
+	name = "80-е"
 	icon_state = "80s"
 
 /datum/sprite_accessory/hair/volaju
@@ -545,7 +545,7 @@
 	icon_state = "dandypompadour"
 
 /datum/sprite_accessory/hair/fringetail
-	name = "Fringetail"
+	name = "Пучкохвост"
 	icon_state = "fringetail"
 
 /datum/sprite_accessory/hair/mahdrills
@@ -553,7 +553,7 @@
 	icon_state = "drillruru"
 
 /datum/sprite_accessory/hair/familyman
-	name = "The Family Man"
+	name = "Женатый мужчина"
 	icon_state = "thefamilyman"
 
 /datum/sprite_accessory/hair/grandebraid
@@ -565,11 +565,11 @@
 	icon_state = "emofringe"
 
 /datum/sprite_accessory/hair/emo2
-	name = "Emo Alt"
+	name = "Эмо № 2"
 	icon_state = "emo2"
 
 /datum/sprite_accessory/hair/sargeant // TODO: Remove this typepath due to redundancy - Ansari
-	name = "Flat Top"
+	name = "Площадка"
 	icon_state = "sergeant"
 
 /datum/sprite_accessory/hair/rows2
@@ -581,7 +581,7 @@
 	icon_state = "rows1"
 
 /datum/sprite_accessory/hair/reversemohawk
-	name = "Reverse Mohawk"
+	name = "Ирокез наоборот"
 	icon_state = "reversemohawk"
 
 /datum/sprite_accessory/hair/father
@@ -589,7 +589,7 @@
 	icon_state = "father"
 
 /datum/sprite_accessory/hair/beehive2
-	name = "Beehive 2"
+	name = "Пчелиный улей № 2"
 	icon_state = "beehive2"
 
 /datum/sprite_accessory/hair/sleeze
@@ -613,15 +613,15 @@
 	icon_state = "oneshoulder"
 
 /datum/sprite_accessory/hair/ponytail6
-	name = "Ponytail 6"
+	name = "Хвост № 6"
 	icon_state = "ponytail6"
 
 /datum/sprite_accessory/hair/ponytail5
-	name = "Ponytail 5"
+	name = "Хвост № 5"
 	icon_state = "ponytail5"
 
 /datum/sprite_accessory/hair/ponytail4
-	name = "Ponytail 4"
+	name = "Хвост № 4"
 	icon_state = "ponytail4"
 
 /datum/sprite_accessory/hair/country
@@ -641,19 +641,19 @@
 	icon_state = "twintail"
 
 /datum/sprite_accessory/hair/short2
-	name = "Short Hair 2"
+	name = "Короткая стрижка № 2"
 	icon_state = "shorthair3"
 
 /datum/sprite_accessory/hair/bun2
-	name = "Bun 2"
+	name = "Пучок № 2"
 	icon_state = "bun2"
 
 /datum/sprite_accessory/hair/bun3
-	name = "Bun 3"
+	name = "Пучок № 3"
 	icon_state = "bun3"
 
 /datum/sprite_accessory/hair/shavehair
-	name = "Shaved Hair"
+	name = "Бритые волосы"
 	icon_state = "shaved"
 
 /datum/sprite_accessory/hair/veryshortovereyealternate
@@ -677,7 +677,7 @@
 	icon_state = "father"
 
 /datum/sprite_accessory/hair/bun4 // Due to a vulp hairstyle called bun
-	name = "Bun 4"
+	name = "Пучок № 4"
 	icon_state = "bun4"
 
 ///////////////////////////////////
@@ -689,11 +689,11 @@
 //////////////////////
 
 /datum/sprite_accessory/hair/eighties_ponytail
-	name = "80's ponytail"
+	name = "Хвост 80-х"
 	icon_state = "80_ponytail"
 
 /datum/sprite_accessory/hair/eighties_ponytailalt
-	name = "80's ponytail alt"
+	name = "Хвост 80-х (альтернативный)"
 	icon_state = "80_ponytail_alt"
 
 /datum/sprite_accessory/hair/big_bow
@@ -701,7 +701,7 @@
 	icon_state = "big_bow"
 
 /datum/sprite_accessory/hair/buns
-	name = "Buns"
+	name = "Пучок"
 	icon_state = "buns"
 
 /datum/sprite_accessory/hair/himecut_long
@@ -733,15 +733,15 @@
 	icon_state = "amanita_short"
 
 /datum/sprite_accessory/hair/long_curls
-	name = "Long curls"
+	name = "Длинные кудри"
 	icon_state = "long_curls"
 
 /datum/sprite_accessory/hair/long_curls_alt
-	name = "Long curls alt"
+	name = "Длинные кудри (альтернативные)"
 	icon_state = "long_curls_alt"
 
 /datum/sprite_accessory/hair/long_buns
-	name = "Long buns"
+	name = "Длинный пучок"
 	icon_state = "long_buns"
 
 /datum/sprite_accessory/hair/low_twins
@@ -755,4 +755,4 @@
 /datum/sprite_accessory/hair/fluff/pinapple_fluff_hair //Pineapple Salad hair fluff its for a slime..has to go under human
 	name = "Sasook Hair"
 	icon_state = "psalad_fluff_hair"
-	species_allowed = list("Slime People")
+	species_allowed = list("Слаймомен")

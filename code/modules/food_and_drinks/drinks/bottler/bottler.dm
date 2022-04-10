@@ -359,7 +359,7 @@
 			if(slots[i])
 				dat += "<td><A href='?src=[UID()];eject=[i]'>Eject</a></td>"
 			else
-				dat += "<td>N/A</td>"
+				dat += "<td>Нет</td>"
 		dat += "<td><A href='?src=[UID()];eject=0'>Eject All</a></td>"
 		dat += "</tr>"
 		dat += "</table>"

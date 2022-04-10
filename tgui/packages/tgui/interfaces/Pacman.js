@@ -34,7 +34,7 @@ export const Pacman = (props, context) => {
     <Window>
       <Window.Content>
         {((broken || !anchored) && (
-          <Section title="Status">
+          <Section title="Статус">
             {!!broken && (
               <Box color="orange">
                 The generator is malfunctioning!
@@ -50,7 +50,7 @@ export const Pacman = (props, context) => {
         {((!broken && !!anchored) && (
           <div>
             <Section
-              title="Status"
+              title="Статус"
               buttons={(<Button
                 icon={active ? 'power-off' : 'times'}
                 content={active ? 'On' : 'Off'}
@@ -80,7 +80,7 @@ export const Pacman = (props, context) => {
                 </Flex.Item>
                 <Flex.Item width="50%">
                   <LabeledList>
-                    <LabeledList.Item label="Temperature">
+                    <LabeledList.Item label="Температура">
                       <ProgressBar
                         value={tmpRatio}
                         ranges={{
@@ -91,7 +91,7 @@ export const Pacman = (props, context) => {
                         {tmp_current} &#8451;
                       </ProgressBar>
                     </LabeledList.Item>
-                    <LabeledList.Item label="Status">
+                    <LabeledList.Item label="Статус">
                       {tmp_overheat > 50 && (
                         <Box color="red">CRITICAL OVERHEAT!</Box>
                       )}
@@ -145,7 +145,7 @@ export const Pacman = (props, context) => {
                     <LabeledList.Item label="Fuel depletion">
                       {!!has_fuel && (fuel_usage
                         ? usage
-                        : "N/A")}
+                        : "Нет")}
                       {!has_fuel && (
                         <Box color="red">
                           Out of fuel

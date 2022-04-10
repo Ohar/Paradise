@@ -1,5 +1,5 @@
 /datum/species/diona
-	name = "Diona"
+	name = "Диона"
 	name_plural = "Dionaea"
 	name_adjective_male = "дионейский"
 	name_adjective_female = "дионейская"

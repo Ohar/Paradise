@@ -14,7 +14,7 @@ const getStatText = (cm, critThreshold) => {
     return "Critical";
   }
   if (parseInt(cm.stat, 10) === 1) { // Unconscious
-    return "Unconscious";
+    return "Без сознания";
   }
   return "Living";
 };

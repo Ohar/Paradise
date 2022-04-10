@@ -86,7 +86,7 @@
 				M.increment()
 				addtimer(VARSET_CALLBACK(src, cooldown, FALSE), 10)
 	else
-		to_chat(usr, "<span class='warning'>Access denied.</span>")
+		to_chat(usr, "<span class='warning'>Доступ запрещён.</span>")
 		flick("doorctrl-denied", src)
 
 /obj/machinery/door_control/ticket_machine_button/update_icon()

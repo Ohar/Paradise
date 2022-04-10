@@ -337,22 +337,22 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	antagHUD = TRUE
 	for(var/datum/atom_hud/antag/H in GLOB.huds)
 		H.add_hud_to(src)
-	
+
 /mob/dead/observer/verb/set_dnr()
-	set name = "Set DNR"
+	set name = "Задать СНВ"
 	set category = "Ghost"
 	set desc = "Предотвращает возрождение вашего персонажа."
 
 	if(!isobserver(src)) // Somehow
 		return
 	if(!can_reenter_corpse)
-		to_chat(src, "<span class='warning'>У вас уже стоит DNR!</span>")
+		to_chat(src, "<span class='warning'>У вас уже включен <abbr title='Статус: не возрождать'>СНВ</abbr>!</span>")
 		return
 	if(!mind || QDELETED(mind.current))
 		to_chat(src, "<span class='warning'>У вас нету тела.</span>")
 		return
 	if(mind.current.stat != DEAD)
-		to_chat(src, "<span class='warning'>Твое тело все еще живо!</span>")
+		to_chat(src, "<span class='warning'>Ваше тело всё ещё живо!</span>")
 		return
 
 	if(alert(src, "Если вы включите это, ваше тело не смогут больше возродить до конца раунда.", "Вы уверены?", "Да", "Нет") == "Да")
@@ -478,11 +478,11 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 
 /mob/dead/observer/memory()
 	set hidden = 1
-	to_chat(src, "<span class='warning'>You are dead! You have no mind to store memory!</span>")
+	to_chat(src, "<span class='warning'>Вы мертвы! You have no mind to store memory!</span>")
 
 /mob/dead/observer/add_memory()
 	set hidden = 1
-	to_chat(src, "<span class='warning'>You are dead! You have no mind to store memory!</span>")
+	to_chat(src, "<span class='warning'>Вы мертвы! You have no mind to store memory!</span>")
 
 
 /mob/dead/observer/verb/toggle_health_scan()
@@ -545,7 +545,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		if(unknown_concentration > 0.01)
 			to_chat(src, "<span class='warning'>Unknown: [round(unknown_concentration*100)]% ([round(unknown_concentration*total_moles,0.01)] moles)</span>")
 
-		to_chat(src, "<span class='notice'>Temperature: [round(environment.temperature-T0C,0.1)]&deg;C</span>")
+		to_chat(src, "<span class='notice'>Temperature: [round(environment.temperature-T0C,0.1)]°C</span>")
 		to_chat(src, "<span class='notice'>Heat Capacity: [round(environment.heat_capacity(),0.1)]</span>")
 
 /mob/dead/observer/verb/view_manifest()

@@ -35,7 +35,7 @@ export const ShuttleConsole = (props, context) => {
                 </LabeledList.Item>
               ) || (// ELSE, if there's no docking ports.
                 <Fragment>
-                  <LabeledListItem label="Status" color="red">
+                  <LabeledListItem label="Статус" color="red">
                     <NoticeBox color="red">
                       Shuttle Locked
                     </NoticeBox>

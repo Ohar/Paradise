@@ -4,7 +4,7 @@ GLOBAL_LIST_INIT(potential_theft_objectives, (subtypesof(/datum/theft_objective)
 
 /datum/objective
 	var/datum/mind/owner = null			//Who owns the objective.
-	var/explanation_text = "Nothing"	//What that person is supposed to do.
+	var/explanation_text = "Ничего"	    //What that person is supposed to do.
 	var/datum/mind/target = null		//If they are focused on a particular person.
 	var/target_amount = 0				//If they are focused on a particular number. Steal objectives have their own counter.
 	var/completed = 0					//currently only used for custom objectives.
@@ -493,7 +493,7 @@ GLOBAL_LIST_INIT(potential_theft_objectives, (subtypesof(/datum/theft_objective)
 		if(SSticker.current_state == GAME_STATE_SETTING_UP)
 			for(var/mob/new_player/P in GLOB.player_list)
 				if(P.client && P.ready && P.mind != owner)
-					if(P.client.prefs && (P.client.prefs.species == "Machine")) // Special check for species that can't be absorbed. No better solution.
+					if(P.client.prefs && (P.client.prefs.species == "КПБ")) // Special check for species that can't be absorbed. No better solution.
 						continue
 					n_p++
 		else if(SSticker.current_state == GAME_STATE_PLAYING)
@@ -587,7 +587,7 @@ GLOBAL_LIST_INIT(potential_theft_objectives, (subtypesof(/datum/theft_objective)
 /datum/objective/blood/proc/gen_amount_goal(low = 150, high = 400)
 	target_amount = rand(low,high)
 	target_amount = round(round(target_amount/5)*5)
-	explanation_text = "Накопить не менее [target_amount] единиц крови."
+	explanation_text = "Накопить не менее [target_amount] единиц[declension_ru(target_amount, "ы", "", "")] крови."
 	return target_amount
 
 /datum/objective/blood/check_completion()

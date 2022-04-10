@@ -80,7 +80,7 @@ const Cyborgs = (props, context) => {
           </Fragment>
         )}>
         <LabeledList>
-          <LabeledList.Item label="Status">
+          <LabeledList.Item label="Статус">
             <Box color={cyborg.status
               ? 'bad'
               : cyborg.locked_down

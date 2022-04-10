@@ -33,7 +33,7 @@ GLOBAL_REAL(GLOB, /datum/controller/global_vars)
 
 /datum/controller/global_vars/stat_entry()
 	if(!statclick)
-		statclick = new/obj/effect/statclick/debug(null, "Initializing...", src)
+		statclick = new/obj/effect/statclick/debug(null, "Инициализация…", src)
 
 	stat("Globals:", statclick.update("Edit"))
 

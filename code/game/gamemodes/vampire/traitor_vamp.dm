@@ -7,7 +7,7 @@
 	required_players = 10
 	required_enemies = 1	// how many of each type are required
 	recommended_enemies = 3
-	var/protected_species_vampire = list("Machine")
+	var/protected_species_vampire = list("КПБ")
 
 /datum/game_mode/traitor/vampire/announce()
 	to_chat(world, "<B>The current game mode is - Traitor+Vampire!</B>")

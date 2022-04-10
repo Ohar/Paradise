@@ -4,85 +4,94 @@
 //////////////////////
 
 /obj/item/reagent_containers/food/snacks/chips
-	name = "chips"
-	desc = "Commander Riker's What-The-Crisps."
+	name = "чипсы"
+	desc = "От-так-чипсы от капитана Райкера."
 	icon_state = "chips"
 	bitesize = 1
 	trash = /obj/item/trash/chips
+	gender = MALE
 	filling_color = "#E8C31E"
 	junkiness = 20
 	list_reagents = list("nutriment" = 1, "sodiumchloride" = 1, "sugar" = 3)
-	tastes = list("crisps" = 1)
+	tastes = list("чипсов" = 1)
 
+// Scaredy — «Трусишка». Не очень понятно, на что тут отсылка.
+// Поменял на отсылку на известного персонажа SS220, вполне уместного для названия марки вяленой говядины
 /obj/item/reagent_containers/food/snacks/sosjerky
-	name = "Scaredy's Private Reserve Beef Jerky"
+	name = "Вяленая говядина из личных запасов Сардельки"
 	icon_state = "sosjerky"
-	desc = "Beef jerky made from the finest space cows."
+	desc = "Вяленая говядина из лучших космических коров."
 	trash = /obj/item/trash/sosjerky
 	filling_color = "#631212"
 	junkiness = 25
 	list_reagents = list("protein" = 1, "sugar" = 3)
-	tastes = list("chewy beef" = 1)
+	tastes = list("жевательной говядины" = 1)
 
 /obj/item/reagent_containers/food/snacks/pistachios
-	name = "pistachios"
+	name = "фисташки"
 	icon_state = "pistachios"
-	desc = "Deliciously salted pistachios. A perfectly valid choice..."
+	desc = "Вкусные солёные фисташки. Несомненно, лучший выбор."
 	trash = /obj/item/trash/pistachios
 	filling_color = "#BAD145"
 	junkiness = 20
+	gender = MALE
 	list_reagents = list("plantmatter" = 2, "sodiumchloride" = 1, "sugar" = 4)
-	tastes = list("pistachios" = 1)
+	tastes = list("фисташек" = 1)
 
+// 4no Raisins — For no reason — отсылка к крику при суициде и к бану «Без причины»
 /obj/item/reagent_containers/food/snacks/no_raisin
-	name = "4no Raisins"
+	name = "изюм «Прост»"
 	icon_state = "4no_raisins"
-	desc = "Best raisins in the universe. Not sure why."
+	desc = "Просто лучший изюм в галактике. Почему — неизвестно."
 	trash = /obj/item/trash/raisins
 	filling_color = "#343834"
 	junkiness = 25
 	list_reagents = list("plantmatter" = 2, "sugar" = 4)
-	tastes = list("dried raisins" = 1)
+	tastes = list("изюма " = 1)
 
 /obj/item/reagent_containers/food/snacks/spacetwinkie
-	name = "Space Twinkie"
+	name = "Космические бисквиты"
 	icon_state = "space_twinkie"
-	desc = "Guaranteed to survive longer then you will."
+	desc = "Их срок годности больше вашей продолжительности жизни."
 	trash = /obj/item/trash/spacetwinkie
 	filling_color = "#FFE591"
 	junkiness = 25
+	gender = MALE
 	list_reagents = list("sugar" = 4)
-	tastes = list("twinkies" = 1)
+	tastes = list("бисквитов" = 1)
 
 /obj/item/reagent_containers/food/snacks/cheesiehonkers
-	name = "Cheesie Honkers"
+	name = "«Сырные хонкеры»"
 	icon_state = "cheesie_honkers"
-	desc = "Bite sized cheesie snacks that will honk all over your mouth."
+	desc = "Сырные снеки размером ровно в один укус. Обхонкают вам весь рот."
 	trash = /obj/item/trash/cheesie
 	filling_color = "#FFA305"
 	junkiness = 25
+	gender = MALE
 	list_reagents = list("nutriment" = 1, "fake_cheese" = 2, "sugar" = 3)
-	tastes = list("cheese" = 1, "crisps" = 2)
+	tastes = list("сыра" = 1, "чипсов" = 2)
 
 /obj/item/reagent_containers/food/snacks/syndicake
-	name = "Syndi-Cakes"
+	name = "«Синдикексы»"
 	icon_state = "syndi_cakes"
-	desc = "An extremely moist snack cake that tastes just as good after being nuked."
+	desc = "Очень нежные кексы. Особенно хороши на вкус если их обжарить на атомном огне."
 	filling_color = "#FF5D05"
 	trash = /obj/item/trash/syndi_cakes
 	bitesize = 3
+	gender = MALE
 	list_reagents = list("nutriment" = 4, "salglu_solution" = 5)
-	tastes = list("sweetness" = 3, "cake" = 1)
+	tastes = list("сладости" = 3, "кекса" = 1)
 
 /obj/item/reagent_containers/food/snacks/tastybread
-	name = "bread tube"
-	desc = "Bread in a tube. Chewy and surprisingly tasty."
+	name = "багет"
+	desc = "Багет в пакете. Хрустящий и удивительно вкусный."
 	icon_state = "tastybread"
 	trash = /obj/item/trash/tastybread
 	filling_color = "#A66829"
 	junkiness = 20
+	gender = MALE
 	list_reagents = list("nutriment" = 2, "sugar" = 4)
-	tastes = list("bread" = 1)
+	tastes = list("хлеба" = 1)
 
 
 //////////////////////
@@ -90,13 +99,14 @@
 //////////////////////
 
 /obj/item/reagent_containers/food/snacks/sosjerky/healthy
-	name = "homemade beef jerky"
-	desc = "Homemade beef jerky made from the finest space cows."
+	name = "сыровяленая говядина"
+	desc = "сыровяленая говядина, из лучших космических коров."
 	list_reagents = list("nutriment" = 3, "vitamin" = 1)
 	junkiness = 0
 
 /obj/item/reagent_containers/food/snacks/no_raisin/healthy
-	name = "homemade raisins"
-	desc = "homemade raisins, the best in all of spess."
+	name = "домашний виноград"
+	name = "ето домашниевый виноград, лучший в усём космасе"
+	gender = MALE
 	list_reagents = list("nutriment" = 3, "vitamin" = 2)
 	junkiness = 0

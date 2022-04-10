@@ -179,10 +179,10 @@
 	name = "Pull The Starting Cord"
 
 /datum/action/item_action/print_report
-	name = "Print Report"
+	name = "Напечатать отчёт"
 
 /datum/action/item_action/print_forensic_report
-	name = "Print Report"
+	name = "Напечатать отчёт"
 	button_icon_state = "scanner_print"
 	use_itemicon = FALSE
 

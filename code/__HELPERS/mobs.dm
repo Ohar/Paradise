@@ -47,12 +47,12 @@
 	return pick(valid_picks)
 
 /proc/random_hair_style(var/gender, species = "Человек", var/datum/robolimb/robohead)
-	var/h_style = "Bald"
+	var/h_style = "Лысина"
 	var/list/valid_hairstyles = list()
 	for(var/hairstyle in GLOB.hair_styles_public_list)
 		var/datum/sprite_accessory/S = GLOB.hair_styles_public_list[hairstyle]
 
-		if(hairstyle == "Bald") //Just in case.
+		if(hairstyle == "Лысина") //Just in case.
 			valid_hairstyles += hairstyle
 			continue
 		if((gender == MALE && S.gender == FEMALE) || (gender == FEMALE && S.gender == MALE))
@@ -189,7 +189,7 @@
 		return current_species.get_random_name(gender)
 
 /proc/random_skin_tone(species = "Человек")
-	if(species == "Человек" || species == "Drask")
+	if(species == "Человек" || species == "Драск")
 		switch(pick(60;"caucasian", 15;"afroamerican", 10;"african", 10;"latino", 5;"albino"))
 			if("caucasian")		. = -10
 			if("afroamerican")	. = -115

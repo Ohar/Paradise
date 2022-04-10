@@ -232,7 +232,7 @@
 	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/suit.dmi'
+		"Вокс" = 'icons/mob/species/vox/suit.dmi'
 	)
 
 	var/datum/action/item_action/chameleon/change/chameleon_action
@@ -266,9 +266,9 @@
 	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi',
-		"Drask" = 'icons/mob/species/drask/eyes.dmi',
-		"Grey" = 'icons/mob/species/grey/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi',
+		"Драск" = 'icons/mob/species/drask/eyes.dmi',
+		"Серый" = 'icons/mob/species/grey/eyes.dmi'
 	)
 
 	var/datum/action/item_action/chameleon/change/chameleon_action
@@ -366,7 +366,7 @@
 	armor = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/head.dmi'
+		"Вокс" = 'icons/mob/species/vox/head.dmi'
 	)
 
 	var/datum/action/item_action/chameleon/change/chameleon_action
@@ -405,12 +405,12 @@
 	flags_cover = MASKCOVERSEYES | MASKCOVERSMOUTH
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/mask.dmi',
-		"Unathi" = 'icons/mob/species/unathi/mask.dmi',
-		"Tajaran" = 'icons/mob/species/tajaran/mask.dmi',
-		"Vulpkanin" = 'icons/mob/species/vulpkanin/mask.dmi',
-		"Drask" = 'icons/mob/species/drask/mask.dmi',
-		"Grey" = 'icons/mob/species/grey/mask.dmi'
+		"Вокс" = 'icons/mob/species/vox/mask.dmi',
+		"Унати" = 'icons/mob/species/unathi/mask.dmi',
+		"Таяран" = 'icons/mob/species/tajaran/mask.dmi',
+		"Вульпканин" = 'icons/mob/species/vulpkanin/mask.dmi',
+		"Драск" = 'icons/mob/species/drask/mask.dmi',
+		"Серый" = 'icons/mob/species/grey/mask.dmi'
 	)
 
 	var/obj/item/voice_changer/voice_changer
@@ -483,7 +483,7 @@
 	name = "backpack"
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/back.dmi'
+		"Вокс" = 'icons/mob/species/vox/back.dmi'
 	)
 
 	var/datum/action/item_action/chameleon/change/chameleon_action

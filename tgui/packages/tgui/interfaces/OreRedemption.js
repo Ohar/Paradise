@@ -107,7 +107,7 @@ const IdDisk = (properties, context) => {
           </LabeledList.Item>
           <LabeledList.Item label="Stored design">
             <Box color={disk.design && (disk.compatible ? "good" : "bad")}>
-              {disk.design || "N/A"}
+              {disk.design || "Нет"}
             </Box>
           </LabeledList.Item>
           <LabeledList.Item>

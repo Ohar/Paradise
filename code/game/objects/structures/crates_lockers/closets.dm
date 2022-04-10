@@ -215,12 +215,12 @@
 			return
 	else
 		var/adjective = welded ? "open" : "shut"
-		user.visible_message("<span class='notice'>[user] begins welding [src] [adjective]...</span>", "<span class='notice'>You begin welding [src] [adjective]...</span>", "<span class='warning'>You hear welding.</span>")
+		user.visible_message("<span class='notice'>[user] begins welding [src] [adjective]...</span>", "<span class='notice'>Вы начинаете сварку [src] [adjective]...</span>", "<span class='warning'>Вы слышите звуки сварки.</span>")
 		if(I.use_tool(src, user, 15, volume = I.tool_volume))
 			if(opened)
 				to_chat(user, "<span class='notice'>Keep [src] shut while doing that!</span>")
 				return
-			user.visible_message("<span class='notice'>[user] welds [src] [adjective]!</span>", "<span class='notice'>You weld [src] [adjective]!</span>")
+			user.visible_message("<span class='notice'>[user] welds [src] [adjective]!</span>", "<span class='notice'>Вы привариваете [src] [adjective]!</span>")
 			welded = !welded
 			update_icon()
 			return

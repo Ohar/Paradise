@@ -101,11 +101,11 @@
 		// INNATE is the flag for audible-emote-language, so we don't want to show an "x talks but you cannot hear them" message if it's set
 		// if(!language || !(language.flags & INNATE))
 		if(speaker == src)
-			to_chat(src, "<span class='warning'>You cannot hear yourself speak!</span>")
+			to_chat(src, "<span class='warning'>Вы не слышите собственных слов!</span>")
 		else
-			to_chat(src, "<span class='name'>[speaker.name]</span> talks but you cannot hear [speaker.p_them()].")
+			to_chat(src, "<span class='name'>[speaker.name]</span> говор[pluralize_ru(speaker.gender,"ит","ят")], но вы [genderize_ru(speaker.gender,"его","её","его","их")] не слышите.")
 	else
-		to_chat(src, "<span class='game say'><span class='name'>[speaker_name]</span>[speaker.GetAltName()] [track][verb], \"[message]\"</span>")
+		to_chat(src, "<span class='game say'><span class='name'>[speaker_name]</span>[speaker.GetAltName()] [track][verb], «[message]»</span>")
 
 		// Create map text message
 		if (client?.prefs.toggles2 & PREFTOGGLE_2_RUNECHAT) // can_hear is checked up there on L99
@@ -162,18 +162,18 @@
 
 	if(!can_hear())
 		if(prob(20))
-			to_chat(src, "<span class='warning'>You feel your headset vibrate but can hear nothing from it!</span>")
+			to_chat(src, "<span class='warning'>Вы слышите как наушник вибрирует, но из него не слышно ни звука!</span>")
 	else if(track)
-		to_chat(src, "[part_a][track][part_b][verb], \"[message]\"</span></span>")
+		to_chat(src, "[part_a][track][part_b][verb], «[message]»</span></span>")
 		if(client?.prefs.toggles2 & PREFTOGGLE_2_RUNECHAT)
 			create_chat_message(speaker, message, TRUE, FALSE)
 	else
-		to_chat(src, "[part_a][speaker_name][part_b][verb], \"[message]\"</span></span>")
+		to_chat(src, "[part_a][speaker_name][part_b][verb], «[message]»</span></span>")
 		if(client?.prefs.toggles2 & PREFTOGGLE_2_RUNECHAT)
 			create_chat_message(speaker, message, TRUE, FALSE)
 
 /mob/proc/handle_speaker_name(mob/speaker = null, vname, hard_to_hear)
-	var/speaker_name = "unknown"
+	var/speaker_name = "неизвестный"
 	if(speaker)
 		speaker_name = speaker.name
 
@@ -181,7 +181,7 @@
 		speaker_name = vname
 
 	if(hard_to_hear)
-		speaker_name = "unknown"
+		speaker_name = "неизвестный"
 
 	return speaker_name
 
@@ -201,11 +201,11 @@
 				heardword = copytext(heardword,2)
 			if(copytext(heardword,-1) in punctuation)
 				heardword = copytext(heardword,1,length(heardword))
-			heard = "<span class='game say'>...<i>You hear something about<i>... '[heardword]'...</span>"
+			heard = "<span class='game say'>…<i>Вы слышите что-то о<i>… «[heardword]»…</span>"
 		else
-			heard = "<span class='game say'>...<i>You almost hear something...</i>...</span>"
+			heard = "<span class='game say'>…<i>Вы почти смогли что-то расслышать…</i>…</span>"
 	else
-		heard = "<span class='game say'>...<i>You almost hear someone talking</i>...</span>"
+		heard = "<span class='game say'>…<i>Вы почти смогли разобрать чьи-то слова</i>…</span>"
 
 	to_chat(src, heard)
 

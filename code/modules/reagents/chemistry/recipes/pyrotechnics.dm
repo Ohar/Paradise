@@ -74,7 +74,7 @@
 	mix_message = "The mixture becomes a yellow liquid!"
 
 /datum/chemical_reaction/clf3
-	name = "Chlorine Trifluoride"
+	name = "Трифторид хлора"
 	id = "clf3"
 	result = "clf3"
 	required_reagents = list("chlorine" = 1, "fluorine" = 3)

@@ -15,9 +15,9 @@
 	strip_delay = 60
 	dog_fashion = /datum/dog_fashion/head/helmet
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/helmet.dmi',
-		"Drask" = 'icons/mob/species/drask/helmet.dmi',
-		"Grey" = 'icons/mob/species/grey/helmet.dmi'
+		"Вокс" = 'icons/mob/species/vox/helmet.dmi',
+		"Драск" = 'icons/mob/species/drask/helmet.dmi',
+		"Серый" = 'icons/mob/species/grey/helmet.dmi'
 		)
 
 /obj/item/clothing/head/helmet/attack_self(mob/user)
@@ -224,7 +224,7 @@
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/helmet.dmi'
+		"Вокс" = 'icons/mob/species/vox/helmet.dmi'
 		)
 
 /obj/item/clothing/head/helmet/riot/knight/blue

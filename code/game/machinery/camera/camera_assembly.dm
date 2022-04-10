@@ -147,12 +147,12 @@
 	if(state == ASSEMBLY_WRENCHED)
 		if(!I.use_tool(src, user, 50, volume = I.tool_volume))
 			return
-		to_chat(user, "<span class='notice'>You weld [src] into place.</span>")
+		to_chat(user, "<span class='notice'>Вы привариваете [src] на место.</span>")
 		state = ASSEMBLY_WELDED
 	else if(state == ASSEMBLY_WELDED)
 		if(!I.use_tool(src, user, 50, volume = I.tool_volume))
 			return
-		to_chat(user, "<span class='notice'>You unweld [src] from its place.</span>")
+		to_chat(user, "<span class='notice'>Вы отвариваете крепление [src].</span>")
 		state = ASSEMBLY_WRENCHED
 
 /obj/item/camera_assembly/update_icon()

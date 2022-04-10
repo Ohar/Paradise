@@ -11,7 +11,7 @@ export const DisposalBin = (props, context) => {
     stateText = "Ready";
   } else if (data.mode <= 0) {
     stateColor = "bad";
-    stateText = "N/A";
+    stateText = "Нет";
   } else if (data.mode === 1) {
     stateColor = "average";
     stateText = "Pressurizing";
@@ -31,7 +31,7 @@ export const DisposalBin = (props, context) => {
               {stateText}
             </LabeledList.Item>
             <LabeledList.Item
-              label="Pressure">
+              label="Давление">
               <ProgressBar
                 ranges={{
                   bad: [-Infinity, 0],

@@ -27,6 +27,7 @@ GLOBAL_LIST_INIT(advance_cures, list(
 	name = "Без названия" // We will always let our Virologist name our disease.
 	desc = "Спроектированная болезнь, может содержать сразу несколько симптомов."
 	form = "Улучшенная болезнь" // Will let med-scanners know that this disease was engineered.
+	form_gender = FEMALE
 	agent = "advance microbes"
 	max_stages = 5
 	spread_text = "Неизвестно"

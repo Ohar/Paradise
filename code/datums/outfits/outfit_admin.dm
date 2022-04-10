@@ -420,7 +420,7 @@
 	if(istype(PDA))
 		PDA.owner = H.real_name
 		PDA.ownjob = "Mime"
-		PDA.name = "PDA-[H.real_name] ([PDA.ownjob])"
+		PDA.name = "КПК — [H.real_name] ([PDA.ownjob])"
 
 	var/obj/item/card/id/I = H.wear_id
 	if(istype(I))

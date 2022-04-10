@@ -2,7 +2,7 @@
 	name = "Грипп"
 	max_stages = 3
 	spread_text = "Аэрогенный"
-	cure_text = "Spaceacillin"
+	cure_text = "Космоцилин"
 	cures = list("spaceacillin")
 	cure_chance = 10
 	agent = "Вирион гриппа H13N1"

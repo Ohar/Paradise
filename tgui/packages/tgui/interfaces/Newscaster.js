@@ -284,10 +284,10 @@ const NewscasterFeed = (properties, context) => {
           )}>
           <LabeledList>
             <LabeledList.Item label="Description">
-              {channel.description || "N/A"}
+              {channel.description || "Нет"}
             </LabeledList.Item>
             <LabeledList.Item label="Owner">
-              {channel.author || "N/A"}
+              {channel.author || "Нет"}
             </LabeledList.Item>
             <LabeledList.Item label="Public">
               {channel.public ? "Yes" : "No"}
@@ -528,7 +528,7 @@ const manageChannelModalBodyOverride = (modal, context) => {
               onInput={(_e, v) => setAuthor(v)}
             />
           </LabeledList.Item>
-          <LabeledList.Item label="Name">
+          <LabeledList.Item label="Имя">
             <Input
               width="100%"
               placeholder="50 characters max."
@@ -782,7 +782,7 @@ const wantedNoticeModalBodyOverride = (modal, context) => {
               onInput={(_e, v) => setAuthor(v)}
             />
           </LabeledList.Item>
-          <LabeledList.Item label="Name">
+          <LabeledList.Item label="Имя">
             <Input
               width="100%"
               value={name}

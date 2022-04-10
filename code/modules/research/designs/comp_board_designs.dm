@@ -273,8 +273,8 @@
 	category = list("Computer Boards")
 
 /datum/design/sm_monitor
-	name = "Console Board (Supermatter Monitoring)"
-	desc = "Allows for the construction of circuit boards used to build a supermatter monitoring console"
+	name = "Плата консоли (Мониторинг Суперматерии)"
+	desc = "Позволяет создавать печатные платы, необходимые для постройки консоли мониторинга Суперматерии"
 	id = "sm_monitor"
 	req_tech = list("programming" = 2, "powerstorage" = 2)
 	build_type = IMPRINTER

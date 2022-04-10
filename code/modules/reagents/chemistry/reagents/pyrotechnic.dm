@@ -139,7 +139,7 @@
 			M.adjust_fire_stacks(6)
 
 /datum/reagent/plasma
-	name = "Plasma"
+	name = "Плазма"
 	id = "plasma"
 	description = "The liquid phase of an unusual extraterrestrial compound."
 	reagent_state = LIQUID
@@ -214,7 +214,7 @@
 	description = "Glycerol is a simple polyol compound. Glycerol is sweet-tasting and of low toxicity."
 	reagent_state = LIQUID
 	color = "#808080" // rgb: 128, 128, 128
-	taste_description = "sweetness"
+	taste_description = "сладости"
 
 /datum/reagent/stabilizing_agent
 	name = "Stabilizing Agent"
@@ -225,9 +225,9 @@
 	taste_description = "long-term stability"
 
 /datum/reagent/clf3
-	name = "Chlorine Trifluoride"
+	name = "Трифторид хлора" // Chlorine Trifluoride
 	id = "clf3"
-	description = "An extremely volatile substance, handle with the utmost care."
+	description = "Чрезвычайно летучее вещество, обращаться с особой осторожностью."
 	reagent_state = LIQUID
 	color = "#FF0000"
 	metabolization_rate = 4
@@ -336,7 +336,7 @@
 	description = "Comes into existence at 20K. As long as there is sufficient oxygen for it to react with, Cryostylane slowly cools all other reagents in the mob down to 0K."
 	color = "#B2B2FF" // rgb: 139, 166, 233
 	process_flags = ORGANIC | SYNTHETIC
-	taste_description = "bitterness"
+	taste_description = "горечи"
 
 /datum/reagent/cryostylane/on_new(data)
 	..()
@@ -378,7 +378,7 @@
 	description = "Comes into existence at 20K. As long as there is sufficient oxygen for it to react with, Pyrosium slowly heats all other reagents."
 	color = "#B20000" // rgb: 139, 166, 233
 	process_flags = ORGANIC | SYNTHETIC
-	taste_description = "bitterness"
+	taste_description = "горечи"
 
 /datum/reagent/pyrosium/on_new(data)
 	..()

@@ -475,7 +475,7 @@
 				if(!C.cremating)
 					C.cremate(user)
 	else
-		to_chat(usr, "<span class='warning'>Access denied.</span>")
+		to_chat(usr, "<span class='warning'>Доступ запрещён.</span>")
 
 /mob/proc/update_morgue()
 	if(stat == DEAD)

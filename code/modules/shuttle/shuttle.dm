@@ -804,7 +804,7 @@
 	if(..())	//we can't actually interact, so no action
 		return TRUE
 	if(!allowed(usr))
-		to_chat(usr, "<span class='danger'>Access denied.</span>")
+		to_chat(usr, "<span class='danger'>Доступ запрещён.</span>")
 		return	TRUE
 	if(!can_call_shuttle(usr, action))
 		return TRUE

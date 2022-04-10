@@ -15,22 +15,22 @@
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
 
 	//Species-specific stuff.
-	species_restricted = list("exclude","Wryn")
+	species_restricted = list("exclude","Врин")
 	sprite_sheets = list(
-		"Unathi" = 'icons/mob/species/unathi/helmet.dmi',
-		"Tajaran" = 'icons/mob/species/tajaran/helmet.dmi',
-		"Skrell" = 'icons/mob/species/skrell/helmet.dmi',
-		"Vox" = 'icons/mob/species/vox/helmet.dmi',
-		"Vulpkanin" = 'icons/mob/species/vulpkanin/helmet.dmi',
-		"Drask" = 'icons/mob/species/drask/helmet.dmi',
-		"Grey" = 'icons/mob/species/grey/helmet.dmi'
+		"Унати" = 'icons/mob/species/unathi/helmet.dmi',
+		"Таяран" = 'icons/mob/species/tajaran/helmet.dmi',
+		"Скрелл" = 'icons/mob/species/skrell/helmet.dmi',
+		"Вокс" = 'icons/mob/species/vox/helmet.dmi',
+		"Вульпканин" = 'icons/mob/species/vulpkanin/helmet.dmi',
+		"Драск" = 'icons/mob/species/drask/helmet.dmi',
+		"Серый" = 'icons/mob/species/grey/helmet.dmi'
 		)
 	sprite_sheets_obj = list(
-		"Unathi" = 'icons/obj/clothing/species/unathi/hats.dmi',
-		"Tajaran" = 'icons/obj/clothing/species/tajaran/hats.dmi',
-		"Skrell" = 'icons/obj/clothing/species/skrell/hats.dmi',
-		"Vox" = 'icons/obj/clothing/species/vox/hats.dmi',
-		"Vulpkanin" = 'icons/obj/clothing/species/vulpkanin/hats.dmi'
+		"Унати" = 'icons/obj/clothing/species/unathi/hats.dmi',
+		"Таяран" = 'icons/obj/clothing/species/tajaran/hats.dmi',
+		"Скрелл" = 'icons/obj/clothing/species/skrell/hats.dmi',
+		"Вокс" = 'icons/obj/clothing/species/vox/hats.dmi',
+		"Вульпканин" = 'icons/obj/clothing/species/vulpkanin/hats.dmi'
 		)
 
 /obj/item/clothing/head/helmet/space/hardsuit/attack_self(mob/user)
@@ -98,22 +98,22 @@
 	var/helmettype = /obj/item/clothing/head/helmet/space/hardsuit
 	var/obj/item/tank/jetpack/suit/jetpack = null
 
-	hide_tail_by_species = list("Vox" , "Vulpkanin" , "Unathi" , "Tajaran")
-	species_restricted = list("exclude", "Wryn")
+	hide_tail_by_species = list("Вокс" , "Вульпканин" , "Унати" , "Таяран")
+	species_restricted = list("exclude", "Врин")
 	sprite_sheets = list(
-		"Unathi" = 'icons/mob/species/unathi/suit.dmi',
-		"Tajaran" = 'icons/mob/species/tajaran/suit.dmi',
-		"Skrell" = 'icons/mob/species/skrell/suit.dmi',
-		"Vox" = 'icons/mob/species/vox/suit.dmi',
-		"Vulpkanin" = 'icons/mob/species/vulpkanin/suit.dmi',
-		"Drask" = 'icons/mob/species/drask/suit.dmi'
+		"Унати" = 'icons/mob/species/unathi/suit.dmi',
+		"Таяран" = 'icons/mob/species/tajaran/suit.dmi',
+		"Скрелл" = 'icons/mob/species/skrell/suit.dmi',
+		"Вокс" = 'icons/mob/species/vox/suit.dmi',
+		"Вульпканин" = 'icons/mob/species/vulpkanin/suit.dmi',
+		"Драск" = 'icons/mob/species/drask/suit.dmi'
 		)
 	sprite_sheets_obj = list(
-		"Unathi" = 'icons/obj/clothing/species/unathi/suits.dmi',
-		"Tajaran" = 'icons/obj/clothing/species/tajaran/suits.dmi',
-		"Skrell" = 'icons/obj/clothing/species/skrell/suits.dmi',
-		"Vox" = 'icons/obj/clothing/species/vox/suits.dmi',
-		"Vulpkanin" = 'icons/obj/clothing/species/vulpkanin/suits.dmi'
+		"Унати" = 'icons/obj/clothing/species/unathi/suits.dmi',
+		"Таяран" = 'icons/obj/clothing/species/tajaran/suits.dmi',
+		"Скрелл" = 'icons/obj/clothing/species/skrell/suits.dmi',
+		"Вокс" = 'icons/obj/clothing/species/vox/suits.dmi',
+		"Вульпканин" = 'icons/obj/clothing/species/vulpkanin/suits.dmi'
 		)
 
 /obj/item/clothing/suit/space/hardsuit/New()

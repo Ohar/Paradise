@@ -608,7 +608,7 @@
 	if(!panel_open)
 		toggle(user)
 	else
-		to_chat(user, "<span class='notice'>Close the maintenance panel first.</span>")
+		to_chat(user, "<span class='notice'>Сначала закройте панель техобслуживания.</span>")
 
 /obj/machinery/teleport/station/proc/toggle(mob/user)
 	if(stat & (BROKEN|NOPOWER) || !teleporter_hub || !teleporter_console)

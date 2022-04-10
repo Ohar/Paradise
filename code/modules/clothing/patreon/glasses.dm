@@ -9,7 +9,7 @@
 	item_state = "gar"
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi'
 		)
 
 

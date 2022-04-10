@@ -1,5 +1,5 @@
 /mob/living/silicon/robot/verb/cmd_show_laws()
-	set category = "Robot Commands"
+	set category = "Робот: Команды"
 	set name = "Show Laws"
 	show_laws()
 
@@ -27,7 +27,7 @@
 			to_chat(src, "<b>No AI selected to sync laws with, disabling lawsync protocol.</b>")
 			lawupdate = 0
 
-	to_chat(who, "<b>Obey these laws:</b>")
+	to_chat(who, "<b>Подчиняйтесь этим законам:</b>")
 	laws.show_laws(who)
 	// TODO: Update to new antagonist system.
 	if(mind && (mind.special_role == SPECIAL_ROLE_TRAITOR && mind.original == src) && connected_ai)
@@ -49,6 +49,6 @@
 	return
 
 /mob/living/silicon/robot/proc/robot_checklaws()
-	set category = "Robot Commands"
-	set name = "State Laws"
+	set category = "Робот: Команды"
+	set name = "Огласить законы"
 	subsystem_law_manager()

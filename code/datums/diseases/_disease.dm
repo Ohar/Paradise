@@ -42,6 +42,7 @@ GLOBAL_LIST_INIT(diseases, subtypesof(/datum/disease))
 	var/form = "Вирус"
 	var/name = "Без заболеваний"
 	var/desc = ""
+	var/form_gender = MALE
 	var/agent = "некоторые микробы"
 	var/spread_text = ""
 	var/cure_text = ""

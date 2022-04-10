@@ -11,13 +11,13 @@
 	permeability_coefficient = 0.01
 	resistance_flags = NONE
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/mask.dmi',
-		"Unathi" = 'icons/mob/species/unathi/mask.dmi',
-		"Tajaran" = 'icons/mob/species/tajaran/mask.dmi',
-		"Vulpkanin" = 'icons/mob/species/vulpkanin/mask.dmi',
-		"Drask" = 'icons/mob/species/drask/mask.dmi',
-		"Grey" = 'icons/mob/species/grey/mask.dmi',
-		"Plasmaman" = 'icons/mob/species/plasmaman/mask.dmi'
+		"Вокс" = 'icons/mob/species/vox/mask.dmi',
+		"Унати" = 'icons/mob/species/unathi/mask.dmi',
+		"Таяран" = 'icons/mob/species/tajaran/mask.dmi',
+		"Вульпканин" = 'icons/mob/species/vulpkanin/mask.dmi',
+		"Драск" = 'icons/mob/species/drask/mask.dmi',
+		"Серый" = 'icons/mob/species/grey/mask.dmi',
+		"Плазмомен" = 'icons/mob/species/plasmaman/mask.dmi'
 		)
 
 // **** Welding gas mask ****
@@ -50,12 +50,12 @@
 	resistance_flags = FIRE_PROOF
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/mask.dmi',
-		"Unathi" = 'icons/mob/species/unathi/mask.dmi',
-		"Tajaran" = 'icons/mob/species/tajaran/mask.dmi',
-		"Vulpkanin" = 'icons/mob/species/vulpkanin/mask.dmi',
-		"Drask" = 'icons/mob/species/drask/mask.dmi',
-		"Grey" = 'icons/mob/species/grey/mask.dmi'
+		"Вокс" = 'icons/mob/species/vox/mask.dmi',
+		"Унати" = 'icons/mob/species/unathi/mask.dmi',
+		"Таяран" = 'icons/mob/species/tajaran/mask.dmi',
+		"Вульпканин" = 'icons/mob/species/vulpkanin/mask.dmi',
+		"Драск" = 'icons/mob/species/drask/mask.dmi',
+		"Серый" = 'icons/mob/species/grey/mask.dmi'
 		)
 
 /obj/item/clothing/mask/gas/explorer/attack_self(mob/user)

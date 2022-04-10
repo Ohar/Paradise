@@ -56,9 +56,9 @@
 	if(src.health < src.maxHealth)
 		msg += "<span class='warning'>"
 		if(src.health >= src.maxHealth/2)
-			msg += "It looks slightly dented.\n"
+			msg += "Выглядит слегка помято.\n"
 		else
-			msg += "<B>It looks severely dented!</B>\n"
+			msg += "<B>Выглядит очень помято!</B>\n"
 		msg += "</span>"
 	msg += "*---------*</span>"
 

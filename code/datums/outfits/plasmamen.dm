@@ -1,5 +1,5 @@
 /datum/outfit/plasmaman
-	name = "Plasmaman"
+	name = "Плазмомен"
 
 	head = /obj/item/clothing/head/helmet/space/plasmaman
 	uniform = /obj/item/clothing/under/plasmaman

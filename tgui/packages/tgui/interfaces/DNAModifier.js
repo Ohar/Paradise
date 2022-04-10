@@ -55,7 +55,7 @@ const DNAModifierOccupant = (props, context) => {
   } = data;
   return (
     <Section
-      title="Occupant"
+      title="Пациент"
       buttons={
         <Fragment>
           <Box color="label" display="inline" mr="0.5rem">
@@ -80,10 +80,10 @@ const DNAModifierOccupant = (props, context) => {
         <Fragment>
           <Box>
             <LabeledList>
-              <LabeledList.Item label="Name">
+              <LabeledList.Item label="Имя">
                 {occupant.name}
               </LabeledList.Item>
-              <LabeledList.Item label="Health">
+              <LabeledList.Item label="Здоровье">
                 <ProgressBar
                   min={occupant.minHealth}
                   max={occupant.maxHealth}
@@ -95,7 +95,7 @@ const DNAModifierOccupant = (props, context) => {
                   }}
                 />
               </LabeledList.Item>
-              <LabeledList.Item label="Status" color={stats[occupant.stat][0]}>
+              <LabeledList.Item label="Статус" color={stats[occupant.stat][0]}>
                 {stats[occupant.stat][1]}
               </LabeledList.Item>
               <LabeledList.Divider />

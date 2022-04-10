@@ -78,12 +78,12 @@
 	mix_message = "A horrible smell pours forth from the mixture."
 
 /datum/chemical_reaction/space_cleaner
-	name = "Space cleaner"
+	name = "Космический очиститель"
 	id = "cleaner"
 	result = "cleaner"
 	required_reagents = list("ammonia" = 1, "water" = 1, "ethanol" = 1)
 	result_amount = 3
-	mix_message = "Ick, this stuff really stinks. Sure does make the container sparkle though!"
+	mix_message = "Фе, он очень воняет. Хотя контейнер теперь просто сверкает чистотой!"
 
 /datum/chemical_reaction/sulfuric_acid
 	name = "Sulfuric Acid"
@@ -123,7 +123,7 @@
 	mix_message = "The water somehow seems purified. Or maybe defiled."
 
 /datum/chemical_reaction/drying_agent
-	name = "Drying agent"
+	name = "Осушающий агент"
 	id = "drying_agent"
 	result = "drying_agent"
 	required_reagents = list("plasma" = 2, "ethanol" = 1, "sodium" = 1)
@@ -340,13 +340,13 @@
 	mix_message = "It smells like vinegar and a bad hangover in here."
 
 /datum/chemical_reaction/ice
-	name = "Ice"
+	name = "Лёд"
 	id = "ice"
 	result = "ice"
 	required_reagents = list("water" = 1)
 	result_amount = 1
 	max_temp = T0C
-	mix_message = "Ice forms as the water freezes."
+	mix_message = "Замерзая, вода превращается в лёд."
 	mix_sound = null
 
 /datum/chemical_reaction/water

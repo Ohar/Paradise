@@ -681,7 +681,7 @@
 						new_objective.explanation_text = "Absorb [target_number] compatible genomes."
 					if("blood")
 						new_objective = new /datum/objective/blood
-						new_objective.explanation_text = "Накопить не менее [target_number] единиц крови."
+						new_objective.explanation_text = "Накопить не менее [target_number] единиц[declension_ru(target_number, "ы", "", "")] крови."
 				new_objective.owner = src
 				new_objective.target_amount = target_number
 

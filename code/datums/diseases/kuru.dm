@@ -1,6 +1,7 @@
 /datum/disease/kuru
 	form = "Болезнь"
 	name = "Космический куру"
+	form_gender = FEMALE
 	max_stages = 4
 	stage_prob = 5
 	spread_text = "Незаразно"

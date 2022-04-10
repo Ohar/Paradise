@@ -144,7 +144,7 @@
 	heat_level_3 = 460
 	info_text = "As a <span class='danger'>Plasma Golem</span>, you burn easily. Be careful, if you get hot enough while burning, you'll blow up!"
 	heatmod = 0 //fine until they blow up
-	prefix = "Plasma"
+	prefix = "Плазма"
 	special_names = list("Flood", "Fire", "Bar", "Man")
 	var/boom_warning = FALSE
 	var/datum/action/innate/ignite/ignite

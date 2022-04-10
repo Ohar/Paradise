@@ -147,20 +147,20 @@
 	do_sparks(6, 1, location)
 
 /datum/chemical_reaction/mutagen
-	name = "Unstable mutagen"
+	name = "Нестабильный мутаген"
 	id = "mutagen"
 	result = "mutagen"
 	required_reagents = list("radium" = 1, "plasma" = 1, "chlorine" = 1)
 	result_amount = 3
-	mix_message = "The substance turns neon green and bubbles unnervingly."
+	mix_message = "Вещество становится неоново-зелёным и тревожно пузырится."
 
 /datum/chemical_reaction/stable_mustagen
-	name = "Stable mutagen"
+	name = "Стабильный мутаген"
 	id = "stable_mutagen"
 	result = "stable_mutagen"
 	required_reagents = list("mutagen" = 1, "lithium" = 1, "acetone" = 1, "bromine" = 1)
 	result_amount = 3
-	mix_message = "The substance turns a drab green and begins to bubble."
+	mix_message = "Вещество становится тускло-зелёным и начинает побулькивать."
 
 /datum/chemical_reaction/stable_mustagen/stable_mustagen2
 	id = "stable_mutagen2"

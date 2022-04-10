@@ -134,7 +134,7 @@
 		return
 
 	if(panel_open)
-		to_chat(user, "<span class='notice'>Close the maintenance panel first.</span>")
+		to_chat(user, "<span class='notice'>Сначала закройте панель техобслуживания.</span>")
 		return
 
 	ui_interact(user)
@@ -252,7 +252,7 @@
 	if(!controls_inside && usr == occupant)
 		return
 	if(panel_open)
-		to_chat(usr, "<span class='notice'>Close the maintenance panel first.</span>")
+		to_chat(usr, "<span class='notice'>Сначала закройте панель техобслуживания.</span>")
 		return
 	if(stat & (NOPOWER|BROKEN))
 		return
@@ -310,7 +310,7 @@
 	if(istype(I, /obj/item/grab))
 		var/obj/item/grab/G = I
 		if(panel_open)
-			to_chat(user, "<span class='boldnotice'>Close the maintenance panel first.</span>")
+			to_chat(user, "<span class='boldnotice'>Сначала закройте панель техобслуживания.</span>")
 			return
 		if(!ismob(G.affecting))
 			return
@@ -361,7 +361,7 @@
 		to_chat(user, "<span class='notice'>The scanner is occupied.</span>")
 		return
 	if(panel_open)
-		to_chat(user, "<span class='notice'>Close the maintenance panel first.</span>")
+		to_chat(user, "<span class='notice'>Сначала закройте панель техобслуживания.</span>")
 		return
 	if(dir == EAST)
 		orient = "LEFT"
@@ -491,7 +491,7 @@
 	if(!istype(user.loc, /turf) || !istype(O.loc, /turf)) // are you in a container/closet/pod/etc?
 		return
 	if(panel_open)
-		to_chat(user, "<span class='boldnotice'>Close the maintenance panel first.</span>")
+		to_chat(user, "<span class='boldnotice'>Сначала закройте панель техобслуживания.</span>")
 		return
 	if(occupant)
 		to_chat(user, "<span class='boldnotice'>The sleeper is already occupied!</span>")
@@ -500,7 +500,7 @@
 	if(!istype(L) || L.buckled)
 		return
 	if(L.abiotic())
-		to_chat(user, "<span class='boldnotice'>Subject cannot have abiotic items on.</span>")
+		to_chat(user, "<span class='boldnotice'>Субъект не должен держать в руках абиотические предметы.</span>")
 		return
 	if(L.has_buckled_mobs()) //mob attached to us
 		to_chat(user, "<span class='warning'>[L] will not fit into [src] because [L.p_they()] [L.p_have()] a slime latched onto [L.p_their()] head.</span>")
@@ -539,7 +539,7 @@
 		to_chat(usr, "<span class='boldnotice'>The sleeper is already occupied!</span>")
 		return
 	if(panel_open)
-		to_chat(usr, "<span class='boldnotice'>Close the maintenance panel first.</span>")
+		to_chat(usr, "<span class='boldnotice'>Сначала закройте панель техобслуживания.</span>")
 		return
 	if(usr.incapacitated() || usr.buckled) //are you cuffed, dying, lying, stunned or other
 		return

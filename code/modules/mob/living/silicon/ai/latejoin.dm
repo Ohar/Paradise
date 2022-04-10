@@ -1,18 +1,19 @@
 GLOBAL_LIST_EMPTY(empty_playable_ai_cores)
 
 /mob/living/silicon/ai/verb/wipe_core()
-	set name = "Wipe Core"
+	set name = "Стереть ядро"
 	set category = "OOC"
 	set desc = "Wipe your core. This is functionally equivalent to cryo or robotic storage, freeing up your job slot."
+	set desc = "Стирает ваше ядро. Эквивалентно криохранилищу или хранилищу киборгов. Освобождает роль ИИ."
 
 	// Guard against misclicks, this isn't the sort of thing we want happening accidentally
-	if(alert("WARNING: This will immediately wipe your core and ghost you, removing your character from the round permanently (similar to cryo and robotic storage). Are you entirely sure you want to do this?",
-					"Wipe Core", "No", "No", "Yes") != "Yes")
+	if(alert("ВНИМАНИЕ: это немедленно сотрёт ваше ядро ИИ и выкинет вас в призраки, навсегда удаляя вашего персонажа из раунда (аналогично криохранилищу или хранилищу киборгов). Вы точно хотите это сделать?",
+					"Стирание ядра", "Нет", "Нет", "Да") != "Да")
 		return
 
 	// We warned you.
 	GLOB.empty_playable_ai_cores += new /obj/structure/AIcore/deactivated(loc)
-	GLOB.global_announcer.autosay("[src] has been moved to intelligence storage.", "Artificial Intelligence Oversight")
+	GLOB.global_announcer.autosay("[src] помещается хранилище интеллектов.", "Система контроля искусственного интеллекта")
 
 	//Handle job slot/tater cleanup.
 	var/job = mind.assigned_role
@@ -48,7 +49,7 @@ GLOBAL_LIST_EMPTY(empty_playable_ai_cores)
 					continue
 				loc_landmark = tripai
 	if(!loc_landmark)
-		to_chat(src, "Oh god sorry we can't find an unoccupied AI spawn location, so we're spawning you on top of someone.")
+		to_chat(src, "Святая Хонкоматерь! Извините, мы не смогли найти вашего ИИ свободное место для появления, поэтому мы создаём вас поверх кого-то другого.")
 		for(var/obj/effect/landmark/start/sloc in GLOB.landmarks_list)
 			if(sloc.name == "AI")
 				loc_landmark = sloc

@@ -123,26 +123,26 @@
 	list_reagents = list("frostoil" = 30)
 
 /obj/item/reagent_containers/glass/bottle/morphine
-	name = "Morphine Bottle"
-	desc = "A small bottle of morphine, a powerful painkiller."
+	name = "Бутылочка морфина"
+	desc = "Небольшая бутылочка морфина, мощного обезболивающего."
 	icon_state = "bottle"
 	list_reagents = list("morphine" = 30)
 
 /obj/item/reagent_containers/glass/bottle/ether
-	name = "Ether Bottle"
+	name = "Бутылочка эфира"
 	desc = "A small bottle of an ether, a strong anesthetic and sedative."
 	icon_state = "round_bottle"
 	list_reagents = list("ether" = 30)
 
 /obj/item/reagent_containers/glass/bottle/charcoal
-	name = "Charcoal Bottle"
-	desc = "Небольшая бутылочка. Содержит charcoal."
+	name = "Бутылочка активированного угля"
+	desc = "Небольшая бутылочка. Содержит активированный уголь."
 	icon_state = "wide_bottle"
 	list_reagents = list("charcoal" = 30)
 
 /obj/item/reagent_containers/glass/bottle/epinephrine
-	name = "Epinephrine Bottle"
-	desc = "Небольшая бутылочка. Содержит epinephrine - used to stabilize patients."
+	name = "Бутылочка эпинефрина"
+	desc = "Небольшая бутылочка. Содержит эпинефрин — средство стабилизации пациентов."
 	icon_state = "round_bottle"
 	list_reagents = list("epinephrine" = 30)
 
@@ -168,62 +168,62 @@
 
 /obj/item/reagent_containers/glass/bottle/reagent/oil
 	name = "Oil Bottle"
-	desc = "A reagent bottle. Contains oil."
+	desc = "Бутылка реагентов. Contains oil."
 	list_reagents = list("oil" = 50)
 	pixel_x = -4
 	pixel_y = 6
 
 /obj/item/reagent_containers/glass/bottle/reagent/phenol
 	name = "Phenol Bottle"
-	desc = "A reagent bottle. Contains phenol."
+	desc = "Бутылка реагентов. Contains phenol."
 	list_reagents = list("phenol" = 50)
 	pixel_x = 6
 	pixel_y = 6
 
 /obj/item/reagent_containers/glass/bottle/reagent/acetone
 	name = "Acetone Bottle"
-	desc = "A reagent bottle. Contains acetone."
+	desc = "Бутылка реагентов. Contains acetone."
 	list_reagents = list("acetone" = 50)
 	pixel_x = -4
 
 /obj/item/reagent_containers/glass/bottle/reagent/ammonia
 	name = "Ammonia Bottle"
-	desc = "A reagent bottle. Contains ammonia."
+	desc = "Бутылка реагентов. Contains ammonia."
 	list_reagents = list("ammonia" = 50)
 	pixel_x = 6
 
 /obj/item/reagent_containers/glass/bottle/reagent/diethylamine
 	name = "Diethylamine Bottle"
-	desc = "A reagent bottle. Contains diethylamine."
+	desc = "Бутылка реагентов. Contains diethylamine."
 	list_reagents = list("diethylamine" = 50)
 	pixel_x = -4
 	pixel_y = -6
 
 /obj/item/reagent_containers/glass/bottle/reagent/acid
 	name = "Acid Bottle"
-	desc = "A reagent bottle. Contains sulfuric acid."
+	desc = "Бутылка реагентов. Contains sulfuric acid."
 	list_reagents = list("sacid" = 50)
 	pixel_x = 6
 	pixel_y = -6
 
 /obj/item/reagent_containers/glass/bottle/reagent/formaldehyde
 	name = "Formaldehyde Bottle"
-	desc = "A reagent bottle. Contains formaldehyde."
+	desc = "Бутылка реагентов. Contains formaldehyde."
 	list_reagents = list("formaldehyde" = 50)
 
 /obj/item/reagent_containers/glass/bottle/reagent/synaptizine
 	name = "Synaptizine Bottle"
-	desc = "A reagent bottle. Contains synaptizine."
+	desc = "Бутылка реагентов. Contains synaptizine."
 	list_reagents = list("synaptizine" = 50)
 
 /obj/item/reagent_containers/glass/bottle/reagent/morphine
-	name = "Morphine Bottle"
-	desc = "A reagent bottle. Contains morphine."
+	name = "Бутылочка морфина"
+	desc = "Бутылка реагентов. Содержит морфин."
 	list_reagents = list("morphine" = 50)
 
 /obj/item/reagent_containers/glass/bottle/reagent/insulin
 	name = "Insulin Bottle"
-	desc = "A reagent bottle. Contains insulin."
+	desc = "Бутылка реагентов. Contains insulin."
 	list_reagents = list("insulin" = 50)
 
 /obj/item/reagent_containers/glass/bottle/reagent/hairgrownium
@@ -237,19 +237,19 @@
 	list_reagents = list("hair_dye" = 50)
 
 /obj/item/reagent_containers/glass/bottle/reagent/omnizine
-	name = "Omnizine Bottle"
-	desc = "A reagent bottle. Contains Omnizine."
+	name = "Бутылка омнизина"
+	desc = "Бутылка реагентов. Содержит омнизин."
 	list_reagents = list("omnizine" = 50)
 
 /obj/item/reagent_containers/glass/bottle/reagent/strange_reagent
-	name = "Strange Reagent Bottle"
-	desc = "A bottle of glowing fluid."
+	name = "Бутылка странного реагента"
+	desc = "Бутылка светящейся жидкости."
 	list_reagents = list("strange_reagent" = 30)
 
 ////////////////////Traitor Poison Bottle//////////////////////////////
 
 /obj/item/reagent_containers/glass/bottle/traitor
-	desc = "It has a small skull and crossbones on it. Uh-oh!"
+	desc = "На ней изображён небольшой череп и кости. Ох-хо."
 	possible_transfer_amounts = list(5,10,15,25,30,40)
 	volume = 40
 

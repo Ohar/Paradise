@@ -287,31 +287,31 @@ GLOBAL_LIST_EMPTY(karma_spenders)
 				dat+= "Magistrate - <font color='green'>Unlocked</font><br>"
 
 		if(1) // Species Unlocks
-			if(!("Machine" in specieslist))
+			if(!("КПБ" in specieslist))
 				dat += "<a href='?src=[UID()];karmashop=shop;KarmaBuy2=1'>Unlock Machine People -- 15KP</a><br>"
 			else
 				dat += "Machine People - <font color='green'>Unlocked</font><br>"
-			if(!("Kidan" in specieslist))
+			if(!("Кидан" in specieslist))
 				dat += "<a href='?src=[UID()];karmashop=shop;KarmaBuy2=2'>Unlock Kidan -- 30KP</a><br>"
 			else
 				dat += "Kidan - <font color='green'>Unlocked</font><br>"
-			if(!("Grey" in specieslist))
+			if(!("Серый" in specieslist))
 				dat += "<a href='?src=[UID()];karmashop=shop;KarmaBuy2=3'>Unlock Grey -- 30KP</a><br>"
 			else
 				dat += "Grey - <font color='green'>Unlocked</font><br>"
-			if(!("Drask" in specieslist))
+			if(!("Драск" in specieslist))
 				dat += "<a href='?src=[UID()];karmashop=shop;KarmaBuy2=7'>Unlock Drask -- 30KP</a><br>"
 			else
 				dat += "Drask - <font color='green'>Unlocked</font><br>"
-			if(!("Vox" in specieslist))
+			if(!("Вокс" in specieslist))
 				dat += "<a href='?src=[UID()];karmashop=shop;KarmaBuy2=4'>Unlock Vox -- 45KP</a><br>"
 			else
 				dat += "Vox - <font color='green'>Unlocked</font><br>"
-			if(!("Slime People" in specieslist))
+			if(!("Слаймомен" in specieslist))
 				dat += "<a href='?src=[UID()];karmashop=shop;KarmaBuy2=5'>Unlock Slime People -- 45KP</a><br>"
 			else
 				dat += "Slime People - <font color='green'>Unlocked</font><br>"
-			if(!("Plasmaman" in specieslist))
+			if(!("Плазмомен" in specieslist))
 				dat += "<a href='?src=[UID()];karmashop=shop;KarmaBuy2=6'>Unlock Plasmaman -- 45KP</a><br>"
 			else
 				dat += "Plasmaman - <font color='green'>Unlocked</font><br>"

@@ -23,14 +23,14 @@
 /obj/item/reagent_containers/glass/examine(mob/user)
 	. = ..()
 	if(get_dist(user, src) <= 2 && !is_open_container())
-		. += "<span class='notice'>Airtight lid seals it completely.</span>"
+		. += "<span class='notice'>Герметичная крышка плотно закрыта.</span>"
 
 /obj/item/reagent_containers/glass/attack(mob/M, mob/user, def_zone)
 	if(!is_open_container())
 		return ..()
 
 	if(!reagents || !reagents.total_volume)
-		to_chat(user, "<span class='warning'>[src] is empty!</span>")
+		to_chat(user, "<span class='warning'>[src] пуст!</span>")
 		return
 
 	if(istype(M))
@@ -40,8 +40,8 @@
 		var/contained = english_list(transferred)
 
 		if(user.a_intent == INTENT_HARM)
-			M.visible_message("<span class='danger'>[user] splashes the contents of [src] onto [M]!</span>", \
-							"<span class='userdanger'>[user] splashes the contents of [src] onto [M]!</span>")
+			M.visible_message("<span class='danger'>[user] выплёскивает содержимое [src] на [M]!</span>", \
+							"<span class='userdanger'>[user] выплёскивает содержимое [src] на [M]!</span>")
 			add_attack_logs(user, M, "Splashed with [name] containing [contained]", !!M.ckey ? null : ATKLOG_ALL)
 
 			reagents.reaction(M, REAGENT_TOUCH)
@@ -60,7 +60,7 @@
 				M.visible_message("<span class='danger'>[user] feeds something to [M].</span>", "<span class='userdanger'>[user] feeds something to you.</span>")
 				add_attack_logs(user, M, "Fed with [name] containing [contained]", !!M.ckey ? null : ATKLOG_ALL)
 			else
-				to_chat(user, "<span class='notice'>You swallow a gulp of [src].</span>")
+				to_chat(user, "<span class='notice'>Вы делаете глоток из [src].</span>")
 
 			var/fraction = min(5 / reagents.total_volume, 1)
 			reagents.reaction(M, REAGENT_INGEST, fraction)
@@ -114,11 +114,12 @@
 		return ..()
 
 /obj/item/reagent_containers/glass/beaker
-	name = "beaker"
-	desc = "A beaker. Can hold up to 50 units."
+	name = "мензурка"
+	desc = "Мензурка. Может вмещать до 50 единиц."
 	icon = 'icons/obj/chemical.dmi'
 	icon_state = "beaker"
 	item_state = "beaker"
+	gender = FEMALE
 	materials = list(MAT_GLASS=500)
 	var/obj/item/assembly_holder/assembly = null
 	var/can_assembly = 1
@@ -160,19 +161,19 @@
 	..()
 
 /obj/item/reagent_containers/glass/beaker/verb/remove_assembly()
-	set name = "Remove Assembly"
+	set name = "Снять аксессуар"
 	set category = "Object"
 	set src in usr
 	if(usr.incapacitated())
 		return
 	if(assembly)
-		to_chat(usr, "<span class='notice'>You detach [assembly] from [src]</span>")
+		to_chat(usr, "<span class='notice'>Вы снимаете [assembly] с [src]</span>")
 		usr.put_in_hands(assembly)
 		assembly = null
 		qdel(GetComponent(/datum/component/proximity_monitor))
 		update_icon()
 	else
-		to_chat(usr, "<span class='notice'>There is no assembly to remove.</span>")
+		to_chat(usr, "<span class='notice'>На [src] нет аксессуаров.</span>")
 
 /obj/item/reagent_containers/glass/beaker/proc/heat_beaker()
 	if(reagents)

@@ -36,9 +36,9 @@
 	examine_extensions = list(EXAMINE_HUD_MEDICAL)
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi',
-		"Drask" = 'icons/mob/species/drask/eyes.dmi',
-		"Grey" = 'icons/mob/species/grey/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi',
+		"Драск" = 'icons/mob/species/drask/eyes.dmi',
+		"Серый" = 'icons/mob/species/grey/eyes.dmi'
 		)
 
 /obj/item/clothing/glasses/hud/health/night
@@ -67,9 +67,9 @@
 	HUDType = DATA_HUD_DIAGNOSTIC
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi',
-		"Drask" = 'icons/mob/species/drask/eyes.dmi',
-		"Grey" = 'icons/mob/species/grey/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi',
+		"Драск" = 'icons/mob/species/drask/eyes.dmi',
+		"Серый" = 'icons/mob/species/grey/eyes.dmi'
 		)
 
 /obj/item/clothing/glasses/hud/diagnostic/night
@@ -100,9 +100,9 @@
 	examine_extensions = list(EXAMINE_HUD_SECURITY_READ, EXAMINE_HUD_SECURITY_WRITE)
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi',
-		"Drask" = 'icons/mob/species/drask/eyes.dmi',
-		"Grey" = 'icons/mob/species/grey/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi',
+		"Драск" = 'icons/mob/species/drask/eyes.dmi',
+		"Серый" = 'icons/mob/species/grey/eyes.dmi'
 		)
 
 
@@ -137,9 +137,9 @@
 	prescription_upgradable = 1
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi',
-		"Drask" = 'icons/mob/species/drask/eyes.dmi',
-		"Grey" = 'icons/mob/species/grey/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi',
+		"Драск" = 'icons/mob/species/drask/eyes.dmi',
+		"Серый" = 'icons/mob/species/grey/eyes.dmi'
 	)
 
 /obj/item/clothing/glasses/hud/security/sunglasses/prescription
@@ -157,9 +157,9 @@
 	HUDType = DATA_HUD_HYDROPONIC
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi',
-		"Drask" = 'icons/mob/species/drask/eyes.dmi',
-		"Grey" = 'icons/mob/species/grey/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi',
+		"Драск" = 'icons/mob/species/drask/eyes.dmi',
+		"Серый" = 'icons/mob/species/grey/eyes.dmi'
 		)
 
 /obj/item/clothing/glasses/hud/hydroponic/night
@@ -181,7 +181,7 @@
 	up = 0
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi'
 		)
 
 /obj/item/clothing/glasses/hud/security/tajblind/attack_self()
@@ -197,9 +197,9 @@
 	up = 0
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi',
-		"Grey" = 'icons/mob/species/grey/eyes.dmi',
-		"Drask" = 'icons/mob/species/drask/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi',
+		"Серый" = 'icons/mob/species/grey/eyes.dmi',
+		"Драск" = 'icons/mob/species/drask/eyes.dmi'
 		)
 
 /obj/item/clothing/glasses/hud/health/tajblind/attack_self()
@@ -213,9 +213,9 @@
 	HUDType = DATA_HUD_SECURITY_BASIC
 	examine_extensions = list(EXAMINE_HUD_SKILLS)
 	sprite_sheets = list(
-		"Drask" = 'icons/mob/species/drask/eyes.dmi',
-		"Grey"  = 'icons/mob/species/grey/eyes.dmi',
-		"Vox" = 'icons/mob/species/vox/eyes.dmi'
+		"Драск" = 'icons/mob/species/drask/eyes.dmi',
+		"Серый"  = 'icons/mob/species/grey/eyes.dmi',
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi'
 	)
 
 /obj/item/clothing/glasses/hud/skills/sunglasses
@@ -227,7 +227,7 @@
 	tint = 1
 	prescription_upgradable = TRUE
 	sprite_sheets = list(
-		"Drask" = 'icons/mob/species/drask/eyes.dmi',
-		"Grey"  = 'icons/mob/species/grey/eyes.dmi',
-		"Vox" = 'icons/mob/species/vox/eyes.dmi'
+		"Драск" = 'icons/mob/species/drask/eyes.dmi',
+		"Серый"  = 'icons/mob/species/grey/eyes.dmi',
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi'
 	)

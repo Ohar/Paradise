@@ -183,7 +183,7 @@
 	list_reagents = list("charcoal" = 15)
 
 /obj/item/reagent_containers/syringe/epinephrine
-	name = "Syringe (Epinephrine)"
+	name = "Шприц (эпинефрин)"
 	desc = "Contains epinephrine - used to stabilize patients."
 	list_reagents = list("epinephrine" = 15)
 

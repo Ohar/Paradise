@@ -25,11 +25,11 @@ const analyzeModalBodyOverride = (modal, context) => {
       title={data.condi ? "Condiment Analysis" : "Reagent Analysis"}>
       <Box mx="0.5rem">
         <LabeledList>
-          <LabeledList.Item label="Name">
+          <LabeledList.Item label="Имя">
             {result.name}
           </LabeledList.Item>
           <LabeledList.Item label="Description">
-            {(result.desc || "").length > 0 ? result.desc : "N/A"}
+            {(result.desc || "").length > 0 ? result.desc : "Нет"}
           </LabeledList.Item>
           {result.blood_type && (
             <Fragment>

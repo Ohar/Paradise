@@ -1,27 +1,27 @@
 /datum/sprite_accessory/hair/ipc
 	icon = 'icons/mob/sprite_accessories/ipc/ipc_face.dmi'
-	species_allowed = list("Machine")
+	species_allowed = list("КПБ")
 	glasses_over = 1
-	models_allowed = list("Bishop Cybernetics mtr.", "Hesphiastos Industries mtr.", "Morpheus Cyberkinetics", "Ward-Takahashi mtr.", "Xion Manufacturing Group mtr.", "Shellguard Munitions Monitor Series")
+	models_allowed = list("Монитор «Бишоп Кибернетикс»", "Монитор «Гефиатос Индастриз»", "«Морфей Кибернетикс»", "Монитор «Страж Такахаши»", "Монитор «Сиэнь Мануфэкчуринг Групп»", "Линейка мониторов «Снаряды Шеллгардс»")
 
 /datum/sprite_accessory/hair/ipc/ipc_screen_blank
-	name = "Blank IPC Screen"
+	name = "Пустой экран КПБ"
 	icon_state = "blank"
 
 /datum/sprite_accessory/hair/ipc/ipc_screen_pink
-	name = "Pink IPC Screen"
+	name = "Розовый экран КПБ"
 	icon_state = "pink"
 
 /datum/sprite_accessory/hair/ipc/ipc_screen_red
-	name = "Red IPC Screen"
+	name = "Красный экран КПБ"
 	icon_state = "red"
 
 /datum/sprite_accessory/hair/ipc/ipc_screen_green
-	name = "Green IPC Screen"
+	name = "Зелёный экран КПБ"
 	icon_state = "green"
 
 /datum/sprite_accessory/hair/ipc/ipc_screen_blue
-	name = "Blue IPC Screen"
+	name = "Синий экран КПБ"
 	icon_state = "blue"
 
 /datum/sprite_accessory/hair/ipc/ipc_screen_breakout
@@ -29,35 +29,35 @@
 	icon_state = "breakout"
 
 /datum/sprite_accessory/hair/ipc/ipc_screen_eight
-	name = "Eight IPC Screen"
+	name = "Экран КПБ «Восьмёрка»"
 	icon_state = "eight"
 
 /datum/sprite_accessory/hair/ipc/ipc_screen_rainbow
-	name = "Rainbow IPC Screen"
+	name = "Экран КПБ «Радуга»"
 	icon_state = "rainbow"
 
 /datum/sprite_accessory/hair/ipc/ipc_screen_goggles
-	name = "Goggles IPC Screen"
+	name = "Экран КПБ «Очки»"
 	icon_state = "goggles"
 
 /datum/sprite_accessory/hair/ipc/ipc_screen_heart
-	name = "Heart IPC Screen"
+	name = "Экран КПБ «Сердце»"
 	icon_state = "heart"
 
 /datum/sprite_accessory/hair/ipc/ipc_screen_monoeye
-	name = "Monoeye IPC Screen"
+	name = "Экран КПБ «Циклоп»"
 	icon_state = "monoeye"
 
 /datum/sprite_accessory/hair/ipc/ipc_screen_nature
-	name = "Nature IPC Screen"
+	name = "Экран КПБ «Природа»"
 	icon_state = "nature"
 
 /datum/sprite_accessory/hair/ipc/ipc_screen_orange
-	name = "Orange IPC Screen"
+	name = "Оранжевый экран КПБ"
 	icon_state = "orange"
 
 /datum/sprite_accessory/hair/ipc/ipc_screen_purple
-	name = "Purple IPC Screen"
+	name = "Фиолетовый экран КПБ"
 	icon_state = "purple"
 
 /datum/sprite_accessory/hair/ipc/ipc_screen_shower
@@ -69,7 +69,7 @@
 	icon_state = "static"
 
 /datum/sprite_accessory/hair/ipc/ipc_screen_yellow
-	name = "Yellow IPC Screen"
+	name = "Жёлтый экран КПБ"
 	icon_state = "yellow"
 
 /datum/sprite_accessory/hair/ipc/ipc_screen_scrolling
@@ -77,59 +77,59 @@
 	icon_state = "scroll"
 
 /datum/sprite_accessory/hair/ipc/ipc_screen_console
-	name = "Console IPC Screen"
+	name = "Экран КПБ «Консоль»"
 	icon_state = "console"
 
 /datum/sprite_accessory/hair/ipc/ipc_screen_rgb
-	name = "RGB IPC Screen"
+	name = "Экран КПБ «RGB»"
 	icon_state = "rgb"
 
 /datum/sprite_accessory/hair/ipc/ipc_screen_glider
-	name = "Glider IPC Screen"
+	name = "Экран КПБ «Глайдер»"
 	icon_state = "gol_glider"
 
 /datum/sprite_accessory/hair/ipc/ipc_screen_smoking
-	name = "Smoking IPC Screen"
+	name = "Экран КПБ «Дымок»"
 	icon_state = "smoking"
 
 /datum/sprite_accessory/hair/ipc/ipc_screen_test
-	name = "Test IPC Screen"
+	name = "Экран КПБ «Тест»"
 	icon_state = "test"
 
 /datum/sprite_accessory/hair/ipc/hesphiastos_alt_off
 	name = "Dark Hesphiastos Screen"
 	icon_state = "off"
-	models_allowed = list("Hesphiastos Industries alt.")
+	models_allowed = list("«Гефиатос Индастриз», модель № 2")
 
 /datum/sprite_accessory/hair/ipc/hesphiastos_alt_pink
 	name = "Pink Hesphiastos Screen"
 	icon_state = "pink_hesp_alt"
-	models_allowed = list("Hesphiastos Industries alt.")
+	models_allowed = list("«Гефиатос Индастриз», модель № 2")
 
 /datum/sprite_accessory/hair/ipc/hesphiastos_alt_orange
 	name = "Orange Hesphiastos Screen"
 	icon_state = "orange_hesp_alt"
-	models_allowed = list("Hesphiastos Industries alt.")
+	models_allowed = list("«Гефиатос Индастриз», модель № 2")
 
 /datum/sprite_accessory/hair/ipc/hesphiastos_alt_goggle
 	name = "Goggles Hesphiastos Screen"
 	icon_state = "goggles_hesp_alt"
-	models_allowed = list("Hesphiastos Industries alt.")
+	models_allowed = list("«Гефиатос Индастриз», модель № 2")
 
 /datum/sprite_accessory/hair/ipc/hesphiastos_alt_scroll
 	name = "Scrolling Hesphiastos Screen"
 	icon_state = "scroll_hesp_alt"
-	models_allowed = list("Hesphiastos Industries alt.")
+	models_allowed = list("«Гефиатос Индастриз», модель № 2")
 
 /datum/sprite_accessory/hair/ipc/hesphiastos_alt_rgb
 	name = "RGB Hesphiastos Screen"
 	icon_state = "rgb_hesp_alt"
-	models_allowed = list("Hesphiastos Industries alt.")
+	models_allowed = list("«Гефиатос Индастриз», модель № 2")
 
 /datum/sprite_accessory/hair/ipc/hesphiastos_alt_rainbow
 	name = "Rainbow Hesphiastos Screen"
 	icon_state = "rainbow_hesp_alt"
-	models_allowed = list("Hesphiastos Industries alt.")
+	models_allowed = list("«Гефиатос Индастриз», модель № 2")
 
 /datum/sprite_accessory/hair/ipc/fluff
 	fluff = 1

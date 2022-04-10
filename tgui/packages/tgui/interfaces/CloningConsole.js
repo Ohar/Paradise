@@ -23,10 +23,10 @@ const viewRecordModalBodyOverride = (modal, context) => {
       pb="1rem"
       title={"Records of " + realname}>
       <LabeledList>
-        <LabeledList.Item label="Name">
+        <LabeledList.Item label="Имя">
           {realname}
         </LabeledList.Item>
-        <LabeledList.Item label="Damage">
+        <LabeledList.Item label="Повреждения">
           {damages.length > 1 ? (
             <Fragment>
               <Box color={COLORS.damageType.oxy} display="inline">
@@ -216,7 +216,7 @@ const CloningConsoleMain = (props, context) => {
           </Fragment>
         }>
         <LabeledList>
-          <LabeledList.Item label="Status">
+          <LabeledList.Item label="Статус">
             {loading ? (
               <Box color="average">
                 <Icon name="spinner" spin />&nbsp;
@@ -404,7 +404,7 @@ const CloningConsoleStatus = (props, context) => {
   } = data;
   return (
     <Section
-      title="Status"
+      title="Статус"
       buttons={
         <Fragment>
           {!!autoallowed && (

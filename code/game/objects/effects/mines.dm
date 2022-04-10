@@ -166,7 +166,7 @@
 /obj/effect/mine/pickup/healing/mineEffect(mob/living/carbon/victim)
 	if(!victim.client || !istype(victim))
 		return
-	to_chat(victim, "<span class='notice'>You feel great!</span>")
+	to_chat(victim, "<span class='notice'>Вы прекрасно себя чувствуете!</span>")
 	victim.revive()
 
 /obj/effect/mine/pickup/speed

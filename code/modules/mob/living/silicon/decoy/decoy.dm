@@ -1,5 +1,5 @@
 /mob/living/silicon/decoy
-	name = "AI"
+	name = "ИИ"
 	icon = 'icons/mob/ai.dmi'//
 	icon_state = "ai"
 	anchored = 1 // -- TLE
@@ -8,7 +8,7 @@
 
 /mob/living/silicon/decoy/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/aicard))
-		to_chat(user, "<span class='warning'>You cannot find an intellicard slot on [src].</span>")
+		to_chat(user, "<span class='warning'>Вы не можете найти слот для intellicard на [src].</span>")
 		return TRUE
 	else
 		return ..()
@@ -19,8 +19,8 @@
 /mob/living/silicon/decoy/syndicate
 	faction = list("syndicate")
 	bubble_icon = "syndibot"
-	name = "R.O.D.G.E.R"
-	desc = "Red Operations, Depot General Emission Regulator"
+	name = "Р.О.Д.Ж.Е.Р" // R.O.D.G.E.R
+	desc = "Регулятор Отходов Депо Жизнеобеспечивающей Единицы Рубикона"
 	icon_state = "ai-magma"
 
 /mob/living/silicon/decoy/syndicate/Initialize(mapload)
@@ -36,9 +36,9 @@
 	raised_alert = TRUE
 	var/area/syndicate_depot/core/depotarea = get_area(src) // Cannot use myArea as it wont be defined for this mob type
 	if(istype(depotarea))
-		depotarea.increase_alert("AI Unit Offline")
+		depotarea.increase_alert("ИИ отключён")
 	else
-		say("Connection failure!")
+		say("Ошибка подключения!")
 
 /mob/living/silicon/decoy/syndicate/depot/death(pass)
 	if(!raised_alert)

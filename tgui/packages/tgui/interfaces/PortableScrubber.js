@@ -123,7 +123,7 @@ const PressureSettings = (props, context) => {
         <Flex.Item>
           <Slider
             animated
-            unit="kPa"
+            unit="кПа"
             width={17.3}
             stepPixelSize={0.22}
             minValue={0}

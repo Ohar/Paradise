@@ -105,7 +105,7 @@
 	connected_ai = null
 
 	aiCamera = new/obj/item/camera/siliconcam/drone_camera(src)
-	additional_law_channels["Drone"] = ";"
+	additional_law_channels["Дроны"] = ";"
 
 	playsound(src.loc, 'sound/machines/twobeep.ogg', 50, 0)
 
@@ -115,7 +115,7 @@
 	return ..(newname, newname)
 
 /mob/living/silicon/robot/drone/get_default_name()
-	return "maintenance drone ([rand(100,999)])"
+	return "дрон техобслуживания ([rand(100,999)])"
 
 /mob/living/silicon/robot/drone/update_icons()
 	overlays.Cut()
@@ -140,7 +140,7 @@
 /mob/living/silicon/robot/drone/attackby(obj/item/W as obj, mob/user as mob, params)
 
 	if(istype(W, /obj/item/borg/upgrade/))
-		to_chat(user, "<span class='warning'>The maintenance drone chassis not compatible with \the [W].</span>")
+		to_chat(user, "<span class='warning'>Шасси дрона техобслуживания несовместимо с [W].</span>")
 		return
 
 	else if(istype(W, /obj/item/crowbar))
@@ -156,7 +156,7 @@
 				return
 
 			if(!allowed(W))
-				to_chat(user, "<span class='warning'>Access denied.</span>")
+				to_chat(user, "<span class='warning'>Доступ запрещён.</span>")
 				return
 
 			var/delta = (world.time / 10) - last_reboot
@@ -186,7 +186,7 @@
 				if(allowed(W))
 					shut_down()
 				else
-					to_chat(user, "<span class='warning'>Access denied.</span>")
+					to_chat(user, "<span class='warning'>Доступ запрещён.</span>")
 
 		return
 
@@ -232,7 +232,7 @@
 	laws = new /datum/ai_laws/syndicate_override
 	set_zeroth_law("Only [H.real_name] and people [H.real_name] designates as being such are Syndicate Agents.")
 
-	to_chat(src, "<b>Obey these laws:</b>")
+	to_chat(src, "<b>Подчиняйтесь этим законам:</b>")
 	laws.show_laws(src)
 	to_chat(src, "<span class='boldwarning'>ALERT: [H.real_name] is your new master. Obey your new laws and [H.real_name]'s commands.</span>")
 	return
@@ -295,10 +295,10 @@
 /mob/living/silicon/robot/drone/proc/question(var/client/C,var/mob/M)
 	spawn(0)
 		if(!C || !M || jobban_isbanned(M,"nonhumandept") || jobban_isbanned(M,"Drone"))	return
-		var/response = alert(C, "Someone is attempting to reboot a maintenance drone. Would you like to play as one?", "Maintenance drone reboot", "Yes", "No")
+		var/response = alert(C, "Кто-то пытается перезагрузить выключенного дрона техобслуживания. Хотели бы вы за него сыграть?", "Перезагрузка дрона техобслуживания", "Да", "Нет")
 		if(!C || ckey)
 			return
-		if(response == "Yes")
+		if(response == "Да")
 			transfer_personality(C)
 
 /mob/living/silicon/robot/drone/proc/transfer_personality(var/client/player)

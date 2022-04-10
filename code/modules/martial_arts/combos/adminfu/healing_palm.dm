@@ -31,7 +31,7 @@
 					ghost.reenter_corpse()
 					break
 		if(old_stat != DEAD)
-			to_chat(target, "<span class='notice'>You feel great!</span>")
+			to_chat(target, "<span class='notice'>Вы прекрасно себя чувствуете!</span>")
 		else
 			to_chat(target, "<span class='notice'>You rise with a start, you're alive!!!</span>")
 		return MARTIAL_COMBO_DONE

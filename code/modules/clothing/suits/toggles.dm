@@ -80,7 +80,7 @@
 					to_chat(H, "<span class='notice'>Suit systems activated, identity verified...</span>")
 					EngageHelmet()
 				else
-					to_chat(H, "<span class='warning'>Access denied. The user is not identified!</span>")
+					to_chat(H, "<span class='warning'>Доступ запрещён. The user is not identified!</span>")
 					return
 			else
 				EngageHelmet()

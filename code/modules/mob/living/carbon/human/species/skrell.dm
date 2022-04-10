@@ -1,6 +1,6 @@
 /datum/species/skrell
-	name = "Skrell"
-	name_plural = "Skrell"
+	name = "Скрелл"
+	name_plural = "Скрелл"
 	name_adjective_male = "скреллский"
 	name_adjective_female = "скреллская"
 	icobase = 'icons/mob/human_races/r_skrell.dmi'

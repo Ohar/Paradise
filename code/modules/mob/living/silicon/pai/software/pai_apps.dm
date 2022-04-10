@@ -110,7 +110,7 @@
 
 // Crew Manifest //
 /datum/pai_software/crew_manifest
-	name = "Crew Manifest"
+	name = "Список экипажа"
 	ram_cost = 5
 	id = "manifest"
 	template_file = "pai_manifest"

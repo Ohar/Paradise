@@ -4,6 +4,7 @@
 	max_stages = 4
 	spread_text = "Контактный"
 	spread_flags = CONTACT_GENERAL
+	form_gender = FEMALE
 	cure_text = "Этанол"
 	cures = list("ethanol")
 	agent = "Избыток лепидоптицидов"

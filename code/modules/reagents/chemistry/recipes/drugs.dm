@@ -1,19 +1,19 @@
 /datum/chemical_reaction/space_drugs
-	name = "Space Drugs"
+	name = "Космодурь"
 	id = "space_drugs"
 	result = "space_drugs"
 	required_reagents = list("mercury" = 1, "sugar" = 1, "lithium" = 1)
 	result_amount = 3
-	mix_message = "Slightly dizzying fumes drift from the solution."
+	mix_message = "От запаха этого слегка кружится голова."
 	mix_sound = 'sound/goonstation/misc/drinkfizz.ogg'
 
 /datum/chemical_reaction/crank
-	name = "Crank"
+	name = "Крэнк"
 	id = "crank"
 	result = "crank"
 	required_reagents = list("diphenhydramine" = 1, "ammonia" = 1, "lithium" = 1, "sacid" = 1, "fuel" = 1)
 	result_amount = 5
-	mix_message = "The mixture violently reacts, leaving behind a few crystalline shards."
+	mix_message = "Реакция протекает бурно, создавая несколько небольших кристаллов."
 	mix_sound = 'sound/goonstation/effects/crystalshatter.ogg'
 	min_temp = T0C + 100
 
@@ -23,12 +23,12 @@
 	explosion(T, 0, 0, 2)
 
 /datum/chemical_reaction/krokodil
-	name = "Krokodil"
+	name = "Крокодил"
 	id = "krokodil"
 	result = "krokodil"
 	required_reagents = list("diphenhydramine" = 1, "morphine" = 1, "cleaner" = 1, "potassium" = 1, "phosphorus" = 1, "fuel" = 1)
 	result_amount = 6
-	mix_message = "The mixture dries into a pale blue powder."
+	mix_message = "Микстура оседает голубым порошком."
 	min_temp = T0C + 100
 	mix_sound = 'sound/goonstation/misc/fuse.ogg'
 
@@ -92,12 +92,12 @@
 	mix_message = "The mixture swirls around excitedly!"
 
 /datum/chemical_reaction/lsd
-	name = "Lysergic acid diethylamide"
+	name = "Диэтиламид лизергиновой кислоты"
 	id = "lsd"
 	result = "lsd"
 	required_reagents = list("diethylamine" = 1, "fungus" = 1)
 	result_amount = 3
-	mix_message = "The mixture turns a rather unassuming color and settles."
+	mix_message = "Смесь оседает и приобретает довольно неприятный цвет."
 
 /datum/chemical_reaction/lube/ultra
 	name = "Ultra-Lube"

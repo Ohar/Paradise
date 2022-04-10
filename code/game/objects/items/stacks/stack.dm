@@ -16,7 +16,7 @@
 	var/to_transfer = 0
 	var/max_amount = 50 //also see stack recipes initialisation, param "max_res_amount" must be equal to this max_amount
 	var/merge_type = null // This path and its children should merge with this stack, defaults to src.type
-	var/recipe_width = 400 //Width of the recipe popup 
+	var/recipe_width = 400 //Width of the recipe popup
 	var/recipe_height = 400 //Height of the recipe popup
 	var/is_cyborg = 0 // It's 1 if module is used by a cyborg, and uses its storage
 	var/cost = 1 // How much energy from storage it costs
@@ -289,7 +289,7 @@
 
 /obj/item/stack/AltClick(mob/living/user)
 	if(!istype(user) || user.incapacitated())
-		to_chat(user, "<span class='warning'>You can't do that right now!</span>")
+		to_chat(user, "<span class='warning'>Сейчас вы не можете этого сделать!</span>")
 		return
 	if(!in_range(src, user))
 		return

@@ -1,10 +1,10 @@
 /datum/sprite_accessory/hair/nucleation
 	icon = 'icons/mob/sprite_accessories/nucleation/nucleation_face.dmi'
-	species_allowed = list("Nucleation")
+	species_allowed = list("Нуклеация")
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/nucleation/nuc_crystals
-	name = "Nucleation Crystals"
+	name = "Кристаллы нуклеаций"
 	icon_state = "crystal"
 
 /datum/sprite_accessory/hair/nucleation/nuc_betaburns

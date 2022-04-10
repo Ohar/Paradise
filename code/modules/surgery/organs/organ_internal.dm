@@ -334,15 +334,15 @@
 	if(istype(owner, /mob/living/carbon/human))
 		var/mob/living/carbon/human/H = owner
 		var/obj/item/organ/external/head/head_organ = H.get_organ("head")
-		if(!(head_organ.h_style == "Very Long Hair" || head_organ.h_style == "Mohawk"))
+		if(!(head_organ.h_style == "Очень длинные волосы" || head_organ.h_style == "Ирокез"))
 			if(prob(10))
-				head_organ.h_style = "Mohawk"
+				head_organ.h_style = "Ирокез"
 			else
-				head_organ.h_style = "Very Long Hair"
+				head_organ.h_style = "Очень длинные волосы"
 			head_organ.hair_colour = "#D8C078"
 			H.update_hair()
-		if(!(head_organ.f_style == "Very Long Beard"))
-			head_organ.f_style = "Very Long Beard"
+		if(!(head_organ.f_style == "Очень длинная борода"))
+			head_organ.f_style = "Очень длинная борода"
 			head_organ.facial_colour = "#D8C078"
 			H.update_fhair()
 

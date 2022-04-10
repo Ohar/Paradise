@@ -26,11 +26,11 @@
 						if(O.started_as_observer)
 							entry += " - <font color='gray'>Наблюдает</font>"
 						else
-							entry += " - <font color='black'><b>МЕРТВ</b></font>"
+							entry += " - <font color='black'><b>МЁРТВ</b></font>"
 					else if(isnewplayer(C.mob))
 						entry += " - <font color='green'>Новый Игрок</font>"
 					else
-						entry += " - <font color='black'><b>МЕРТВ</b></font>"
+						entry += " - <font color='black'><b>МЁРТВ</b></font>"
 
 			var/age
 			if(isnum(C.player_age))

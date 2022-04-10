@@ -44,7 +44,7 @@ export const CommunicationsComputer = (props, context) => {
         <Section title="Escape Shuttle">
           <LabeledList>
             {!!data.esc_status && (
-              <LabeledList.Item label="Status">
+              <LabeledList.Item label="Статус">
                 {data.esc_status}
               </LabeledList.Item>
             )}

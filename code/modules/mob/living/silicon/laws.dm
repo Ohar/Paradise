@@ -1,6 +1,6 @@
 /mob/living/silicon
 	var/datum/ai_laws/laws = null
-	var/list/additional_law_channels = list("State" = "")
+	var/list/additional_law_channels = list("Объявить" = "")
 
 /mob/living/silicon/proc/laws_sanity_check()
 	if(!src.laws)
@@ -14,7 +14,7 @@
 	laws_sanity_check()
 	laws.set_zeroth_law(law, law_borg)
 	if(!isnull(usr) && law)
-		log_and_message_admins("has given [src] the zeroth laws: [law]/[law_borg ? law_borg : "N/A"]")
+		log_and_message_admins("has given [src] the zeroth laws: [law]/[law_borg ? law_borg : "Нет"]")
 
 /mob/living/silicon/robot/set_zeroth_law(var/law, var/law_borg)
 	..()

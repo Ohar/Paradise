@@ -164,8 +164,8 @@
 		var/obj/item/organ/external/head/H = target.get_organ("head")
 		var/datum/robolimb/robohead = GLOB.all_robolimbs[H.model]
 		if(robohead.is_monitor) //Ensures that if an IPC gets a head that's got a human hair wig attached to their body, the hair won't wipe.
-			H.h_style = "Bald"
-			H.f_style = "Shaved"
+			H.h_style = "Лысина"
+			H.f_style = "Выбритость"
 			target.m_styles["head"] = "None"
 
 

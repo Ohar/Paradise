@@ -63,12 +63,12 @@
 			M.reagents.add_reagent("spore", 0.4*volume)
 
 /datum/reagent/blob/lexorin_jelly //does tons of oxygen damage and a little brute
-	name = "Lexorin Jelly"
-	description = "Deals Medium Brute damage, but massive amounts of Respiration Damage."
+	name = "Лексориновое желе"// Lexorin Jelly
+	description = "Наносит средний физический урон, но огромное количество урона от удушья."
 	id = "lexorin_jelly"
 	color = "#00FFC5"
 	complementary_color = "#56ebc9"
-	message_living = ", and your lungs feel heavy and weak"
+	message_living = ", а ваши легкие кажутся тяжёлыми и слабыми"
 
 /datum/reagent/blob/lexorin_jelly/reaction_mob(mob/living/M, method=REAGENT_TOUCH, volume)
 	if(method == REAGENT_TOUCH)

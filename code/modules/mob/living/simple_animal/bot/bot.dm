@@ -329,7 +329,7 @@
 			if(open)
 				to_chat(user, "<span class='warning'>Please close the access panel before locking it.</span>")
 			else
-				to_chat(user, "<span class='warning'>Access denied.</span>")
+				to_chat(user, "<span class='warning'>Доступ запрещён.</span>")
 	else if(istype(W, /obj/item/paicard))
 		if(paicard)
 			to_chat(user, "<span class='warning'>A [paicard] is already inserted!</span>")

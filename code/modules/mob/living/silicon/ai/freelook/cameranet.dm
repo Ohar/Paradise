@@ -7,7 +7,7 @@
 GLOBAL_DATUM_INIT(cameranet, /datum/cameranet, new())
 
 /datum/cameranet
-	var/name = "Camera Net" // Name to show for VV and stat()
+	var/name = "Сеть камер" // Name to show for VV and stat()
 
 	// The cameras on the map, no matter if they work or not. Updated in obj/machinery/camera.dm by New() and Destroy().
 	var/list/cameras = list()
@@ -184,7 +184,7 @@ GLOBAL_DATUM_INIT(cameranet, /datum/cameranet, new())
 /*
 /datum/cameranet/proc/stat_entry()
 	if(!statclick)
-		statclick = new/obj/effect/statclick/debug(null, "Initializing...", src)
+		statclick = new/obj/effect/statclick/debug(null, "Инициализация…", src)
 
 	stat(name, statclick.update("Cameras: [cameranet.cameras.len] | Chunks: [cameranet.chunks.len]"))
 */

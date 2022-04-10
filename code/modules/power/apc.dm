@@ -684,7 +684,7 @@
 			to_chat(user, "<span class='notice'>You [ locked ? "lock" : "unlock"] the APC interface.</span>")
 			update_icon()
 		else
-			to_chat(user, "<span class='warning'>Access denied.</span>")
+			to_chat(user, "<span class='warning'>Доступ запрещён.</span>")
 
 /obj/machinery/power/apc/run_obj_armor(damage_amount, damage_type, damage_flag = 0, attack_dir)
 	if(stat & BROKEN)
@@ -1018,7 +1018,7 @@
 		occupier.parent = malf
 	malf.shunted = 1
 	malf.mind.transfer_to(occupier)
-	occupier.eyeobj.name = "[occupier.name] (AI Eye)"
+	occupier.eyeobj.name = "[occupier.name] (Око ИИ)"
 	if(malf.parent)
 		qdel(malf)
 	var/datum/action/innate/ai/return_to_core/R = new

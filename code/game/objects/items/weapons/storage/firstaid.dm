@@ -336,8 +336,8 @@
 	wrapper_state = "patch_pack_wrap"
 
 /obj/item/storage/pill_bottle/charcoal
-	name = "Pill bottle (Charcoal)"
-	desc = "Contains pills used to counter toxins."
+	name = "Баночка с пилюлями (активированный уголь)"
+	desc = "Содержит пилюли, выводящие токсины."
 	wrapper_color = COLOR_GREEN
 
 /obj/item/storage/pill_bottle/charcoal/New()
@@ -351,8 +351,8 @@
 	new /obj/item/reagent_containers/food/pill/charcoal(src)
 
 /obj/item/storage/pill_bottle/painkillers
-	name = "Pill Bottle (Salicylic Acid)"
-	desc = "Contains various pills for minor pain relief."
+	name = "Баночка с пилюлями (салициловая кислота)"
+	desc = "Содержит пилюли, облегчающие незначительную боль."
 	wrapper_color = COLOR_RED
 
 /obj/item/storage/pill_bottle/painkillers/New()

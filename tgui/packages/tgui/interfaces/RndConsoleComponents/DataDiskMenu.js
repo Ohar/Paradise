@@ -15,7 +15,7 @@ const TechSummary = (properties, context) => {
   return (
     <Box>
       <LabeledList>
-        <LabeledList.Item label="Name">{disk_data.name}</LabeledList.Item>
+        <LabeledList.Item label="Имя">{disk_data.name}</LabeledList.Item>
         <LabeledList.Item label="Level">{disk_data.level}</LabeledList.Item>
         <LabeledList.Item label="Description">{disk_data.desc}</LabeledList.Item>
       </LabeledList>
@@ -41,7 +41,7 @@ const LatheSummary = (properties, context) => {
   return (
     <Box>
       <LabeledList>
-        <LabeledList.Item label="Name">
+        <LabeledList.Item label="Имя">
           {name}
         </LabeledList.Item>
 

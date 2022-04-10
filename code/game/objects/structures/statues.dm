@@ -279,7 +279,7 @@
 
 /obj/structure/statue/tranquillite/mime/AltClick(mob/user)//has 4 dirs
 	if(user.incapacitated())
-		to_chat(user, "<span class='warning'>You can't do that right now!</span>")
+		to_chat(user, "<span class='warning'>Сейчас вы не можете этого сделать!</span>")
 		return
 	if(!Adjacent(user))
 		return
@@ -336,7 +336,7 @@
 	desc = "Еще один герой корп. NanoTrasen. Вы замечаете интересную деталь, что спинка стула похожа на тюремное окошко. Так же на нем почему-то присутствует кровь, которая уже налегает слоями и хранится около года. По всей видимости этот стул символизирует какую то личность, которая внесла большой вклад в развитие и поддержание нашей галактической системы. \n Надпись на табличке - Спасибо тебе за все, мы всегда были и будем рады тебе."
 	icon_state = "artchair"
 	anchored = TRUE
-	oreAmount = 0	
+	oreAmount = 0
 
 
 ////////////////////////////////

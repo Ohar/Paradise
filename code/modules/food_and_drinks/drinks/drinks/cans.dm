@@ -164,8 +164,8 @@
 		addtimer(CALLBACK(src, .proc/reset_shaken), (70 - (times_shaken * 10)) SECONDS, TIMER_UNIQUE | TIMER_OVERRIDE | TIMER_NO_HASH_WAIT)
 
 /obj/item/reagent_containers/food/drinks/cans/cola
-	name = "space cola"
-	desc = "Cola. in space."
+	name = "космическая кола"
+	desc = "Кола. В космосе."
 	icon_state = "cola"
 	list_reagents = list("cola" = 30)
 
@@ -206,14 +206,14 @@
 	list_reagents = list("ale" = 30)
 
 /obj/item/reagent_containers/food/drinks/cans/space_mountain_wind
-	name = "Space Mountain Wind"
-	desc = "Blows right through you like a space wind."
+	name = "Космический горный ветер"
+	desc = "Дует прямо насквозь вас, как и любой космический ветер."
 	icon_state = "space_mountain_wind"
 	list_reagents = list("spacemountainwind" = 30)
 
 /obj/item/reagent_containers/food/drinks/cans/thirteenloko
-	name = "Thirteen Loko"
-	desc = "The CMO has advised crew members that consumption of Thirteen Loko may result in seizures, blindness, drunkeness, or even death. Please Drink Responsibly."
+	name = "Локо тринадцать"
+	desc = "Главврач предупредил экипаж, что употребление «Локо тринадцать» может привести к судорогам, слепоте, опьянению или даже смерти. Пожалуйста, пейте ответственно."
 	icon_state = "thirteen_loko"
 	list_reagents = list("thirteenloko" = 25, "psilocybin" = 5)
 
@@ -231,14 +231,14 @@
 	list_reagents = list("brownstar" = 30)
 
 /obj/item/reagent_containers/food/drinks/cans/space_up
-	name = "Space-Up"
-	desc = "Tastes like a hull breach in your mouth."
+	name = "Космирование"
+	desc = "С лёгким вкусом разгермы."
 	icon_state = "space-up"
 	list_reagents = list("space_up" = 30)
 
 /obj/item/reagent_containers/food/drinks/cans/lemon_lime
-	name = "Lemon-Lime"
-	desc = "You wanted ORANGE. It gave you Lemon Lime."
+	name = "Лимон-лайм"
+	desc = "Вы хотели апельсин. А получили лимон-лайм."
 	icon_state = "lemon-lime"
 	list_reagents = list("lemon_lime" = 30)
 
@@ -255,14 +255,14 @@
 	list_reagents = list("grapejuice" = 30)
 
 /obj/item/reagent_containers/food/drinks/cans/tonic
-	name = "T-Borg's Tonic Water"
-	desc = "Quinine tastes funny, but at least it'll keep that Space Malaria away."
+	name = "Вода с тоником Ти-борга"
+	desc = "У хинина странный вкус. Но он хотя бы защищает от космической малярии."
 	icon_state = "tonic"
 	list_reagents = list("tonic" = 50)
 
 /obj/item/reagent_containers/food/drinks/cans/sodawater
-	name = "soda water"
-	desc = "A can of soda water. Still water's more refreshing cousin."
+	name = "газировка"
+	desc = "Банка клубной газировки. Более освежающая сестра обычной воды"
 	icon_state = "sodawater"
 	list_reagents = list("sodawater" = 50)
 

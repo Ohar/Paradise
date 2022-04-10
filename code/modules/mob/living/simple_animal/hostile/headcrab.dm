@@ -108,7 +108,7 @@
 		overlays.Cut()
 		overlays = human_overlays
 		var/image/I = image('icons/mob/headcrab.dmi', icon_state = "headcrabpod")
-		if(host_species == "Vox")
+		if(host_species == "Вокс")
 			I = image('icons/mob/headcrab.dmi', icon_state = "headcrabpod_vox")
 		else if(host_species == "Gray")
 			I = image('icons/mob/headcrab.dmi', icon_state = "headcrabpod_gray")
@@ -142,7 +142,7 @@
 		overlays.Cut()
 		overlays = human_overlays
 		var/image/I = image('icons/mob/headcrab.dmi', icon_state = "fast_headcrabpod")
-		if(host_species == "Vox")
+		if(host_species == "Вокс")
 			I = image('icons/mob/headcrab.dmi', icon_state = "fast_headcrabpod_vox")
 		else if(host_species == "Gray")
 			I = image('icons/mob/headcrab.dmi', icon_state = "fast_headcrabpod_gray")
@@ -175,7 +175,7 @@
 		overlays.Cut()
 		overlays = human_overlays
 		var/image/I = image('icons/mob/headcrab.dmi', icon_state = "poison_headcrabpod")
-		if(host_species == "Vox")
+		if(host_species == "Вокс")
 			I = image('icons/mob/headcrab.dmi', icon_state = "poison_headcrabpod_vox")
 		else if(host_species == "Gray")
 			I = image('icons/mob/headcrab.dmi', icon_state = "poison_headcrabpod_gray")

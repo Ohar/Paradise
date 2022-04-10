@@ -158,9 +158,9 @@
 	if(istype(H))
 		H.disfigured = TRUE //makes them unknown without fucking up other stuff like admintools
 		if(H.f_style)
-			H.f_style = "Shaved"		//we only change the icon_state of the hair datum, so it doesn't mess up their UI/UE
+			H.f_style = "Выбритость"		//we only change the icon_state of the hair datum, so it doesn't mess up their UI/UE
 		if(H.h_style)
-			H.h_style = "Bald"
+			H.h_style = "Лысина"
 	update_fhair()
 	update_hair()
 

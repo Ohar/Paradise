@@ -167,7 +167,7 @@
 		if(beaker)
 			to_chat(user, "<span class='warning'>There's already a container inside.</span>")
 		else if(panel_open)
-			to_chat(user, "<span class='warning'>Close the maintenance panel first.</span>")
+			to_chat(user, "<span class='warning'>Сначала закройте панель техобслуживания.</span>")
 		else
 			if(!user.drop_item())
 				return FALSE

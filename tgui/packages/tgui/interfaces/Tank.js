@@ -50,7 +50,7 @@ export const Tank = (props, context) => {
                 animated
                 value={parseFloat(data.releasePressure)}
                 width="65px"
-                unit="kPa"
+                unit="кПа"
                 minValue={data.minReleasePressure}
                 maxValue={data.maxReleasePressure}
                 onChange={(e, value) => act('pressure', {

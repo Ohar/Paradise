@@ -92,7 +92,7 @@
 			icon_state = "bulb-empty"
 	stage = 3
 	user.visible_message("<span class='notice'>[user] closes [src]'s casing.</span>", \
-		"<span class='notice'>You close [src]'s casing.</span>", "<span class='notice'>You hear a screwdriver.</span>")
+		"<span class='notice'>You close [src]'s casing.</span>", "<span class='notice'>Вы слышите звуки отвёртки.</span>")
 
 	switch(fixture_type)
 		if("tube")
@@ -446,7 +446,7 @@
 		if(istype(W, /obj/item/screwdriver)) //If it's a screwdriver open it.
 			playsound(loc, W.usesound, W.tool_volume, 1)
 			user.visible_message("<span class='notice'>[user] opens [src]'s casing.</span>", \
-				"<span class='notice'>You open [src]'s casing.</span>", "<span class='notice'>You hear a screwdriver.</span>")
+				"<span class='notice'>You open [src]'s casing.</span>", "<span class='notice'>Вы слышите звуки отвёртки.</span>")
 			deconstruct()
 			return
 

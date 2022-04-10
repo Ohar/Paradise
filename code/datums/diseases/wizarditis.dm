@@ -2,7 +2,7 @@
 	name = "Визардис"
 	max_stages = 4
 	spread_text = "Аэрогенный"
-	cure_text = "The Manly Dorf"
+	cure_text = "Бравый карлик"
 	cures = list("manlydorf")
 	cure_chance = 100
 	agent = "Ринсвиндий обыкновенный"

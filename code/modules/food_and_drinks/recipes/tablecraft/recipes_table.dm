@@ -20,7 +20,7 @@
 	subcategory = CAT_SANDWICH
 
 /datum/crafting_recipe/slimesandwich
-	name = "Slime Jelly Sandwich"
+	name = "Сэндвич со слаймовым желе" // Slime Jelly Sandwich
 	reqs = list(
 		/datum/reagent/slimejelly = 5,
 		/obj/item/reagent_containers/food/snacks/breadslice = 2,
@@ -40,7 +40,7 @@
 	subcategory = CAT_SANDWICH
 
 /datum/crafting_recipe/slimeburger
-	name = "Slime Jelly Burger"
+	name = "Бургер со слаймовым желе" // Slime Jelly Burger
 	reqs = list(
 		/datum/reagent/slimejelly = 5,
 		/obj/item/reagent_containers/food/snacks/bun = 1,

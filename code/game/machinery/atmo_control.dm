@@ -2,7 +2,7 @@
 	icon = 'icons/obj/stationobjs.dmi'
 	icon_state = "gsensor1"
 	resistance_flags = FIRE_PROOF
-	name = "gas sensor"
+	name = "газовый датчик"
 	req_one_access_txt = "24;10"
 
 	anchored = 1
@@ -30,17 +30,17 @@
 
 /obj/machinery/air_sensor/multitool_menu(var/mob/user, var/obj/item/multitool/P)
 	return {"
-	<b>Main</b>
+	<b>Основное</b>
 	<ul>
-		<li><b>Frequency:</b> <a href="?src=[UID()];set_freq=-1">[format_frequency(frequency)] GHz</a> (<a href="?src=[UID()];set_freq=[initial(frequency)]">Reset</a>)</li>
-		<li>[format_tag("ID Tag","id_tag","set_id")]</li>
-		<li>Floor Bolts: <a href="?src=[UID()];toggle_bolts=1">[bolts ? "Enabled" : "Disabled"]</a>
-		<li>Monitor Pressure: <a href="?src=[UID()];toggle_out_flag=1">[output&1 ? "Yes" : "No"]</a>
-		<li>Monitor Temperature: <a href="?src=[UID()];toggle_out_flag=2">[output&2 ? "Yes" : "No"]</a>
-		<li>Monitor Oxygen Concentration: <a href="?src=[UID()];toggle_out_flag=4">[output&4 ? "Yes" : "No"]</a>
-		<li>Monitor Plasma Concentration: <a href="?src=[UID()];toggle_out_flag=8">[output&8 ? "Yes" : "No"]</a>
-		<li>Monitor Nitrogen Concentration: <a href="?src=[UID()];toggle_out_flag=16">[output&16 ? "Yes" : "No"]</a>
-		<li>Monitor Carbon Dioxide Concentration: <a href="?src=[UID()];toggle_out_flag=32">[output&32 ? "Yes" : "No"]</a>
+		<li><b>Частота:</b> <a href="?src=[UID()];set_freq=-1">[format_frequency(frequency)] Гц</a> (<a href="?src=[UID()];set_freq=[initial(frequency)]">Сбросить</a>)</li>
+		<li>[format_tag("Название","id_tag","set_id")]</li>
+		<li>Крепление болтами: <a href="?src=[UID()];toggle_bolts=1">[bolts ? "На болтах" : "Болты сняты"]</a>
+		<li>Отслеживать давление: <a href="?src=[UID()];toggle_out_flag=1">[output&1 ? "Да" : "Нет"]</a>
+		<li>Отслеживать температуру: <a href="?src=[UID()];toggle_out_flag=2">[output&2 ? "Да" : "Нет"]</a>
+		<li>Отслеживать концентрацию азота: <a href="?src=[UID()];toggle_out_flag=16">[output&16 ? "Да" : "Нет"]</a>
+		<li>Отслеживать концентрацию кислорода: <a href="?src=[UID()];toggle_out_flag=4">[output&4 ? "Да" : "Нет"]</a>
+		<li>Отслеживать концентрацию плазмы: <a href="?src=[UID()];toggle_out_flag=8">[output&8 ? "Да" : "Нет"]</a>
+		<li>Отслеживать концентрацию углекислого газа: <a href="?src=[UID()];toggle_out_flag=32">[output&32 ? "Да" : "Нет"]</a>
 	</ul>"}
 
 /obj/machinery/air_sensor/multitool_topic(var/mob/user, var/list/href_list, var/obj/O)

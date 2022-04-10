@@ -1,5 +1,5 @@
 /datum/species/human
-	name = "Human"
+	name = "Человек"
 	name_plural = "Humans"
 	name_adjective_male = "человеческий"
 	name_adjective_female = "человеческая"

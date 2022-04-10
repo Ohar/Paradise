@@ -136,7 +136,7 @@
 
 
 /obj/item/mecha_parts/mecha_equipment/gravcatapult/get_equip_info()
-	return "[..()] [mode==1?"([locked||"Nothing"])":null] \[<a href='?src=[UID()];mode=1'>S</a>|<a href='?src=[UID()];mode=2'>P</a>\]"
+	return "[..()] [mode==1?"([locked||"пусто"])":null] \[<a href='?src=[UID()];mode=1'>праща</a> | <a href='?src=[UID()];mode=2'>толкач</a>\]"
 
 /obj/item/mecha_parts/mecha_equipment/gravcatapult/Topic(href, href_list)
 	..()

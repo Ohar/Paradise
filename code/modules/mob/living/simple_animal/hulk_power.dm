@@ -396,7 +396,7 @@
 
 /obj/effect/proc_holder/spell/aoe_turf/hulk/hulk_mill/cast(list/targets,mob/user = user)
 	if (user.lying || user.incapacitated())
-		to_chat(user, "<span class='warning'>You can't do that right now!</span>")
+		to_chat(user, "<span class='warning'>Сейчас вы не можете этого сделать!</span>")
 		return
 	for(var/i in 1 to 45)
 		if(user.dir == 1)
@@ -451,7 +451,7 @@
 /obj/effect/proc_holder/spell/targeted/click/hulk/hulk_spit/cast(list/targets,mob/user)
 	var/target = targets[1]
 	if (user.lying || user.incapacitated())
-		to_chat(user, "<span class='warning'>You can't do that right now!</span>")
+		to_chat(user, "<span class='warning'>Сейчас вы не можете этого сделать!</span>")
 		return
 
 	var/turf/T = user.loc

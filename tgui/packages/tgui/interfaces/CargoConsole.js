@@ -93,7 +93,7 @@ const StatusPane = (_properties, context) => {
   }
 
   return (
-    <Section title="Status">
+    <Section title="Статус">
       <LabeledList>
         <LabeledList.Item label="Points Available">
           {points}

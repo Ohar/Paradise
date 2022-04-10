@@ -7,6 +7,7 @@
 	cure_text = "Сахар"
 	cures = list("sugar")
 	agent = "Пчелиный вирус"
+	form_gender = FEMALE
 	viable_mobtypes = list(/mob/living/carbon/human, /mob/living/carbon/human/monkey)
 	desc = "Если не вылечить, то субъект будет извергать пчёл."
 	severity = DANGEROUS

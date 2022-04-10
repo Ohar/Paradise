@@ -56,10 +56,10 @@
 	prescription_upgradable = 1
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi',
-		"Drask" = 'icons/mob/species/drask/eyes.dmi',
-		"Grey" = 'icons/mob/species/grey/eyes.dmi',
-		"Drask" = 'icons/mob/species/drask/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi',
+		"Драск" = 'icons/mob/species/drask/eyes.dmi',
+		"Серый" = 'icons/mob/species/grey/eyes.dmi',
+		"Драск" = 'icons/mob/species/drask/eyes.dmi'
 		)
 
 /obj/item/clothing/glasses/meson/night
@@ -107,9 +107,9 @@
 	resistance_flags = ACID_PROOF
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 100)
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi',
-		"Grey" = 'icons/mob/species/grey/eyes.dmi',
-		"Drask" = 'icons/mob/species/drask/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi',
+		"Серый" = 'icons/mob/species/grey/eyes.dmi',
+		"Драск" = 'icons/mob/species/drask/eyes.dmi'
 		)
 	actions_types = list(/datum/action/item_action/toggle_research_scanner)
 
@@ -132,7 +132,7 @@
 	item_state = "glasses"
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi'
 		)
 
 /obj/item/clothing/glasses/night
@@ -145,9 +145,9 @@
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_INVISIBLE //don't render darkness while wearing these
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi',
-		"Drask" = 'icons/mob/species/drask/eyes.dmi',
-		"Grey" = 'icons/mob/species/grey/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi',
+		"Драск" = 'icons/mob/species/drask/eyes.dmi',
+		"Серый" = 'icons/mob/species/grey/eyes.dmi'
 		)
 
 /obj/item/clothing/glasses/eyepatch
@@ -157,9 +157,9 @@
 	item_state = "eyepatch"
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi',
-		"Grey" = 'icons/mob/species/grey/eyes.dmi',
-		"Drask" = 'icons/mob/species/drask/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi',
+		"Серый" = 'icons/mob/species/grey/eyes.dmi',
+		"Драск" = 'icons/mob/species/drask/eyes.dmi'
 		)
 
 /obj/item/clothing/glasses/monocle
@@ -170,9 +170,9 @@
 	prescription_upgradable = 1
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi',
-		"Drask" = 'icons/mob/species/drask/eyes.dmi',
-		"Grey" = 'icons/mob/species/grey/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi',
+		"Драск" = 'icons/mob/species/drask/eyes.dmi',
+		"Серый" = 'icons/mob/species/grey/eyes.dmi'
 		)
 
 /obj/item/clothing/glasses/material
@@ -184,9 +184,9 @@
 	vision_flags = SEE_OBJS
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi',
-		"Drask" = 'icons/mob/species/drask/eyes.dmi',
-		"Grey" = 'icons/mob/species/grey/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi',
+		"Драск" = 'icons/mob/species/drask/eyes.dmi',
+		"Серый" = 'icons/mob/species/grey/eyes.dmi'
 		)
 
 /obj/item/clothing/glasses/material/cyber
@@ -214,9 +214,9 @@
 	prescription = 1
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi',
-		"Grey" = 'icons/mob/species/grey/eyes.dmi',
-		"Drask" = 'icons/mob/species/drask/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi',
+		"Серый" = 'icons/mob/species/grey/eyes.dmi',
+		"Драск" = 'icons/mob/species/drask/eyes.dmi'
 		)
 
 /obj/item/clothing/glasses/regular/hipster
@@ -232,9 +232,9 @@
 	item_state = "3d"
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi',
-		"Grey" = 'icons/mob/species/grey/eyes.dmi',
-		"Drask" = 'icons/mob/species/drask/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi',
+		"Серый" = 'icons/mob/species/grey/eyes.dmi',
+		"Драск" = 'icons/mob/species/drask/eyes.dmi'
 		)
 
 /obj/item/clothing/glasses/gglasses
@@ -244,9 +244,9 @@
 	item_state = "gglasses"
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi',
-		"Grey" = 'icons/mob/species/grey/eyes.dmi',
-		"Drask" = 'icons/mob/species/drask/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi',
+		"Серый" = 'icons/mob/species/grey/eyes.dmi',
+		"Драск" = 'icons/mob/species/drask/eyes.dmi'
 		)
 	prescription_upgradable = 1
 
@@ -261,9 +261,9 @@
 	prescription_upgradable = 1
 	dog_fashion = /datum/dog_fashion/head
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi',
-		"Drask" = 'icons/mob/species/drask/eyes.dmi',
-		"Grey" = 'icons/mob/species/grey/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi',
+		"Драск" = 'icons/mob/species/drask/eyes.dmi',
+		"Серый" = 'icons/mob/species/grey/eyes.dmi'
 		)
 
 /obj/item/clothing/glasses/sunglasses_fake
@@ -275,9 +275,9 @@
 	flash_protect = 0
 	tint = 0
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi',
-		"Drask" = 'icons/mob/species/drask/eyes.dmi',
-		"Grey" = 'icons/mob/species/grey/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi',
+		"Драск" = 'icons/mob/species/drask/eyes.dmi',
+		"Серый" = 'icons/mob/species/grey/eyes.dmi'
 		)
 
 /obj/item/clothing/glasses/sunglasses/noir
@@ -329,9 +329,9 @@
 	tint = 1
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi',
-		"Drask" = 'icons/mob/species/drask/eyes.dmi',
-		"Grey" = 'icons/mob/species/grey/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi',
+		"Драск" = 'icons/mob/species/drask/eyes.dmi',
+		"Серый" = 'icons/mob/species/grey/eyes.dmi'
 		)
 
 /obj/item/clothing/glasses/sunglasses/lasers
@@ -355,9 +355,9 @@
 	tint = 2
 	visor_vars_to_toggle = VISOR_FLASHPROTECT | VISOR_TINT
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi',
-		"Drask" = 'icons/mob/species/drask/eyes.dmi',
-		"Grey" = 'icons/mob/species/grey/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi',
+		"Драск" = 'icons/mob/species/drask/eyes.dmi',
+		"Серый" = 'icons/mob/species/grey/eyes.dmi'
 		)
 
 /obj/item/clothing/glasses/welding/attack_self(mob/user)
@@ -399,9 +399,9 @@
 	flash_protect = -1
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi',
-		"Grey" = 'icons/mob/species/grey/eyes.dmi',
-		"Drask" = 'icons/mob/species/drask/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi',
+		"Серый" = 'icons/mob/species/grey/eyes.dmi',
+		"Драск" = 'icons/mob/species/drask/eyes.dmi'
 		)
 
 /obj/item/clothing/glasses/thermal/emp_act(severity)
@@ -456,9 +456,9 @@
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_INVISIBLE
 	resistance_flags = LAVA_PROOF | FIRE_PROOF
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi',
-		"Grey" = 'icons/mob/species/grey/eyes.dmi',
-		"Drask" = 'icons/mob/species/drask/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi',
+		"Серый" = 'icons/mob/species/grey/eyes.dmi',
+		"Драск" = 'icons/mob/species/drask/eyes.dmi'
 		)
 
 /obj/item/clothing/glasses/godeye/attackby(obj/item/W as obj, mob/user as mob, params)
@@ -486,9 +486,9 @@
 	tint = 0
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/eyes.dmi',
-		"Grey" = 'icons/mob/species/grey/eyes.dmi',
-		"Drask" = 'icons/mob/species/drask/eyes.dmi'
+		"Вокс" = 'icons/mob/species/vox/eyes.dmi',
+		"Серый" = 'icons/mob/species/grey/eyes.dmi',
+		"Драск" = 'icons/mob/species/drask/eyes.dmi'
 		)
 
 /obj/item/clothing/glasses/tajblind/eng

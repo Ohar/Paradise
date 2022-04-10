@@ -231,7 +231,7 @@
 	name = "Circuit board (Brig Cell Control)"
 	build_path = /obj/machinery/computer/brigcells
 /obj/item/circuitboard/sm_monitor
-	name = "Circuit board (Supermatter Monitoring Console)"
+	name = "Печатная плата (Консоль мониторинга Суперматерии)"
 	build_path = /obj/machinery/computer/sm_monitor
 	origin_tech = "programming=2;powerstorage=2"
 

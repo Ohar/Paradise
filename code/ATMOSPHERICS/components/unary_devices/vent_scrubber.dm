@@ -350,7 +350,7 @@
 	return {"
 	<ul>
 		<li><b>Frequency:</b> <a href="?src=[UID()];set_freq=-1">[format_frequency(frequency)] GHz</a> (<a href="?src=[UID()];set_freq=[ATMOS_VENTSCRUB]">Reset</a>)</li>
-		<li>[format_tag("ID Tag","id_tag", "set_id")]</li>
+		<li>[format_tag("Название","id_tag", "set_id")]</li>
 	</ul>
 	"}
 
@@ -390,7 +390,7 @@
 		return 1
 	if(istype(W, /obj/item/wrench))
 		if(!(stat & NOPOWER) && on)
-			to_chat(user, "<span class='danger'>You cannot unwrench this [src], turn it off first.</span>")
+			to_chat(user, "<span class='danger'>Чтобы открутить, [src] нужно сначала отключить.</span>")
 			return 1
 
 	return ..()
@@ -404,9 +404,9 @@
 		if(!welded)
 			welded = TRUE
 			user.visible_message("<span class='notice'>[user] welds [src] shut!</span>",\
-				"<span class='notice'>You weld [src] shut!</span>")
+				"<span class='notice'>Вы привариваете [src] shut!</span>")
 		else
 			welded = FALSE
 			user.visible_message("<span class='notice'>[user] unwelds [src]!</span>",\
-				"<span class='notice'>You unweld [src]!</span>")
+				"<span class='notice'>Вы развариваете [src]!</span>")
 		update_icon()

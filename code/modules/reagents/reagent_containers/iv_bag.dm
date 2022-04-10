@@ -201,4 +201,4 @@
 
 /obj/item/reagent_containers/iv_bag/slime/Initialize(mapload)
 	. = ..()
-	name = "[initial(name)] - Slime Jelly"
+	name = "[initial(name)] - Слаймовое желе"

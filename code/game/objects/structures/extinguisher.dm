@@ -36,7 +36,7 @@
 
 /obj/structure/extinguisher_cabinet/AltClick(mob/living/user)
 	if(!istype(user) || user.incapacitated())
-		to_chat(user, "<span class='warning'>You can't do that right now!</span>")
+		to_chat(user, "<span class='warning'>Сейчас вы не можете этого сделать!</span>")
 		return
 	if(!in_range(src, user))
 		return

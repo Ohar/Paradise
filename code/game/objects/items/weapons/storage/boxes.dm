@@ -504,8 +504,8 @@
 	new /obj/item/reagent_containers/food/condiment(src)
 
 /obj/item/storage/box/cups
-	name = "box of paper cups"
-	desc = "It has pictures of paper cups on the front."
+	name = "коробка бумажных стаканчиков" // box of paper cups
+	desc = "На лицевой стороне изображены бумажные стаканчики."
 
 /obj/item/storage/box/cups/New()
 	..()

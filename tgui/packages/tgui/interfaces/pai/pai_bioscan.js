@@ -23,7 +23,7 @@ export const pai_bioscan = (props, context) => {
   }
   return (
     <LabeledList>
-      <LabeledList.Item label="Status">
+      <LabeledList.Item label="Статус">
         {dead ? (
           <Box bold color="red">
             Dead
@@ -34,7 +34,7 @@ export const pai_bioscan = (props, context) => {
           </Box>
         )}
       </LabeledList.Item>
-      <LabeledList.Item label="Health">
+      <LabeledList.Item label="Здоровье">
         <ProgressBar
           min={0}
           max={1}
@@ -56,12 +56,12 @@ export const pai_bioscan = (props, context) => {
           {tox}
         </Box>
       </LabeledList.Item>
-      <LabeledList.Item label="Burn Damage">
+      <LabeledList.Item label="Ожоги">
         <Box color="orange">
           {burn}
         </Box>
       </LabeledList.Item>
-      <LabeledList.Item label="Brute Damage">
+      <LabeledList.Item label="Раны">
         <Box color="red">
           {brute}
         </Box>

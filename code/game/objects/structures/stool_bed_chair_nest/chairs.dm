@@ -70,7 +70,7 @@
 		if(!item_chair || has_buckled_mobs())
 			return
 		if(usr.incapacitated())
-			to_chat(usr, "<span class='warning'>You can't do that right now!</span>")
+			to_chat(usr, "<span class='warning'>Сейчас вы не можете этого сделать!</span>")
 			return
 		if(!usr.has_right_hand() && !usr.has_left_hand())
 			to_chat(usr, "<span class='warning'>You try to grab the chair, but you are missing both of your hands!</span>")
@@ -134,7 +134,7 @@
 
 /obj/structure/chair/AltClick(mob/user)
 	if(user.incapacitated())
-		to_chat(user, "<span class='warning'>You can't do that right now!</span>")
+		to_chat(user, "<span class='warning'>Сейчас вы не можете этого сделать!</span>")
 		return
 	if(!Adjacent(user))
 		return

@@ -40,7 +40,7 @@
 
 		else if (href_list["interaction"] == "scratch")
 			if(((!istype(P.loc, /obj/structure/closet)) || (H.loc == P.loc)) && hashands && H.Adjacent(P))
-				if(H.zone_selected == "head" && !((P.dna.species.name == "Machine") || (P.dna.species.name == "Grey") || (P.dna.species.name == "Unathi")))
+				if(H.zone_selected == "head" && !((P.dna.species.name == "КПБ") || (P.dna.species.name == "Серый") || (P.dna.species.name == "Унати")))
 					H.visible_message("<B>[H]</B> [pick("чешет за ухом", "чешет голову")] <B>[P]</B>.")
 					if (istype(P.loc, /obj/structure/closet))
 						P.visible_message("<B>[H]</B> [pick("чешет за ухом", "чешет голову")] <B>[P]</B>.")

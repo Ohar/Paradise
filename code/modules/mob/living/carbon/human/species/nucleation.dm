@@ -1,5 +1,5 @@
 /datum/species/nucleation
-	name = "Nucleation"
+	name = "Нуклеация"
 	name_plural = "Nucleations"
 	icobase = 'icons/mob/human_races/r_nucleation.dmi'
 	blacklisted = TRUE
@@ -18,7 +18,7 @@
 	dietflags = DIET_OMNI		//still human at their core, so they maintain their eating habits and diet
 
 	//Default styles for created mobs.
-	default_hair = "Nucleation Crystals"
+	default_hair = "Кристаллы нуклеаций"
 
 	reagent_tag = PROCESS_ORG
 	has_organ = list(

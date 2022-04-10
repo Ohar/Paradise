@@ -87,7 +87,7 @@
 
 /obj/item/gun/magic/wand/resurrection/zap_self(mob/living/user)
 	user.revive()
-	to_chat(user, "<span class='notice'>You feel great!</span>")
+	to_chat(user, "<span class='notice'>Вы прекрасно себя чувствуете!</span>")
 	charges--
 	..()
 

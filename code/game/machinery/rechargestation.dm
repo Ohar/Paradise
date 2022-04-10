@@ -36,7 +36,7 @@
 	component_parts += new /obj/item/stock_parts/capacitor/adv(null)
 	component_parts += new /obj/item/stock_parts/manipulator/femto(null)
 	component_parts += new /obj/item/stock_parts/cell/super(null)
-	RefreshParts()	
+	RefreshParts()
 
 /obj/machinery/recharge_station/upgraded/New()
 	..()
@@ -253,7 +253,7 @@
 		return
 
 	if(panel_open)
-		to_chat(usr, "<span class='warning'>Close the maintenance panel first.</span>")
+		to_chat(usr, "<span class='warning'>Сначала закройте панель техобслуживания.</span>")
 		return
 
 	var/can_accept_user

@@ -110,7 +110,7 @@ won't update every console in existence) but it's more of a hassle to do. Also, 
 			if("plasma")
 				return_name = "Solid Plasma"
 			if("uranium")
-				return_name = "Uranium"
+				return_name = "Уран"
 			if("diamond")
 				return_name = "Diamond"
 			if("clown")
@@ -690,7 +690,7 @@ won't update every console in existence) but it's more of a hassle to do. Also, 
 	if(..())
 		return 1
 	if(!allowed(user) && !isobserver(user))
-		to_chat(user, "<span class='warning'>Access denied.</span>")
+		to_chat(user, "<span class='warning'>Доступ запрещён.</span>")
 		return TRUE
 	ui_interact(user)
 
@@ -761,7 +761,7 @@ won't update every console in existence) but it's more of a hassle to do. Also, 
 		materials_list[++materials_list.len] = list("name" = "Gold", "id" = MAT_GOLD, "amount" = machine.materials.amount(MAT_GOLD))
 		materials_list[++materials_list.len] = list("name" = "Silver", "id" = MAT_SILVER, "amount" = machine.materials.amount(MAT_SILVER))
 		materials_list[++materials_list.len] = list("name" = "Solid Plasma", "id" = MAT_PLASMA, "amount" = machine.materials.amount(MAT_PLASMA))
-		materials_list[++materials_list.len] = list("name" = "Uranium", "id" = MAT_URANIUM, "amount" = machine.materials.amount(MAT_URANIUM))
+		materials_list[++materials_list.len] = list("name" = "Уран", "id" = MAT_URANIUM, "amount" = machine.materials.amount(MAT_URANIUM))
 		materials_list[++materials_list.len] = list("name" = "Diamond", "id" = MAT_DIAMOND, "amount" = machine.materials.amount(MAT_DIAMOND))
 		materials_list[++materials_list.len] = list("name" = "Bananium", "id" = MAT_BANANIUM, "amount" = machine.materials.amount(MAT_BANANIUM))
 		materials_list[++materials_list.len] = list("name" = "Tranquillite", "id" = MAT_TRANQUILLITE, "amount" = machine.materials.amount(MAT_TRANQUILLITE))

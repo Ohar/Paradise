@@ -11,11 +11,11 @@
 	resistance_flags = ACID_PROOF
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/helmet.dmi',
-		"Unathi" = 'icons/mob/species/unathi/head.dmi',
-		"Tajaran" = 'icons/mob/species/tajaran/head.dmi',
-		"Vulpkanin" = 'icons/mob/species/vulpkanin/head.dmi',
-		"Grey" = 'icons/mob/species/grey/head.dmi'
+		"Вокс" = 'icons/mob/species/vox/helmet.dmi',
+		"Унати" = 'icons/mob/species/unathi/head.dmi',
+		"Таяран" = 'icons/mob/species/tajaran/head.dmi',
+		"Вульпканин" = 'icons/mob/species/vulpkanin/head.dmi',
+		"Серый" = 'icons/mob/species/grey/head.dmi'
 	)
 
 /obj/item/clothing/suit/bio_suit
@@ -36,10 +36,10 @@
 	put_on_delay = 70
 	resistance_flags = ACID_PROOF
 	sprite_sheets = list(
-		"Tajaran" = 'icons/mob/species/tajaran/suit.dmi',
-		"Unathi" = 'icons/mob/species/unathi/suit.dmi',
-		"Vulpkanin" = 'icons/mob/species/vulpkanin/suit.dmi',
-		"Vox" = 'icons/mob/species/vox/suit.dmi'
+		"Таяран" = 'icons/mob/species/tajaran/suit.dmi',
+		"Унати" = 'icons/mob/species/unathi/suit.dmi',
+		"Вульпканин" = 'icons/mob/species/vulpkanin/suit.dmi',
+		"Вокс" = 'icons/mob/species/vox/suit.dmi'
 		)
 
 
@@ -103,8 +103,8 @@
 	put_on_delay = 20
 
 	sprite_sheets = list(
-		"Tajaran" = 'icons/mob/species/tajaran/suit.dmi',
-		"Unathi" = 'icons/mob/species/unathi/suit.dmi',
-		"Vulpkanin" = 'icons/mob/species/vulpkanin/suit.dmi',
+		"Таяран" = 'icons/mob/species/tajaran/suit.dmi',
+		"Унати" = 'icons/mob/species/unathi/suit.dmi',
+		"Вульпканин" = 'icons/mob/species/vulpkanin/suit.dmi',
 		)
 	hide_tail_by_species = list("Unathi, Tajaran, Vulpkanin")

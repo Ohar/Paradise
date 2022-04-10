@@ -38,7 +38,7 @@ export const Teleporter = (props, context) => {
         )}
         {(powerstation && teleporterhub)
         && (
-          <Section title="Status">
+          <Section title="Статус">
             <LabeledList>
               <LabeledList.Item label="Regime">
                 <Button

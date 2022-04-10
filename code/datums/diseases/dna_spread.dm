@@ -3,7 +3,7 @@
 	max_stages = 4
 	spread_text = "Контактный"
 	spread_flags = CONTACT_GENERAL
-	cure_text = "Mutadone"
+	cure_text = "Мутадон"
 	cures = list("mutadone")
 	disease_flags = CAN_CARRY|CAN_RESIST|CURABLE
 	agent = "Ретровирус S4E1"

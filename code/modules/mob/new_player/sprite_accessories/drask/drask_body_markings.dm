@@ -1,7 +1,7 @@
 /datum/sprite_accessory/body_markings/drask
-    species_allowed = list("Drask")
+    species_allowed = list("Драск")
 
 /datum/sprite_accessory/body_markings/drask/arm_spines_drask
     icon = 'icons/mob/sprite_accessories/drask/drask_body_markings.dmi'
-    name = "Drask Arm Spines"
+    name = "Драсковые шипы на руках"
     icon_state = "armspines"

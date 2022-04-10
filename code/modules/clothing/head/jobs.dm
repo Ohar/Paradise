@@ -82,7 +82,7 @@
 	dog_fashion = /datum/dog_fashion/head/detective
 
 	sprite_sheets = list(
-	"Vox" = 'icons/mob/species/vox/head.dmi'
+	"Вокс" = 'icons/mob/species/vox/head.dmi'
 	)
 
 //Mime
@@ -174,7 +174,7 @@
 	icon_state = "surgcap_blue"
 	flags = BLOCKHEADHAIR
 	sprite_sheets = list(
-		"Drask" = 'icons/mob/species/drask/head.dmi'
+		"Драск" = 'icons/mob/species/drask/head.dmi'
 		)
 
 /obj/item/clothing/head/surgery/purple
