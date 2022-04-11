@@ -216,7 +216,7 @@
 					state_next = list(
 						"key"      = TOOL_WELDER,
 						"vis_msg"  = "{USER} welds the {HOLDER}'s armor.",
-						"self_msg" = "You weld the {HOLDER}'s armor."
+						"self_msg" = "Вы привариваете the {HOLDER}'s armor."
 					)
 				)
 				// EOF

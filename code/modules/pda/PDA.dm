@@ -272,7 +272,7 @@ GLOBAL_LIST_EMPTY(PDAs)
 			owner = idcard.registered_name
 			ownjob = idcard.assignment
 			ownrank = idcard.rank
-			name = "PDA-[owner] ([ownjob])"
+			name = "КПК — [owner] ([ownjob])"
 			to_chat(user, "<span class='notice'>Card scanned.</span>")
 			SStgui.update_uis(src)
 		else

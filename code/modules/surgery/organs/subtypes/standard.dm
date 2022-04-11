@@ -212,7 +212,7 @@
 	//Hair colour and style
 	var/hair_colour = "#000000"
 	var/sec_hair_colour = "#000000"
-	var/h_style = "Bald"
+	var/h_style = "Лысина"
 
 	//Head accessory colour and style
 	var/headacc_colour = "#000000"
@@ -221,7 +221,7 @@
 	//Facial hair colour and style
 	var/facial_colour = "#000000"
 	var/sec_facial_colour = "#000000"
-	var/f_style = "Shaved"
+	var/f_style = "Выбритость"
 
 /obj/item/organ/external/head/remove()
 	if(owner)

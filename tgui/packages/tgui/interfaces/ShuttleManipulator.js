@@ -159,7 +159,7 @@ const ModificationView = (props, context) => {
       {existing_shuttle ? (
         <Section title={"Selected Shuttle: " + existing_shuttle.name}>
           <LabeledList>
-            <LabeledList.Item label="Status">
+            <LabeledList.Item label="Статус">
               {existing_shuttle.status}
             </LabeledList.Item>
             {existing_shuttle.timer && (

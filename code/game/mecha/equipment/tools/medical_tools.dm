@@ -157,19 +157,19 @@
 	var/t1
 	switch(patient.stat)
 		if(0)
-			t1 = "Conscious"
+			t1 = "В сознании"
 		if(1)
-			t1 = "Unconscious"
+			t1 = "Без сознания"
 		if(2)
 			t1 = "*dead*"
 		else
 			t1 = "Unknown"
 	return {"<font color="[patient.health > 50 ? "blue" : "red"]"><b>Health:</b> [patient.stat > 1 ? "[t1]" : "[patient.health]% ([t1])"]</font><br />
-				<font color="[patient.bodytemperature > 50 ? "blue" : "red"]"><b>Core Temperature:</b> [patient.bodytemperature-T0C]&deg;C ([patient.bodytemperature*1.8-459.67]&deg;F)</font><br />
-				<font color="[patient.getBruteLoss() < 60 ? "blue" : "red"]"><b>Brute Damage:</b> [patient.getBruteLoss()]%</font><br />
-				<font color="[patient.getOxyLoss() < 60 ? "blue" : "red"]"><b>Respiratory Damage:</b> [patient.getOxyLoss()]%</font><br />
-				<font color="[patient.getToxLoss() < 60 ? "blue" : "red"]"><b>Toxin Content:</b> [patient.getToxLoss()]%</font><br />
-				<font color="[patient.getFireLoss() < 60 ? "blue" : "red"]"><b>Burn Severity:</b> [patient.getFireLoss()]%</font><br />
+				<font color="[patient.bodytemperature > 50 ? "blue" : "red"]"><b>Core Temperature:</b> [patient.bodytemperature-T0C]°C ([patient.bodytemperature*1.8-459.67]&deg;F)</font><br />
+				<font color="[patient.getBruteLoss() < 60 ? "blue" : "red"]"><b>Раны:</b> [patient.getBruteLoss()]%</font><br />
+				<font color="[patient.getOxyLoss() < 60 ? "blue" : "red"]"><b>Асфиксия:</b> [patient.getOxyLoss()]%</font><br />
+				<font color="[patient.getToxLoss() < 60 ? "blue" : "red"]"><b>Интоксикация:</b> [patient.getToxLoss()]%</font><br />
+				<font color="[patient.getFireLoss() < 60 ? "blue" : "red"]"><b>Тяжесть ожогов:</b> [patient.getFireLoss()]%</font><br />
 				<font color="red">[patient.getCloneLoss() ? "Subject appears to have cellular damage." : ""]</font><br />
 				<font color="red">[patient.getBrainLoss() ? "Significant brain damage detected." : ""]</font><br />
 				"}
@@ -260,7 +260,7 @@
 	create_reagents(max_volume)
 	reagents.set_reacting(FALSE)
 	syringes = new
-	known_reagents = list("epinephrine"="Epinephrine","charcoal"="Charcoal")
+	known_reagents = list("epinephrine"="Эпинефрин","charcoal"="Активированный уголь")
 	processed_reagents = new
 
 /obj/item/mecha_parts/mecha_equipment/medical/syringe_gun/detach()

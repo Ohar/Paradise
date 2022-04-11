@@ -20,7 +20,7 @@
 		return
 
 	if(!allowed(user))
-		to_chat(user, "<span class='warning'>Access denied.</span>")
+		to_chat(user, "<span class='warning'>Доступ запрещён.</span>")
 		return
 
 	interact(user)
@@ -54,7 +54,7 @@
 		return
 
 	if(!allowed(usr) && !usr.can_admin_interact())
-		to_chat(usr, "<span class='warning'>Access denied.</span>")
+		to_chat(usr, "<span class='warning'>Доступ запрещён.</span>")
 		return
 
 	if((usr.contents.Find(src) || (in_range(src, usr) && istype(src.loc, /turf))) || (istype(usr, /mob/living/silicon)))

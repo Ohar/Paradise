@@ -213,7 +213,7 @@
 		for(var/hair_style in valid_hairstyles)
 			hair_styles += list(list("hairstyle" = hair_style))
 		data["hair_styles"] = hair_styles
-		data["hair_style"] = head_organ ? head_organ.h_style : "Skinhead"
+		data["hair_style"] = head_organ ? head_organ.h_style : "Скинхэд"
 
 	data["change_facial_hair"] = can_change(APPEARANCE_FACIAL_HAIR)
 	if(data["change_facial_hair"])
@@ -221,7 +221,7 @@
 		for(var/facial_hair_style in valid_facial_hairstyles)
 			facial_hair_styles += list(list("facialhairstyle" = facial_hair_style))
 		data["facial_hair_styles"] = facial_hair_styles
-		data["facial_hair_style"] = head_organ ? head_organ.f_style : "Shaved"
+		data["facial_hair_style"] = head_organ ? head_organ.f_style : "Выбритость"
 
 	data["change_head_markings"] = can_change_markings("head")
 	if(data["change_head_markings"])

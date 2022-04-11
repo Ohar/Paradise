@@ -9,7 +9,7 @@
 	W.age = H.age
 	W.sex = capitalize(H.gender)
 	W.registered_name = H.real_name
-	W.name = "[H.real_name]'s ID Card ([rt_job])"
+	W.name = "ID-карта [H.real_name] ([rt_job])"
 	W.access = get_centcom_access(W.assignment)
 	W.photo = get_id_photo(H)
 	if(H.mind && H.mind.initial_account && H.mind.initial_account.account_number)
@@ -21,7 +21,7 @@
 		PDA.owner = H.real_name
 		PDA.ownjob = rt_assignment
 		PDA.ownrank = rt_assignment
-		PDA.name = "PDA-[H.real_name] ([PDA.ownjob])"
+		PDA.name = "КПК — [H.real_name] ([PDA.ownjob])"
 
 /datum/outfit/job/centcom/response_team/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()

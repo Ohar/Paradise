@@ -133,7 +133,7 @@
 	//Human specific stuff.
 	var/mob_species = null		//Set species
 	var/allow_species_pick = FALSE
-	var/list/pickable_species = list("Human", "Vulpkanin", "Tajaran", "Unathi", "Skrell", "Diona")
+	var/list/pickable_species = list("Человек", "Вульпканин", "Таяран", "Унати", "Скрелл", "Диона")
 	var/datum/outfit/outfit = /datum/outfit	//If this is a path, it will be instanced in Initialize()
 	var/disable_pda = TRUE
 	var/disable_sensors = TRUE
@@ -531,7 +531,7 @@
 	icon_state = "remains"
 	description = "Be a spooky scary skeleton."	//not mapped in anywhere so admin spawner, who knows what they'll use this for.
 	flavour_text = "By unknown powers, your skeletal remains have been reanimated! Walk this mortal plain and terrorize all living adventurers who dare cross your path."
-	assignedrole = "Skeleton"
+	assignedrole = "Скелет"
 
 /////////////////Officers//////////////////////
 

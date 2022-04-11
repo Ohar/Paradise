@@ -12,7 +12,7 @@
 	var/obj/effect/landmark/battle_mob_point/avatar_point
 	var/obj/effect/nanomob/battle/avatar
 	var/ready = 0
-	var/team = "Grey"
+	var/team = "Серый"
 
 /obj/machinery/computer/mob_battle_terminal/red
 	pixel_y = 24

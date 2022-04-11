@@ -75,7 +75,7 @@
 	category = list("initial","Tools")
 
 /datum/design/screwdriver
-	name = "Screwdriver"
+	name = "Отвёртка"
 	id = "screwdriver"
 	build_type = AUTOLATHE
 	materials = list(MAT_METAL = 75)

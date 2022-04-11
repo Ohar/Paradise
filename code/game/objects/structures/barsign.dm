@@ -59,7 +59,7 @@
 
 /obj/structure/sign/barsign/attack_hand(mob/user as mob)
 	if(!src.allowed(user))
-		to_chat(user, "<span class = 'info'>Access denied.</span>")
+		to_chat(user, "<span class = 'info'>Доступ запрещён</span>")
 		return
 	if(broken)
 		to_chat(user, "<span class ='danger'>The controls seem unresponsive.</span>")

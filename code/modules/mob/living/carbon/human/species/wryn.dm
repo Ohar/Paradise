@@ -1,6 +1,8 @@
 /datum/species/wryn
-	name = "Wryn"
-	name_plural = "Wryn"
+	name = "Врин"
+	name_plural = "Врин"
+	name_adjective_male = "вринский"
+	name_adjective_female = "вринская"
 	icobase = 'icons/mob/human_races/r_wryn.dmi'
 	deform = 'icons/mob/human_races/r_wryn.dmi'
 	blacklisted = TRUE
@@ -180,7 +182,7 @@
 			to_chat(target, "<span class='danger'>You hear a loud crunch as your antennae is ripped off your head by [user].</span>")
 			to_chat(target, "<span class='danger'><B>It's so quiet...</B></span>")
 			var/obj/item/organ/external/head/head_organ = target.get_organ("head")
-			head_organ.h_style = "Bald"
+			head_organ.h_style = "Лысина"
 			target.update_hair()
 
 			add_attack_logs(user, target, "Antennae removed")

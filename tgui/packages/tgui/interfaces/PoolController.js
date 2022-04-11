@@ -46,7 +46,7 @@ export const PoolController = (properties, context) => {
   return (
     <Window>
       <Window.Content>
-        <Section title="Status">
+        <Section title="Статус">
           <LabeledList>
             <LabeledList.Item label="Current Temperature">
               <Box color={currentColor}>

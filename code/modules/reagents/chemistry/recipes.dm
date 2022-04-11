@@ -32,10 +32,10 @@
 		if(M)
 			message += " - Carried By: [key_name_admin(M)]([ADMIN_QUE(M,"?")]) ([ADMIN_FLW(M,"FLW")])"
 		else
-			message += " - Last Fingerprint: [(A.fingerprintslast ? A.fingerprintslast : "N/A")]"
+			message += " - Last Fingerprint: [(A.fingerprintslast ? A.fingerprintslast : "Нет")]"
 
 		message_admins(message, 0, 1)
-		log_game("[reaction_name] chemical mob spawn reaction occuring at [AREACOORD(T)] carried by [key_name(M)] with last fingerprint [A.fingerprintslast? A.fingerprintslast : "N/A"]")
+		log_game("[reaction_name] chemical mob spawn reaction occuring at [AREACOORD(T)] carried by [key_name(M)] with last fingerprint [A.fingerprintslast? A.fingerprintslast : "Нет"]")
 
 		playsound(get_turf(holder.my_atom), 'sound/effects/phasein.ogg', 100, 1)
 

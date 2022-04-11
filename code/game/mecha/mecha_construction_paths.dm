@@ -223,7 +223,7 @@
 				holder.icon_state = "ripley8"
 		if(4)
 			if(diff==FORWARD)
-				user.visible_message("[user] welds the internal armor layer to the [holder].", "You weld the internal armor layer to the [holder].")
+				user.visible_message("[user] welds the internal armor layer to the [holder].", "Вы привариваете the internal armor layer to the [holder].")
 				holder.icon_state = "ripley11"
 			else
 				user.visible_message("[user] unfastens the internal armor layer.", "You unfasten the internal armor layer.")
@@ -246,7 +246,7 @@
 				holder.icon_state = "ripley11"
 		if(1)
 			if(diff==FORWARD)
-				user.visible_message("[user] welds the external armor layer to the [holder].", "You weld the external armor layer to the [holder].")
+				user.visible_message("[user] welds the external armor layer to the [holder].", "Вы привариваете the external armor layer to the [holder].")
 			else
 				user.visible_message("[user] unfastens the external armor layer.", "You unfasten the external armor layer.")
 				holder.icon_state = "ripley12"
@@ -498,7 +498,7 @@
 				holder.icon_state = "gygax14"
 		if(4)
 			if(diff==FORWARD)
-				user.visible_message("[user] welds the internal armor layer to the [holder].", "You weld the internal armor layer to the [holder].")
+				user.visible_message("[user] welds the internal armor layer to the [holder].", "Вы привариваете the internal armor layer to the [holder].")
 				holder.icon_state = "gygax17"
 			else
 				user.visible_message("[user] unfastens the internal armor layer.", "You unfasten the internal armor layer.")
@@ -521,7 +521,7 @@
 				holder.icon_state = "gygax17"
 		if(1)
 			if(diff==FORWARD)
-				user.visible_message("[user] welds Gygax Armor Plates to the [holder].", "You weld Gygax Armor Plates to the [holder].")
+				user.visible_message("[user] welds Gygax Armor Plates to the [holder].", "Вы привариваете Gygax Armor Plates to the [holder].")
 			else
 				user.visible_message("[user] unfastens Gygax Armor Plates.", "You unfasten Gygax Armor Plates.")
 				holder.icon_state = "gygax18"
@@ -708,7 +708,7 @@
 				holder.icon_state = "fireripley8"
 		if(5)
 			if(diff==FORWARD)
-				user.visible_message("[user] welds the internal armor layer to the [holder].", "You weld the internal armor layer to the [holder].")
+				user.visible_message("[user] welds the internal armor layer to the [holder].", "Вы привариваете the internal armor layer to the [holder].")
 				holder.icon_state = "fireripley11"
 			else
 				user.visible_message("[user] unfastens the internal armor layer.", "You unfasten the internal armor layer.")
@@ -740,7 +740,7 @@
 				holder.icon_state = "fireripley12"
 		if(1)
 			if(diff==FORWARD)
-				user.visible_message("[user] welds the external armor layer to the [holder].", "You weld the external armor layer to the [holder].")
+				user.visible_message("[user] welds the external armor layer to the [holder].", "Вы привариваете the external armor layer to the [holder].")
 			else
 				user.visible_message("[user] unfastens the external armor layer.", "You unfasten the external armor layer.")
 				holder.icon_state = "fireripley13"
@@ -1138,7 +1138,7 @@
 				holder.icon_state = "durand14"
 		if(4)
 			if(diff==FORWARD)
-				user.visible_message("[user] welds the internal armor layer to the [holder].", "You weld the internal armor layer to the [holder].")
+				user.visible_message("[user] welds the internal armor layer to the [holder].", "Вы привариваете the internal armor layer to the [holder].")
 				holder.icon_state = "durand17"
 			else
 				user.visible_message("[user] unfastens the internal armor layer.", "You unfasten the internal armor layer.")
@@ -1161,7 +1161,7 @@
 				holder.icon_state = "durand17"
 		if(1)
 			if(diff==FORWARD)
-				user.visible_message("[user] welds Durand Armor Plates to the [holder].", "You weld Durand Armor Plates to the [holder].")
+				user.visible_message("[user] welds Durand Armor Plates to the [holder].", "Вы привариваете Durand Armor Plates to the [holder].")
 			else
 				user.visible_message("[user] unfastens Durand Armor Plates.", "You unfasten Durand Armor Plates.")
 				holder.icon_state = "durand18"
@@ -1454,7 +1454,7 @@
 				holder.icon_state = "phazon17"
 		if(5)
 			if(diff==FORWARD)
-				user.visible_message("[user] welds the phase armor layer to the [holder].", "You weld the phase armor layer to the [holder].")
+				user.visible_message("[user] welds the phase armor layer to the [holder].", "Вы привариваете the phase armor layer to the [holder].")
 				holder.icon_state = "phazon20"
 			else
 				user.visible_message("[user] unfastens the phase armor layer.", "You unfasten the phase armor layer.")
@@ -1477,7 +1477,7 @@
 				holder.icon_state = "phazon20"
 		if(2)
 			if(diff==FORWARD)
-				user.visible_message("[user] welds Phazon Armor Plates to the [holder].", "You weld Phazon Armor Plates to the [holder].")
+				user.visible_message("[user] welds Phazon Armor Plates to the [holder].", "Вы привариваете Phazon Armor Plates to the [holder].")
 			else
 				user.visible_message("[user] unfastens Phazon Armor Plates.", "You unfasten Phazon Armor Plates.")
 				holder.icon_state = "phazon21"
@@ -1663,7 +1663,7 @@
 				holder.icon_state = "odysseus8"
 		if(4)
 			if(diff==FORWARD)
-				user.visible_message("[user] welds the internal armor layer to the [holder].", "You weld the internal armor layer to the [holder].")
+				user.visible_message("[user] welds the internal armor layer to the [holder].", "Вы привариваете the internal armor layer to the [holder].")
 				holder.icon_state = "odysseus11"
 			else
 				user.visible_message("[user] unfastens the internal armor layer.", "You unfasten the internal armor layer.")
@@ -1687,7 +1687,7 @@
 				holder.icon_state = "odysseus11"
 		if(1)
 			if(diff==FORWARD)
-				user.visible_message("[user] welds the external armor layer to the [holder].", "You weld the external armor layer to the [holder].")
+				user.visible_message("[user] welds the external armor layer to the [holder].", "Вы привариваете the external armor layer to the [holder].")
 				holder.icon_state = "odysseus14"
 			else
 				user.visible_message("[user] unfastens the external armor layer.", "You unfasten the external armor layer.")
@@ -1871,7 +1871,7 @@
 				holder.icon_state = "clarke8"
 		if(4)
 			if(diff==FORWARD)
-				user.visible_message("[user] welds the internal armor layer to the [holder].", "You weld the internal armor layer to the [holder].")
+				user.visible_message("[user] welds the internal armor layer to the [holder].", "Вы привариваете the internal armor layer to the [holder].")
 				holder.icon_state = "clarke11"
 			else
 				user.visible_message("[user] unfastens the internal armor layer.", "You unfasten the internal armor layer.")
@@ -1895,7 +1895,7 @@
 				holder.icon_state = "clarke11"
 		if(1)
 			if(diff==FORWARD)
-				user.visible_message("[user] welds the external armor layer to the [holder].", "You weld the external armor layer to the [holder].")
+				user.visible_message("[user] welds the external armor layer to the [holder].", "Вы привариваете the external armor layer to the [holder].")
 				holder.icon_state = "clarke14"
 			else
 				user.visible_message("[user] unfastens the external armor layer.", "You unfasten the external armor layer.")

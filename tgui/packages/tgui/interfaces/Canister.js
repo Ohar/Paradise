@@ -137,7 +137,7 @@ export const Canister = (props, context) => {
           <LabeledControls>
             <LabeledControls.Item
               minWidth="66px"
-              label="Pressure">
+              label="Давление">
               <AnimatedNumber
                 value={tankPressure}
                 format={value => {
@@ -155,7 +155,7 @@ export const Canister = (props, context) => {
                   size={1.25}
                   color={!!valveOpen && 'yellow'}
                   value={releasePressure}
-                  unit="kPa"
+                  unit="кПа"
                   minValue={minReleasePressure}
                   maxValue={maxReleasePressure}
                   step={5}
@@ -229,7 +229,7 @@ export const Canister = (props, context) => {
               <LabeledList.Item label="Label">
                 {holdingTank.name}
               </LabeledList.Item>
-              <LabeledList.Item label="Pressure">
+              <LabeledList.Item label="Давление">
                 <AnimatedNumber value={holdingTank.tankPressure} /> kPa
               </LabeledList.Item>
             </LabeledList>

@@ -240,7 +240,7 @@
 	switch(action)
 		if("vend")
 			if(is_secure && !emagged && scan_id && !allowed(usr)) //secure fridge check
-				to_chat(usr, "<span class='warning'>Access denied.</span>")
+				to_chat(usr, "<span class='warning'>Доступ запрещён.</span>")
 				return FALSE
 
 			var/index = text2num(params["index"])

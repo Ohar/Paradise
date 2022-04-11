@@ -59,7 +59,7 @@
 		for(var/obj/O in cargo)
 			output += "<a href='?src=[UID()];drop_from_cargo=\ref[O]'>Unload</a> : [O]<br>"
 	else
-		output += "Nothing"
+		output += "Пусто"
 	output += "</div>"
 	return output
 

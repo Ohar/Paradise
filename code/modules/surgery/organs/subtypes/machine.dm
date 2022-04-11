@@ -10,7 +10,7 @@
 
 /obj/item/organ/external/head/ipc/New(mob/living/carbon/holder, datum/species/species_override = null)
 	..(holder, /datum/species/machine) // IPC heads need to be explicitly set to this since you can print them
-	robotize("Morpheus Cyberkinetics")
+	robotize("«Морфей Кибернетикс»")
 
 /obj/item/organ/external/chest/ipc
 	species_type = /datum/species/machine
@@ -20,7 +20,7 @@
 
 /obj/item/organ/external/chest/ipc/New()
 	..()
-	robotize("Morpheus Cyberkinetics")
+	robotize("«Морфей Кибернетикс»")
 
 /obj/item/organ/external/groin/ipc
 	species_type = /datum/species/machine
@@ -30,7 +30,7 @@
 
 /obj/item/organ/external/groin/ipc/New()
 	..()
-	robotize("Morpheus Cyberkinetics")
+	robotize("«Морфей Кибернетикс»")
 
 /obj/item/organ/external/arm/ipc
 	species_type = /datum/species/machine
@@ -40,7 +40,7 @@
 
 /obj/item/organ/external/arm/ipc/New()
 	..()
-	robotize("Morpheus Cyberkinetics")
+	robotize("«Морфей Кибернетикс»")
 
 /obj/item/organ/external/arm/right/ipc
 	species_type = /datum/species/machine
@@ -50,7 +50,7 @@
 
 /obj/item/organ/external/arm/right/ipc/New()
 	..()
-	robotize("Morpheus Cyberkinetics")
+	robotize("«Морфей Кибернетикс»")
 
 /obj/item/organ/external/leg/ipc
 	species_type = /datum/species/machine
@@ -60,7 +60,7 @@
 
 /obj/item/organ/external/leg/ipc/New()
 	..()
-	robotize("Morpheus Cyberkinetics")
+	robotize("«Морфей Кибернетикс»")
 
 /obj/item/organ/external/leg/right/ipc
 	species_type = /datum/species/machine
@@ -70,7 +70,7 @@
 
 /obj/item/organ/external/leg/right/ipc/New()
 	..()
-	robotize("Morpheus Cyberkinetics")
+	robotize("«Морфей Кибернетикс»")
 
 /obj/item/organ/external/foot/ipc
 	species_type = /datum/species/machine
@@ -80,7 +80,7 @@
 
 /obj/item/organ/external/foot/ipc/New()
 	..()
-	robotize("Morpheus Cyberkinetics")
+	robotize("«Морфей Кибернетикс»")
 
 /obj/item/organ/external/foot/right/ipc
 	species_type = /datum/species/machine
@@ -90,7 +90,7 @@
 
 /obj/item/organ/external/foot/right/ipc/New()
 	..()
-	robotize("Morpheus Cyberkinetics")
+	robotize("«Морфей Кибернетикс»")
 
 /obj/item/organ/external/hand/ipc
 	species_type = /datum/species/machine
@@ -100,7 +100,7 @@
 
 /obj/item/organ/external/hand/ipc/New()
 	..()
-	robotize("Morpheus Cyberkinetics")
+	robotize("«Морфей Кибернетикс»")
 
 /obj/item/organ/external/hand/right/ipc
 	species_type = /datum/species/machine
@@ -110,7 +110,7 @@
 
 /obj/item/organ/external/hand/right/ipc/New()
 	..()
-	robotize("Morpheus Cyberkinetics")
+	robotize("«Морфей Кибернетикс»")
 
 /obj/item/organ/internal/cell
 	species_type = /datum/species/machine

@@ -110,7 +110,7 @@
 				update_icon()
 				updateUsrDialog()
 		else
-			to_chat(user, "<span class='warning'>Close the maintenance panel first.</span>")
+			to_chat(user, "<span class='warning'>Сначала закройте панель техобслуживания.</span>")
 		return
 
 	else if(istype(O, /obj/item/storage/bag/plants))

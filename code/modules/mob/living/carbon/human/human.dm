@@ -1384,11 +1384,11 @@
 	if(dna.species.default_hair)
 		H.h_style = dna.species.default_hair
 	else
-		H.h_style = "Bald"
+		H.h_style = "Лысина"
 	if(dna.species.default_fhair)
 		H.f_style = dna.species.default_fhair
 	else
-		H.f_style = "Shaved"
+		H.f_style = "Выбритость"
 	if(dna.species.default_headacc)
 		H.ha_style = dna.species.default_headacc
 	else
@@ -1646,10 +1646,10 @@ Eyes need to have significantly high darksight to shine unless the mob has the X
 		to_chat(src, "<span class='danger'>They don't have a mouth, you cannot perform CPR!</span>")
 		return
 	if((head && (head.flags_cover & HEADCOVERSMOUTH)) || (wear_mask && (wear_mask.flags_cover & MASKCOVERSMOUTH) && !wear_mask.mask_adjusted))
-		to_chat(src, "<span class='warning'>Remove your mask first!</span>")
+		to_chat(src, "<span class='warning'>Сначала снимите свою маску!</span>")
 		return
 	if((H.head && (H.head.flags_cover & HEADCOVERSMOUTH)) || (H.wear_mask && (H.wear_mask.flags_cover & MASKCOVERSMOUTH) && !H.wear_mask.mask_adjusted))
-		to_chat(src, "<span class='warning'>Remove [H.p_their()] mask first!</span>")
+		to_chat(src, "<span class='warning'>Снимите [H.p_their()] маску first!</span>")
 		return
 	if(H.receiving_cpr) // To prevent spam stacking
 		to_chat(src, "<span class='warning'>They are already receiving CPR!</span>")
@@ -1670,7 +1670,7 @@ Eyes need to have significantly high darksight to shine unless the mob has the X
 			return TRUE
 	else
 		H.receiving_cpr = FALSE
-		to_chat(src, "<span class='danger'>You need to stay still while performing CPR!</span>")
+		to_chat(src, "<span class='danger'>Вы не должны передвигаться при выполнении СЛР.!</span>")
 
 /mob/living/carbon/human/canBeHandcuffed()
 	if(get_num_arms() >= 2)
@@ -1728,26 +1728,26 @@ Eyes need to have significantly high darksight to shine unless the mob has the X
 
 /mob/living/carbon/human/selfFeed(var/obj/item/reagent_containers/food/toEat, fullness)
 	if(!check_has_mouth())
-		to_chat(src, "Where do you intend to put \the [toEat]? You don't have a mouth!")
+		to_chat(src, "Как вы намеревались съесть [toEat]? У вас нет рта!")
 		return 0
 	return ..()
 
 /mob/living/carbon/human/forceFed(var/obj/item/reagent_containers/food/toEat, mob/user, fullness)
 	if(!check_has_mouth())
 		if(!((istype(toEat, /obj/item/reagent_containers/food/drinks) && (ismachineperson(src)))))
-			to_chat(user, "Where do you intend to put \the [toEat]? \The [src] doesn't have a mouth!")
+			to_chat(user, "Куда вы намеревались вложить [toEat]? У [src] нет рта!")
 			return 0
 	return ..()
 
 /mob/living/carbon/human/selfDrink(var/obj/item/reagent_containers/food/drinks/toDrink)
 	if(!check_has_mouth())
 		if(!ismachineperson(src))
-			to_chat(src, "Where do you intend to put \the [src]? You don't have a mouth!")
+			to_chat(src, "Куда вы намеревались влить [src]? У вас нет рта!")
 			return 0
 		else
-			to_chat(src, "<span class='notice'>You pour a bit of liquid from [toDrink] into your connection port.</span>")
+			to_chat(src, "<span class='notice'>Вы вливаете немного жидкости из [toDrink] в свой соединительный порт.</span>")
 	else
-		to_chat(src, "<span class='notice'>You swallow a gulp of [toDrink].</span>")
+		to_chat(src, "<span class='notice'>Вы делаете глоток [toDrink].</span>")
 	return 1
 
 /mob/living/carbon/human/can_track(mob/living/user)

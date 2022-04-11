@@ -16,7 +16,7 @@ BONUS
 
 /datum/symptom/beard
 
-	name = "Facial Hypertrichosis"
+	name = "Лицевой гипертрихоз"
 	stealth = -3
 	resistance = -1
 	stage_speed = -3
@@ -33,18 +33,18 @@ BONUS
 			var/obj/item/organ/external/head/head_organ = H.get_organ("head")
 			switch(A.stage)
 				if(1, 2)
-					to_chat(H, "<span class='warning'>Your chin itches.</span>")
-					if(head_organ.f_style == "Shaved")
+					to_chat(H, "<span class='warning'>У вас начинается чесаться подбородок.</span>")
+					if(head_organ.f_style == "Выбритость")
 						head_organ.f_style = "Jensen Beard"
 						H.update_fhair()
 				if(3, 4)
-					to_chat(H, "<span class='warning'>You feel tough.</span>")
-					if(!(head_organ.f_style == "Dwarf Beard") && !(head_organ.f_style == "Very Long Beard") && !(head_organ.f_style == "Full Beard"))
-						head_organ.f_style = "Full Beard"
+					to_chat(H, "<span class='warning'>Вы чувствуете себя на 20% круче.</span>")
+					if(!(head_organ.f_style == "Дварфийская борода") && !(head_organ.f_style == "Очень длинная борода") && !(head_organ.f_style == "Большая борода"))
+						head_organ.f_style = "Большая борода"
 						H.update_fhair()
 				else
-					to_chat(H, "<span class='warning'>You feel manly!</span>")
-					if(!(head_organ.f_style == "Dwarf Beard") && !(head_organ.f_style == "Very Long Beard"))
-						head_organ.f_style = pick("Dwarf Beard", "Very Long Beard")
+					to_chat(H, "<span class='warning'>Вы чувствуете прилив мужественности!</span>")
+					if(!(head_organ.f_style == "Дварфийская борода") && !(head_organ.f_style == "Очень длинная борода"))
+						head_organ.f_style = pick("Дварфийская борода", "Очень длинная борода")
 						H.update_fhair()
 	return

@@ -48,8 +48,8 @@
 	var/gender = NEUTER	//Determines if the accessory will be skipped or included in random hair generations
 
 	// Restrict some styles to specific species
-	var/list/species_allowed = list("Human", "Slime People")
-	var/list/sprite_sheets = list() //For accessories common across species but need to use 'fitted' sprites (like underwear). e.g. list("Vox" = 'icons/mob/species/vox/iconfile.dmi')
+	var/list/species_allowed = list("Человек", "Слаймомен")
+	var/list/sprite_sheets = list() //For accessories common across species but need to use 'fitted' sprites (like underwear). e.g. list("Вокс" = 'icons/mob/species/vox/iconfile.dmi')
 	var/list/models_allowed = list() //Specifies which, if any, hairstyles or markings can be accessed by which prosthetics. Should equal the manufacturing company name in robolimbs.dm.
 	var/list/heads_allowed = null //Specifies which, if any, alt heads a head marking, hairstyle or facial hair style is compatible with.
 	var/list/tails_allowed = null //Specifies which, if any, tails a tail marking is compatible with.
@@ -68,9 +68,9 @@
 
 /datum/sprite_accessory/hair/bald
 	icon = 'icons/mob/human_face.dmi' // Keep bald hair here, as for some reason, putting it elsewhere lead to it being colourable - Also it make sense as it is shared by everyone.
-	name = "Bald"
+	name = "Лысина"
 	icon_state = "bald"
-	species_allowed = list("Human", "Unathi", "Vox", "Diona", "Kidan", "Grey", "Plasmaman", "Skeleton", "Vulpkanin", "Tajaran")
+	species_allowed = list("Человек", "Унати", "Вокс", "Диона", "Кидан", "Серый", "Плазмомен", "Скелет", "Вульпканин", "Таяран")
 	glasses_over = 1
 
 /datum/sprite_accessory/facial_hair
@@ -85,20 +85,20 @@
 
 /datum/sprite_accessory/head_accessory
 	icon = 'icons/mob/body_accessory.dmi'
-	species_allowed = list("Unathi", "Vulpkanin", "Tajaran", "Machine")
+	species_allowed = list("Унати", "Вульпканин", "Таяран", "КПБ")
 	icon_state = "accessory_none"
 	var/over_hair
 
 /datum/sprite_accessory/head_accessory/none
 	name = "None"
-	species_allowed = list("Human", "Unathi", "Diona", "Grey", "Kidan", "Machine", "Tajaran", "Vulpkanin", "Skrell", "Slime People", "Skeleton", "Vox")
+	species_allowed = list("Человек", "Унати", "Диона", "Серый", "Кидан", "КПБ", "Таяран", "Вульпканин", "Скрелл", "Слаймомен", "Скелет", "Вокс")
 	icon_state = "accessory_none"
 
 /* BODY MARKINGS */
 
 /datum/sprite_accessory/body_markings
 	icon = 'icons/mob/sprite_accessories/human/human_body_markings.dmi'
-	species_allowed = list("Unathi", "Tajaran", "Vulpkanin", "Machine", "Vox", "Kidan")
+	species_allowed = list("Унати", "Таяран", "Вульпканин", "КПБ", "Вокс", "Кидан")
 	icon_state = "accessory_none"
 	marking_location = "body"
 
@@ -133,7 +133,7 @@
 /datum/sprite_accessory/skin/human
 	name = "Default human skin"
 	icon_state = "default"
-	species_allowed = list("Human")
+	species_allowed = list("Человек")
 
 /datum/sprite_accessory/skin/human/human_tatt01
 	name = "Tatt01 human skin"
@@ -143,42 +143,42 @@
 	name = "Default tajaran skin"
 	icon_state = "default"
 	icon = 'icons/mob/human_races/r_tajaran.dmi'
-	species_allowed = list("Tajaran")
+	species_allowed = list("Таяран")
 
 /datum/sprite_accessory/skin/vulpkanin
 	name = "Default Vulpkanin skin"
 	icon_state = "default"
 	icon = 'icons/mob/human_races/r_vulpkanin.dmi'
-	species_allowed = list("Vulpkanin")
+	species_allowed = list("Вульпканин")
 
 /datum/sprite_accessory/skin/unathi
 	name = "Default Unathi skin"
 	icon_state = "default"
 	icon = 'icons/mob/human_races/r_lizard.dmi'
-	species_allowed = list("Unathi")
+	species_allowed = list("Унати")
 
 /datum/sprite_accessory/skin/skrell
 	name = "Default skrell skin"
 	icon_state = "default"
 	icon = 'icons/mob/human_races/r_skrell.dmi'
-	species_allowed = list("Skrell")
+	species_allowed = list("Скрелл")
 
 ///////////////////////////
 // Underwear Definitions //
 ///////////////////////////
 /datum/sprite_accessory/underwear
 	icon = 'icons/mob/underwear.dmi'
-	species_allowed = list("Human", "Unathi", "Diona", "Vulpkanin", "Tajaran", "Kidan", "Grey", "Plasmaman", "Machine", "Skrell", "Slime People", "Skeleton", "Drask", "Vox")
+	species_allowed = list("Человек", "Унати", "Диона", "Вульпканин", "Таяран", "Кидан", "Серый", "Плазмомен", "КПБ", "Скрелл", "Слаймомен", "Скелет", "Драск", "Вокс")
 	sprite_sheets = list(
-	"Vox" = 'icons/mob/species/vox/underwear.dmi',
-	"Grey" = 'icons/mob/species/grey/underwear.dmi'
+	"Вокс" = 'icons/mob/species/vox/underwear.dmi',
+	"Серый" = 'icons/mob/species/grey/underwear.dmi'
 	)
 	gender = NEUTER
 
 /datum/sprite_accessory/underwear/nude
 	name = "Nude"
 	icon_state = null
-	species_allowed = list("Human", "Unathi", "Diona", "Vulpkanin", "Tajaran", "Kidan", "Grey", "Plasmaman", "Machine", "Skrell", "Slime People", "Skeleton", "Drask", "Vox")
+	species_allowed = list("Человек", "Унати", "Диона", "Вульпканин", "Таяран", "Кидан", "Серый", "Плазмомен", "КПБ", "Скрелл", "Слаймомен", "Скелет", "Драск", "Вокс")
 
 /datum/sprite_accessory/underwear/male
 	gender = MALE
@@ -298,16 +298,16 @@
 ////////////////////////////
 /datum/sprite_accessory/undershirt
 	icon = 'icons/mob/underwear.dmi'
-	species_allowed = list("Human", "Unathi", "Diona", "Vulpkanin", "Tajaran", "Kidan", "Grey", "Plasmaman", "Machine", "Skrell", "Slime People", "Skeleton", "Drask", "Vox")
+	species_allowed = list("Человек", "Унати", "Диона", "Вульпканин", "Таяран", "Кидан", "Серый", "Плазмомен", "КПБ", "Скрелл", "Слаймомен", "Скелет", "Драск", "Вокс")
 	sprite_sheets = list(
-	"Vox" = 'icons/mob/species/vox/underwear.dmi',
-	"Grey" = 'icons/mob/species/grey/underwear.dmi')
+	"Вокс" = 'icons/mob/species/vox/underwear.dmi',
+	"Серый" = 'icons/mob/species/grey/underwear.dmi')
 	gender = NEUTER
 
 /datum/sprite_accessory/undershirt/nude
 	name = "Nude"
 	icon_state = null
-	species_allowed = list("Human", "Unathi", "Diona", "Vulpkanin", "Tajaran", "Kidan", "Grey", "Plasmaman", "Machine", "Skrell", "Slime People", "Skeleton", "Drask", "Vox")
+	species_allowed = list("Человек", "Унати", "Диона", "Вульпканин", "Таяран", "Кидан", "Серый", "Плазмомен", "КПБ", "Скрелл", "Слаймомен", "Скелет", "Драск", "Вокс")
 
 //plain color shirts
 /datum/sprite_accessory/undershirt/shirt_white
@@ -537,14 +537,14 @@
 ///////////////////////
 /datum/sprite_accessory/socks
 	icon = 'icons/mob/underwear.dmi'
-	species_allowed = list("Human", "Unathi", "Diona", "Vulpkanin", "Tajaran", "Kidan", "Grey", "Plasmaman", "Machine", "Skrell", "Slime People", "Skeleton", "Drask", "Vox")
-	sprite_sheets = list("Vox" = 'icons/mob/species/vox/underwear.dmi')
+	species_allowed = list("Человек", "Унати", "Диона", "Вульпканин", "Таяран", "Кидан", "Серый", "Плазмомен", "КПБ", "Скрелл", "Слаймомен", "Скелет", "Драск", "Вокс")
+	sprite_sheets = list("Вокс" = 'icons/mob/species/vox/underwear.dmi')
 	gender = NEUTER
 
 /datum/sprite_accessory/socks/nude
 	name = "Nude"
 	icon_state = null
-	species_allowed = list("Human", "Unathi", "Diona", "Vulpkanin", "Tajaran", "Kidan", "Grey", "Plasmaman", "Machine", "Skrell", "Slime People", "Skeleton", "Drask", "Vox")
+	species_allowed = list("Человек", "Унати", "Диона", "Вульпканин", "Таяран", "Кидан", "Серый", "Плазмомен", "КПБ", "Скрелл", "Слаймомен", "Скелет", "Драск", "Вокс")
 
 /datum/sprite_accessory/socks/white_norm
 	name = "Normal White"

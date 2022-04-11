@@ -1,6 +1,6 @@
 /datum/sprite_accessory/body_markings/unathi
     icon = 'icons/mob/sprite_accessories/unathi/unathi_body_markings.dmi'
-    species_allowed = list("Unathi")
+    species_allowed = list("Унати")
 
 /datum/sprite_accessory/body_markings/unathi/stripe_una
 	name = "Unathi Stripe"

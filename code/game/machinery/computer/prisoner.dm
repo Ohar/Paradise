@@ -58,25 +58,25 @@
 				<A href='?src=[UID()];inject10=\ref[C]'>(<font color=red>(10)</font>)</A><BR>
 				********************************<BR>"}
 			// END AUTOFIX
-		dat += "<HR>Tracking Implants<BR>"
+		dat += "<HR>Импланты слежения<BR>"
 		for(var/obj/item/implant/tracking/T in GLOB.tracked_implants)
 			Tr = get_turf(T)
 			if((Tr) && (Tr.z != src.z))	continue//Out of range
 			if(!T.implanted) continue
 			var/mob/living/carbon/M = T.imp_in
-			var/loc_display = "Unknown"
-			var/health_display = "OK"
+			var/loc_display = "неизвестна"
+			var/health_display = "ОК"
 			var/total_loss = (M.maxHealth - M.health)
 			if(M.stat == DEAD)
-				health_display = "DEAD"
+				health_display = "Труп"
 			else if(total_loss)
-				health_display = "HURT ([total_loss])"
+				health_display = "РАНЕНИЕ ([total_loss])"
 			if(is_station_level(Tr.z) && !istype(Tr.loc, /turf/space))
 				loc_display = "[get_area(Tr)]"
-			dat += "ID: [T.id] <BR>Subject: [M] <BR>Location: [loc_display] <BR>Health: [health_display] <BR>"
-			dat += "<A href='?src=[UID()];warn=\ref[T]'>(<font color=red><i>Message Holder</i></font>)</A> |<BR>"
+			dat += "ID: [T.id] <BR>Субъект: [M] <BR>Местоположение: [loc_display] <BR>Здоровье: [health_display] <BR>"
+			dat += "<A href='?src=[UID()];warn=\ref[T]'>(<font color=red><i>Послание носителю</i></font>)</A> |<BR>"
 			dat += "********************************<BR>"
-		dat += "<HR><A href='?src=[UID()];lock=1'>Lock Console</A>"
+		dat += "<HR><A href='?src=[UID()];lock=1'>Заблокировать консоль</A>"
 
 	user << browse(dat, "window=computer;size=400x500")
 	onclose(user, "computer")

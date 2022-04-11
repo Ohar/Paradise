@@ -119,7 +119,7 @@
 			if((C.dna.species.bodyflags & ALL_RPARTS) && robohead.is_monitor) //If the target is of a species that can have prosthetic heads, but the head doesn't support human hair 'wigs'...
 				to_chat(user, "<span class='warning'>You find yourself disappointed at the appalling lack of facial hair.</span>")
 				return
-			if(C.f_style == "Shaved")
+			if(C.f_style == "Выбритость")
 				to_chat(user, "<span class='notice'>Already clean-shaven.</span>")
 				return
 			if(H == user) //shaving yourself
@@ -128,7 +128,7 @@
 				if(do_after(user, 50 * toolspeed, target = H))
 					user.visible_message("<span class='notice'>[user] shaves [user.p_their()] facial hair clean with [src].</span>", \
 					"<span class='notice'>You finish shaving with [src]. Fast and clean!</span>")
-					C.f_style = "Shaved"
+					C.f_style = "Выбритость"
 					H.update_fhair()
 					playsound(src.loc, usesound, 20, 1)
 			else
@@ -140,7 +140,7 @@
 					if(user_loc == user.loc && H_loc == H.loc)
 						user.visible_message("<span class='danger'>[user] shaves off [H]'s facial hair with \the [src].</span>", \
 						"<span class='notice'>You shave [H]'s facial hair clean off.</span>")
-						C.f_style = "Shaved"
+						C.f_style = "Выбритость"
 						H.update_fhair()
 						playsound(src.loc, usesound, 20, 1)
 		if(user.zone_selected == "head")
@@ -150,7 +150,7 @@
 			if((C.dna.species.bodyflags & ALL_RPARTS) && robohead.is_monitor) //If the target is of a species that can have prosthetic heads, but the head doesn't support human hair 'wigs'...
 				to_chat(user, "<span class='warning'>You find yourself disappointed at the appalling lack of hair.</span>")
 				return
-			if(C.h_style == "Bald" || C.h_style == "Balding Hair" || C.h_style == "Skinhead")
+			if(C.h_style == "Лысина" || C.h_style == "Залысина" || C.h_style == "Скинхэд")
 				to_chat(user, "<span class='notice'>There is not enough hair left to shave...</span>")
 				return
 			if(isskrell(M))
@@ -162,7 +162,7 @@
 				if(do_after(user, 50 * toolspeed, target = H))
 					user.visible_message("<span class='notice'>[user] shaves [user.p_their()] head with [src].</span>", \
 					"<span class='notice'>You finish shaving with \the [src].</span>")
-					C.h_style = "Skinhead"
+					C.h_style = "Скинхэд"
 					H.update_hair()
 					playsound(src.loc, usesound, 40, 1)
 			else
@@ -174,7 +174,7 @@
 					if(user_loc == user.loc && H_loc == H.loc)
 						user.visible_message("<span class='danger'>[user] shaves [H]'s head bald with \the [src]!</span>", \
 						"<span class='warning'>You shave [H]'s head bald.</span>")
-						C.h_style = "Skinhead"
+						C.h_style = "Скинхэд"
 						H.update_hair()
 						playsound(src.loc, usesound, 40, 1)
 		else

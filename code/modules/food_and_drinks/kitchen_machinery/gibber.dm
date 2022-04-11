@@ -27,7 +27,7 @@
 /obj/machinery/gibber/suicide_act(mob/user)
 	if(occupant || locked)
 		return FALSE
-	user.visible_message("<span class='danger'>[user] climbs into [src] and turns it on!</b></span>")
+	user.visible_message("<span class='danger'>[user] включает [src] и залезает туда!</b></span>")
 	user.Stun(10)
 	user.forceMove(src)
 	occupant = user

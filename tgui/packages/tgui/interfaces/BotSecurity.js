@@ -29,7 +29,7 @@ export const BotSecurity = (props, context) => {
         </NoticeBox>
         <Section title="General Settings">
           <LabeledList>
-            <LabeledList.Item label="Status">
+            <LabeledList.Item label="Статус">
               <Button
                 icon={on ? 'power-off' : 'times'}
                 content={on ? 'On' : 'Off'}

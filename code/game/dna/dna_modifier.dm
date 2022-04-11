@@ -156,7 +156,7 @@
 		to_chat(usr, "<span class='boldnotice'>The [src] is already occupied!</span>")
 		return
 	if(usr.abiotic())
-		to_chat(usr, "<span class='boldnotice'>Subject cannot have abiotic items on.</span>")
+		to_chat(usr, "<span class='boldnotice'>Субъект не должен держать в руках абиотические предметы.</span>")
 		return
 	if(usr.has_buckled_mobs()) //mob attached to us
 		to_chat(usr, "<span class='warning'>[usr] will not fit into the [src] because [usr.p_they()] [usr.p_have()] a slime latched onto [usr.p_their()] head.</span>")
@@ -194,13 +194,13 @@
 	if(!istype(L) || L.buckled)
 		return
 	if(L.abiotic())
-		to_chat(user, "<span class='danger'>Subject cannot have abiotic items on.</span>")
+		to_chat(user, "<span class='danger'>Субъект не должен держать в руках абиотические предметы.</span>")
 		return
 	if(L.has_buckled_mobs()) //mob attached to us
 		to_chat(user, "<span class='warning'>[L] will not fit into [src] because [L.p_they()] [L.p_have()] a slime latched onto [L.p_their()] head.</span>")
 		return
 	if(L == user)
-		visible_message("[user] climbs into the [src].")
+		visible_message("[user] залезает в [src].")
 	else
 		visible_message("[user] puts [L.name] into the [src].")
 	put_in(L)
@@ -229,16 +229,16 @@
 		if(!ismob(G.affecting))
 			return
 		if(occupant)
-			to_chat(user, "<span class='boldnotice'>The scanner is already occupied!</span>")
+			to_chat(user, "<span class='boldnotice'>Сканер уже занят!</span>")
 			return
 		if(G.affecting.abiotic())
-			to_chat(user, "<span class='boldnotice'>Subject cannot have abiotic items on.</span>")
+			to_chat(user, "<span class='boldnotice'>Субъект не должен держать в руках абиотические предметы.</span>")
 			return
 		if(G.affecting.has_buckled_mobs()) //mob attached to us
 			to_chat(user, "<span class='warning'>will not fit into the [src] because [G.affecting.p_they()] [G.affecting.p_have()] a slime latched onto [G.affecting.p_their()] head.</span>")
 			return
 		if(panel_open)
-			to_chat(usr, "<span class='boldnotice'>Close the maintenance panel first.</span>")
+			to_chat(usr, "<span class='boldnotice'>Сначала закройте панель техобслуживания.</span>")
 			return
 		put_in(G.affecting)
 		add_fingerprint(user)

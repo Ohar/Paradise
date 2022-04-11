@@ -185,8 +185,8 @@
 	random_icon_states = list("smashed_pie")
 
 /obj/effect/decal/cleanable/fungus
-	name = "space fungus"
-	desc = "A fungal growth. Looks pretty nasty."
+	name = "космогриб"
+	desc = "Грибные наросты. Выглядит довольно мерзко."
 	density = FALSE
 	anchored = TRUE
 	layer = TURF_LAYER

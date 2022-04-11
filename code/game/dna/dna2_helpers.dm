@@ -242,12 +242,12 @@
 		log_runtime(EXCEPTION("Attempting to reset DNA from a missing head!"), src)
 		return
 	if(!head_organ.h_style)
-		head_organ.h_style = "Skinhead"
+		head_organ.h_style = "Скинхэд"
 	var/hair = GLOB.hair_styles_full_list.Find(head_organ.h_style)
 
 	// Facial Hair
 	if(!head_organ.f_style)
-		head_organ.f_style = "Shaved"
+		head_organ.f_style = "Выбритость"
 	var/beard	= GLOB.facial_hair_styles_list.Find(head_organ.f_style)
 
 	// Head Accessory

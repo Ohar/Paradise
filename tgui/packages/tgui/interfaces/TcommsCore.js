@@ -83,7 +83,7 @@ const ConfigPage = (_properties, context) => {
   } = data;
   return (
     <Fragment>
-      <Section title="Status">
+      <Section title="Статус">
         <LabeledList>
           <LabeledList.Item label="Machine Power">
             <Button

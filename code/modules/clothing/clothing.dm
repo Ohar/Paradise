@@ -110,8 +110,8 @@
 /obj/item/clothing/proc/refit_for_species(var/target_species)
 	//Set species_restricted list
 	switch(target_species)
-		if("Human", "Skrell")	//humanoid bodytypes
-			species_restricted = list("exclude","Unathi","Tajaran","Diona","Vox","Wryn","Drask")
+		if("Человек", "Скрелл")	//humanoid bodytypes
+			species_restricted = list("exclude","Унати","Таяран","Диона","Вокс","Врин","Драск")
 		else
 			species_restricted = list(target_species)
 
@@ -140,7 +140,7 @@
 	slot_flags = SLOT_EARS
 	resistance_flags = NONE
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/ears.dmi',
+		"Вокс" = 'icons/mob/species/vox/ears.dmi',
 		"Vox Armalis" = 'icons/mob/species/armalis/ears.dmi'
 		) //We read you loud and skree-er.
 
@@ -269,8 +269,8 @@ BLIND     // can't see anything
 	put_on_delay = 40
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/gloves.dmi',
-		"Drask" = 'icons/mob/species/drask/gloves.dmi'
+		"Вокс" = 'icons/mob/species/vox/gloves.dmi',
+		"Драск" = 'icons/mob/species/drask/gloves.dmi'
 		)
 
 // Called just before an attack_hand(), in mob/UnarmedAttack()
@@ -459,8 +459,8 @@ BLIND     // can't see anything
 	slowdown = SHOES_SLOWDOWN
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/shoes.dmi',
-		"Drask" = 'icons/mob/species/drask/shoes.dmi'
+		"Вокс" = 'icons/mob/species/vox/shoes.dmi',
+		"Драск" = 'icons/mob/species/drask/shoes.dmi'
 		)
 
 /obj/item/clothing/shoes/attackby(obj/item/I, mob/user, params)
@@ -615,7 +615,7 @@ BLIND     // can't see anything
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
 	heat_protection = HEAD
 	max_heat_protection_temperature = SPACE_HELM_MAX_TEMP_PROTECT
-	species_restricted = list("exclude","Wryn")
+	species_restricted = list("exclude","Врин")
 	flash_protect = 2
 	strip_delay = 50
 	put_on_delay = 50
@@ -645,7 +645,7 @@ BLIND     // can't see anything
 	put_on_delay = 80
 	resistance_flags = NONE
 	hide_tail_by_species = null
-	species_restricted = list("exclude","Wryn")
+	species_restricted = list("exclude","Врин")
 
 
 //Under clothing
@@ -658,9 +658,9 @@ BLIND     // can't see anything
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/uniform.dmi',
-		"Drask" = 'icons/mob/species/drask/uniform.dmi',
-		"Grey" = 'icons/mob/species/grey/uniform.dmi'
+		"Вокс" = 'icons/mob/species/vox/uniform.dmi',
+		"Драск" = 'icons/mob/species/drask/uniform.dmi',
+		"Серый" = 'icons/mob/species/grey/uniform.dmi'
 		)
 
 	var/has_sensor = TRUE//For the crew computer 2 = unable to change mode

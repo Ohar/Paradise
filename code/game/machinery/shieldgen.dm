@@ -258,7 +258,7 @@
 			locked = !locked
 			to_chat(user, "The controls are now [locked ? "locked." : "unlocked."]")
 		else
-			to_chat(user, "<span class='warning'>Access denied.</span>")
+			to_chat(user, "<span class='warning'>Доступ запрещён.</span>")
 
 	else
 		return ..()
@@ -483,7 +483,7 @@
 			locked = !locked
 			to_chat(user, "Controls are now [locked ? "locked." : "unlocked."]")
 		else
-			to_chat(user, "<span class='warning'>Access denied.</span>")
+			to_chat(user, "<span class='warning'>Доступ запрещён.</span>")
 
 	else
 		add_fingerprint(user)

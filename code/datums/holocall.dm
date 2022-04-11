@@ -36,7 +36,7 @@
 			H.atom_say("[area] pad beeps: Incoming call from [caller]!")
 
 	if(!dialed_holopads.len)
-		calling_holopad.atom_say("Connection failure.")
+		calling_holopad.atom_say("Ошибка подключения.")
 		qdel(src)
 		return
 
@@ -100,7 +100,7 @@
 /datum/holocall/proc/ConnectionFailure(obj/machinery/hologram/holopad/H, graceful = FALSE)
 	if(H == connected_holopad || H == calling_holopad)
 		if(!graceful && H != calling_holopad)
-			calling_holopad.atom_say("Connection failure.")
+			calling_holopad.atom_say("Ошибка подключения.")
 		qdel(src)
 		return
 

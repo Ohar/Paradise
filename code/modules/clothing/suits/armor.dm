@@ -11,7 +11,7 @@
 	resistance_flags = NONE
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 20, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/suit.dmi',
+		"Вокс" = 'icons/mob/species/vox/suit.dmi',
 		)
 	w_class = WEIGHT_CLASS_NORMAL
 
@@ -41,7 +41,7 @@
 	name = "security armor"
 	desc = "An armored vest that protects against some damage. This one has a clip for a holobadge."
 	sprite_sheets = list(
-		"Grey" = 'icons/mob/species/grey/suit.dmi'
+		"Серый" = 'icons/mob/species/grey/suit.dmi'
 	)
 	icon_state = "armor"
 	item_state = "armor"
@@ -183,7 +183,7 @@
 	flags_inv = HIDEJUMPSUIT
 	strip_delay = 80
 	put_on_delay = 60
-	hide_tail_by_species = list("Vox")
+	hide_tail_by_species = list("Вокс")
 
 /obj/item/clothing/suit/armor/riot/knight
 	name = "plate armour"
@@ -415,7 +415,7 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	slowdown = 3
 	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
-	hide_tail_by_species = list("Vox")
+	hide_tail_by_species = list("Вокс")
 
 /obj/item/clothing/suit/armor/tdome
 	armor = list("melee" = 80, "bullet" = 80, "laser" = 50, "energy" = 50, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 90)
@@ -424,7 +424,7 @@
 	flags = THICKMATERIAL
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
-	hide_tail_by_species = list("Vox")
+	hide_tail_by_species = list("Вокс")
 
 /obj/item/clothing/suit/armor/tdome/red
 	name = "Red Thunderdome Armor"

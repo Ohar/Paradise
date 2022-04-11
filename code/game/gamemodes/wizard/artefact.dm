@@ -729,7 +729,7 @@ GLOBAL_LIST_EMPTY(multiverse)
 	if(H.gender == MALE)
 		H.change_gender(FEMALE)
 
-	var/list/anime_hair =list("Odango", "Kusanagi Hair", "Pigtails", "Hime Cut", "Floorlength Braid", "Ombre", "Twincurls", "Twincurls 2")
+	var/list/anime_hair =list("Оданго", "Kusanagi Hair", "Косички", "Hime Cut", "Floorlength Braid", "Омбре", "Двойные кудри", "Двойные кудри 2")
 	H.change_hair(pick(anime_hair))
 
 	var/list/anime_hair_colours = list(list(216, 192, 120),

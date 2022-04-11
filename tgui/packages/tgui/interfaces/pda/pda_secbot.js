@@ -98,7 +98,7 @@ const BotStatus = (props, context) => {
         <LabeledList.Item label="Location">
           {loca}
         </LabeledList.Item>
-        <LabeledList.Item label="Status">
+        <LabeledList.Item label="Статус">
           {statusText}
         </LabeledList.Item>
         <LabeledList.Item label="Controls">

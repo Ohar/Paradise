@@ -25,7 +25,7 @@
 	throwforce = 0
 	w_class = WEIGHT_CLASS_TINY
 	var/tattoo_name = "tiger stripe tattoo" // Tat name for visible messages
-	var/tattoo_icon = "Tiger-stripe Tattoo" // body_accessory.dmi, new icons defined in sprite_accessories.dm
+	var/tattoo_icon = "Тату «Тигровые полосы»" // body_accessory.dmi, new icons defined in sprite_accessories.dm
 	var/tattoo_r = 1 // RGB values for the body markings
 	var/tattoo_g = 1
 	var/tattoo_b = 1
@@ -95,7 +95,7 @@
 /obj/item/fluff/tattoo_gun/elliot_cybernetic_tat
 	desc = "A cheap plastic tattoo application pen.<br>This one seems heavily used."
 	tattoo_name = "circuitry tattoo"
-	tattoo_icon = "Elliot Circuit Tattoo"
+	tattoo_icon = "Тату «Схема Эллиота»"
 	tattoo_r = 48
 	tattoo_g = 138
 	tattoo_b = 176
@@ -344,7 +344,7 @@
 		M.icon = 'icons/obj/custom_items.dmi'
 		M.icon_state = "gas_tariq"
 		M.sprite_sheets = list(
-			"Vulpkanin" = 'icons/mob/species/vulpkanin/mask.dmi'
+			"Вульпканин" = 'icons/mob/species/vulpkanin/mask.dmi'
 			)
 		user.update_icons()
 		qdel(src)
@@ -617,7 +617,7 @@
 	desc = "A visor of alien origin, charred by fire and completely non-functioning. It's been impeccably polished, shiny!"
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "charred_visor"
-	species_restricted = list("Vox")
+	species_restricted = list("Вокс")
 
 /obj/item/clothing/head/bearpelt/fluff/polar //Gibson1027: Sploosh
 	name = "polar bear pelt hat"
@@ -670,7 +670,7 @@
 	icon_state = "kakicharakiti"
 
 /obj/item/clothing/head/helmet/fluff/merchant_sallet //Travelling Merchant: Trav Noble. This >>IS NOT<< what they spawn in with
-	name = "Shellguard Helmet"
+	name = "Шлем «Шеллгардс»"
 	desc = "A Shellguard Helmet with the name Noble written on the inside."
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "merchant_sallet_visor_bevor"
@@ -939,7 +939,7 @@
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "k3_webbing"
 
-	sprite_sheets = list("Vox" = 'icons/mob/species/vox/suit.dmi')
+	sprite_sheets = list("Вокс" = 'icons/mob/species/vox/suit.dmi')
 	ignore_suitadjust = 0
 	actions_types = list(/datum/action/item_action/toggle)
 	suit_adjusted = 0
@@ -1201,7 +1201,7 @@
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "spartan_mask"
 	item_state = "spartan_mask"
-	species_restricted = list("Vox")
+	species_restricted = list("Вокс")
 
 //////////// Shoes ////////////
 
@@ -1583,7 +1583,7 @@
 	item_state = "asmer_accordion"
 
 
-/obj/item/clothing/head/fluff/pinesalad_horns //Pineapple Salad: Dan Jello 
+/obj/item/clothing/head/fluff/pinesalad_horns //Pineapple Salad: Dan Jello
 	name = "Bluespace Horns"
 	desc = "A pair of fake horns. Now with added bluespace!"
 	icon = 'icons/obj/custom_items.dmi'
@@ -1601,12 +1601,12 @@
 	icon = 'icons/obj/custom_items.dmi'
 	lefthand_file = 'icons/mob/inhands/fluff_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/fluff_righthand.dmi'
-	sprite_sheets = list("Vox" = 'icons/mob/species/vox/uniform.dmi')
+	sprite_sheets = list("Вокс" = 'icons/mob/species/vox/uniform.dmi')
 	icon_state = "kiaoutfit"
 	item_state = "kiaoutfit"
 	item_color = "kiaoutfit"
 	displays_id = FALSE
-	species_restricted = list("Vox")
+	species_restricted = list("Вокс")
 
 /obj/item/clothing/head/fluff/kiahat //FullOfSkittles: Kiachi
 	name = "Suspicious Witch Hat"
@@ -1624,11 +1624,11 @@
 	icon = 'icons/obj/custom_items.dmi'
 	lefthand_file = 'icons/mob/inhands/fluff_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/fluff_righthand.dmi'
-	sprite_sheets = list("Vox" = 'icons/mob/species/vox/mask.dmi')
+	sprite_sheets = list("Вокс" = 'icons/mob/species/vox/mask.dmi')
 	icon_state = "kiamask"
 	item_state = "kiamask"
 	item_color = "kiamask"
-	species_restricted = list("Vox")
+	species_restricted = list("Вокс")
 
 
 
@@ -1657,10 +1657,10 @@
 	desc = "A simple black dress with a white undercoat, tied with a blue ribbon."
 	lefthand_file = 'icons/mob/inhands/fluff_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/fluff_righthand.dmi'
-	sprite_sheets = list("Vox" = 'icons/mob/species/vox/uniform.dmi')
+	sprite_sheets = list("Вокс" = 'icons/mob/species/vox/uniform.dmi')
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "kikeridress"
 	item_state = "kikeridress"
 	item_color = "kikeridress"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
-	species_restricted = list("Vox")
+	species_restricted = list("Вокс")

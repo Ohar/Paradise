@@ -67,7 +67,7 @@
 
 /obj/machinery/power/emitter/AltClick(mob/user)
 	if(user.incapacitated())
-		to_chat(user, "<span class='warning'>You can't do that right now!</span>")
+		to_chat(user, "<span class='warning'>Сейчас вы не можете этого сделать!</span>")
 		return
 	if(!Adjacent(user))
 		return
@@ -248,7 +248,7 @@
 				src.locked = 0 //just in case it somehow gets locked
 				to_chat(user, "<span class='warning'>The controls can only be locked when the [src] is online</span>")
 		else
-			to_chat(user, "<span class='warning'>Access denied.</span>")
+			to_chat(user, "<span class='warning'>Доступ запрещён.</span>")
 		return
 
 	if(default_deconstruction_screwdriver(user, "emitter_open", "emitter", W))

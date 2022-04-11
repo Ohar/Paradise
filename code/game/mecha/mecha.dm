@@ -696,7 +696,7 @@
 				output_maintenance_dialog(id_card, user)
 				return
 			else
-				to_chat(user, "<span class='warning'>Invalid ID: Access denied.</span>")
+				to_chat(user, "<span class='warning'>Invalid ID: Доступ запрещён.</span>")
 		else
 			to_chat(user, "<span class='warning'>Maintenance protocols disabled by operator.</span>")
 
@@ -955,7 +955,7 @@
 				to_chat(user, "<span class='warning'>[AI.name] is currently unresponsive, and cannot be uploaded.</span>")
 				return
 			else if(occupant || dna) //Normal AIs cannot steal mechs!
-				to_chat(user, "<span class='warning'>Access denied. [name] is [occupant ? "currently occupied" : "secured with a DNA lock"].")
+				to_chat(user, "<span class='warning'>Доступ запрещён. [name] is [occupant ? "currently occupied" : "secured with a DNA lock"].")
 				return
 			AI.control_disabled = 0
 			AI.aiRadio.disabledAi = 0
@@ -1087,7 +1087,7 @@
 	else if(operation_allowed(user))
 		passed = 1
 	if(!passed)
-		to_chat(user, "<span class='warning'>Access denied.</span>")
+		to_chat(user, "<span class='warning'>Доступ запрещён.</span>")
 		log_append_to_last("Permission denied.")
 		return
 	if(user.buckled)
@@ -1148,10 +1148,10 @@
 		to_chat(user, "<span class='warning'>Occupant detected!</span>")
 		return FALSE
 	else if(dna && dna != mmi_as_oc.brainmob.dna.unique_enzymes)
-		to_chat(user, "<span class='warning'>Access denied. [name] is secured with a DNA lock.</span>")
+		to_chat(user, "<span class='warning'>Доступ запрещён. [name] is secured with a DNA lock.</span>")
 		return FALSE
 	else if(!operation_allowed(user))
-		to_chat(user, "<span class='warning'>Access denied. [name] is secured with an ID lock.</span>")
+		to_chat(user, "<span class='warning'>Доступ запрещён. [name] is secured with an ID lock.</span>")
 		return FALSE
 
 	if(do_after(user, 40, target = src))

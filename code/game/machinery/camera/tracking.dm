@@ -27,18 +27,18 @@
 	for(var/obj/machinery/camera/C in L)
 		var/list/tempnetwork = C.network & src.network
 		if(tempnetwork.len)
-			T[text("[][]", C.c_tag, (C.can_use() ? null : " (Deactivated)"))] = C
+			T[text("[][]", C.c_tag, (C.can_use() ? null : " (Деактивирован)"))] = C
 
 	track.cameras = T
 	return T
 
 
 /mob/living/silicon/ai/proc/ai_camera_list(var/camera in get_camera_list())
-	set category = "AI Commands"
-	set name = "Show Camera List"
+	set category = "Команды ИИ"
+	set name = "Показать список камер"
 
 	if(src.stat == 2)
-		to_chat(src, "You can't list the cameras because you are dead!")
+		to_chat(src, "Вы не можете получить список камер, потому что вы мертвы!")
 		return
 
 	if(!camera || camera == "Cancel")
@@ -50,57 +50,57 @@
 	return
 
 /mob/living/silicon/ai/proc/ai_store_location(loc as text)
-	set category = "AI Commands"
-	set name = "Store Camera Location"
-	set desc = "Stores your current camera location by the given name"
+	set category = "Команды ИИ"
+	set name = "Камеры — Сохранить локацию"
+	set desc = "Сохраняет текущую локацию ока под выбранным именем"
 
 	loc = sanitize(copytext_char(loc, 1, MAX_MESSAGE_LEN))
 	if(!loc)
-		to_chat(src, "<span class='warning'>Must supply a location name</span>")
+		to_chat(src, "<span class='warning'>Нужно выбрать название</span>")
 		return
 
 	if(stored_locations.len >= max_locations)
-		to_chat(src, "<span class='warning'>Cannot store additional locations. Remove one first</span>")
+		to_chat(src, "<span class='warning'>Невозможно сохранить ещё одну локацию. Удалите одну из предыдущих.</span>")
 		return
 
 	if(loc in stored_locations)
-		to_chat(src, "<span class='warning'>There is already a stored location by this name</span>")
+		to_chat(src, "<span class='warning'>Уже существует сохранённая локация с таким именем.</span>")
 		return
 
 	var/L = get_turf(eyeobj)
 	if(InvalidTurf(get_turf(L)))
-		to_chat(src, "<span class='warning'>Unable to store this location</span>")
+		to_chat(src, "<span class='warning'>Эту локацию сохранить не удалось</span>")
 		return
 
 	stored_locations[loc] = L
-	to_chat(src, "Location '[loc]' stored")
+	to_chat(src, "Локация «[loc]» сохранена")
 
 /mob/living/silicon/ai/proc/sorted_stored_locations()
 	return sortList(stored_locations)
 
 /mob/living/silicon/ai/proc/ai_goto_location(loc in sorted_stored_locations())
-	set category = "AI Commands"
-	set name = "Goto Camera Location"
-	set desc = "Returns to the selected camera location"
+	set category = "Команды ИИ"
+	set name = "Камеры — Перейти к локации"
+	set desc = "Возвращает око к выбранной локации"
 
 	if(!(loc in stored_locations))
-		to_chat(src, "<span class='warning'>Location [loc] not found</span>")
+		to_chat(src, "<span class='warning'>Локация «[loc]» не найдена</span>")
 		return
 
 	var/L = stored_locations[loc]
 	src.eyeobj.setLoc(L)
 
 /mob/living/silicon/ai/proc/ai_remove_location(loc in sorted_stored_locations())
-	set category = "AI Commands"
-	set name = "Delete Camera Location"
-	set desc = "Deletes the selected camera location"
+	set category = "Команды ИИ"
+	set name = "Камеры — Удалить локацию"
+	set desc = "Удаляет выбранную локации ока"
 
 	if(!(loc in stored_locations))
-		to_chat(src, "<span class='warning'>Location [loc] not found</span>")
+		to_chat(src, "<span class='warning'>Локация «[loc]» не найдена</span>")
 		return
 
 	stored_locations.Remove(loc)
-	to_chat(src, "Location [loc] removed")
+	to_chat(src, "Локация «[loc]» удалена")
 
 // Used to allow the AI is write in mob names/camera name from the CMD line.
 /datum/trackable
@@ -146,12 +146,12 @@
 	return targets
 
 /mob/living/silicon/ai/proc/ai_camera_track(target_name in trackable_mobs())
-	set category = "AI Commands"
-	set name = "Track With Camera"
-	set desc = "Select who you would like to track."
+	set category = "Команды ИИ"
+	set name = "Камеры — Следить"
+	set desc = "Выберите, кого нужно отслеживать."
 
 	if(src.stat == DEAD)
-		to_chat(src, "You can't track with camera because you are dead!")
+		to_chat(src, "Вы не можете отслеживать кого-то по камерам, потому что вы мертвы!")
 		return
 	if(!target_name)
 		return
@@ -164,7 +164,7 @@
 	if(!cameraFollow)
 		return
 
-	to_chat(src, "Follow camera mode [forced ? "terminated" : "ended"].")
+	to_chat(src, "Режим следования камеры [forced ? "прерван" : "остановлен"].")
 	cameraFollow = null
 
 /mob/living/silicon/ai/proc/ai_actual_track(mob/living/target)
@@ -175,17 +175,17 @@
 	U.cameraFollow = target
 	U.tracking = 1
 
-	to_chat(U, "<span class='notice'>Attempting to track [target.get_visible_name()]...</span>")
+	to_chat(U, "<span class='notice'>Попытка отследить [target.get_visible_name()]…</span>")
 	sleep(min(30, get_dist(target, U.eyeobj) / 4))
 	spawn(15) //give the AI a grace period to stop moving.
 		U.tracking = 0
 
 	if(!target || !target.can_track(usr))
-		to_chat(U, "<span class='warning'>Target is not near any active cameras.</span>")
+		to_chat(U, "<span class='warning'>Цель вне зоны видимости активных камер.</span>")
 		U.cameraFollow = null
 		return
 
-	to_chat(U, "<span class='notice'>Now tracking [target.get_visible_name()] on camera.</span>")
+	to_chat(U, "<span class='notice'>Отслеживаем [target.get_visible_name()] по камерам.</span>")
 
 	var/cameraticks = 0
 	spawn(0)
@@ -196,11 +196,11 @@
 			if(!target.can_track(usr))
 				U.tracking = 1
 				if(!cameraticks)
-					to_chat(U, "<span class='warning'>Target is not near any active cameras. Attempting to reacquire...</span>")
+					to_chat(U, "<span class='warning'>Цель вне зоны видимости активных камер. Attempting to reacquire...</span>")
 				cameraticks++
 				if(cameraticks > 9)
 					U.cameraFollow = null
-					to_chat(U, "<span class='warning'>Unable to reacquire, cancelling track...</span>")
+					to_chat(U, "<span class='warning'>Не удалось получить повторно, отслеживание отменено…</span>")
 					U.tracking = 0
 					return
 				else

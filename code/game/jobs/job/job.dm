@@ -254,7 +254,7 @@
 		C.assignment = alt_title ? alt_title : J.title
 		C.sex = capitalize(H.gender)
 		C.age = H.age
-		C.name = "[C.registered_name]'s ID Card ([C.assignment])"
+		C.name = "ID-карта [C.registered_name] ([C.assignment])"
 		C.photo = get_id_photo(H)
 
 		if(H.mind && H.mind.initial_account)
@@ -269,7 +269,7 @@
 		PDA.owner = H.real_name
 		PDA.ownjob = C.assignment
 		PDA.ownrank = C.rank
-		PDA.name = "PDA-[H.real_name] ([PDA.ownjob])"
+		PDA.name = "КПК — [H.real_name] ([PDA.ownjob])"
 
 /datum/job/proc/would_accept_job_transfer_from_player(mob/player)
 	if(!transfer_allowed)

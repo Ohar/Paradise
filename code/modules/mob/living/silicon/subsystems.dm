@@ -49,7 +49,7 @@
 *	Atmos Control	*
 ********************/
 /mob/living/silicon/proc/subsystem_atmos_control()
-	set category = "Subsystems"
+	set category = "Подсистемы ИИ"
 	set name = "Atmospherics Control"
 
 	atmos_control.ui_interact(usr, state = GLOB.self_state)
@@ -58,7 +58,7 @@
 *	Crew Monitor	*
 ********************/
 /mob/living/silicon/proc/subsystem_crew_monitor()
-	set category = "Subsystems"
+	set category = "Подсистемы ИИ"
 	set name = "Crew Monitor"
 	crew_monitor.ui_interact(usr, state = GLOB.self_state)
 
@@ -66,8 +66,8 @@
 *	Law Manager	*
 ****************/
 /mob/living/silicon/proc/subsystem_law_manager()
-	set name = "Law Manager"
-	set category = "Subsystems"
+	set name = "Менеджер законов"
+	set category = "Подсистемы ИИ"
 
 	law_manager.ui_interact(usr, state = GLOB.conscious_state)
 
@@ -75,17 +75,17 @@
 *	Power Monitor	*
 ********************/
 /mob/living/silicon/proc/subsystem_power_monitor()
-	set category = "Subsystems"
-	set name = "Power Monitor"
+	set category = "Подсистемы ИИ"
+	set name = "Монитор энергосистем"
 
 	power_monitor.ui_interact(usr, state = GLOB.self_state)
 
 /mob/living/silicon/robot/proc/self_diagnosis()
-	set category = "Robot Commands"
-	set name = "Self Diagnosis"
+	set category = "Робот: Команды"
+	set name = "Самодиагностика"
 
 	if(!is_component_functioning("diagnosis unit"))
-		to_chat(src, "<span class='warning'>Your self-diagnosis component isn't functioning.</span>")
+		to_chat(src, "<span class='warning'>Модуль самодиагностики нефункционален.</span>")
 		return
 
 	self_diagnosis.ui_interact(src)

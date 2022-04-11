@@ -289,7 +289,7 @@
 			return
 	if(!is_operational())
 		if(panel_open)
-			to_chat(usr, "<span class='warning'>Close the maintenance panel first.</span>")
+			to_chat(usr, "<span class='warning'>Сначала закройте панель техобслуживания.</span>")
 		else
 			to_chat(usr, "<span class='warning'>The unit is not operational.</span>")
 		return
@@ -572,7 +572,7 @@
 
 /obj/machinery/suit_storage_unit/proc/check_allowed(user)
 	if(!(allowed(user) || !secure))
-		to_chat(user, "<span class='warning'>Access denied.</span>")
+		to_chat(user, "<span class='warning'>Доступ запрещён.</span>")
 		return FALSE
 	return TRUE
 

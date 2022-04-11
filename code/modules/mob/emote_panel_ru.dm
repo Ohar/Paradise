@@ -320,12 +320,12 @@
 	usr.emote("handshake")
 
 /mob/living/carbon/human/verb/emote_slap()
-	set name = "> Шлепнуть "
+	set name = "> Шлёпнуть "
 	set category = "Эмоции"
 	usr.emote("slap")
 
 /mob/living/carbon/human/verb/emote_snap()
-	set name = "> Щелкнуть пальцами "
+	set name = "> Щёлкнуть пальцами "
 	set category = "Эмоции"
 	usr.emote("snap")
 
@@ -391,7 +391,7 @@
 	usr.emote("warble")
 
 /mob/living/carbon/human/proc/emote_click()
-	set name = "< Щелкать >"
+	set name = "< Щёлкать >"
 	set category = "Эмоции"
 	usr.emote("click")
 

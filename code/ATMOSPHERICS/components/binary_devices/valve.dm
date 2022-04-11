@@ -64,8 +64,8 @@
 		open()
 
 /obj/machinery/atmospherics/binary/valve/digital		// can be controlled by AI
-	name = "digital valve"
-	desc = "A digitally controlled valve."
+	name = "цифровой вентиль"
+	desc = "Вентиль, управляемый электроникой."
 	icon = 'icons/atmos/digital_valve.dmi'
 
 	frequency = ATMOS_VENTSCRUB
@@ -85,7 +85,7 @@
 	if(!powered())
 		return
 	if(!allowed(user) && !user.can_advanced_admin_interact())
-		to_chat(user, "<span class='alert'>Access denied.</span>")
+		to_chat(user, "<span class='alert'>Доступ запрещён.</span>")
 		return
 	..()
 
@@ -144,7 +144,7 @@
 /obj/machinery/atmospherics/binary/valve/digital/multitool_menu(var/mob/user,var/obj/item/multitool/P)
 	return {"
 		<ul>
-			<li><b>Frequency:</b> <a href="?src=[UID()];set_freq=-1">[format_frequency(frequency)] GHz</a> (<a href="?src=[UID()];set_freq=[ATMOS_VENTSCRUB]">Reset</a>)</li>
-			<li>[format_tag("ID Tag","id_tag","set_id")]</a></li>
+			<li><b>Частота:</b> <a href="?src=[UID()];set_freq=-1">[format_frequency(frequency)] ГГц</a> (<a href="?src=[UID()];set_freq=[ATMOS_VENTSCRUB]">Сбросить</a>)</li>
+			<li>[format_tag("Название","id_tag","set_id")]</a></li>
 		</ul>
 		"}

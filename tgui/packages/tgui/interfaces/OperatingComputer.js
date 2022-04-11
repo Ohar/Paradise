@@ -5,16 +5,16 @@ import { Window } from "../layouts";
 import { Box, Button, Flex, Icon, Knob, LabeledList, Section, Tabs, ProgressBar } from "../components";
 
 const stats = [
-  ['good', 'Conscious'],
-  ['average', 'Unconscious'],
+  ['good', 'В сознании'],
+  ['average', 'Без сознания'],
   ['bad', 'DEAD'],
 ];
 
 const damages = [
-  ['Resp.', 'oxyLoss'],
-  ['Toxin', 'toxLoss'],
-  ['Brute', 'bruteLoss'],
-  ['Burn', 'fireLoss'],
+  ['Асфиксия', 'oxyLoss'],
+  ['Токс.', 'toxLoss'],
+  ['Раны', 'bruteLoss'],
+  ['Ожоги', 'fireLoss'],
 ];
 
 const damageRange = {
@@ -80,13 +80,13 @@ const OperatingComputerPatient = (props, context) => {
     <Fragment>
       <Section title="Patient" level="2">
         <LabeledList>
-          <LabeledList.Item label="Name">
+          <LabeledList.Item label="Имя">
             {occupant.name}
           </LabeledList.Item>
-          <LabeledList.Item label="Status" color={stats[occupant.stat][0]}>
+          <LabeledList.Item label="Статус" color={stats[occupant.stat][0]}>
             {stats[occupant.stat][1]}
           </LabeledList.Item>
-          <LabeledList.Item label="Health">
+          <LabeledList.Item label="Здоровье">
             <ProgressBar
               min="0"
               max={occupant.maxHealth}
@@ -110,18 +110,18 @@ const OperatingComputerPatient = (props, context) => {
               </ProgressBar>
             </LabeledList.Item>
           ))}
-          <LabeledList.Item label="Temperature">
+          <LabeledList.Item label="Температура">
             <ProgressBar
               min="0"
               max={occupant.maxTemp}
               value={occupant.bodyTemperature / occupant.maxTemp}
               color={tempColors[occupant.temperatureSuitability + 3]}>
-              {round(occupant.btCelsius)}&deg;C, {round(occupant.btFaren)}&deg;F
+              {round(occupant.btCelsius)}°C, {round(occupant.btFaren)}&deg;F
             </ProgressBar>
           </LabeledList.Item>
           {!!occupant.hasBlood && (
             <Fragment>
-              <LabeledList.Item label="Blood Level">
+              <LabeledList.Item label="Уровень крови">
                 <ProgressBar
                   min="0"
                   max={occupant.bloodMax}

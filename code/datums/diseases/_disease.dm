@@ -21,12 +21,12 @@
 
 
 //Severity Defines
-#define NONTHREAT	"No threat"
-#define MINOR		"Minor"
-#define MEDIUM		"Medium"
-#define HARMFUL		"Harmful"
-#define DANGEROUS 	"Dangerous!"
-#define BIOHAZARD	"BIOHAZARD THREAT!"
+#define NONTHREAT	"Не опасно"
+#define MINOR		"Мало опасно"
+#define MEDIUM		"Средне опасно"
+#define HARMFUL		"Опасно"
+#define DANGEROUS 	"Очень опасно!"
+#define BIOHAZARD	"БИОЛОГИЧЕСКАЯ УГРОЗА!!!"
 
 
 GLOBAL_LIST_INIT(diseases, subtypesof(/datum/disease))
@@ -39,10 +39,11 @@ GLOBAL_LIST_INIT(diseases, subtypesof(/datum/disease))
 	var/spread_flags = AIRBORNE
 
 	//Fluff
-	var/form = "Virus"
-	var/name = "No disease"
+	var/form = "Вирус"
+	var/name = "Без заболеваний"
 	var/desc = ""
-	var/agent = "some microbes"
+	var/form_gender = MALE
+	var/agent = "некоторые микробы"
 	var/spread_text = ""
 	var/cure_text = ""
 

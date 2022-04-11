@@ -96,7 +96,7 @@
 	color = "#FFFFFF" // rgb: 255, 255, 255
 	nutriment_factor = 5 * REAGENTS_METABOLISM
 	overdose_threshold = 200 // Hyperglycaemic shock
-	taste_description = "sweetness"
+	taste_description = "сладости"
 	taste_mult = 1.5
 
 /datum/reagent/consumable/sugar/on_mob_life(mob/living/M)
@@ -329,13 +329,13 @@
 	taste_description = "bitter vanilla"
 
 /datum/reagent/consumable/hot_coco
-	name = "Hot Chocolate"
+	name = "Горячий шоколад"
 	id = "hot_coco"
-	description = "Made with love! And cocoa beans."
+	description = "Сделан с любовью. И какао бобами."
 	reagent_state = LIQUID
 	nutriment_factor = 2 * REAGENTS_METABOLISM
 	color = "#403010" // rgb: 64, 48, 16
-	taste_description = "chocolate"
+	taste_description = "шоколада"
 
 /datum/reagent/consumable/hot_coco/on_mob_life(mob/living/M)
 	if(M.bodytemperature < 310)//310 is the normal bodytemp. 310.055
@@ -409,7 +409,7 @@
 	description = "A special catalyst that makes certain culinary chemical reactions happen instantly instead of taking hours or days."
 	reagent_state = LIQUID
 	color = "#282314" // rgb: 54, 94, 48
-	taste_description = "sweetness"
+	taste_description = "сладости"
 
 /datum/reagent/consumable/dry_ramen
 	name = "Dry Ramen"
@@ -535,7 +535,7 @@
 	reagent_state = LIQUID
 	color = "#d3a308"
 	nutriment_factor = 15 * REAGENTS_METABOLISM
-	taste_description = "sweetness"
+	taste_description = "сладости"
 
 /datum/reagent/consumable/honey/on_mob_life(mob/living/M)
 	var/update_flags = STATUS_UPDATE_NONE

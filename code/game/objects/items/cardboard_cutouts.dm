@@ -147,7 +147,7 @@
 			desc = "A cardboard cutout of a swarmer."
 			icon_state = "cutout_swarmer"
 		//if("Ash Walker")
-		//	name = random_name(pick(MALE,FEMALE),"Unathi")
+		//	name = random_name(pick(MALE,FEMALE),"Унати")
 		//	desc = "A cardboard cutout of an ash walker."
 		//	icon_state = "cutout_free_antag"
 		if("Deathsquad Officer")

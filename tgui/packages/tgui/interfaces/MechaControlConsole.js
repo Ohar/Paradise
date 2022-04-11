@@ -55,7 +55,7 @@ export const MechaControlConsole = (props, context) => {
             </Fragment>
           }>
             <LabeledList>
-              <LabeledList.Item label="Health">
+              <LabeledList.Item label="Здоровье">
                 <ProgressBar
                   ranges={{
                     good: [beacon.maxHealth * 0.75, Infinity],

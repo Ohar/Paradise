@@ -261,7 +261,7 @@
 	if(!src.stat)
 		stat(null, text("System integrity: [round((health/maxHealth)*100)]%"))
 	else
-		stat(null, text("Systems nonfunctional"))
+		stat(null, text("Система нефункциональна"))
 
 
 // This adds the basic clock, shuttle recall timer, and malf_ai info to all silicon lifeforms

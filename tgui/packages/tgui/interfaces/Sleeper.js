@@ -11,10 +11,10 @@ const stats = [
 ];
 
 const damages = [
-  ['Resp.', 'oxyLoss'],
-  ['Toxin', 'toxLoss'],
-  ['Brute', 'bruteLoss'],
-  ['Burn', 'fireLoss'],
+  ['Асфиксия', 'oxyLoss'],
+  ['Токс.', 'toxLoss'],
+  ['Раны', 'bruteLoss'],
+  ['Ожоги', 'fireLoss'],
 ];
 
 const damageRange = {
@@ -70,7 +70,7 @@ const SleeperOccupant = (props, context) => {
   } = data;
   return (
     <Section
-      title="Occupant"
+      title="Пациент"
       buttons={(
         <Fragment>
           <Box color="label" display="inline">
@@ -91,10 +91,10 @@ const SleeperOccupant = (props, context) => {
         </Fragment>
       )}>
       <LabeledList>
-        <LabeledList.Item label="Name">
+        <LabeledList.Item label="Имя">
           {occupant.name}
         </LabeledList.Item>
-        <LabeledList.Item label="Health">
+        <LabeledList.Item label="Здоровье">
           <ProgressBar
             min="0"
             max={occupant.maxHealth}
@@ -107,22 +107,22 @@ const SleeperOccupant = (props, context) => {
             {round(occupant.health, 0)}
           </ProgressBar>
         </LabeledList.Item>
-        <LabeledList.Item label="Status" color={stats[occupant.stat][0]}>
+        <LabeledList.Item label="Статус" color={stats[occupant.stat][0]}>
           {stats[occupant.stat][1]}
         </LabeledList.Item>
-        <LabeledList.Item label="Temperature">
+        <LabeledList.Item label="Температура">
           <ProgressBar
             min="0"
             max={occupant.maxTemp}
             value={occupant.bodyTemperature / occupant.maxTemp}
             color={tempColors[occupant.temperatureSuitability + 3]}>
-            {round(occupant.btCelsius, 0)}&deg;C,
+            {round(occupant.btCelsius, 0)}°C,
             {round(occupant.btFaren, 0)}&deg;F
           </ProgressBar>
         </LabeledList.Item>
         {!!occupant.hasBlood && (
           <Fragment>
-            <LabeledList.Item label="Blood Level">
+            <LabeledList.Item label="Уровень крови">
               <ProgressBar
                 min="0"
                 max={occupant.bloodMax}
@@ -310,7 +310,7 @@ const SleeperEmpty = (props, context) => {
             mb="0.5rem"
             size="5"
           /><br />
-          No occupant detected.
+          Пациент не обнаружен.
         </Flex.Item>
       </Flex>
     </Section>

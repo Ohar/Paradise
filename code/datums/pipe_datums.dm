@@ -185,7 +185,7 @@ GLOBAL_LIST_EMPTY(rpd_pipe_list)			//Some pipes we don't want to be dispensable 
 	rpd_dispensable = TRUE
 
 /datum/pipes/atmospheric/gate
-	pipe_name = "passive gate"
+	pipe_name = "пассивный клапан"
 	pipe_id = PIPE_PASSIVE_GATE
 	orientations = 4
 	pipe_icon = "passivegate"
@@ -193,7 +193,7 @@ GLOBAL_LIST_EMPTY(rpd_pipe_list)			//Some pipes we don't want to be dispensable 
 	rpd_dispensable = TRUE
 
 /datum/pipes/atmospheric/filter
-	pipe_name = "gas filter"
+	pipe_name = "газовая фильтрация"
 	pipe_id = PIPE_GAS_FILTER
 	orientations = 4
 	pipe_icon = "filter"

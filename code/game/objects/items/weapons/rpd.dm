@@ -223,7 +223,7 @@
 
 /obj/item/rpd/proc/radial_menu(mob/user)
 	if(!check_menu(user))
-		to_chat(user, "<span class='notice'>You can't do that right now!</span>")
+		to_chat(user, "<span class='notice'>Сейчас вы не можете этого сделать!</span>")
 		return
 	var/list/choices = list(
 		RPD_MENU_ROTATE = image(icon = 'icons/obj/interface.dmi', icon_state = "rpd_rotate"),

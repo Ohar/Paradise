@@ -50,7 +50,7 @@
 				SStgui.update_uis(src)
 				broadcast_request() //This is the device making the initial event request. It needs to broadcast to other devices
 		else
-			to_chat(user, "<span class='warning'>Access denied.</span>")
+			to_chat(user, "<span class='warning'>Доступ запрещён.</span>")
 		return
 	return ..()
 
@@ -95,7 +95,7 @@
 		to_chat(usr, "<span class='warning'>This device is busy.</span>")
 		return
 	if(!allowed(usr))
-		to_chat(usr, "<span class='warning'>Access denied.</span>")
+		to_chat(usr, "<span class='warning'>Доступ запрещён.</span>")
 		return
 	. = TRUE
 	switch(action)

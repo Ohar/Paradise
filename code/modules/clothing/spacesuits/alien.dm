@@ -2,7 +2,7 @@
 /obj/item/clothing/head/helmet/space/skrell
 	name = "Skrellian helmet"
 	desc = "Smoothly contoured and polished to a shine. Still looks like a fishbowl."
-	species_restricted = list("Skrell","Human")
+	species_restricted = list("Скрелл","Человек")
 
 /obj/item/clothing/head/helmet/space/skrell/white
 	icon_state = "skrell_helmet_white"
@@ -17,7 +17,7 @@
 /obj/item/clothing/suit/space/skrell
 	name = "Skrellian hardsuit"
 	desc = "Seems like a wetsuit with reinforced plating seamlessly attached to it. Very chic."
-	species_restricted = list("Skrell","Human")
+	species_restricted = list("Скрелл","Человек")
 
 /obj/item/clothing/suit/space/skrell/white
 	icon_state = "skrell_suit_white"
@@ -32,9 +32,9 @@
 //Unathi space gear. Huge and restrictive.
 /obj/item/clothing/head/helmet/space/unathi
 	icon = 'icons/obj/clothing/species/unathi/hats.dmi'
-	species_restricted = list("Unathi")
+	species_restricted = list("Унати")
 	sprite_sheets = list(
-		"Unathi" = 'icons/mob/species/unathi/helmet.dmi'
+		"Унати" = 'icons/mob/species/unathi/helmet.dmi'
 		)
 
 /obj/item/clothing/head/helmet/space/unathi/helmet_cheap
@@ -46,9 +46,9 @@
 
 /obj/item/clothing/suit/space/unathi
 	icon = 'icons/obj/clothing/species/unathi/suits.dmi'
-	species_restricted = list("Unathi")
+	species_restricted = list("Унати")
 	sprite_sheets = list(
-		"Unathi" = 'icons/mob/species/unathi/suit.dmi'
+		"Унати" = 'icons/mob/species/unathi/suit.dmi'
 		)
 
 /obj/item/clothing/suit/space/unathi/rig_cheap
@@ -80,9 +80,9 @@
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = SPACE_SUIT_MAX_TEMP_PROTECT
 	icon = 'icons/obj/clothing/species/vox/suits.dmi'
-	species_restricted = list("Vox", "Vox Armalis")
+	species_restricted = list("Вокс", "Vox Armalis")
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/suit.dmi',
+		"Вокс" = 'icons/mob/species/vox/suit.dmi',
 		"Vox Armalis" = 'icons/mob/species/armalis/suit.dmi',
 		)
 
@@ -91,9 +91,9 @@
 	flags = STOPSPRESSUREDMAGE
 	flags_cover = HEADCOVERSEYES
 	icon = 'icons/obj/clothing/species/vox/hats.dmi'
-	species_restricted = list("Vox","Vox Armalis")
+	species_restricted = list("Вокс","Vox Armalis")
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/head.dmi',
+		"Вокс" = 'icons/mob/species/vox/head.dmi',
 		"Vox Armalis" = 'icons/mob/species/armalis/head.dmi',
 		)
 
@@ -149,9 +149,9 @@
 /obj/item/clothing/under/vox
 	has_sensor = 0
 	icon = 'icons/obj/clothing/species/vox/uniforms.dmi'
-	species_restricted = list("Vox")
+	species_restricted = list("Вокс")
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/uniform.dmi'
+		"Вокс" = 'icons/mob/species/vox/uniform.dmi'
 		)
 
 /obj/item/clothing/under/vox/vox_casual
@@ -168,9 +168,9 @@
 	icon_state = "vox-casual-2"
 	item_color = "vox-casual-2"
 	item_state = "vox-casual-2"
-	species_restricted = list("Vox","Vox Armalis")
+	species_restricted = list("Вокс","Vox Armalis")
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/uniform.dmi',
+		"Вокс" = 'icons/mob/species/vox/uniform.dmi',
 		"Vox Armalis" = 'icons/mob/species/armalis/suit.dmi'
 		)
 
@@ -183,9 +183,9 @@
 	permeability_coefficient = 0.05
 	item_color = "gloves-vox"
 	icon = 'icons/obj/clothing/species/vox/gloves.dmi'
-	species_restricted = list("Vox","Vox Armalis")
+	species_restricted = list("Вокс","Vox Armalis")
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/gloves.dmi',
+		"Вокс" = 'icons/mob/species/vox/gloves.dmi',
 		"Vox Armalis" = 'icons/mob/species/armalis/gloves.dmi',
 		)
 
@@ -195,9 +195,9 @@
 	item_state = "boots-vox"
 	icon_state = "boots-vox"
 	icon = 'icons/obj/clothing/species/vox/shoes.dmi'
-	species_restricted = list("Vox","Vox Armalis")
+	species_restricted = list("Вокс","Vox Armalis")
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/feet.dmi',
+		"Вокс" = 'icons/mob/species/vox/feet.dmi',
 		"Vox Armalis" = 'icons/mob/species/armalis/feet.dmi'
 		)
 

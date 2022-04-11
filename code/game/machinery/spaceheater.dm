@@ -105,7 +105,7 @@
 
 		dat += "<A href='?src=[UID()];op=temp;val=-5'>-</A>"
 
-		dat += " [set_temperature]&deg;C "
+		dat += " [set_temperature]°C "
 		dat += "<A href='?src=[UID()];op=temp;val=5'>+</A><BR>"
 
 		user.set_machine(src)

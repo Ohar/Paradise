@@ -383,7 +383,7 @@
 		if(ACCESS_SYNDICATE_LEADER)
 			return "Syndicate Operative Leader"
 		if(ACCESS_VOX)
-			return "Vox"
+			return "Вокс"
 		if(ACCESS_SYNDICATE_COMMAND)
 			return "Syndicate Command"
 

@@ -109,7 +109,7 @@ GLOBAL_LIST_EMPTY(cortical_stacks) //Stacks for 'leave nobody behind' objective.
 	vox.add_language("Galactic Common")
 	vox.add_language("Tradeband")
 	head_organ.h_style = "Short Vox Quills"
-	head_organ.f_style = "Shaved"
+	head_organ.f_style = "Выбритость"
 	vox.change_hair_color(97, 79, 25) //Same as the species default colour.
 	vox.change_eye_color(rand(1, 255), rand(1, 255), rand(1, 255))
 	vox.underwear = "Nude"
@@ -201,10 +201,10 @@ GLOBAL_LIST_EMPTY(cortical_stacks) //Stacks for 'leave nobody behind' objective.
 	//Set result by objectives.
 	if(success == raid_objectives.len)
 		win_type = "Major"
-		win_group = "Vox"
+		win_group = "Вокс"
 	else if(success > 2)
 		win_type = "Minor"
-		win_group = "Vox"
+		win_group = "Вокс"
 	else
 		win_type = "Minor"
 		win_group = "Crew"
@@ -226,7 +226,7 @@ GLOBAL_LIST_EMPTY(cortical_stacks) //Stacks for 'leave nobody behind' objective.
 
 	else
 
-		if(win_group == "Vox")
+		if(win_group == "Вокс")
 			if(win_type == "Minor")
 
 				win_type = "Major"

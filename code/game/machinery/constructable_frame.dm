@@ -314,7 +314,7 @@ to destroy them and players will be able to make replacements.
 							/obj/item/stock_parts/capacitor = 6)
 
 /obj/item/circuitboard/thermomachine
-	name = "circuit board (Freezer)"
+	name = "печатная плата (Охладитель)"
 	desc = "Use screwdriver to switch between heating and cooling modes."
 	build_path = /obj/machinery/atmospherics/unary/cold_sink/freezer
 	board_type = "machine"
@@ -329,12 +329,12 @@ to destroy them and players will be able to make replacements.
 	if(istype(I, /obj/item/screwdriver))
 		if(build_path == /obj/machinery/atmospherics/unary/cold_sink/freezer)
 			build_path = /obj/machinery/atmospherics/unary/heat_reservoir/heater
-			name = "circuit board (Heater)"
-			to_chat(user, "<span class='notice'>You set the board to heating.</span>")
+			name = "печатная плата (Нагреватель)"
+			to_chat(user, "<span class='notice'>Вы перенастраиваете плату на нагрев.</span>")
 		else
 			build_path = /obj/machinery/atmospherics/unary/cold_sink/freezer
-			name = "circuit board (Freezer)"
-			to_chat(user, "<span class='notice'>You set the board to cooling.</span>")
+			name = "печатная плата (Охладитель)"
+			to_chat(user, "<span class='notice'>Вы перенастраиваете плату на охлаждение.</span>")
 		return
 	return ..()
 

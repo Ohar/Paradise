@@ -416,7 +416,7 @@
 /obj/item/gun/AltClick(mob/user)
 	..()
 	if(user.incapacitated())
-		to_chat(user, "<span class='warning'>You can't do that right now!</span>")
+		to_chat(user, "<span class='warning'>Сейчас вы не можете этого сделать!</span>")
 		return
 	if(unique_reskin && !current_skin && loc == user)
 		reskin_gun(user)

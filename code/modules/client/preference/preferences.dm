@@ -115,17 +115,17 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 		"body" = "#000000",
 		"tail" = "#000000"
 		)		//Marking colours.
-	var/h_style = "Bald"				//Hair type
+	var/h_style = "Лысина"				//Hair type
 	var/h_colour = "#000000"			//Hair color
 	var/h_sec_colour = "#000000"		//Secondary hair color
-	var/f_style = "Shaved"				//Facial hair type
+	var/f_style = "Выбритость"				//Facial hair type
 	var/f_colour = "#000000"			//Facial hair color
 	var/f_sec_colour = "#000000"		//Secondary facial hair color
 	var/s_tone = 0						//Skin tone
 	var/s_colour = "#000000"			//Skin color
 	var/e_colour = "#000000"			//Eye color
 	var/alt_head = "None"				//Alt head style.
-	var/species = "Human"
+	var/species = "Человек"
 	var/language = "None"				//Secondary language
 	var/autohiss_mode = AUTOHISS_FULL	//Species autohiss level. OFF, BASIC, FULL.
 
@@ -277,9 +277,9 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 			dat += "<b>Age:</b> <a href='?_src_=prefs;preference=age;task=input'>[age]</a><br>"
 			dat += "<b>Body:</b> <a href='?_src_=prefs;preference=all;task=random'>(&reg;)</a><br>"
 			dat += "<b>Species:</b> <a href='?_src_=prefs;preference=species;task=input'>[species]</a><br>"
-			if(species == "Vox")
+			if(species == "Вокс")
 				dat += "<b>N2 Tank:</b> <a href='?_src_=prefs;preference=speciesprefs;task=input'>[speciesprefs ? "Large N2 Tank" : "Specialized N2 Tank"]</a><br>"
-			if(species == "Grey")
+			if(species == "Серый")
 				dat += "<b>Wingdings:</b> Set in disabilities<br>"
 				dat += "<b>Voice Translator:</b> <a href ='?_src_=prefs;preference=speciesprefs;task=input'>[speciesprefs ? "Yes" : "No"]</a><br>"
 			dat += "<b>Secondary Language:</b> <a href='?_src_=prefs;preference=language;task=input'>[language]</a><br>"
@@ -297,7 +297,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 
 			if(S.bodyflags & HAS_HEAD_ACCESSORY) //Species that have head accessories.
 				var/headaccessoryname = "Head Accessory: "
-				if(species == "Unathi")
+				if(species == "Унати")
 					headaccessoryname = "Horns: "
 				dat += "<b>[headaccessoryname]</b>"
 				dat += "<a href='?_src_=prefs;preference=ha_style;task=input'>[ha_style]</a> "
@@ -325,7 +325,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 			dat += "<br>"
 
 			dat += "<b>Facial Hair:</b> "
-			dat += "<a href='?_src_=prefs;preference=f_style;task=input'>[f_style ? "[f_style]" : "Shaved"]</a>"
+			dat += "<a href='?_src_=prefs;preference=f_style;task=input'>[f_style ? "[f_style]" : "Выбритость"]</a>"
 			dat += "<a href='?_src_=prefs;preference=facial;task=input'>Color</a> [color_square(f_colour)]"
 			var/datum/sprite_accessory/temp_facial_hair_style = GLOB.facial_hair_styles_list[f_style]
 			if(temp_facial_hair_style && temp_facial_hair_style.secondary_theme && !temp_facial_hair_style.no_sec_colour)
@@ -358,8 +358,8 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 				dat += "<b>Alternate Head:</b> "
 				dat += "<a href='?_src_=prefs;preference=alt_head;task=input'>[alt_head]</a><br>"
 			dat += "<b>Limbs and Parts:</b> <a href='?_src_=prefs;preference=limbs;task=input'>Adjust</a><br>"
-			if(species != "Slime People" && species != "Machine")
-				dat += "<b>Internal Organs:</b> <a href='?_src_=prefs;preference=organs;task=input'>Adjust</a><br>"
+			if(species != "Слаймомен" && species != "КПБ")
+				dat += "<b>Внутренние органы:</b> <a href='?_src_=prefs;preference=organs;task=input'>Adjust</a><br>"
 
 			//display limbs below
 			var/ind = 0
@@ -1216,7 +1216,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 		if("random")
 			var/datum/robolimb/robohead
 			if(S.bodyflags & ALL_RPARTS)
-				var/head_model = "[!rlimb_data["head"] ? "Morpheus Cyberkinetics" : rlimb_data["head"]]"
+				var/head_model = "[!rlimb_data["head"] ? "«Морфей Кибернетикс»" : rlimb_data["head"]]"
 				robohead = GLOB.all_robolimbs[head_model]
 			switch(href_list["preference"])
 				if("name")
@@ -1227,18 +1227,18 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 				if("age")
 					age = rand(AGE_MIN, AGE_MAX)
 				if("hair")
-					if(species in list("Human", "Unathi", "Tajaran", "Skrell", "Machine", "Wryn", "Vulpkanin", "Vox"))
+					if(species in list("Человек", "Унати", "Таяран", "Скрелл", "КПБ", "Врин", "Вульпканин", "Вокс"))
 						h_colour = rand_hex_color()
 				if("secondary_hair")
-					if(species in list("Human", "Unathi", "Tajaran", "Skrell", "Machine", "Wryn", "Vulpkanin", "Vox"))
+					if(species in list("Человек", "Унати", "Таяран", "Скрелл", "КПБ", "Врин", "Вульпканин", "Вокс"))
 						h_sec_colour = rand_hex_color()
 				if("h_style")
 					h_style = random_hair_style(gender, species, robohead)
 				if("facial")
-					if(species in list("Human", "Unathi", "Tajaran", "Skrell", "Machine", "Wryn", "Vulpkanin", "Vox"))
+					if(species in list("Человек", "Унати", "Таяран", "Скрелл", "КПБ", "Врин", "Вульпканин", "Вокс"))
 						f_colour = rand_hex_color()
 				if("secondary_facial")
-					if(species in list("Human", "Unathi", "Tajaran", "Skrell", "Machine", "Wryn", "Vulpkanin", "Vox"))
+					if(species in list("Человек", "Унати", "Таяран", "Скрелл", "КПБ", "Врин", "Вульпканин", "Вокс"))
 						f_sec_colour = rand_hex_color()
 				if("f_style")
 					f_style = random_facial_hair_style(gender, species, robohead)
@@ -1308,7 +1308,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 					if(new_age)
 						age = max(min(round(text2num(new_age)), AGE_MAX),AGE_MIN)
 				if("species")
-					var/list/new_species = list("Human", "Tajaran", "Skrell", "Unathi", "Diona", "Vulpkanin")
+					var/list/new_species = list("Человек", "Таяран", "Скрелл", "Унати", "Диона", "Вульпканин")
 					var/prev_species = species
 //						var/whitelisted = 0
 
@@ -1333,7 +1333,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 							gender = pick(MALE,FEMALE)
 						var/datum/robolimb/robohead
 						if(NS.bodyflags & ALL_RPARTS)
-							var/head_model = "[!rlimb_data["head"] ? "Morpheus Cyberkinetics" : rlimb_data["head"]]"
+							var/head_model = "[!rlimb_data["head"] ? "«Морфей Кибернетикс»" : rlimb_data["head"]]"
 							robohead = GLOB.all_robolimbs[head_model]
 						//grab one of the valid hair styles for the newly chosen species
 						h_style = random_hair_style(gender, species, robohead)
@@ -1439,14 +1439,14 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 						b_type = new_b_type
 
 				if("hair")
-					if(species in list("Human", "Unathi", "Tajaran", "Skrell", "Machine", "Vulpkanin", "Vox")) //Species that have hair. (No HAS_HAIR flag)
+					if(species in list("Человек", "Унати", "Таяран", "Скрелл", "КПБ", "Вульпканин", "Вокс")) //Species that have hair. (No HAS_HAIR flag)
 						var/input = "Choose your character's hair colour:"
 						var/new_hair = input(user, input, "Character Preference", h_colour) as color|null
 						if(new_hair)
 							h_colour = new_hair
 
 				if("secondary_hair")
-					if(species in list("Human", "Unathi", "Tajaran", "Skrell", "Machine", "Vulpkanin", "Vox"))
+					if(species in list("Человек", "Унати", "Таяран", "Скрелл", "КПБ", "Вульпканин", "Вокс"))
 						var/datum/sprite_accessory/hair_style = GLOB.hair_styles_public_list[h_style]
 						if(hair_style.secondary_theme && !hair_style.no_sec_colour)
 							var/new_hair = input(user, "Choose your character's secondary hair colour:", "Character Preference", h_sec_colour) as color|null
@@ -1458,20 +1458,20 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 					for(var/hairstyle in GLOB.hair_styles_public_list)
 						var/datum/sprite_accessory/SA = GLOB.hair_styles_public_list[hairstyle]
 
-						if(hairstyle == "Bald") //Just in case.
+						if(hairstyle == "Лысина") //Just in case.
 							valid_hairstyles += hairstyle
 							continue
 						if(S.bodyflags & ALL_RPARTS) //Species that can use prosthetic heads.
 							var/head_model
 							if(!rlimb_data["head"]) //Handle situations where the head is default.
-								head_model = "Morpheus Cyberkinetics"
+								head_model = "«Морфей Кибернетикс»"
 							else
 								head_model = rlimb_data["head"]
 							var/datum/robolimb/robohead = GLOB.all_robolimbs[head_model]
 							if((species in SA.species_allowed) && robohead.is_monitor && ((SA.models_allowed && (robohead.company in SA.models_allowed)) || !SA.models_allowed)) //If this is a hair style native to the user's species, check to see if they have a head with an ipc-style screen and that the head's company is in the screen style's allowed models list.
 								valid_hairstyles += hairstyle //Give them their hairstyles if they do.
 							else
-								if(!robohead.is_monitor && ("Human" in SA.species_allowed)) /*If the hairstyle is not native to the user's species and they're using a head with an ipc-style screen, don't let them access it.
+								if(!robohead.is_monitor && ("Человек" in SA.species_allowed)) /*If the hairstyle is not native to the user's species and they're using a head with an ipc-style screen, don't let them access it.
 																							But if the user has a robotic humanoid head and the hairstyle can fit humans, let them use it as a wig. */
 									valid_hairstyles += hairstyle
 						else //If the user is not a species who can have robotic heads, use the default handling.
@@ -1547,7 +1547,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 							if(S.bodyflags & ALL_RPARTS) //Species that can use prosthetic heads.
 								var/head_model
 								if(!rlimb_data["head"]) //Handle situations where the head is default.
-									head_model = "Morpheus Cyberkinetics"
+									head_model = "«Морфей Кибернетикс»"
 								else
 									head_model = rlimb_data["head"]
 								var/datum/robolimb/robohead = GLOB.all_robolimbs[head_model]
@@ -1643,13 +1643,13 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 						body_accessory = (new_body_accessory == "None") ? null : new_body_accessory
 
 				if("facial")
-					if(species in list("Human", "Unathi", "Tajaran", "Skrell", "Machine", "Vulpkanin", "Vox")) //Species that have facial hair. (No HAS_HAIR_FACIAL flag)
+					if(species in list("Человек", "Унати", "Таяран", "Скрелл", "КПБ", "Вульпканин", "Вокс")) //Species that have facial hair. (No HAS_HAIR_FACIAL flag)
 						var/new_facial = input(user, "Choose your character's facial-hair colour:", "Character Preference", f_colour) as color|null
 						if(new_facial)
 							f_colour = new_facial
 
 				if("secondary_facial")
-					if(species in list("Human", "Unathi", "Tajaran", "Skrell", "Machine", "Vulpkanin", "Vox"))
+					if(species in list("Человек", "Унати", "Таяран", "Скрелл", "КПБ", "Вульпканин", "Вокс"))
 						var/datum/sprite_accessory/facial_hair_style = GLOB.facial_hair_styles_list[f_style]
 						if(facial_hair_style.secondary_theme && !facial_hair_style.no_sec_colour)
 							var/new_facial = input(user, "Choose your character's secondary facial-hair colour:", "Character Preference", f_sec_colour) as color|null
@@ -1661,7 +1661,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 					for(var/facialhairstyle in GLOB.facial_hair_styles_list)
 						var/datum/sprite_accessory/SA = GLOB.facial_hair_styles_list[facialhairstyle]
 
-						if(facialhairstyle == "Shaved") //Just in case.
+						if(facialhairstyle == "Выбритость") //Just in case.
 							valid_facial_hairstyles += facialhairstyle
 							continue
 						if(gender == MALE && SA.gender == FEMALE)
@@ -1671,14 +1671,14 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 						if(S.bodyflags & ALL_RPARTS) //Species that can use prosthetic heads.
 							var/head_model
 							if(!rlimb_data["head"]) //Handle situations where the head is default.
-								head_model = "Morpheus Cyberkinetics"
+								head_model = "«Морфей Кибернетикс»"
 							else
 								head_model = rlimb_data["head"]
 							var/datum/robolimb/robohead = GLOB.all_robolimbs[head_model]
 							if((species in SA.species_allowed) && robohead.is_monitor && ((SA.models_allowed && (robohead.company in SA.models_allowed)) || !SA.models_allowed)) //If this is a facial hair style native to the user's species, check to see if they have a head with an ipc-style screen and that the head's company is in the screen style's allowed models list.
 								valid_facial_hairstyles += facialhairstyle //Give them their facial hairstyles if they do.
 							else
-								if(!robohead.is_monitor && ("Human" in SA.species_allowed)) /*If the facial hairstyle is not native to the user's species and they're using a head with an ipc-style screen, don't let them access it.
+								if(!robohead.is_monitor && ("Человек" in SA.species_allowed)) /*If the facial hairstyle is not native to the user's species and they're using a head with an ipc-style screen, don't let them access it.
 																							But if the user has a robotic humanoid head and the facial hairstyle can fit humans, let them use it as a wig. */
 									valid_facial_hairstyles += facialhairstyle
 						else //If the user is not a species who can have robotic heads, use the default handling.
@@ -1853,8 +1853,8 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 						if("Normal")
 							if(limb == "head")
 								m_styles["head"] = "None"
-								h_style = GLOB.hair_styles_public_list["Bald"]
-								f_style = GLOB.facial_hair_styles_list["Shaved"]
+								h_style = GLOB.hair_styles_public_list["Лысина"]
+								f_style = GLOB.facial_hair_styles_list["Выбритость"]
 							organ_data[limb] = null
 							rlimb_data[limb] = null
 							if(third_limb)
@@ -1904,8 +1904,8 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 								if(limb == "head")
 									ha_style = "None"
 									alt_head = null
-									h_style = GLOB.hair_styles_public_list["Bald"]
-									f_style = GLOB.facial_hair_styles_list["Shaved"]
+									h_style = GLOB.hair_styles_public_list["Лысина"]
+									f_style = GLOB.facial_hair_styles_list["Выбритость"]
 									m_styles["head"] = "None"
 							rlimb_data[limb] = choice
 							organ_data[limb] = "cyborg"

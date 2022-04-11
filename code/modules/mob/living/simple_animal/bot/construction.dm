@@ -93,7 +93,7 @@
 			if(W.tool_behaviour == TOOL_WELDER && W.use_tool(src, user, volume = W.tool_volume))
 				build_step++
 				name = "shielded frame assembly"
-				to_chat(user, "<span class='notice'>You weld the vest to [src].</span>")
+				to_chat(user, "<span class='notice'>Вы привариваете the vest to [src].</span>")
 		if(4)
 			switch(lasercolor)
 				if("b")
@@ -421,11 +421,11 @@
 		if(!build_step)
 			build_step++
 			overlays += "hs_hole"
-			to_chat(user, "<span class='notice'>You weld a hole in [src]!</span>")
+			to_chat(user, "<span class='notice'>Вы привариваете a hole in [src]!</span>")
 		else if(build_step == 1)
 			build_step--
 			overlays -= "hs_hole"
-			to_chat(user, "<span class='notice'>You weld the hole in [src] shut!</span>")
+			to_chat(user, "<span class='notice'>Вы привариваете the hole in [src] shut!</span>")
 
 	else if(isprox(I) && (build_step == 1))
 		if(!user.unEquip(I))

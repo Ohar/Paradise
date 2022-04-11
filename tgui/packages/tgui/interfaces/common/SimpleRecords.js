@@ -167,7 +167,7 @@ const RecordView = (props, context) => {
       <Section level={2} title="General Data">
         {general ? (
           <LabeledList>
-            <LabeledList.Item label="Name">
+            <LabeledList.Item label="Имя">
               {general.name}
             </LabeledList.Item>
             <LabeledList.Item label="Sex">

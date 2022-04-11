@@ -37,7 +37,7 @@
 		to_chat(user, "<span class='warning'>Что-то блокирует ваши силы!</span>")
 		return 0
 	if(vampire.bloodusable < required_blood)
-		to_chat(user, "<span class='warning'>Для этого вам потребуется не менее [required_blood] единиц крови!</span>")
+		to_chat(user, "<span class='warning'>Для этого вам потребуется не менее [required_blood] единиц[declension_ru(required_blood, "ы", "", "")] крови!</span>")
 		return 0
 	//chapel check
 	if(istype(loc.loc, /area/chapel) && !fullpower)
@@ -105,7 +105,7 @@
 		targets.Cut()
 
 	if(targets.len)
-		to_chat(usr, "<span class='notice'><b>У вас осталось [vampire.bloodusable] единиц крови.</b></span>")
+		to_chat(usr, "<span class='notice'><b>У вас осталось [vampire.bloodusable] единиц[declension_ru(vampire.bloodusable, "а", "ы", "")] крови.</b></span>")
 
 /obj/effect/proc_holder/spell/vampire/targetted/choose_targets(mob/user = usr)
 	var/list/possible_targets[0]

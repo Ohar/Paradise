@@ -122,7 +122,7 @@ const ApcContent = (props, context) => {
                     </Box>
                     <Button
                       icon="sync"
-                      content="Auto"
+                      content="Авто"
                       selected={!locked && (
                         channel.status === 1 || channel.status === 3
                       )}

@@ -4,7 +4,7 @@
 // It streams chunks as it moves around, which will show it what the AI can and cannot see.
 
 /mob/camera/aiEye
-	name = "Inactive AI Eye"
+	name = "Неактивное око ИИ"
 
 	icon = 'icons/mob/ai.dmi' //Allows ghosts to see what the AI is looking at.
 	icon_state = "eye"
@@ -106,7 +106,7 @@
 
 // Return to the Core.
 /mob/living/silicon/ai/proc/core()
-	set category = "AI Commands"
+	set category = "Команды ИИ"
 	set name = "AI Core"
 
 	view_core()
@@ -132,10 +132,10 @@
 	all_eyes += eyeobj
 	eyeobj.ai = src
 	eyeobj.setLoc(loc)
-	eyeobj.name = "[name] (AI Eye)"
+	eyeobj.name = "[name] (Око ИИ)"
 
 /mob/living/silicon/ai/proc/toggle_acceleration()
-	set category = "AI Commands"
+	set category = "Команды ИИ"
 	set name = "Toggle Camera Acceleration"
 
 	if(usr.stat == 2)

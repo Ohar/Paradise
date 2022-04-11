@@ -56,8 +56,8 @@
 			dat += " | Toxin levels: [U.getToxLoss()]<br>"
 			dat += "Burn severity: [U.getFireLoss()]"
 			dat += " | Brute trauma: [U.getBruteLoss()]<br>"
-			dat += "Radiation Level: [U.radiation] rad<br>"
-			dat += "Body Temperature: [U.bodytemperature-T0C]&deg;C ([U.bodytemperature*1.8-459.67]&deg;F)<br>"
+			dat += "Уровень радиации: [U.radiation] rad<br>"
+			dat += "Температура тела: [U.bodytemperature-T0C] °C<br>"
 
 			for(var/datum/disease/D in U.viruses)
 				dat += "Warning: Virus Detected. Name: [D.name].Type: [D.spread_text]. Stage: [D.stage]/[D.max_stages]. Possible Cure: [D.cure_text].<br>"
@@ -95,7 +95,7 @@
 					if(unknown_level > 0.01)
 						dat += "OTHER: [round(unknown_level)]%<br>"
 
-					dat += "Temperature: [round(environment.temperature-T0C)]&deg;C"
+					dat += "Temperature: [round(environment.temperature-T0C)]°C"
 		if(2)
 			dat += "<h4><img src=sos_12.png> Anonymous Messenger:</h4>"//Anonymous because the receiver will not know the sender's identity.
 			dat += "<h4><img src=sos_6.png> Detected PDAs:</h4>"
@@ -220,7 +220,7 @@
 				to_chat(display_to, "<span class='danger'>Error: unable to deliver message.</span>")
 				display_spideros()
 				return
-			
+
 			var/datum/data/pda/app/messenger/M = P.find_program(/datum/data/pda/app/messenger)
 			M.notify("<b>Message from unknown source: </b>\"[t]\" (Unable to Reply)", 0)
 

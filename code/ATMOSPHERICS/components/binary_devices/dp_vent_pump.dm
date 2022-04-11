@@ -245,7 +245,7 @@
 /obj/machinery/atmospherics/binary/dp_vent_pump/multitool_menu(var/mob/user,var/obj/item/multitool/P)
 	return {"
 	<ul>
-		<li><b>Frequency:</b> <a href="?src=[UID()];set_freq=-1">[format_frequency(frequency)] GHz</a> (<a href="?src=[UID()];set_freq=[ATMOS_VENTSCRUB]">Reset</a>)</li>
-		<li><b>ID Tag:</b> <a href="?src=[UID()];set_id=1">[id_tag]</a></li>
+		<li><b>Частота:</b> <a href="?src=[UID()];set_freq=-1">[format_frequency(frequency)] ГГц</a> (<a href="?src=[UID()];set_freq=[ATMOS_VENTSCRUB]">Сбросить</a>)</li>
+		<li><b>Название:</b> <a href="?src=[UID()];set_id=1">[id_tag]</a></li>
 	</ul>
 	"}

@@ -1,6 +1,6 @@
 /obj/machinery/camera
-	name = "security camera"
-	desc = "It's used to monitor rooms."
+	name = "камера видеонаблюдения"
+	desc = "Используется для наблюдения за помещениями."
 	icon = 'icons/obj/monitors.dmi'
 	icon_state = "camera"
 	use_power = ACTIVE_POWER_USE
@@ -101,7 +101,7 @@
 				if(M.client && M.client.eye == src)
 					M.unset_machine()
 					M.reset_perspective(null)
-					to_chat(M, "The screen bursts into static.")
+					to_chat(M, "Экран заполняют статические помехи.")
 			..()
 
 /obj/machinery/camera/tesla_act(power)//EMP proof upgrade also makes it tesla immune
@@ -125,8 +125,8 @@
 	..()
 
 /obj/machinery/camera/attackby(obj/item/I, mob/living/user, params)
-	var/msg = "<span class='notice'>You attach [I] into the assembly inner circuits.</span>"
-	var/msg2 = "<span class='notice'>The camera already has that upgrade!</span>"
+	var/msg = "<span class='notice'>Вы прикрепляете [I] ко внутренним контурам камеры.</span>"
+	var/msg2 = "<span class='notice'>У камеры уже есть это улучшение!</span>"
 
 	if(istype(I, /obj/item/stack/sheet/mineral/plasma) && panel_open)
 		if(!user.drop_item())
@@ -153,7 +153,7 @@
 	// OTHER
 	else if((istype(I, /obj/item/paper) || istype(I, /obj/item/pda)) && isliving(user))
 		if (!can_use())
-			to_chat(user, "<span class='warning'>You can't show something to a disabled camera!</span>")
+			to_chat(user, "<span class='warning'>Вы не можете ничего показать в выключенную камеру!</span>")
 			return
 
 		var/mob/living/U = user
@@ -172,7 +172,7 @@
 			if(N)
 				itemname = PDA.name
 				info = N.note
-		to_chat(U, "You hold \the [itemname] up to the camera ...")
+		to_chat(U, "Вы показываете [itemname] прямо в камеру…")
 		U.changeNext_move(CLICK_CD_MELEE)
 		for(var/mob/O in GLOB.player_list)
 			if(istype(O, /mob/living/silicon/ai))
@@ -180,12 +180,12 @@
 				if(AI.control_disabled || (AI.stat == DEAD))
 					return
 				if(U.name == "Unknown")
-					to_chat(AI, "<b>[U]</b> holds <a href='?_src_=usr;show_paper=1;'>\a [itemname]</a> up to one of your cameras ...")
+					to_chat(AI, "<b>[U]</b> держит <a href='?_src_=usr;show_paper=1;'> [itemname]</a> прямо перед одной из ваших камер…")
 				else
-					to_chat(AI, "<b><a href='?src=[AI.UID()];track=[html_encode(U.name)]'>[U]</a></b> holds <a href='?_src_=usr;show_paper=1;'>\a [itemname]</a> up to one of your cameras ...")
+					to_chat(AI, "<b><a href='?src=[AI.UID()];track=[html_encode(U.name)]'>[U]</a></b> держит <a href='?_src_=usr;show_paper=1;'> [itemname]</a> прямо перед одной из ваших камер…")
 				AI.last_paper_seen = {"<HTML><meta charset="UTF-8"><HEAD><TITLE>[itemname]</TITLE></HEAD><BODY><TT>[info]</TT></BODY></HTML>"}
 			else if(O.client && O.client.eye == src)
-				to_chat(O, "[U] holds \a [itemname] up to one of the cameras ...")
+				to_chat(O, "[U] держит [itemname] прямо перед одной из камер…")
 				O << browse(text({"<HTML><meta charset="UTF-8"><HEAD><TITLE>[]</TITLE></HEAD><BODY><TT>[]</TT></BODY></HTML>"}, itemname, info), text("window=[]", itemname))
 
 	else if(istype(I, /obj/item/laser_pointer))
@@ -200,7 +200,7 @@
 	if(!I.use_tool(src, user, 0, volume = I.tool_volume))
 		return
 	panel_open = !panel_open
-	to_chat(user, "<span class='notice'>You screw [src]'s panel [panel_open ? "open" : "closed"].</span>")
+	to_chat(user, "<span class='notice'>Вы [panel_open ? "от" : "за"]кручиваете панель на [src] .</span>")
 
 /obj/machinery/camera/wirecutter_act(mob/user, obj/item/I)
 	. = TRUE
@@ -224,8 +224,8 @@
 		return
 	WELDER_ATTEMPT_WELD_MESSAGE
 	if(I.use_tool(src, user, 100, volume = I.tool_volume))
-		visible_message("<span class='warning'>[user] unwelds [src], leaving it as just a frame bolted to the wall.</span>",
-						"<span class='warning'>You unweld [src], leaving it as just a frame bolted to the wall</span>")
+		visible_message("<span class='warning'>[user] отварива[pluralize_ru(user.gender,"ет","ют")] [src], оставляя только привинченный к стене каркас.</span>",
+						"<span class='warning'>Вы отвариваете [src], оставляя только привинченный к стене каркас</span>")
 		deconstruct(TRUE)
 
 /obj/machinery/camera/run_obj_armor(damage_amount, damage_type, damage_flag = 0, attack_dir)
@@ -290,7 +290,7 @@
 			visible_message("<span class='danger'>[user] [change_msg] [src]!</span>")
 			add_hiddenprint(user)
 		else
-			visible_message("<span class='danger'>\The [src] [change_msg]!</span>")
+			visible_message("<span class='danger'>[src] [change_msg]!</span>")
 
 		playsound(loc, toggle_sound, 100, 1)
 	update_icon()
@@ -302,7 +302,7 @@
 		if(O.client && O.client.eye == src)
 			O.unset_machine()
 			O.reset_perspective(null)
-			to_chat(O, "The screen bursts into static.")
+			to_chat(O, "Экран заполняют статические помехи.")
 
 /obj/machinery/camera/proc/triggerCameraAlarm()
 	alarm_on = TRUE

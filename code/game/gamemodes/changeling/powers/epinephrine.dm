@@ -1,5 +1,5 @@
 /datum/action/changeling/epinephrine
-	name = "Epinephrine Overdose"
+	name = "Передозировка эпинефрина"
 	desc = "We evolve additional sacs of adrenaline throughout our body. Costs 30 chemicals."
 	helptext = "Removes all stuns instantly and adds a short term reduction in further stuns. Can be used while unconscious. Continued use poisons the body."
 	button_icon_state = "adrenaline"

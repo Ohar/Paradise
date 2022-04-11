@@ -1,20 +1,20 @@
 /datum/sprite_accessory/hair/unathi
 	icon = 'icons/mob/sprite_accessories/unathi/unathi_hair.dmi'
-	species_allowed = list("Unathi")
+	species_allowed = list("Унати")
 	glasses_over = 1
 
 /datum/sprite_accessory/hair/braid_hip_una // Future coder: Change the typepath under unathi. This is a legacy of my accessories splitting PR where typepath change is avoided at all cost
 	icon = 'icons/mob/sprite_accessories/unathi/unathi_hair.dmi'
 	name = "Unathi Hippie Braid"
 	icon_state = "hipbraid"
-	species_allowed = list("Unathi")
+	species_allowed = list("Унати")
 	secondary_theme = "beads"
 
 /datum/sprite_accessory/hair/unathi/una_cobra_hood
     name = "Unathi Cobra Hood"
     icon_state = "cobrahood"
     secondary_theme = "webbing"
-	
+
 /datum/sprite_accessory/hair/unathi/simple
 	name = "Simple Horns"
 	icon_state = "simple_horns"

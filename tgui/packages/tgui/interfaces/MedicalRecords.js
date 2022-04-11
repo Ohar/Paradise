@@ -359,7 +359,7 @@ const MedicalRecordsMedbots = (_properties, context) => {
           <LabeledList.Item label="Location">
             {medbot.area || 'Unknown'} ({medbot.x}, {medbot.y})
           </LabeledList.Item>
-          <LabeledList.Item label="Status">
+          <LabeledList.Item label="Статус">
             {medbot.on ? (
               <Fragment>
                 <Box color="good">

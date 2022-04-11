@@ -707,7 +707,7 @@
 
 /obj/machinery/vending/proc/vend(datum/data/vending_product/R, mob/user)
 	if(!allowed(user) && !user.can_admin_interact() && !emagged && scan_id)	//For SECURE VENDING MACHINES YEAH
-		to_chat(user, "<span class='warning'>Access denied.</span>")//Unless emagged of course
+		to_chat(user, "<span class='warning'>Доступ запрещён.</span>")//Unless emagged of course
 		flick(icon_deny, src)
 		vend_ready = TRUE
 		return

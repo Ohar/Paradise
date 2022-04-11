@@ -222,8 +222,8 @@
 	target.set_species(/datum/species/human)
 	var/obj/item/organ/external/head/head_organ = target.get_organ("head")
 	if(head_organ)
-		head_organ.h_style = "Bald"
-		head_organ.f_style = "Shaved"
+		head_organ.h_style = "Лысина"
+		head_organ.f_style = "Выбритость"
 	target.s_tone = 35
 	// No `update_dna=0` here because the character is being over-written
 	target.change_eye_color(1,1,1)

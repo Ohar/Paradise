@@ -37,14 +37,14 @@
 
 /turf/simulated/wall/r_wall/attackby(obj/item/I, mob/user, params)
 	if(d_state == RWALL_COVER && istype(I, /obj/item/gun/energy/plasmacutter))
-		to_chat(user, "<span class='notice'>You begin slicing through the metal cover...</span>")
+		to_chat(user, "<span class='notice'>Вы начинаете разрезать the metal cover...</span>")
 		if(I.use_tool(src, user, 40, volume = I.tool_volume) && d_state == RWALL_COVER)
 			d_state = RWALL_CUT_COVER
 			update_icon()
 			to_chat(user, "<span class='notice'>You press firmly on the cover, dislodging it.</span>")
 		return
 	else if(d_state == RWALL_SUPPORT_RODS && istype(I, /obj/item/gun/energy/plasmacutter))
-		to_chat(user, "<span class='notice'>You begin slicing through the support rods...</span>")
+		to_chat(user, "<span class='notice'>Вы начинаете разрезать the support rods...</span>")
 		if(I.use_tool(src, user, 70, volume = I.tool_volume) && d_state == RWALL_SUPPORT_RODS)
 			d_state = RWALL_SHEATH
 			update_icon()
@@ -102,16 +102,16 @@
 	if(!I.tool_use_check(user, 0))
 		return
 	if(d_state == RWALL_COVER)
-		to_chat(user, "<span class='notice'>You begin slicing through the metal cover...</span>")
+		to_chat(user, "<span class='notice'>Вы начинаете разрезать the metal cover...</span>")
 		if(I.use_tool(src, user, 60, volume = I.tool_volume) && d_state == RWALL_COVER)
 			d_state = RWALL_CUT_COVER
 			to_chat(user, "<span class='notice'>You press firmly on the cover, dislodging it.</span>")
 	else if(d_state == RWALL_SUPPORT_RODS)
-		to_chat(user, "<span class='notice'>You begin slicing through the support rods...</span>")
+		to_chat(user, "<span class='notice'>Вы начинаете разрезать the support rods...</span>")
 		if(I.use_tool(src, user, 100, volume = I.tool_volume) && d_state == RWALL_SUPPORT_RODS)
 			d_state = RWALL_SHEATH
 	else if(d_state == RWALL_CUT_COVER)
-		to_chat(user, "<span class='notice'>You begin welding the metal cover back to the frame...</span>")
+		to_chat(user, "<span class='notice'>Вы начинаете сварку the metal cover back to the frame...</span>")
 		if(I.use_tool(src, user, 60, volume = I.tool_volume) && d_state == RWALL_CUT_COVER)
 			to_chat(user, "<span class='notice'>The metal cover has been welded securely to the frame.</span>")
 			d_state = RWALL_COVER

@@ -13,10 +13,10 @@ Contents:
 	item_state = "s-ninja_mask"
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/mask.dmi',
-		"Unathi" = 'icons/mob/species/unathi/mask.dmi',
-		"Tajaran" = 'icons/mob/species/tajaran/mask.dmi',
-		"Vulpkanin" = 'icons/mob/species/vulpkanin/mask.dmi'
+		"Вокс" = 'icons/mob/species/vox/mask.dmi',
+		"Унати" = 'icons/mob/species/unathi/mask.dmi',
+		"Таяран" = 'icons/mob/species/tajaran/mask.dmi',
+		"Вульпканин" = 'icons/mob/species/vulpkanin/mask.dmi'
 		)
 
 	var/obj/item/voice_changer/voice_changer

@@ -340,8 +340,8 @@ emp_act
 			if(prob(min(acidpwr * acid_volume / 10, 90))) //Applies disfigurement
 				head_organ.receive_damage(acidity, 2 * acidity)
 				emote("scream")
-				head_organ.h_style = "Bald"
-				head_organ.f_style = "Shaved"
+				head_organ.h_style = "Лысина"
+				head_organ.f_style = "Выбритость"
 				update_hair()
 				update_fhair()
 				head_organ.disfigure()

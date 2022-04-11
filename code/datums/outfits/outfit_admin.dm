@@ -18,7 +18,7 @@
 	I.assignment = rank
 	I.sex = capitalize(H.gender)
 	I.age = H.age
-	I.name = "[I.registered_name]'s ID Card ([I.assignment])"
+	I.name = "ID-карта [I.registered_name] ([I.assignment])"
 	I.photo = get_id_photo(H)
 
 	if(special_icon)
@@ -420,7 +420,7 @@
 	if(istype(PDA))
 		PDA.owner = H.real_name
 		PDA.ownjob = "Mime"
-		PDA.name = "PDA-[H.real_name] ([PDA.ownjob])"
+		PDA.name = "КПК — [H.real_name] ([PDA.ownjob])"
 
 	var/obj/item/card/id/I = H.wear_id
 	if(istype(I))

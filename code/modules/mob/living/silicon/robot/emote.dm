@@ -163,7 +163,7 @@
 	..()
 
 /mob/living/silicon/robot/verb/powerwarn()
-	set category = "Robot Commands"
+	set category = "Робот: Команды"
 	set name = "Power Warning"
 
 	if(handle_emote_CD(50))

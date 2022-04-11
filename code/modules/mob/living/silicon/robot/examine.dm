@@ -10,12 +10,12 @@
 	msg += "<span class='warning'>"
 	if(getBruteLoss())
 		if(getBruteLoss() < maxHealth*0.5)
-			msg += "It looks slightly dented.\n"
+			msg += "Выглядит слегка помято.\n"
 		else
-			msg += "<B>It looks severely dented!</B>\n"
+			msg += "<B>Выглядит очень помято!</B>\n"
 	if(getFireLoss())
 		if(getFireLoss() < maxHealth*0.5)
-			msg += "It looks slightly charred.\n"
+			msg += "Выглядит слегка обгоревшим.\n"
 		else
 			msg += "<B>It looks severely burnt and heat-warped!</B>\n"
 	if(health < -maxHealth*0.5)

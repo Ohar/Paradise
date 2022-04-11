@@ -233,7 +233,7 @@
 	. = TRUE
 	if(!I.tool_use_check(user, 0))
 		return
-	user.visible_message("[user] cuts the wires from the airlock assembly.", "You start to cut the wires from airlock assembly...")
+	user.visible_message("[user] среза[pluralize_ru(user.gender,"ет","ют")] провода с the airlock assembly.", "You start to cut the wires from airlock assembly...")
 	if(!I.use_tool(src, user, 40, volume = I.tool_volume) || state != "02")
 		return
 	to_chat(user, "<span class='notice'>You cut the windoor wires.</span>")
@@ -325,7 +325,7 @@
 /obj/structure/windoor_assembly/AltClick(mob/user)
 	..()
 	if(user.incapacitated())
-		to_chat(user, "<span class='warning'>You can't do that right now!</span>")
+		to_chat(user, "<span class='warning'>Сейчас вы не можете этого сделать!</span>")
 		return
 	if(!in_range(src, user))
 		return

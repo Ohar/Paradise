@@ -405,7 +405,7 @@
 
 /obj/machinery/computer/supplycomp/attack_hand(var/mob/user as mob)
 	if(!allowed(user) && !isobserver(user))
-		to_chat(user, "<span class='warning'>Access denied.</span>")
+		to_chat(user, "<span class='warning'>Доступ запрещён.</span>")
 		return 1
 
 	post_signal("supply")
@@ -513,7 +513,7 @@
 					var/datum/supply_order/O = new /datum/supply_order()
 					O.ordernum = SSshuttle.ordernum
 					O.object = SSshuttle.supply_packs[pick(SSshuttle.supply_packs)]
-					O.orderedby = random_name(pick(MALE,FEMALE), species = "Human")
+					O.orderedby = random_name(pick(MALE,FEMALE), species = "Человек")
 					SSshuttle.shoppinglist += O
 					investigate_log("Random [O.object] crate added to supply shuttle")
 

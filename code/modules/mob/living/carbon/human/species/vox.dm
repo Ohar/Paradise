@@ -1,6 +1,6 @@
 /datum/species/vox
-	name = "Vox"
-	name_plural = "Vox"
+	name = "Вокс"
+	name_plural = "Вокс"
 	icobase = 'icons/mob/human_races/vox/r_vox.dmi'
 	deform = 'icons/mob/human_races/vox/r_def_vox.dmi'
 	dangerous_existence = TRUE
@@ -51,7 +51,7 @@
 		1 = "Default Green",
 		2 = "Dark Green",
 		3 = "Brown",
-		4 = "Grey",
+		4 = "Серый",
 		5 = "Emerald",
 		6 = "Azure"
 		)

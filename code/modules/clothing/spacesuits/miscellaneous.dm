@@ -7,11 +7,11 @@
 	flags_inv = HIDEFACE
 	permeability_coefficient = 0.01
 	armor = list("melee" = 40, "bullet" = 50, "laser" = 50, "energy" = 40, "bomb" = 50, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 100)
-	species_restricted = list("exclude", "Wryn")
+	species_restricted = list("exclude", "Врин")
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/helmet.dmi',
-		"Grey" = 'icons/mob/species/grey/helmet.dmi'
+		"Вокс" = 'icons/mob/species/vox/helmet.dmi',
+		"Серый" = 'icons/mob/species/grey/helmet.dmi'
 		)
 
 /obj/item/clothing/head/helmet/space/capspace/equipped(mob/living/carbon/human/user, slot)
@@ -31,10 +31,10 @@
 	w_class = WEIGHT_CLASS_BULKY
 	allowed = list(/obj/item/tank, /obj/item/flashlight,/obj/item/gun/energy, /obj/item/gun/projectile, /obj/item/ammo_box, /obj/item/ammo_casing, /obj/item/melee/baton,/obj/item/restraints/handcuffs)
 	armor = list("melee" = 40, "bullet" = 50, "laser" = 50, "energy" = 40, "bomb" = 50, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 100)
-	species_restricted = list("exclude", "Wryn")
+	species_restricted = list("exclude", "Врин")
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/suit.dmi'
+		"Вокс" = 'icons/mob/species/vox/suit.dmi'
 		)
 
 	//Deathsquad space suit, not hardsuits because no flashlight!
@@ -74,10 +74,10 @@
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 30,"energy" = 30, "bomb" = 50, "bio" = 90, "rad" = 20, "fire" = 100, "acid" = 100)
 	strip_delay = 120
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	species_restricted = list("exclude", "Wryn")
+	species_restricted = list("exclude", "Врин")
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/suit.dmi'
+		"Вокс" = 'icons/mob/species/vox/suit.dmi'
 		)
 
 /obj/item/clothing/head/helmet/space/deathsquad/beret
@@ -106,8 +106,8 @@
 	icon_state = "santahat"
 
 	sprite_sheets = list(
-		"Grey" = 'icons/mob/species/Grey/head.dmi',
-		"Drask" = 'icons/mob/species/Drask/helmet.dmi'
+		"Серый" = 'icons/mob/species/Grey/head.dmi',
+		"Драск" = 'icons/mob/species/Drask/helmet.dmi'
 		)
 	flags = BLOCKHAIR | STOPSPRESSUREDMAGE
 	flags_cover = HEADCOVERSEYES
@@ -163,19 +163,19 @@
 	icon_state = "paramedic-eva-helmet"
 	item_state = "paramedic-eva-helmet"
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 100, rad = 20, fire = 50, acid = 65)
-	species_restricted = list("exclude", "Wryn")
+	species_restricted = list("exclude", "Врин")
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/helmet.dmi',
-		"Grey" = 'icons/mob/species/grey/helmet.dmi',
-		"Skrell" = 'icons/mob/species/skrell/helmet.dmi',
-		"Tajaran" = 'icons/mob/species/tajaran/helmet.dmi',
-		"Drask" = 'icons/mob/species/drask/helmet.dmi',
-		"Unathi" = 'icons/mob/species/unathi/helmet.dmi',
-		"Vulpkanin" = 'icons/mob/species/vulpkanin/helmet.dmi',
+		"Вокс" = 'icons/mob/species/vox/helmet.dmi',
+		"Серый" = 'icons/mob/species/grey/helmet.dmi',
+		"Скрелл" = 'icons/mob/species/skrell/helmet.dmi',
+		"Таяран" = 'icons/mob/species/tajaran/helmet.dmi',
+		"Драск" = 'icons/mob/species/drask/helmet.dmi',
+		"Унати" = 'icons/mob/species/unathi/helmet.dmi',
+		"Вульпканин" = 'icons/mob/species/vulpkanin/helmet.dmi',
 		)
 	sprite_sheets_obj = list(
-		"Vox" = 'icons/obj/clothing/species/vox/hats.dmi'
+		"Вокс" = 'icons/obj/clothing/species/vox/hats.dmi'
 		)
 
 /obj/item/clothing/suit/space/eva/paramedic
@@ -184,18 +184,18 @@
 	item_state = "paramedic-eva"
 	desc = "A brand new paramedic EVA suit. The nitrile seems a bit too thin to be space proof. Used for retrieving bodies in space."
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 100, rad = 20, fire = 50, acid = 65)
-	species_restricted = list("exclude", "Wryn")
+	species_restricted = list("exclude", "Врин")
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/suit.dmi',
-		"Skrell" = 'icons/mob/species/skrell/suit.dmi',
-		"Tajaran" = 'icons/mob/species/tajaran/suit.dmi',
-		"Drask" = 'icons/mob/species/drask/suit.dmi',
-		"Unathi" = 'icons/mob/species/unathi/suit.dmi',
-		"Vulpkanin" = 'icons/mob/species/vulpkanin/suit.dmi',
+		"Вокс" = 'icons/mob/species/vox/suit.dmi',
+		"Скрелл" = 'icons/mob/species/skrell/suit.dmi',
+		"Таяран" = 'icons/mob/species/tajaran/suit.dmi',
+		"Драск" = 'icons/mob/species/drask/suit.dmi',
+		"Унати" = 'icons/mob/species/unathi/suit.dmi',
+		"Вульпканин" = 'icons/mob/species/vulpkanin/suit.dmi',
 		)
 	sprite_sheets_obj = list(
-		"Vox" = 'icons/obj/clothing/species/vox/suits.dmi'
+		"Вокс" = 'icons/obj/clothing/species/vox/suits.dmi'
 		)
 
 /obj/item/clothing/suit/space/eva
@@ -204,19 +204,19 @@
 	item_state = "s_suit"
 	desc = "A lightweight space suit with the basic ability to protect the wearer from the vacuum of space during emergencies."
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 100, rad = 20, fire = 50, acid = 65)
-	species_restricted = list("exclude", "Wryn")
+	species_restricted = list("exclude", "Врин")
 
 	sprite_sheets = list(
-		"Tajaran" = 'icons/mob/species/tajaran/suit.dmi',
-		"Unathi" = 'icons/mob/species/unathi/suit.dmi',
-		"Vox" = 'icons/mob/species/vox/suit.dmi',
-		"Vulpkanin" = 'icons/mob/species/vulpkanin/suit.dmi',
+		"Таяран" = 'icons/mob/species/tajaran/suit.dmi',
+		"Унати" = 'icons/mob/species/unathi/suit.dmi',
+		"Вокс" = 'icons/mob/species/vox/suit.dmi',
+		"Вульпканин" = 'icons/mob/species/vulpkanin/suit.dmi',
 		)
 	sprite_sheets_obj = list(
-		"Tajaran" = 'icons/obj/clothing/species/tajaran/suits.dmi',
-		"Unathi" = 'icons/obj/clothing/species/unathi/suits.dmi',
-		"Vox" = 'icons/obj/clothing/species/vox/suits.dmi',
-		"Vulpkanin" = 'icons/obj/clothing/species/vulpkanin/suits.dmi'
+		"Таяран" = 'icons/obj/clothing/species/tajaran/suits.dmi',
+		"Унати" = 'icons/obj/clothing/species/unathi/suits.dmi',
+		"Вокс" = 'icons/obj/clothing/species/vox/suits.dmi',
+		"Вульпканин" = 'icons/obj/clothing/species/vulpkanin/suits.dmi'
 		)
 
 /obj/item/clothing/head/helmet/space/eva
@@ -227,17 +227,17 @@
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 100, rad = 20, fire = 50, acid = 65)
 	flash_protect = 0
-	species_restricted = list("exclude", "Wryn")
+	species_restricted = list("exclude", "Врин")
 	sprite_sheets = list(
-		"Tajaran" = 'icons/mob/species/tajaran/helmet.dmi',
-		"Unathi" = 'icons/mob/species/unathi/helmet.dmi',
-		"Vox" = 'icons/mob/species/vox/helmet.dmi',
-		"Vulpkanin" = 'icons/mob/species/vulpkanin/helmet.dmi',
-		"Grey" = 'icons/mob/species/grey/helmet.dmi'
+		"Таяран" = 'icons/mob/species/tajaran/helmet.dmi',
+		"Унати" = 'icons/mob/species/unathi/helmet.dmi',
+		"Вокс" = 'icons/mob/species/vox/helmet.dmi',
+		"Вульпканин" = 'icons/mob/species/vulpkanin/helmet.dmi',
+		"Серый" = 'icons/mob/species/grey/helmet.dmi'
 		)
 	sprite_sheets_obj = list(
-		"Vox" = 'icons/obj/clothing/species/vox/hats.dmi',
-		"Vulpkanin" = 'icons/obj/clothing/species/vulpkanin/hats.dmi'
+		"Вокс" = 'icons/obj/clothing/species/vox/hats.dmi',
+		"Вульпканин" = 'icons/obj/clothing/species/vulpkanin/hats.dmi'
 		)
 
 //Mime's Hardsuit
@@ -247,9 +247,9 @@
 	desc = ". . ."
 	icon_state = "spacemimehelmet"
 	item_state = "spacemimehelmet"
-	species_restricted = list("exclude","Wryn")
+	species_restricted = list("exclude","Врин")
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/helmet.dmi')
+		"Вокс" = 'icons/mob/species/vox/helmet.dmi')
 	sprite_sheets_obj = null
 
 /obj/item/clothing/suit/space/eva/mime
@@ -258,9 +258,9 @@
 	desc = ". . ."
 	icon_state = "spacemime_suit"
 	item_state = "spacemime_items"
-	species_restricted = list("exclude","Wryn")
+	species_restricted = list("exclude","Врин")
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/suit.dmi')
+		"Вокс" = 'icons/mob/species/vox/suit.dmi')
 	sprite_sheets_obj = null
 
 /obj/item/clothing/head/helmet/space/eva/clown
@@ -269,9 +269,9 @@
 	desc = "An EVA helmet specifically designed for the clown. SPESSHONK!"
 	icon_state = "clownhelmet"
 	item_state = "clownhelmet"
-	species_restricted = list("exclude","Wryn")
+	species_restricted = list("exclude","Врин")
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/helmet.dmi')
+		"Вокс" = 'icons/mob/species/vox/helmet.dmi')
 	sprite_sheets_obj = null
 
 /obj/item/clothing/suit/space/eva/clown
@@ -280,7 +280,7 @@
 	desc = "An EVA suit specifically designed for the clown. SPESSHONK!"
 	icon_state = "spaceclown_suit"
 	item_state = "spaceclown_items"
-	species_restricted = list("exclude","Wryn")
+	species_restricted = list("exclude","Врин")
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/suit.dmi')
+		"Вокс" = 'icons/mob/species/vox/suit.dmi')
 	sprite_sheets_obj = null

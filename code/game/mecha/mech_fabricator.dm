@@ -292,7 +292,7 @@
 	if(..())
 		return
 	if(!allowed(user) && !isobserver(user))
-		to_chat(user, "<span class='warning'>Access denied.</span>")
+		to_chat(user, "<span class='warning'>Доступ запрещён.</span>")
 		return
 	ui_interact(user)
 

@@ -1,10 +1,10 @@
 // Pumpkin
 /obj/item/seeds/pumpkin
-	name = "pack of pumpkin seeds"
-	desc = "These seeds grow into pumpkin vines."
+	name = "пачка тыквенных семян" // pack of pumpkin seeds
+	desc = "Из этих семян вырастает тыквенная лоза."
 	icon_state = "seed-pumpkin"
 	species = "pumpkin"
-	plantname = "Pumpkin Vines"
+	plantname = "Тыквенная лоза"
 	product = /obj/item/reagent_containers/food/snacks/grown/pumpkin
 	lifespan = 50
 	endurance = 40
@@ -18,8 +18,8 @@
 
 /obj/item/reagent_containers/food/snacks/grown/pumpkin
 	seed = /obj/item/seeds/pumpkin
-	name = "pumpkin"
-	desc = "It's large and scary."
+	name = "тыква" // pumpkin
+	desc = "Большая и страшная."
 	icon_state = "pumpkin"
 	filling_color = "#FFA500"
 	bitesize_mod = 2
@@ -28,7 +28,7 @@
 
 /obj/item/reagent_containers/food/snacks/grown/pumpkin/attackby(obj/item/W as obj, mob/user as mob, params)
 	if(is_sharp(W))
-		user.show_message("<span class='notice'>You carve a face into [src]!</span>", 1)
+		user.show_message("<span class='notice'>Вы вырезаете лицо на [src]!</span>", 1)
 		new /obj/item/clothing/head/hardhat/pumpkinhead(user.loc)
 		qdel(src)
 		return
@@ -37,11 +37,11 @@
 
 // Blumpkin
 /obj/item/seeds/pumpkin/blumpkin
-	name = "pack of blumpkin seeds"
-	desc = "These seeds grow into blumpkin vines."
+	name = "пачка синячьих семян" // pack of blumpkin seeds
+	desc = "Из этих семян вырастает синячья лоза."
 	icon_state = "seed-blumpkin"
 	species = "blumpkin"
-	plantname = "Blumpkin Vines"
+	plantname = "Синячья лоза"
 	product = /obj/item/reagent_containers/food/snacks/grown/blumpkin
 	mutatelist = list()
 	reagents_add = list("ammonia" = 0.2, "chlorine" = 0.1, "plasma" = 0.1, "plantmatter" = 0.2)
@@ -49,8 +49,8 @@
 
 /obj/item/reagent_containers/food/snacks/grown/blumpkin
 	seed = /obj/item/seeds/pumpkin/blumpkin
-	name = "blumpkin"
-	desc = "The pumpkin's toxic sibling."
+	name = "синяк" // blumpkin
+	desc = "Ядовитый брат тыквы."
 	icon_state = "blumpkin"
 	filling_color = "#87CEFA"
 	bitesize_mod = 2

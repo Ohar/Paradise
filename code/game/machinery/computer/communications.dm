@@ -53,7 +53,7 @@
 		return COMM_AUTHENTICATION_MIN
 	else
 		if(message)
-			to_chat(user, "<span class='warning'>Access denied.</span>")
+			to_chat(user, "<span class='warning'>Доступ запрещён.</span>")
 		return COMM_AUTHENTICATION_NONE
 
 /obj/machinery/computer/communications/proc/change_security_level(var/new_level)
@@ -80,7 +80,7 @@
 
 	if(action == "auth")
 		if(!ishuman(usr))
-			to_chat(usr, "<span class='warning'>Access denied.</span>")
+			to_chat(usr, "<span class='warning'>Доступ запрещён.</span>")
 			return FALSE
 		// Logout function.
 		if(authenticated != COMM_AUTHENTICATION_NONE)
@@ -137,7 +137,7 @@
 				if(message_cooldown > world.time)
 					to_chat(usr, "<span class='warning'>Please allow at least one minute to pass between announcements.</span>")
 					return
-				var/input = input(usr, "Please write a message to announce to the station crew.", "Priority Announcement")
+				var/input = input(usr, "Please write a message to announce to the station crew.", "Важное объявление")
 				if(!input || message_cooldown > world.time || ..() || !(is_authenticated(usr) == COMM_AUTHENTICATION_MAX))
 					return
 				if(length(input) < COMM_MSGLEN_MINIMUM)

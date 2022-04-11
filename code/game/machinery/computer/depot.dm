@@ -110,7 +110,7 @@
 		return
 	. = FALSE
 	if(!allowed(usr))
-		to_chat(usr, "<span class='warning'>Access denied.</span>")
+		to_chat(usr, "<span class='warning'>Доступ запрещён.</span>")
 		return
 	switch(action)
 		if("primary")

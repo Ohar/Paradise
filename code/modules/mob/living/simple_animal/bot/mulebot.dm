@@ -248,7 +248,7 @@
 		update_controls()
 		return 1
 	else
-		to_chat(user, "<span class='danger'>Access denied.</span>")
+		to_chat(user, "<span class='danger'>Доступ запрещён.</span>")
 		return 0
 
 // TODO: remove this; PDAs currently depend on it

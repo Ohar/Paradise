@@ -21,7 +21,7 @@
 						<B>Game</b><br>
 						<A href='?src=[UID()];secretsadmin=showailaws'>Show AI Laws</A>&nbsp;&nbsp;
 						<A href='?src=[UID()];secretsadmin=showgm'>Show Game Mode</A>&nbsp;&nbsp;
-						<A href='?src=[UID()];secretsadmin=manifest'>Show Crew Manifest</A><br>
+						<A href='?src=[UID()];secretsadmin=manifest'>Показать список экипажа</A><br>
 						<A href='?src=[UID()];secretsadmin=check_antagonist'>Show current traitors and objectives</A><BR>
 						<A href='?src=[UID()];secretsadmin=view_codewords'>Show code phrases and responses</A><BR>
 						<a href='?src=[UID()];secretsadmin=night_shift_set'>Set Night Shift Mode</a><br>

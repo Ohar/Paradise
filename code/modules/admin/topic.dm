@@ -1852,7 +1852,7 @@
 		if(LAZYLEN(found_ids))
 			for(var/obj/item/card/id/ID in found_ids)
 				if(ID.registered_name == old_name)
-					ID.name = "[new_name]'s ID Card ([M.mind.role_alt_title ? M.mind.role_alt_title : M.mind.assigned_role])"
+					ID.name = "ID-карта [new_name] ([M.mind.role_alt_title ? M.mind.role_alt_title : M.mind.assigned_role])"
 					ID.registered_name = new_name
 					ID.RebuildHTML()
 		//rename all pdas with mob old name
@@ -1861,7 +1861,7 @@
 			for(var/obj/item/pda/PDA in found_pdas)
 				if(PDA.owner == old_name)
 					PDA.owner = new_name
-					PDA.name = "PDA-[new_name] ([PDA.ownjob])"
+					PDA.name = "КПК — [new_name] ([PDA.ownjob])"
 		//update the datacore records! This is goig to be a bit costly.
 		for(var/list/L in list(GLOB.data_core.general, GLOB.data_core.medical, GLOB.data_core.security, GLOB.data_core.locked))
 			for(var/datum/data/record/R in L)

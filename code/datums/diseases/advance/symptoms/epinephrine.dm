@@ -16,7 +16,7 @@ Bonus
 
 /datum/symptom/epinephrine
 
-	name = "Inotropical Hyperfunction"
+	name = "Инотропная гиперфункция"
 	stealth = -5
 	resistance = -4
 	stage_speed = -1
@@ -30,7 +30,7 @@ Bonus
 		switch(A.stage)
 			if(5)
 				if(prob(10))
-					to_chat(M, "<span class='notice'>[pick("Your body feels tough.", "You are feeling on edge.")]</span>")
+					to_chat(M, "<span class='notice'>[pick("Ваше тело немного крепчает.", "Вы чувствуете себя превосходно.")]</span>")
 	if(A.stage > 4 && M.health <= HEALTH_THRESHOLD_CRIT)
 		M.reagents.add_reagent("epinephrine", 0.5)
 	if(M.reagents.get_reagent_amount("epinephrine") > 20)

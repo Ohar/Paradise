@@ -28,11 +28,11 @@
 	resistance_flags = FIRE_PROOF
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/head.dmi',
-		"Unathi" = 'icons/mob/species/unathi/helmet.dmi',
-		"Tajaran" = 'icons/mob/species/tajaran/helmet.dmi',
-		"Vulpkanin" = 'icons/mob/species/vulpkanin/helmet.dmi',
-		"Grey" = 'icons/mob/species/grey/helmet.dmi'
+		"Вокс" = 'icons/mob/species/vox/head.dmi',
+		"Унати" = 'icons/mob/species/unathi/helmet.dmi',
+		"Таяран" = 'icons/mob/species/tajaran/helmet.dmi',
+		"Вульпканин" = 'icons/mob/species/vulpkanin/helmet.dmi',
+		"Серый" = 'icons/mob/species/grey/helmet.dmi'
 		)
 
 /obj/item/clothing/head/welding/attack_self(mob/user)
@@ -139,7 +139,7 @@
 	min_cold_protection_temperature = FIRE_HELM_MIN_TEMP_PROTECT
 	dog_fashion = /datum/dog_fashion/head/ushanka
 	sprite_sheets = list(
-	"Grey" = 'icons/mob/species/grey/head.dmi'
+	"Серый" = 'icons/mob/species/grey/head.dmi'
 	)
 
 /obj/item/clothing/head/ushanka/attack_self(mob/user as mob)
@@ -167,7 +167,7 @@
 
 
 	sprite_sheets = list(
-		"Grey" = 'icons/mob/species/grey/head.dmi'
+		"Серый" = 'icons/mob/species/grey/head.dmi'
 	)
 
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
@@ -240,7 +240,7 @@
 	species_disguise = "High-tech robot"
 	dog_fashion = /datum/dog_fashion/head/cardborg
 	sprite_sheets = list(
-	"Grey" = 'icons/mob/species/grey/head.dmi'
+	"Серый" = 'icons/mob/species/grey/head.dmi'
 	)
 
 
@@ -266,8 +266,8 @@
 	item_state = "head_mirror"
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/head.dmi',
-		"Drask" = 'icons/mob/species/drask/head.dmi',
-		"Grey" = 'icons/mob/species/grey/head.dmi'
+		"Вокс" = 'icons/mob/species/vox/head.dmi',
+		"Драск" = 'icons/mob/species/drask/head.dmi',
+		"Серый" = 'icons/mob/species/grey/head.dmi'
 	)
 

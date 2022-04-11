@@ -243,7 +243,7 @@
 		to_chat(user, "<span class='notice'>Analyzing Results for The floor:\n\t Overall Status: Healthy</span>")
 		to_chat(user, "<span class='notice'>\t Damage Specifics: [0]-[0]-[0]-[0]</span>")
 		to_chat(user, "<span class='notice'>Key: Suffocation/Toxin/Burns/Brute</span>")
-		to_chat(user, "<span class='notice'>Body Temperature: ???</span>")
+		to_chat(user, "<span class='notice'>Температура тела: ???</span>")
 		return
 
 	user.visible_message("<span class='notice'>[user] has analyzed [M]'s components.</span>","<span class='notice'>You have analyzed [M]'s components.</span>")

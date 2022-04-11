@@ -55,7 +55,7 @@
 
 	if(mob_to_track)
 		track = "<a href='byond://?src=[UID()];track=\ref[mob_to_track]'>[speaker_name] ([jobname])</a>"
-		track += "&nbsp;<a href='byond://?src=[UID()];open=\ref[mob_to_track]'>\[Open\]</a>"
+		track += "&nbsp;<a href='byond://?src=[UID()];open=\ref[mob_to_track]'>\[Открыть\]</a>"
 
 	return track
 
@@ -70,22 +70,22 @@ GLOBAL_VAR_INIT(announcing_vox, 0) // Stores the time of the last announcement
 #define VOX_PATH "sound/vox_fem/"
 
 /mob/living/silicon/ai/verb/announcement_help()
-	set name = "Announcement Help"
-	set desc = "Display a list of vocal words to announce to the crew."
-	set category = "AI Commands"
+	set name = "Голосовые объявления: помощь"
+	set desc = "Показывает список слов для голосового оповещения экипажа."
+	set category = "Команды ИИ"
 
-	var/dat = {"<meta charset="UTF-8">Here is a list of words you can type into the 'Announcement' button to create sentences to vocally announce to everyone on the same level at you.<BR> \
-	<UL><LI>You can also click on the word to preview it.</LI>\
-	<LI>You can only say 30 words for every announcement.</LI>\
-	<LI>Do not use punctuation as you would normally, if you want a pause you can use the full stop and comma characters by separating them with spaces, like so: 'Alpha . Test , Bravo'.</LI></UL>\
-	<font class='bad'>WARNING:</font><BR>Misuse of the announcement system will get you job banned.<HR>"}
+	var/dat = {"<meta charset="UTF-8">Вот список слов, которые можно использовать в «Голосовых объявлениях», комбинируя их в предложения для голосового оповещения всех, кто находится на вашем Z-уровне.<BR> \
+	<UL><LI>На слова можно кликать для прослушивания.</LI>\
+	<LI>В одном объявлении не может быть больше 30 слов.</LI>\
+	<LI>Не используйте обычную пунктуацию. Если вам нужна пауза, используйте символы точки «<code>.</code>» и запятой «<code>,</code>», разделяя их пробелами, например так: <code>«Alpha . Test , Bravo»</code>.</LI></UL>\
+	<font class='bad'>ВНИМАНИЕ:</font><BR>Неправильное использование системы объявлений может привести к джоббану.<HR>"}
 
 	// Show alert and voice sounds separately
 	var/vox_words = GLOB.vox_sounds - GLOB.vox_alerts
 	dat = help_format(GLOB.vox_alerts, dat)
 	dat = help_format(vox_words, dat)
 
-	var/datum/browser/popup = new(src, "announce_help", "Announcement Help", 500, 400)
+	var/datum/browser/popup = new(src, "announce_help", "Голосовые объявления: помощь", 500, 400)
 	popup.set_content(dat)
 	popup.open()
 
@@ -105,10 +105,12 @@ GLOBAL_VAR_INIT(announcing_vox, 0) // Stores the time of the last announcement
 		return
 
 	if(GLOB.announcing_vox > world.time)
-		to_chat(src, "<span class='warning'>Please wait [round((GLOB.announcing_vox - world.time) / 10)] seconds.</span>")
+		var/sec_to_wait = round((GLOB.announcing_vox - world.time) / 10)
+
+		to_chat(src, "<span class='warning'>Пожалуйста, подождите [sec_to_wait] секунд[declension_ru(sec_to_wait, "у", "ы", "")].</span>")
 		return
 
-	var/message = clean_input("WARNING: Misuse of this verb can result in you being job banned. More help is available in 'Announcement Help'", "Announcement", last_announcement, src)
+	var/message = clean_input("ВНИМАНИЕ: Неправильное использование этой команды может привести к джоббану. Подробнее в «Голосовые объявления: помощь»", "Голосовые объявления", last_announcement, src)
 
 	last_announcement = message
 
@@ -133,7 +135,7 @@ GLOBAL_VAR_INIT(announcing_vox, 0) // Stores the time of the last announcement
 			incorrect_words += word
 
 	if(incorrect_words.len)
-		to_chat(src, "<span class='warning'>These words are not available on the announcement system: [english_list(incorrect_words)].</span>")
+		to_chat(src, "<span class='warning'>Эти слова недоступны для голосовых объявлений: [english_list(incorrect_words)].</span>")
 		return
 
 	GLOB.announcing_vox = world.time + VOX_DELAY
@@ -151,7 +153,7 @@ GLOBAL_VAR_INIT(announcing_vox, 0) // Stores the time of the last announcement
 
 /mob/living/silicon/ai/proc/ai_voice_announcement_to_text(words)
 	var/words_string = jointext(words, " ")
-	var/formatted_message = "<h1 class='alert'>A.I. Announcement</h1>"
+	var/formatted_message = "<h1 class='alert'>Объявление ИИ</h1>"
 	formatted_message += "<br><span class='alert'>[words_string]</span>"
 	formatted_message += "<br><span class='alert'> -[src]</span>"
 

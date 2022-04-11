@@ -1,7 +1,7 @@
 GLOBAL_DATUM_INIT(generic_crew_manifest, /datum/ui_module/generic_crew_manifest, new)
 
 /datum/ui_module/generic_crew_manifest
-	name = "Crew Manifest"
+	name = "Список экипажа"
 
 /datum/ui_module/generic_crew_manifest/ui_interact(user, ui_key = "GenericCrewManifest", datum/tgui/ui = null, datum/tgui/master_ui = null, state)
 	ui = SStgui.try_update_ui(user, src, ui_key, ui)

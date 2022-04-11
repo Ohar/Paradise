@@ -365,7 +365,7 @@
 
 /turf/simulated/wall/proc/try_decon(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/gun/energy/plasmacutter))
-		to_chat(user, "<span class='notice'>You begin slicing through the outer plating.</span>")
+		to_chat(user, "<span class='notice'>Вы начинаете разрезать the outer plating.</span>")
 		playsound(src, I.usesound, 100, 1)
 
 		if(do_after(user, istype(sheet_type, /obj/item/stack/sheet/mineral/diamond) ? 120 * I.toolspeed : 60 * I.toolspeed, target = src))

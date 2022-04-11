@@ -582,7 +582,7 @@
 	affected.robotize(chosen_appearance, convert_all = FALSE)
 	if(istype(affected, /obj/item/organ/external/head))
 		var/obj/item/organ/external/head/head = affected
-		head.h_style = "Bald" // nearly all the appearance changes for heads are non-monitors; we want to get rid of a floating screen
+		head.h_style = "Лысина" // nearly all the appearance changes for heads are non-monitors; we want to get rid of a floating screen
 		target.update_hair()
 	target.update_body()
 	target.updatehealth()

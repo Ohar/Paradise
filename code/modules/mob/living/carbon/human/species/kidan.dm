@@ -1,6 +1,8 @@
 /datum/species/kidan
-	name = "Kidan"
-	name_plural = "Kidan"
+	name = "Кидан"
+	name_plural = "Кидан"
+	name_adjective_male = "киданский"
+	name_adjective_female = "киданская"
 	icobase = 'icons/mob/human_races/r_kidan.dmi'
 	deform = 'icons/mob/human_races/r_def_kidan.dmi'
 	language = "Chittin"

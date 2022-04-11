@@ -160,7 +160,7 @@ const LawManagementView = (props, context) => {
                   {zeroth_law}
                 </Table.Cell>
                 <Table.Cell>
-                  N/A
+                  Нет
                 </Table.Cell>
                 <Table.Cell>
                   <Button
@@ -188,7 +188,7 @@ const LawManagementView = (props, context) => {
                 {ion_law}
               </Table.Cell>
               <Table.Cell>
-                N/A
+                Нет
               </Table.Cell>
               <Table.Cell>
                 <Button
@@ -215,7 +215,7 @@ const LawManagementView = (props, context) => {
                 {inherent_law}
               </Table.Cell>
               <Table.Cell>
-                N/A
+                Нет
               </Table.Cell>
               <Table.Cell>
                 <Button

@@ -99,50 +99,50 @@
 
 /obj/item/reagent_containers/glass/bottle/facid
 	name = "Fluorosulfuric Acid Bottle"
-	desc = "A small bottle. Contains a small amount of Fluorosulfuric Acid"
+	desc = "Небольшая бутылочка. Содержит a small amount of Fluorosulfuric Acid"
 	icon_state = "round_bottle"
 	list_reagents = list("facid" = 30)
 
 /obj/item/reagent_containers/glass/bottle/adminordrazine
 	name = "Adminordrazine Bottle"
-	desc = "A small bottle. Contains the liquid essence of the gods."
+	desc = "Небольшая бутылочка. Содержит the liquid essence of the gods."
 	icon = 'icons/obj/drinks.dmi'
 	icon_state = "holyflask"
 	list_reagents = list("adminordrazine" = 30)
 
 /obj/item/reagent_containers/glass/bottle/capsaicin
 	name = "Capsaicin Bottle"
-	desc = "A small bottle. Contains hot sauce."
+	desc = "Небольшая бутылочка. Содержит hot sauce."
 	icon_state = "round_bottle"
 	list_reagents = list("capsaicin" = 30)
 
 /obj/item/reagent_containers/glass/bottle/frostoil
 	name = "Frost Oil Bottle"
-	desc = "A small bottle. Contains cold sauce."
+	desc = "Небольшая бутылочка. Содержит cold sauce."
 	icon_state = "round_bottle"
 	list_reagents = list("frostoil" = 30)
 
 /obj/item/reagent_containers/glass/bottle/morphine
-	name = "Morphine Bottle"
-	desc = "A small bottle of morphine, a powerful painkiller."
+	name = "Бутылочка морфина"
+	desc = "Небольшая бутылочка морфина, мощного обезболивающего."
 	icon_state = "bottle"
 	list_reagents = list("morphine" = 30)
 
 /obj/item/reagent_containers/glass/bottle/ether
-	name = "Ether Bottle"
+	name = "Бутылочка эфира"
 	desc = "A small bottle of an ether, a strong anesthetic and sedative."
 	icon_state = "round_bottle"
 	list_reagents = list("ether" = 30)
 
 /obj/item/reagent_containers/glass/bottle/charcoal
-	name = "Charcoal Bottle"
-	desc = "A small bottle. Contains charcoal."
+	name = "Бутылочка активированного угля"
+	desc = "Небольшая бутылочка. Содержит активированный уголь."
 	icon_state = "wide_bottle"
 	list_reagents = list("charcoal" = 30)
 
 /obj/item/reagent_containers/glass/bottle/epinephrine
-	name = "Epinephrine Bottle"
-	desc = "A small bottle. Contains epinephrine - used to stabilize patients."
+	name = "Бутылочка эпинефрина"
+	desc = "Небольшая бутылочка. Содержит эпинефрин — средство стабилизации пациентов."
 	icon_state = "round_bottle"
 	list_reagents = list("epinephrine" = 30)
 
@@ -168,62 +168,62 @@
 
 /obj/item/reagent_containers/glass/bottle/reagent/oil
 	name = "Oil Bottle"
-	desc = "A reagent bottle. Contains oil."
+	desc = "Бутылка реагентов. Contains oil."
 	list_reagents = list("oil" = 50)
 	pixel_x = -4
 	pixel_y = 6
 
 /obj/item/reagent_containers/glass/bottle/reagent/phenol
 	name = "Phenol Bottle"
-	desc = "A reagent bottle. Contains phenol."
+	desc = "Бутылка реагентов. Contains phenol."
 	list_reagents = list("phenol" = 50)
 	pixel_x = 6
 	pixel_y = 6
 
 /obj/item/reagent_containers/glass/bottle/reagent/acetone
 	name = "Acetone Bottle"
-	desc = "A reagent bottle. Contains acetone."
+	desc = "Бутылка реагентов. Contains acetone."
 	list_reagents = list("acetone" = 50)
 	pixel_x = -4
 
 /obj/item/reagent_containers/glass/bottle/reagent/ammonia
 	name = "Ammonia Bottle"
-	desc = "A reagent bottle. Contains ammonia."
+	desc = "Бутылка реагентов. Contains ammonia."
 	list_reagents = list("ammonia" = 50)
 	pixel_x = 6
 
 /obj/item/reagent_containers/glass/bottle/reagent/diethylamine
 	name = "Diethylamine Bottle"
-	desc = "A reagent bottle. Contains diethylamine."
+	desc = "Бутылка реагентов. Contains diethylamine."
 	list_reagents = list("diethylamine" = 50)
 	pixel_x = -4
 	pixel_y = -6
 
 /obj/item/reagent_containers/glass/bottle/reagent/acid
 	name = "Acid Bottle"
-	desc = "A reagent bottle. Contains sulfuric acid."
+	desc = "Бутылка реагентов. Contains sulfuric acid."
 	list_reagents = list("sacid" = 50)
 	pixel_x = 6
 	pixel_y = -6
 
 /obj/item/reagent_containers/glass/bottle/reagent/formaldehyde
 	name = "Formaldehyde Bottle"
-	desc = "A reagent bottle. Contains formaldehyde."
+	desc = "Бутылка реагентов. Contains formaldehyde."
 	list_reagents = list("formaldehyde" = 50)
 
 /obj/item/reagent_containers/glass/bottle/reagent/synaptizine
 	name = "Synaptizine Bottle"
-	desc = "A reagent bottle. Contains synaptizine."
+	desc = "Бутылка реагентов. Contains synaptizine."
 	list_reagents = list("synaptizine" = 50)
 
 /obj/item/reagent_containers/glass/bottle/reagent/morphine
-	name = "Morphine Bottle"
-	desc = "A reagent bottle. Contains morphine."
+	name = "Бутылочка морфина"
+	desc = "Бутылка реагентов. Содержит морфин."
 	list_reagents = list("morphine" = 50)
 
 /obj/item/reagent_containers/glass/bottle/reagent/insulin
 	name = "Insulin Bottle"
-	desc = "A reagent bottle. Contains insulin."
+	desc = "Бутылка реагентов. Contains insulin."
 	list_reagents = list("insulin" = 50)
 
 /obj/item/reagent_containers/glass/bottle/reagent/hairgrownium
@@ -237,19 +237,19 @@
 	list_reagents = list("hair_dye" = 50)
 
 /obj/item/reagent_containers/glass/bottle/reagent/omnizine
-	name = "Omnizine Bottle"
-	desc = "A reagent bottle. Contains Omnizine."
+	name = "Бутылка омнизина"
+	desc = "Бутылка реагентов. Содержит омнизин."
 	list_reagents = list("omnizine" = 50)
 
 /obj/item/reagent_containers/glass/bottle/reagent/strange_reagent
-	name = "Strange Reagent Bottle"
-	desc = "A bottle of glowing fluid."
+	name = "Бутылка странного реагента"
+	desc = "Бутылка светящейся жидкости."
 	list_reagents = list("strange_reagent" = 30)
 
 ////////////////////Traitor Poison Bottle//////////////////////////////
 
 /obj/item/reagent_containers/glass/bottle/traitor
-	desc = "It has a small skull and crossbones on it. Uh-oh!"
+	desc = "На ней изображён небольшой череп и кости. Ох-хо."
 	possible_transfer_amounts = list(5,10,15,25,30,40)
 	volume = 40
 
@@ -282,111 +282,111 @@
 	list_reagents = list("potass_iodide" = 30)
 
 /obj/item/reagent_containers/glass/bottle/flu_virion
-	name = "Flu virion culture bottle"
-	desc = "A small bottle. Contains H13N1 flu virion culture in synthblood medium."
+	name = "Бутылочка с культурой вириона гриппа"
+	desc = "Небольшая бутылочка. Содержит культуру вириона гриппа H13N1 в среде синтетической крови."
 	icon_state = "round_bottle"
 	spawned_disease = /datum/disease/advance/flu
 
 /obj/item/reagent_containers/glass/bottle/epiglottis_virion
-	name = "Epiglottis virion culture bottle"
-	desc = "A small bottle. Contains Epiglottis virion culture in synthblood medium."
+	name = "Бутылочка с культурой вириона «Надгортанника»"
+	desc = "Небольшая бутылочка. Содержит культуру вириона «Надгортанника» в среде синтетической крови."
 	icon_state = "round_bottle"
 	spawned_disease = /datum/disease/advance/voice_change
 
 /obj/item/reagent_containers/glass/bottle/liver_enhance_virion
-	name = "Liver enhancement virion culture bottle"
-	desc = "A small bottle. Contains liver enhancement virion culture in synthblood medium."
+	name = "Бутылочка с культурой вириона «Усилителя печени»"
+	desc = "Небольшая бутылочка. Содержит культуру вириона «Усилителя печени» в среде синтетической крови."
 	icon_state = "round_bottle"
 	spawned_disease = /datum/disease/advance/heal
 
 /obj/item/reagent_containers/glass/bottle/hullucigen_virion
-	name = "Hullucigen virion culture bottle"
-	desc = "A small bottle. Contains hullucigen virion culture in synthblood medium."
+	name = "Бутылочка с культурой вириона «Галлюцигена»"
+	desc = "Небольшая бутылочка. Содержит культуру вириона «Галлюцигена» в среде синтетической крови."
 	icon_state = "round_bottle"
 	spawned_disease = /datum/disease/advance/hullucigen
 
 /obj/item/reagent_containers/glass/bottle/pierrot_throat
-	name = "Pierrot's Throat culture bottle"
-	desc = "A small bottle. Contains H0NI<42 virion culture in synthblood medium."
+	name = "Бутылочка с культурой «Горла Пьеро»"
+	desc = "Небольшая бутылочка. Содержит культуру вириона Х0Н1<42 в среде синтетической крови."
 	icon_state = "round_bottle"
 	spawned_disease = /datum/disease/pierrot_throat
 
 /obj/item/reagent_containers/glass/bottle/cold
-	name = "Rhinovirus culture bottle"
-	desc = "A small bottle. Contains XY-rhinovirus culture in synthblood medium."
+	name = "Бутылочка с культурой риновируса"
+	desc = "Небольшая бутылочка. Содержит культуру риновируса XY в среде синтетической крови."
 	icon_state = "round_bottle"
 	spawned_disease = /datum/disease/advance/cold
 
 /obj/item/reagent_containers/glass/bottle/retrovirus
-	name = "Retrovirus culture bottle"
-	desc = "A small bottle. Contains a retrovirus culture in a synthblood medium."
+	name = "Бутылочка с культурой «Ретровируса»"
+	desc = "Небольшая бутылочка. Содержит культуру ретровируса в среде синтетической крови."
 	icon_state = "round_bottle"
 	spawned_disease = /datum/disease/dna_retrovirus
 
 /obj/item/reagent_containers/glass/bottle/gbs
-	name = "GBS culture bottle"
-	desc = "A small bottle. Contains Gravitokinetic Bipotential SADS+ culture in synthblood medium."//Or simply - General BullShit
+	name = "Бутылочка с культурой «ГБС»"
+	desc = "Небольшая бутылочка. Содержит культуру гравикинетического бипотенциального САДС+ в среде синтетической крови."//Or simply - General BullShit
 	icon_state = "round_bottle"
 	amount_per_transfer_from_this = 5
 	spawned_disease = /datum/disease/gbs
 
 /obj/item/reagent_containers/glass/bottle/fake_gbs
-	name = "GBS culture bottle"
-	desc = "A small bottle. Contains Gravitokinetic Bipotential SADS- culture in synthblood medium."//Or simply - General BullShit
+	name = "Бутылочка с культурой «ГБС»"
+	desc = "Небольшая бутылочка. Содержит культуру гравикинетического бипотенциального САДС− в среде синтетической крови."//Or simply - General BullShit
 	icon_state = "round_bottle"
 	spawned_disease = /datum/disease/fake_gbs
 
 /obj/item/reagent_containers/glass/bottle/brainrot
-	name = "Brainrot culture bottle"
-	desc = "A small bottle. Contains Cryptococcus Cosmosis culture in synthblood medium."
+	name = "Бутылочка с культурой «Мозговой гнили»"
+	desc = "Небольшая бутылочка. Содержит культуру космического криптококка в среде синтетической крови."
 	icon_state = "round_bottle"
 	spawned_disease = /datum/disease/brainrot
 
 /obj/item/reagent_containers/glass/bottle/magnitis
-	name = "Magnitis culture bottle"
-	desc = "A small bottle. Contains a small dosage of Fukkos Miracos."
+	name = "Бутылочка с культурой «Магнитиса»"
+	desc = "Небольшая бутылочка. Содержит небольшую дозу «Фуккоса Миракоса»."
 	icon_state = "round_bottle"
 	spawned_disease = /datum/disease/magnitis
 
 /obj/item/reagent_containers/glass/bottle/wizarditis
-	name = "Wizarditis culture bottle"
-	desc = "A small bottle. Contains a sample of Rincewindus Vulgaris."
+	name = "Бутылочка с культурой «Визардиса»"
+	desc = "Небольшая бутылочка. Содержит образец «Ринсвиндия обыкновенного»."
 	icon_state = "round_bottle"
 	spawned_disease = /datum/disease/wizarditis
 
 /obj/item/reagent_containers/glass/bottle/anxiety
-	name = "Severe Anxiety culture bottle"
-	desc = "A small bottle. Contains a sample of Lepidopticides."
+	name = "Бутылочка с культурой «Сильного беспокойства»"
+	desc = "Небольшая бутылочка. Содержит образец лепидоптицидов."
 	icon_state = "round_bottle"
 	spawned_disease = /datum/disease/anxiety
 
 /obj/item/reagent_containers/glass/bottle/beesease
-	name = "Beesease culture bottle"
-	desc = "A small bottle. Contains a sample of invasive Apidae."
+	name = "Бутылочка с культурой «Пчелоразы»"
+	desc = "Небольшая бутылочка. Содержит образец агрессивных пчёл."
 	icon_state = "round_bottle"
 	spawned_disease = /datum/disease/beesease
 
 /obj/item/reagent_containers/glass/bottle/fluspanish
-	name = "Spanish flu culture bottle"
-	desc = "A small bottle. Contains a sample of Inquisitius."
+	name = "Бутылочка с культурой «Испанского инквизиционного гриппа»"
+	desc = "Небольшая бутылочка. Содержит образец вириона uHKBu3uLIu9I."
 	icon_state = "round_bottle"
 	spawned_disease = /datum/disease/fluspanish
 
 /obj/item/reagent_containers/glass/bottle/tuberculosis
-	name = "Fungal Tuberculosis culture bottle"
-	desc = "A small bottle. Contains a sample of Fungal Tubercle bacillus."
+	name = "Бутылочка с культурой «Грибкового туберкулёза»"
+	desc = "Небольшая бутылочка. Содержит образец грибковой туберкулезной бациллы."
 	icon_state = "round_bottle"
 	spawned_disease = /datum/disease/tuberculosis
 
 /obj/item/reagent_containers/glass/bottle/regeneration
-	name = "Regeneration culture bottle"
-	desc = "A small bottle. Contains a sample of a virus that heals toxin damage."
+	name = "Бутылочка с культурой «Регенерации»"
+	desc = "Небольшая бутылочка. Содержит образец вируса, исцеляющего урон от токсинов."
 	icon_state = "round_bottle"
 	spawned_disease = /datum/disease/advance/heal
 
 /obj/item/reagent_containers/glass/bottle/sensory_restoration
-	name = "Sensory Restoration culture bottle"
-	desc = "A small bottle. Contains a sample of a virus that heals sensory damage."
+	name = "Бутылочка с культурой «Сенсорного восстановления»"
+	desc = "Небольшая бутылочка. Содержит образец вируса, исцеляющего повреждение органов чувств."
 	icon_state = "round_bottle"
 	spawned_disease = /datum/disease/advance/sensory_restoration
 

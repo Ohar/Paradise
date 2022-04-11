@@ -108,7 +108,7 @@ GLOBAL_LIST_INIT(marker_beacon_colors, list(
 	if(.)
 		return
 	if(user.incapacitated())
-		to_chat(user, "<span class='warning'>You can't do that right now!</span>")
+		to_chat(user, "<span class='warning'>Сейчас вы не можете этого сделать!</span>")
 		return
 	to_chat(user, "<span class='notice'>You start picking [src] up...</span>")
 	if(do_after(user, remove_speed, target = src))

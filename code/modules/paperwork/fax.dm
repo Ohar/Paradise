@@ -51,15 +51,15 @@ GLOBAL_LIST_EMPTY(adminfaxes)
 		html += "<td><A align='right' href='?src=[UID()];AdminFaxView=\ref[A.message]'>View</A></td>"
 		if(!A.reply_to)
 			if(A.from_department == "Administrator")
-				html += "<td>N/A</td>"
+				html += "<td>Нет</td>"
 			else
 				html += "<td><A align='right' href='?src=[UID()];AdminFaxCreate=\ref[A.sent_by];originfax=\ref[A.origin];faxtype=[A.to_department];replyto=\ref[A.message]'>Reply</A>"
 				if(A.sent_by)
 					html += "<BR><A align='right' href='?src=[UID()];AdminFaxNotify=\ref[A.sent_by]'>Notify</A>"
 				html += "</td>"
-			html += "<td>N/A</td>"
+			html += "<td>Нет</td>"
 		else
-			html += "<td>N/A</td>"
+			html += "<td>Нет</td>"
 			html += "<td><A align='right' href='?src=[UID()];AdminFaxView=\ref[A.reply_to]'>Original</A></td>"
 		html += "</tr>"
 	html += "</table>"

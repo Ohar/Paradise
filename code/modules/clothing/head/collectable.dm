@@ -66,10 +66,10 @@
 	item_state = "welding"
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/helmet.dmi',
-		"Unathi" = 'icons/mob/species/unathi/mask.dmi',
-		"Tajaran" = 'icons/mob/species/tajaran/mask.dmi',
-		"Vulpkanin" = 'icons/mob/species/vulpkanin/mask.dmi'
+		"Вокс" = 'icons/mob/species/vox/helmet.dmi',
+		"Унати" = 'icons/mob/species/unathi/mask.dmi',
+		"Таяран" = 'icons/mob/species/tajaran/mask.dmi',
+		"Вульпканин" = 'icons/mob/species/vulpkanin/mask.dmi'
 		)
 
 /obj/item/clothing/head/collectable/slime
@@ -142,5 +142,5 @@
 	item_state = "swat"
 
 	sprite_sheets = list(
-		"Vox" = 'icons/mob/species/vox/helmet.dmi'
+		"Вокс" = 'icons/mob/species/vox/helmet.dmi'
 		)

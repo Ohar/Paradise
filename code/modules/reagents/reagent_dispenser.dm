@@ -222,7 +222,7 @@
 /obj/structure/reagent_dispensers/water_cooler/examine(mob/user)
 	. = ..()
 	if(get_dist(user, src) <= 2)
-		. += "There are [paper_cups ? paper_cups : "no"] paper cups left."
+		. += paper_cups ? declension_ru(paper_cups,"Остался [paper_cups] бумажный стаканчик.","Осталось [paper_cups] бумажных стаканчика.","Осталось [paper_cups] бумажных стаканчиков.") : "Бумажных стаканчиков не осталось."
 
 /obj/structure/reagent_dispensers/water_cooler/attack_hand(mob/living/user)
 	if(!paper_cups)

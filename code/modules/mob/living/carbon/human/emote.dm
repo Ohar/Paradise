@@ -1022,21 +1022,21 @@
 			+ " wave(s), whimper(s), wink(s), yawn(s)"
 
 			switch(dna.species.name)
-				if("Diona")
+				if("Диона")
 					emotelist += "\n<u>Специфические эмоуты рассы Diona</u> :- creak(s)"
-				if("Drask")
+				if("Драск")
 					emotelist += "\n<u>Специфические эмоуты расы Drask</u> :- drone(s)-none/mob, hum(s)-none/mob, rumble(s)-none/mob"
-				if("Kidan")
+				if("Кидан")
 					emotelist += "\n<u>Специфические эмоуты расы Kidan</u> :- click(s), clack(s)"
-				if("Skrell")
+				if("Скрелл")
 					emotelist += "\n<u>Специфические эмоуты расы Skrell</u> :- warble(s)"
-				if("Tajaran")
+				if("Таяран")
 					emotelist += "\n<u>Специфические эмоуты расы Tajaran</u> :- wag(s), swag(s)"
-				if("Unathi")
+				if("Унати")
 					emotelist += "\n<u>Специфические эмоуты расы Unathi</u> :- wag(s), swag(s), hiss(es)"
-				if("Vox")
+				if("Вокс")
 					emotelist += "\n<u>Специфические эмоуты расы Vox</u> :- wag(s), swag(s), quill(s)"
-				if("Vulpkanin")
+				if("Вульпканин")
 					emotelist += "\n<u>Специфические эмоуты расы Vulpkanin</u> :- wag(s), swag(s), growl(s)-none/mob, howl(s)-none/mob"
 
 			if(ismachineperson(src))

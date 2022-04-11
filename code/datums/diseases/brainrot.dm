@@ -1,18 +1,18 @@
 /datum/disease/brainrot
-	name = "Brainrot"
+	name = "Мозговая гниль"
 	max_stages = 4
-	spread_text = "On contact"
+	spread_text = "Контактный"
 	spread_flags = CONTACT_GENERAL
-	cure_text = "Mannitol"
+	cure_text = "Маннитол"
 	cures = list("mannitol")
-	agent = "Cryptococcus Cosmosis"
+	agent = "Криптококк космозис"
 	viable_mobtypes = list(/mob/living/carbon/human)
-	cure_chance = 15//higher chance to cure, since two reagents are required
-	desc = "This disease destroys the braincells, causing brain fever, brain necrosis and general intoxication."
+	cure_chance = 15 // higher chance to cure, since two reagents are required
+	desc = "Эта болезнь разрушает клетки мозга, провоцируя воспаление мозга, его некроз и общую интоксикацию организма."
 	required_organs = list(/obj/item/organ/internal/brain)
 	severity = DANGEROUS
 
-/datum/disease/brainrot/stage_act() //Removed toxloss because damaging diseases are pretty horrible. Last round it killed the entire station because the cure didn't work -- Urist -ACTUALLY Removed rather than commented out, I don't see it returning - RR
+/datum/disease/brainrot/stage_act() // Removed toxloss because damaging diseases are pretty horrible. Last round it killed the entire station because the cure didn't work -- Urist -ACTUALLY Removed rather than commented out, I don't see it returning - RR
 	..()
 
 	switch(stage)
@@ -22,7 +22,7 @@
 			if(prob(2))
 				affected_mob.emote("yawn")
 			if(prob(2))
-				to_chat(affected_mob, "<span class='danger'>You don't feel like yourself.</span>")
+				to_chat(affected_mob, "<span class='danger'>Кажется, будто вы — кто-то другой.</span>")
 			if(prob(5))
 				affected_mob.adjustBrainLoss(1)
 		if(3)
@@ -30,23 +30,23 @@
 				affected_mob.emote("stare")
 			if(prob(2))
 				affected_mob.emote("drool")
-			if(prob(10) && affected_mob.getBrainLoss()<=98)//shouldn't brainpain you to death now
+			if(prob(10) && affected_mob.getBrainLoss()<=98) // shouldn't brainpain you to death now
 				affected_mob.adjustBrainLoss(2)
 				if(prob(2))
-					to_chat(affected_mob, "<span class='danger'>Your try to remember something important...but can't.</span>")
+					to_chat(affected_mob, "<span class='danger'>Вы пытаетесь вспомнить что-то важное… но не можете.</span>")
 
 		if(4)
 			if(prob(2))
 				affected_mob.emote("stare")
 			if(prob(2))
 				affected_mob.emote("drool")
-			if(prob(15) && affected_mob.getBrainLoss()<=98) //shouldn't brainpain you to death now
+			if(prob(15) && affected_mob.getBrainLoss()<=98) // shouldn't brainpain you to death now
 				affected_mob.adjustBrainLoss(3)
 				if(prob(2))
-					to_chat(affected_mob, "<span class='danger'>Strange buzzing fills your head, removing all thoughts.</span>")
+					to_chat(affected_mob, "<span class='danger'>Голову наполняет странное жужжание, поглощая все мысли…</span>")
 			if(prob(3))
-				to_chat(affected_mob, "<span class='danger'>You lose consciousness...</span>")
-				affected_mob.visible_message("<span class='warning'>[affected_mob] suddenly collapses</span>")
+				to_chat(affected_mob, "<span class='danger'>Вы теряете сознание…</span>")
+				affected_mob.visible_message("<span class='warning'>[affected_mob] внезапно пада[pluralize_ru(affected_mob.gender,"ет","ют")].</span>")
 				affected_mob.Paralyse(rand(5,10))
 				if(prob(1))
 					affected_mob.emote("snore")

@@ -46,7 +46,7 @@
 
 /datum/data/pda/utility/scanmode/medical/scan_mob(mob/living/M, mob/living/user)
 	user.visible_message("<span class='notice'>[user] analyzes [M]'s vitals.</span>", "<span class='notice'>You analyze [M]'s vitals.</span>")
-	
+
 	healthscan(user, M, 1)
 
 /datum/data/pda/utility/scanmode/dna
@@ -85,7 +85,7 @@
 
 	user.show_message("<span class='notice'>Analyzing Results for [C]:</span>")
 	if(C.radiation)
-		user.show_message("<span class='notice'>Radiation Level: [C.radiation > 0 ? "</span><span class='danger'>[C.radiation]" : "0"]</span>")
+		user.show_message("<span class='notice'>Уровень радиации: [C.radiation > 0 ? "</span><span class='danger'>[C.radiation]" : "0"]</span>")
 	else
 		user.show_message("<span class='notice'>No radiation detected.</span>")
 

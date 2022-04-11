@@ -32,7 +32,7 @@ export const PortableTurret = (props, context) => {
         </NoticeBox>
         <Section>
           <LabeledList>
-            <LabeledList.Item label="Status">
+            <LabeledList.Item label="Статус">
               <Button
                 icon={on ? 'power-off' : 'times'}
                 content={on ? 'On' : 'Off'}
