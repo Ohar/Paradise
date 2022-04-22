@@ -227,21 +227,21 @@
 
 /datum/language/vox
 	name = "Vox-pidgin"
-	desc = "The common tongue of the various Vox ships making up the Shoal. It sounds like chaotic shrieking to everyone else."
+	desc = "Вокс-пиджин — общий язык множества кораблей воксов, входящих в ковчег «Отмель». Для не-воксов он звучит как хаотичные визги и скрежет."
 	speech_verb = "shrieks"
 	ask_verb = "creels"
 	exclaim_verbs = list("loudly skrees")
 	colour = "vox"
 	key = "v"
 	flags = RESTRICTED | WHITELISTED
-	syllables = list("ti","ti","ti","hi","hi","ki","ki","ki","ki","ya","ta","ha","ka","ya","yi","chi","cha","kah", \
-	"SKRE","AHK","EHK","RAWK","KRA","AAA","EEE","KI","II","KRI","KA")
+	syllables = list("ти","ти","ти","хи","хи","ки","ки","ки","ки","йя","та","ха","ка","йя","йи","чи","ча","ка", \
+	"СКРЕ","АХ","ИХ","РАК","КРА","ААА","ИИИ","КИ","ИИ","КРИ","КА")
 
 /datum/language/vox/get_random_name()
 	var/sounds = rand(2, 8)
 	var/i = 0
 	var/newname = ""
-	var/static/list/vox_name_syllables = list("ti","hi","ki","ya","ta","ha","ka","ya","chi","cha","kah")
+	var/static/list/vox_name_syllables = list("ти","хи","ки","йя","та","ха","ка","йя","чи","ча","ка")
 	while(i <= sounds)
 		i++
 		newname += pick(vox_name_syllables)
