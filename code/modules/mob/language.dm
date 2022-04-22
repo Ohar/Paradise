@@ -359,9 +359,9 @@
 	syllables = list("hoorb","vrrm","ooorm","urrrum","ooum","ee","ffm","hhh","mn","ongg")
 
 /datum/language/drask/get_random_name()
-	var/new_name = "[pick(list("Hoorm","Viisk","Saar","Mnoo","Oumn","Fmong","Gnii","Vrrm","Oorm","Dromnn","Ssooumn","Ovv", "Hoorb","Vaar","Gaar","Goom","Ruum","Rumum"))]"
-	new_name += "-[pick(list("Hoorm","Viisk","Saar","Mnoo","Oumn","Fmong","Gnii","Vrrm","Oorm","Dromnn","Ssooumn","Ovv", "Hoorb","Vaar","Gaar","Goom","Ruum","Rumum"))]"
-	new_name += "-[pick(list("Hoorm","Viisk","Saar","Mnoo","Oumn","Fmong","Gnii","Vrrm","Oorm","Dromnn","Ssooumn","Ovv", "Hoorb","Vaar","Gaar","Goom","Ruum","Rumum"))]"
+	var/new_name = "[pick(list("Хурм","Вииск","Саар","Мну","Оум","Фмонг","Гнай","Вррм","Урм","Дромнн","Ссоумн","Овв", "Хурб","Ваар","Гаар","Гум","Рююм","Румум"))]"
+	new_name += "-[pick(list("Хурм","Вииск","Саар","Мну","Оум","Фмонг","Гнай","Вррм","Урм","Дромнн","Ссоумн","Овв", "Хурб","Ваар","Гаар","Гум","Рююм","Румум"))]"
+	new_name += "-[pick(list("Хурм","Вииск","Саар","Мну","Оум","Фмонг","Гнай","Вррм","Урм","Дромнн","Ссоумн","Овв", "Хурб","Ваар","Гаар","Гум","Рююм","Румум"))]"
 	return new_name
 
 /datum/language/common
