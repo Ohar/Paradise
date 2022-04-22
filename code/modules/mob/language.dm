@@ -209,10 +209,10 @@
 	colour = "vulpkanin"
 	key = "7"
 	flags = RESTRICTED
-	syllables = list("rur","ya","cen","rawr","bar","kuk","tek","qat","uk","wu","vuh","tah","tch","schz","auch", \
-	"ist","ein","entch","zwichs","tut","mir","wo","bis","es","vor","nic","gro","lll","enem","zandt","tzch","noch", \
-	"hel","ischt","far","wa","baram","iereng","tech","lach","sam","mak","lich","gen","or","ag","eck","gec","stag","onn", \
-	"bin","ket","jarl","vulf","einech","cresthz","azunein","ghzth")
+	syllables = list("рур","йя","кен","равр","бар","кук","тек","кват","ук","ву","вух","вуф","тах","тч","ш","щ","ох", \
+	"ист","эйн","энтч","цвич","тут","мир","во","бис","эс","вор","нис","гро","илль","энем","зандт","тщч","ноч", \
+	"хэл","ищт","фар","ва","барам","йеренк","тех","теч","лач","лах","сам","мак","лич","ген","ор","аг","йек","эк","гек","стаг","онн", \
+	"бин","кет","ярл","вулф","вульф","эйнэч","эйнеч","крещ","азунэйн","гхшт")
 
 /datum/language/skrell
 	name = "Skrellian"
