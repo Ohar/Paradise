@@ -223,7 +223,7 @@
 	colour = "skrell"
 	key = "k"
 	flags = RESTRICTED
-	syllables = list("qr","qrr","xuq","qil","quum","xuqm","vol","xrim","zaoo","qu-uu","qix","qoo","zix","*","!")
+	syllables = list("кур","курр","зук","зиль","куум","куйм","вол","зрим","зэу","ку-ю","кикс","кю","зикс","*","!")
 
 /datum/language/vox
 	name = "Vox-pidgin"
