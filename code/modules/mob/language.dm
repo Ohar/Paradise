@@ -180,22 +180,22 @@
 
 /datum/language/tajaran
 	name = "Siik'tajr"
-	desc = "The traditionally employed tongue of Ahdomai, composed of expressive yowls and chirps. Native to the Tajaran."
+	desc = "Сик’тайр — родной язык таяран, традиционный на их родной планете Адомая. Состоит из выразительных мурлыканий, подвываний и особых жестов ушами и хвостом."
 	speech_verb = "mrowls"
 	ask_verb = "mrowls"
 	exclaim_verbs = list("yowls")
 	colour = "tajaran"
 	key = "j"
 	flags = RESTRICTED
-	syllables = list("rr","rr","tajr","kir","raj","kii","mir","kra","ahk","nal","vah","khaz","jri","ran","darr", \
-	"mi","jri","dynh","manq","rhe","zar","rrhaz","kal","chur","eech","thaa","dra","jurl","mah","sanu","dra","ii'r", \
-	"ka","aasi","far","wa","baq","ara","qara","zir","sam","mak","hrar","nja","rir","khan","jun","dar","rik","kah", \
-	"hal","ket","jurl","mah","tul","cresh","azu","ragh")
+	syllables = list("рр","рр","тажр","кир","раж","кии","мир","кра","ахх","наль","вах","хаз","жри","ран","дарр", \
+	"ми","жри","дин","манк","ре","зар","жар","рраж","каль","чур","йих","заа","дра","журль","мах","сану","дра","ии’р", \
+	"ка","ааси","фар","ва","бак","ара","кара","зир","жир","сам","мак","храр","нжа","нъя","рир","хан","жун","дар","рик","ках", \
+	"халь","кет","журль","мах","тул","креш","азу","ракх")
 
 /datum/language/tajaran/get_random_name(gender)
 	var/new_name = ..(gender,1)
 	if(prob(80))
-		new_name += " [pick(list("Hadii","Kaytam","Zhan-Khazan","Hharar","Njarir'Akhan"))]"
+		new_name += " [pick(list("Хадии","Кайтам","Жан-Хазан","Ххарар","Нъярир’Ахан","Фааира’Нрези"))]"
 	else
 		new_name += " [..(gender,1)]"
 	return new_name
