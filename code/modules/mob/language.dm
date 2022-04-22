@@ -159,23 +159,23 @@
 
 /datum/language/unathi
 	name = "Sinta'unathi"
-	desc = "The common language of Moghes, composed of sibilant hisses and rattles. Spoken natively by Unathi."
+	desc = "Синта’Унати — общий язык планеты Могес и родной язык народа унати. Состоит из свиста, шипения и хрипов."
 	speech_verb = "hisses"
 	ask_verb = "hisses"
 	exclaim_verbs = list("roars")
 	colour = "soghun"
 	key = "o"
 	flags = RESTRICTED
-	syllables = list("za","az","ze","ez","zi","iz","zo","oz","zu","uz","zs","sz","ha","ah","he","eh","hi","ih", \
-	"ho","oh","hu","uh","hs","sh","la","al","le","el","li","il","lo","ol","lu","ul","ls","sl","ka","ak","ke","ek", \
-	"ki","ik","ko","ok","ku","uk","ks","sk","sa","as","se","es","si","is","so","os","su","us","ss","ss","ra","ar", \
-	"re","er","ri","ir","ro","or","ru","ur","rs","sr","a","a","e","e","i","i","o","o","u","u","s","s" )
+	syllables = list("за","аз","зе","ез","зи","из","зо","оз","зу","уз","зс","сз","ха","ах","хе","ех","хи","их", \
+	"хо","ох","ху","ух","хс","сх","ла","ал","ле","ел","ли","ил","ло","ол","лу","ул","лс","сл","ка","ак","ке","ек", \
+	"ки","ик","ко","ок","ку","ук","кс","ск","са","ас","се","ес","си","ис","со","ос","су","ус","сс","сс","ра","ар", \
+	"ре","ер","ри","ир","ро","ор","ру","ур","рс","ср","а","а","е","е","и","и","о","о","у","у","с","с" )
 
 /datum/language/unathi/get_random_name()
 
 	var/new_name = ..()
-	while(findtextEx(new_name,"sss",1,null))
-		new_name = replacetext(new_name, "sss", "ss")
+	while(findtextEx_char(new_name,"ссс",1,null))
+		new_name = replacetextEx_char(new_name, "ссс", "сс")
 	return capitalize(new_name)
 
 /datum/language/tajaran
