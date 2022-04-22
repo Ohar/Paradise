@@ -256,11 +256,11 @@
 	colour = "diona"
 	key = "q"
 	flags = RESTRICTED
-	syllables = list("hs","zt","kr","st","sh")
+	syllables = list("хс","зт","кр","ст","сш")
 
 /datum/language/diona/get_random_name()
-	var/new_name = "[pick(list("To Sleep Beneath", "Wind Over", "Embrace Of", "Dreams Of", "Witnessing", "To Walk Beneath", "Approaching The", "Glimmer Of", "The Ripple Of", "Colors Of", "The Still Of", "Silence Of", "Gentle Breeze Of", "Glistening Waters Under", "Child Of", "Blessed Plant-Ling Of", "Grass-Walker Of", "Element Of", "Spawn Of"))]"
-	new_name += " [pick(list("The Void", "The Sky", "Encroaching Night", "Planetsong", "Starsong", "The Wandering Star", "The Empty Day", "Daybreak", "Nightfall", "The Rain", "The Stars", "The Waves", "Dusk", "Night", "The Wind", "The Summer Wind", "The Blazing Sun", "The Scorching Sun", "Eternal Fields", "The Soothing Plains", "The Undying Fiona", "Mother Nature's Bousum"))]"
+	var/new_name = "[pick(list("Сон Посреди", "Сон Возле", "Ветер", "Объятья", "Сны", "Мечты", "Память", "Воспоминание", "Прогулка Посреди", "Прогулка Возле", "Приближение", "Отблеск", "Пульс", "Проблеск", "Цвета", "Тишина", "Покой", "Нежное Дыхание", "Плеск Волн", "Дитя", "Благословенное Растение", "Ходящие По Траве", "Элемент", "Порождение", "Глубокая Нота"))]"
+	new_name += " [pick(list("Пустоты", "Небес", "Наступающей Ночи", "Песни Планет", "Песни Звёзд", "Звёздного Света", "Блуждающей звезды", "Пустого Дня", "Дневного Отдыха", "Сумерек", "Дождя", "Звёзд", "Волн", "Заката", "Ночи", "Ветра", "Летнего Ветра", "Пылающего Солнца", "Палящего Солнца", "Вечных Лугов", "Спокойных Полей", "Бессмертной Фионы", "Лона Матери-Природы", "Железной Горы"))]"
 	return new_name
 
 /datum/language/trinary
