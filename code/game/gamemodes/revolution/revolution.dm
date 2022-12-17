@@ -26,15 +26,15 @@
 //Announces the game type//
 ///////////////////////////
 /datum/game_mode/revolution/announce()
-	to_chat(world, "<B>The current game mode is - Revolution!</B>")
-	to_chat(world, "<B>Some crewmembers are attempting to start a revolution!<BR>\nRevolutionaries - Kill the Captain, HoP, HoS, CE, RD and CMO. Involve other employees (excluding the heads of staff, and security officers) in to the revolution.  Protect your leaders.<BR>\nPersonnel - Protect the heads of staff. Kill the leaders of the revolution, and brainwash the other revolutionaries (by implantiong them with mindshield implants).</B>")
+	to_chat(world, "<B>Текущий игровой режим — Революция!</B>")
+	to_chat(world, "<B>Некоторые члены экипажа пытаются поднять революцию!<BR>\nРеволюционеры — убейте капитана, главу персонала, главу службы безопасности, главного инженера, главного врача и директора исследований. Вовлеките в революцию весь прочий экипаж (кроме командования и охраны). Защитите ваших вождей.<BR>\nЭкипаж — Защитите командование. Убейте вождей революции и промойте мозги революционерам (имплантированием им «щитов разума»).</B>")
 
 ///////////////////////////////////////////
 //Магический спелл для приглашения в реву//
 ///////////////////////////////////////////
 
 /datum/action/innate/revolution_recruitment
-	name = "Recruitment"
+	name = "Рекрутинг"
 	button_icon_state = "genetic_mindscan"
 	background_icon_state = "bg_vampire"
 
@@ -51,36 +51,36 @@
 				continue
 			validtargets += M
 	if(!validtargets.len)
-		to_chat(usr, "<span class='warning'>There are no valid targets!</span>")
-	var/mob/living/carbon/human/target = input("Choose a target for recruitment.", "Targeting") as null|mob in validtargets
+		to_chat(usr, "<span class='warning'>Нет подходящих целей!</span>")
+	var/mob/living/carbon/human/target = input("Выберите цель для рекрутирования.", "Выбор цели") as null|mob in validtargets
 	return target
 
 /datum/action/innate/revolution_recruitment/Activate()
 	if(!(usr && usr.mind && usr.stat == CONSCIOUS))
-		to_chat(usr, "<span class='danger'>You must be conscious.")
+		to_chat(usr, "<span class='danger'>Вы должны быть в сознании.")
 		return
 	if(world.time < usr.mind.rev_cooldown)
-		to_chat(usr, "<span class='danger'>You must wait between attempts.")
+		to_chat(usr, "<span class='danger'>Вы должны подождать между попытками.")
 		return
 	usr.mind.rev_cooldown = world.time + 50
 	var/mob/living/carbon/human/recruit = choose_targets()
 	if(!recruit)
 		return
 	log_admin("[key_name(usr)] attempted recruitment [key_name(recruit)] into the revolution.", usr)
-	to_chat(usr, "<span class='info'><b>You are trying to recruit [recruit]: </b></span>")
+	to_chat(usr, "<span class='info'><b>Вы пытаетесь рекрутировать в революцию [recruit]: </b></span>")
 	if(ismindshielded(recruit) || (recruit.mind in SSticker.mode.get_living_heads()))
-		to_chat(recruit, "<span class='danger'><FONT size = 4>You were asked to join the revolution, but for reasons you did not know, you refused.")
-		to_chat(usr, "<span class='danger'>\The [recruit] does not support the revolution!")
+		to_chat(recruit, "<span class='danger'><FONT size = 4>Вам предложили вступить в революцию, но, по неизвестным вам причинам, вы отказались.")
+		to_chat(usr, "<span class='danger'>[recruit] отказывается поддержать революцию!")
 		return
-	var/choice = alert(recruit, "Do you want to join the revolution?", "Join the revolution", "Yes", "No")
-	if(choice == "Yes")
+	var/choice = alert(recruit, "Хотите ли вы ступить в революцию?", "Вступить в революцию", "Да", "Нет")
+	if(choice == "Да")
 		if(!(recruit && recruit.mind && recruit.stat == CONSCIOUS))
 			return
 		if(usr.mind in SSticker.mode.head_revolutionaries)
 			SSticker.mode.add_revolutionary(recruit.mind)
-	if(choice == "No")
+	if(choice == "Нет")
 		to_chat(recruit, "<span class='danger'>You reject this traitorous cause!")
-		to_chat(usr, "<span class='danger'>\The [recruit] does not support the revolution!")
+		to_chat(usr, "<span class='danger'>[recruit] не поддерживает революцию!")
 
 ///////////////////////////////////////////////////////////////////////////////
 //Gets the round setup, cancelling if there's not enough players at the start//
@@ -151,9 +151,9 @@
 	var/datum/action/innate/revolution_recruitment/C = new()
 	C.Grant(rev_mind.current)
 	if(you_are)
-		to_chat(rev_mind.current, "<span class='userdanger'>You are a member of the revolutionaries' leadership!</span>")
+		to_chat(rev_mind.current, "<span class='userdanger'>Вы — один из вождей революции!</span>")
 	for(var/datum/objective/objective in rev_mind.objectives)
-		to_chat(rev_mind.current, "<B>Objective #[obj_count]</B>: [objective.explanation_text]")
+		to_chat(rev_mind.current, "<B>Задание №[obj_count]</B>: [objective.explanation_text]")
 		obj_count++
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -165,7 +165,7 @@
 
 	if(mob.mind)
 		if(mob.mind.assigned_role == "Clown")
-			to_chat(mob, "Your training has allowed you to overcome your clownish nature, allowing you to wield weapons without harming yourself.")
+			to_chat(mob, "Упорные тренировки позволили Вам преодолеть свою клоунскую природу. Теперь Вы можете пользоваться оружием, не боясь прострелить себе колено.")
 			mob.mutations.Remove(CLUMSY)
 			var/datum/action/innate/toggle_clumsy/A = new
 			A.Grant(mob)
@@ -174,11 +174,11 @@
 	var/obj/item/clothing/glasses/hud/security/chameleon/C = new(mob)
 
 	var/list/slots = list (
-		"backpack" = slot_in_backpack,
-		"left pocket" = slot_l_store,
-		"right pocket" = slot_r_store,
-		"left hand" = slot_l_hand,
-		"right hand" = slot_r_hand,
+		"сумке" = slot_in_backpack,
+		"левом кармане" = slot_l_store,
+		"правом кармане" = slot_r_store,
+		"левой руке" = slot_l_hand,
+		"правой руке" = slot_r_hand,
 	)
 	var/where2 = mob.equip_in_one_of_slots(C, slots)
 	mob.equip_in_one_of_slots(R,slots)
@@ -186,9 +186,9 @@
 	mob.update_icons()
 
 	if(!where2)
-		to_chat(mob, "The Syndicate were unfortunately unable to get you a chameleon security HUD.")
+		to_chat(mob, "К сожалению, Синдикат не смог снабдить Вас маскировочным ИЛС СБ.")
 	else
-		to_chat(mob, "The chameleon security HUD in your [where2] will help you keep track of who is mindshield-implanted, and unable to be recruited.")
+		to_chat(mob, "Маскировочный ИЛС СБ (находится у Вас в [where2]) поможет увидеть носителей импланта «Щит разума», которых не выйдет рекрутировать в революцию.")
 		return 1
 
 /////////////////////////////////
@@ -198,7 +198,7 @@
 	var/datum/objective/mutiny/rev_obj = new
 	rev_obj.owner = rev_mind
 	rev_obj.target = head_mind
-	rev_obj.explanation_text = "Exile or assassinate [head_mind.name], the [head_mind.assigned_role]."
+	rev_obj.explanation_text = "Изгнать со станции или убить [head_mind.name], [head_mind.assigned_role]."
 	rev_mind.objectives += rev_obj
 
 ////////////////////////////////////////////
@@ -243,7 +243,7 @@
 	if((rev_mind in revolutionaries) || (rev_mind in head_revolutionaries))
 		return 0
 	revolutionaries += rev_mind
-	to_chat(rev_mind.current, "<span class='danger'><FONT size = 3> You are now a revolutionary! Follow orders given by revolution leaders. Do not harm your fellow freedom fighters. You can identify your comrades by the red \"R\" icons, and your leaders by the blue \"R\" icons.</FONT></span>")
+	to_chat(rev_mind.current, "<span class='danger'><FONT size = 3>Теперь вы — революционер! Слушайтесь вождей революции. Не вредите борцам за свободу — вашим товарищам. Вы можете опознать своих товарищей по красным иконкам «R», а своих вождей — по синей иконке «R».</FONT></span>")
 	add_conversion_logs(rev_mind.current, "recruited to the revolution")
 	rev_mind.special_role = SPECIAL_ROLE_REV
 	update_rev_icons_added(rev_mind)
@@ -266,10 +266,10 @@
 			qdel(C)
 		add_conversion_logs(rev_mind.current, "renounced the revolution")
 		if(beingborged)
-			to_chat(rev_mind.current, "<span class='danger'><FONT size = 3>The frame's firmware detects and deletes your neural reprogramming! You remember nothing[remove_head ? "." : " but the name of the one who recruited you."]</FONT></span>")
+			to_chat(rev_mind.current, "<span class='danger'><FONT size = 3>Программные протоколы оболочки обнаружили и исправили Ваши перепрограммированные нейронные связи! Вы ничего не помните[remove_head ? "." : ", кроме имени того, кто Вас рекрутировал."]</FONT></span>")
 			message_admins("[ADMIN_LOOKUPFLW(rev_mind.current)] has been borged while being a [remove_head ? "leader" : " member"] of the revolution.")
 		else
-			to_chat(rev_mind.current, "<span class='danger'><FONT size = 3>You have been brainwashed! You are no longer a revolutionary!</FONT></span>")
+			to_chat(rev_mind.current, "<span class='danger'><FONT size = 3>Вам промыли мозги! Вы больше не революционер!</FONT></span>")
 
 		update_rev_icons_removed(rev_mind)
 
@@ -306,10 +306,10 @@
 /datum/game_mode/revolution/declare_completion()
 	if(check_rev_victory())
 		SSticker.mode_result = "revolution win - heads killed"
-		to_chat(world, "<span class='redtext'>The heads of staff were killed or exiled! The revolutionaries win!</span>")
+		to_chat(world, "<span class='redtext'>Всё командование было изгнано или убито! Революция победила!</span>")
 	else
 		SSticker.mode_result = "revolution loss - rev heads killed"
-		to_chat(world, "<span class='redtext'>The heads of staff managed to stop the revolution!</span>")
+		to_chat(world, "<span class='redtext'>Командование смогло остановить революцию!</span>")
 	..()
 	return TRUE
 
@@ -325,27 +325,27 @@
 					if((survivor.mind in head_revolutionaries) || (survivor.mind in revolutionaries))
 						num_revs++
 		if(num_survivors)
-			to_chat(world, "[TAB]Command's Approval Rating: <B>[100 - round((num_revs/num_survivors)*100, 0.1)]%</B>") // % of loyal crew
-		var/text = "<br><font size=3><b>The head revolutionaries were:</b></font>"
+			to_chat(world, "[TAB]Уровень поддержки командования экипажем: <B>[100 - round((num_revs/num_survivors)*100, 0.1)]%</B>") // % of loyal crew
+		var/text = "<br><font size=3><b>Вождями революции были:</b></font>"
 		for(var/datum/mind/headrev in head_revolutionaries)
 			text += printplayer(headrev, 1)
 		text += "<br>"
 		to_chat(world, text)
 
 	if(revolutionaries.len || GAMEMODE_IS_REVOLUTION)
-		var/text = "<br><font size=3><b>The revolutionaries were:</b></font>"
+		var/text = "<br><font size=3><b>Революционерами были:</b></font>"
 		for(var/datum/mind/rev in revolutionaries)
 			text += printplayer(rev, 1)
 		text += "<br>"
 		to_chat(world, text)
 
 	if( head_revolutionaries.len || revolutionaries.len || GAMEMODE_IS_REVOLUTION )
-		var/text = "<br><font size=3><b>The heads of staff were:</b></font>"
+		var/text = "<br><font size=3><b>Членами командования были:</b></font>"
 		var/list/heads = get_all_heads()
 		for(var/datum/mind/head in heads)
 			var/target = (head in targets)
 			if(target)
-				text += "<span class='boldannounce'>Target</span>"
+				text += "<span class='boldannounce'>Цель</span>"
 			text += printplayer(head, 1)
 		text += "<br>"
 		to_chat(world, text)
@@ -371,7 +371,7 @@
 		var/mob/living/carbon/human/player = thing
 		if(player.mind)
 			var/role = player.mind.assigned_role
-			if(role in list("Captain", "Head of Security", "Head of Personnel", "Chief Engineer", "Research Director"))
+			if(role in list("Captain", "Head of Security", "Head of Personnel", "Chief Engineer", "Research Director", "Chief Medical Officer"))
 				if(player.stat == DEAD)
 					GLOB.score_deadcommand++
 
@@ -402,7 +402,7 @@
 		var/mob/living/carbon/human/player = thing
 		if(player.mind)
 			var/role = player.mind.assigned_role
-			if(role in list("Captain", "Head of Security", "Head of Personnel", "Chief Engineer", "Research Director"))
+			if(role in list("Captain", "Head of Security", "Head of Personnel", "Chief Engineer", "Research Director", "Chief Medical Officer"))
 				if(player.stat != DEAD)
 					comcount++
 			else
@@ -417,19 +417,19 @@
 
 	var/dat = ""
 
-	dat += "<b><u>Mode Statistics</u></b><br>"
-	dat += "<b>Number of Surviving Revolution Heads:</b> [foecount]<br>"
-	dat += "<b>Number of Surviving Command Staff:</b> [comcount]<br>"
-	dat += "<b>Number of Surviving Revolutionaries:</b> [revcount]<br>"
-	dat += "<b>Number of Surviving Loyal Crew:</b> [loycount]<br>"
+	dat += "<b><u>Статистика режима</u></b><br>"
+	dat += "<b>Выжило вождей революции:</b> [foecount]<br>"
+	dat += "<b>Выжило членов командования станции:</b> [comcount]<br>"
+	dat += "<b>Выжило революционеров:</b> [revcount]<br>"
+	dat += "<b>Выжило лояльного НаноТрейзен экипажа:</b> [loycount]<br>"
 
 	dat += "<br>"
-	dat += "<b>Revolution Heads Arrested:</b> [GLOB.score_arrested] ([GLOB.score_arrested * 1000] Points)<br>"
-	dat += "<b>All Revolution Heads Arrested:</b> [GLOB.score_allarrested ? "Yes" : "No"] (Score tripled)<br>"
+	dat += "<b>Вождей революции арестовано:</b> [GLOB.score_arrested] ([GLOB.score_arrested * 1000] очков)<br>"
+	dat += "<b>Все вожди революции арестованы:</b> [GLOB.score_allarrested ? "Да" : "Нет"] (очки утраиваются)<br>"
 
-	dat += "<b>Revolution Heads Slain:</b> [GLOB.score_opkilled] ([GLOB.score_opkilled * 500] Points)<br>"
-	dat += "<b>Command Staff Slain:</b> [GLOB.score_deadcommand] (-[GLOB.score_deadcommand * 500] Points)<br>"
-	dat += "<b>Revolution Successful:</b> [GLOB.score_traitorswon ? "Yes" : "No"] (-[GLOB.score_traitorswon * 10000] Points)<br>"
+	dat += "<b>Убито вождей революции:</b> [GLOB.score_opkilled] ([GLOB.score_opkilled * 500] очков)<br>"
+	dat += "<b>Убито членов командования станции:</b> [GLOB.score_deadcommand] (-[GLOB.score_deadcommand * 500] очков)<br>"
+	dat += "<b>Революция прошла успешно:</b> [GLOB.score_traitorswon ? "Да" : "Нет"] (-[GLOB.score_traitorswon * 10000] очков)<br>"
 	dat += "<HR>"
 
 	return dat
